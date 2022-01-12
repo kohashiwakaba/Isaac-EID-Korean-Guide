@@ -1,0 +1,64 @@
+site_name: 아이작의 번제 아이템 설명 모드 한국어 가이드
+site_author: kohashiwakaba
+repo_url: https://github.com/kohashiwakaba/Isaac-EID-Korean-Guide
+repo_name: kohashiwakaba/Isaac-EID-Korean-Guide
+nav:
+  - 개요: index.md
+  - 사용법: how.md
+  - 옵션: 
+    - '주요 옵션': config/general.md
+    - '표시 옵션': config/display.md
+    - '스타일 옵션': config/visuals.md
+    - '조합법 옵션': config/crafting.md
+    - '마우스 옵션': config/mouse.md
+    - '색상 옵션': config/colors.md
+  - 자주 묻는 질문: faq.md
+  - 추천 모드: recommended.md
+  - 모드 링크: https://steamcommunity.com/sharedfiles/filedetails/?id=836319872
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  language: kr
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc:
+        permalink: True
+    - toc.integrate
+    - navigation.top
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: 페이지 어둡게
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate 
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 페이지 밝게
+
+extra_css: [ css/pymdownx.css]
+markdown_extensions:
+  - md_in_html
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - pymdownx.pathconverter
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.highlight
+  - pymdownx.keys
+copyright: Copyright &copy; 2022 kohashiwakaba aka. 미카
