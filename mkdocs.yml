@@ -4,7 +4,9 @@ repo_url: https://github.com/kohashiwakaba/Isaac-EID-Korean-Guide
 repo_name: kohashiwakaba/Isaac-EID-Korean-Guide
 nav:
   - 개요: index.md
-  - 사용법: how.md
+  - 사용법: 
+    - '기본 사용법': howto/how.md
+    - 'Github에서 바로 업데이트': howto/update-from-github.md
   - 옵션: 
     - '주요 옵션': config/general.md
     - '표시 옵션': config/display.md
@@ -12,6 +14,7 @@ nav:
     - '조합법 옵션': config/crafting.md
     - '마우스 옵션': config/mouse.md
     - '색상 옵션': config/colors.md
+    - '설정 파일 직접 수정': config/lua.md
   - 자주 묻는 질문: faq.md
   - 추천 모드: recommended.md
   - 모드 링크: https://steamcommunity.com/sharedfiles/filedetails/?id=836319872
@@ -48,6 +51,7 @@ theme:
 
 extra_css: [ css/pymdownx.css]
 markdown_extensions:
+  - tables
   - md_in_html
   - admonition
   - attr_list
