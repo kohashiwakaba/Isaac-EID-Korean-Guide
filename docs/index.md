@@ -66,7 +66,7 @@ Blackcreamtea가 번역, 혹은 제작했던 [한글 설명 모드](https://stea
     - [Mod Config Menu - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=2487535818), 혹은 [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독 
     - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입
     - EID -> General -> Language를 'Korean'으로 설정 (아래 그림 참조)
-    - 이외의 옵션 설정 방법은 이 페이지(준비중)를 확인해 주세요.  
+    - 이외의 옵션 설정 방법은 [이 페이지](./config/lua.md)를 확인해 주세요.  
     ![한국어 설정](./img/guide_first.jpg){: width="500"}
     - 위 이미지처럼 되어 있다면 아이템 설명이 이제 한글로 표시됩니다. 
 

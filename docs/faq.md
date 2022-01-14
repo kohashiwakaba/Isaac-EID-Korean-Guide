@@ -12,18 +12,29 @@
 
 스팀 버전이라면 [External item descriptions](https://steamcommunity.com/sharedfiles/filedetails/?id=836319872) 모드를 구독한 후에 게임을 실행해 주시면 됩니다.
 
-### 모드를 적용했는데 아무것도 없어요
+### 모드를 적용했는데 모드 선택하는 곳에 아무것도 없어요
 
 !!! info ""
     - 참조 링크 : [아이작의 번제 채널 : 모드(MODS) 구독 및 적용 가이드](https://arca.live/b/isaac/19390658)
 
-### 모드를 적용했는데 설명이 안 나와요
+### 설명의 한글 글씨가 깨져요
+
+아이작의 번제 리버스 특성 상 옵션에서 필터(Filter)를 적용했거나 배율이 정수 배율이 아닌 경우 글씨가 깨져 보일 수 있습니다.
 
 ### 번역 업데이트가 너무 느려요! 업데이트된 번역 파일을 먼저 받을 수 있나요?
 
 [Github 프로젝트에서 받기](./howto/update-from-github.md) 페이지 참조
 
 ### 아이템 설명 모드 설정은 어떻게 하나요?
+
+아이템 설명 모드 설정의 대부분은 Mod Config Menu를 통하여 설정할 수 있습니다. 만약 Mod Config Menu를 사용할 수 없는 경우 아래 방법을 이용해 주세요. 설정하려는 값에 대한 내용은 [여기서](./config/lua.md) 확인할 수 있습니다. 안타깝게도 현재 애프터버스+용 Mod Config Menu 모드는 창작마당에서 내려간 상태이므로 메모장 수정 방법을 이용해 주셔야 됩니다.
+
+  - 아이작 게임이 실행 중인 경우 게임을 종료해 주세요.
+  - 애프터버스 + : ```내 문서\My Games\Binding of Isaac Afterbirth + Mods\external item descriptions_836319872``` 폴더로,
+  - 리펜턴스 : ```아이작 설치 폴더\mods\external item descriptions_836319872\``` 폴더로 이동
+  - ```eid_config.lua``` 오른쪽 클릭 후 연결 프로그램 -> 메모장
+  - 원하는 설정값 수정 후 저장
+  - 아이작 게임 실행
 
 ### 아이작의 번제 게임의 기타 팁을 알고 싶어요
 

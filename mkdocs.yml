@@ -5,7 +5,9 @@ repo_name: kohashiwakaba/Isaac-EID-Korean-Guide
 nav:
   - 개요: index.md
   - 사용법: 
-    - '기본 사용법': howto/how.md
+    - '기본 사용법': howto/basic.md
+    - '다른 아이템과의 시너지': howto/advanced.md
+    - '알트 카인 레시피': howto/crafting.md
     - 'Github에서 바로 업데이트': howto/update-from-github.md
   - 옵션: 
     - '주요 옵션': config/general.md
@@ -15,6 +17,14 @@ nav:
     - '마우스 옵션': config/mouse.md
     - '색상 옵션': config/colors.md
     - '설정 파일 직접 수정': config/lua.md
+  - API:
+    - api/api.md
+    - '모드 아이템 설명 추가' : api/description.md
+    - '모드 캐릭터 생득권 추가' : api/birthright.md
+    - '마크업 추가' : api/markupadd.md
+    - '카드 아이콘 추가' : api/cardfront.md
+    - '커스텀 변신세트 추가' : api/transformation.md
+    - '마크업 모음' : api/markup.md
   - 자주 묻는 질문: faq.md
   - 추천 모드: recommended.md
   - 모드 링크: https://steamcommunity.com/sharedfiles/filedetails/?id=836319872
