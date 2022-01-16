@@ -104,6 +104,20 @@ HUD 기준점을 설정합니다. (애프터버스 + 전용)
 텍스트박스의 Y좌표 위치를 설정합니다. 리펜턴스 버전일 경우 HUD 위치에 따라 자동으로 조정됩니다.  
 기본값 : 45
 
+### LineHeight
+!!! note "" 
+    대응 옵션 : EID > General > **Textbox Width**
+
+줄 간 간격을 설정합니다. 기본 설정은 폰트마다 다릅니다.  
+기본값 : 11(기본 폰트)
+
+### TextboxWidth
+!!! note "" 
+    대응 옵션 : EID > General > **Textbox Width**
+
+텍스트박스의 크기를 설정합니다.  
+기본값 : 115
+
 ### MaxDistance
 !!! note "" 
     대응 옵션 : EID > General > **Max Distance**
@@ -388,6 +402,19 @@ Options? 아이템으로 드랍된 선택형 알약의 설명을 출력할지 �
 
 확인되지 않은 알약의 정보를 출력할지 설정합니다.
 기본값 : false  
+
+## Glitched Items
+
+### DisplayGlitchedItemInfo
+!!! note "" 
+    대응 옵션 : EID > Display > **Glitched Item Infos**
+
+오류 아이템의 예상 효과를 표시합니다.  
+!!! warning "추가 옵션 필요" 
+    오류 아이템의 대략적인 효과는 아이작 로그 파일에 기록됩니다. 일반적인 방법으로는 모드가 로그 파일에 접근할 수 없으며 추가 실행 옵션에 ```--luadebug```를 추가해준 후 아이작을 실행시켜야 합니다. ```--luadebug``` 옵션은 일부 악성 모드가 다른 모드의 파일이나 컴퓨터 내 파일을 건들 수 있으므로 가급적이면 사용하지 않는 것을 권장합니다.
+!!! warning "주의" 
+    오류 아이템의 효과는 예상 설명이며 추가로 설명에 없는 또 다른 효과가 발생할 수 있습니다.
+기본값 : true  
 
 ## Sacrifice rooms
 

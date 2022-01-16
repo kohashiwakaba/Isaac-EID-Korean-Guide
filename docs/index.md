@@ -1,6 +1,9 @@
+!!! warning "해당 가이드는 제작중입니다."
+    일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
+
 ## For Non-Korean users
 !!! note ""
-    This documentation contains instruction or information for Korean users. 
+    This (unfinished)documentation contains instruction or information for Korean users.  
     To check original External items Descriptions information, try to visit following links below:
 
 - [Steam Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/?id=836319872)
