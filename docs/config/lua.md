@@ -56,19 +56,6 @@
 | "korean_galmoori9" | **갈무리9** |
 | "korean_galmoori11" | **갈무리11** |
 
-### TextboxWidth
-!!! note "" 
-    대응 옵션 : (추가 예정)
-
-텍스트박스의 넓이를 설정합니다.  
-기본값 : 100
-
-!!! note "예시" 
-    === "Boxwidth 100"
-        ![폰트 미리보기](../img/example_boxwidth_100.jpg)
-    === "Boxwidth 200"
-        ![폰트 미리보기](../img/example_boxwidth_200.jpg)
-
 ### Scale
 !!! note "" 
     대응 옵션 : EID > Visuals > **Text Size**
@@ -114,10 +101,16 @@ HUD 기준점을 설정합니다. (애프터버스 + 전용)
 
 ### TextboxWidth
 !!! note "" 
-    대응 옵션 : EID > General > **Textbox Width**
+    대응 옵션 : (추가 예정)
 
-텍스트박스의 크기를 설정합니다.  
+텍스트박스의 넓이를 설정합니다.  
 기본값 : 115
+
+!!! note "예시" 
+    === "Boxwidth 100"
+        ![폰트 미리보기](../img/example_boxwidth_100.jpg)
+    === "Boxwidth 200"
+        ![폰트 미리보기](../img/example_boxwidth_200.jpg)
 
 ### MaxDistance
 !!! note "" 
