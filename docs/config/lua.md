@@ -22,6 +22,7 @@
 | "bul" | **불가리아어**(Bulgarian) | Gothika_47 |
 | "tr_tr" | **터키어**(Turkish) | Mert Dutal |
 | "ko_kr" | **한국어**(Korean) | Blackcreamtea, 미카 |
+| "zh_cn" | **중국어**(Chinese) | Xheepey87, frto027 |
 
 ### TranslateItemName
 !!! note "" 
