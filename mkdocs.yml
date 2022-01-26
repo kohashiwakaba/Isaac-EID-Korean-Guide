@@ -50,6 +50,8 @@ theme:
     scheme: dracula
     primary: deep purple
     accent: deep purple
+  font:
+    text: IBM Plex Sans KR
 
 extra_css: [ css/pymdownx.css]
 markdown_extensions:
