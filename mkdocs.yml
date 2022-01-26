@@ -47,20 +47,9 @@ theme:
     - toc.integrate
     - navigation.top
   palette: 
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: pink
-      toggle:
-        icon: material/weather-sunny
-        name: 페이지 어둡게
-    - media: "(prefers-color-scheme: dark)"
-      scheme: dracula
-      primary: deep purple
-      accent: deep purple
-      toggle:
-        icon: material/weather-night
-        name: 페이지 밝게
+    scheme: dracula
+    primary: deep purple
+    accent: deep purple
 
 extra_css: [ css/pymdownx.css]
 markdown_extensions:
