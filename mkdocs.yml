@@ -1,7 +1,7 @@
 site_name: 아이작의 번제 아이템 설명 모드 한국어 가이드
 site_author: kohashiwakaba
 repo_url: https://github.com/kohashiwakaba/Isaac-EID-Korean-Guide
-repo_name: 아이템 설명모드 한국어 가이드
+repo_name: kohashiwakaba/Isaac-EID-Korean-Guide
 plugins:
   - search
   - mkdocs_pymdownx_material_extras
@@ -47,9 +47,20 @@ theme:
     - toc.integrate
     - navigation.top
   palette: 
-    - scheme: dracula
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: 페이지 어둡게
+    - media: "(prefers-color-scheme: dark)"
+      scheme: dracula
       primary: deep purple
       accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: 페이지 밝게
 
 extra_css: [ css/pymdownx.css]
 markdown_extensions:
