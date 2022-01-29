@@ -46,6 +46,7 @@ theme:
         permalink: True
     - toc.integrate
     - navigation.top
+    - header.autohide
   palette: 
     scheme: dracula
     primary: deep purple

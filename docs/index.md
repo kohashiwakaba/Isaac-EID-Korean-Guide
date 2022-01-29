@@ -82,7 +82,7 @@ Blackcreamtea가 번역, 혹은 제작했던 [한글 설명 모드](https://stea
     - ```eid_config.lua``` 오른쪽 클릭 후 연결 프로그램 -> 메모장
     - ```["Language"] = "en_us"```를 ```["Language"] = "ko_kr"```으로 수정 후 저장
 
-!!! warning "GOG 버전 주의사항"
+<!-- !!! warning "GOG 버전 주의사항"
     스팀 버전이 아닌 GOG 버전은 모드 실행을 위한 스크립트가 없어 모드를 적용할 수 없습니다. 따라서 별도의 스크립트 구동을 위한 파일이 필요합니다.
 - GOG 버전(리펜턴스) : 
     - 모드 실행을 위한 스크립트를 다운로드 [(링크)](https://cdn.discordapp.com/attachments/927987001767112794/929746140713349170/scripts.rar)
@@ -91,7 +91,7 @@ Blackcreamtea가 번역, 혹은 제작했던 [한글 설명 모드](https://stea
     - 오른쪽 초록색 Code 버튼 클릭 후 Download Zip 버튼 클릭 (혹은 [이 링크](https://github.com/wofsauge/External-Item-Descriptions/archive/refs/heads/master.zip)를 클릭하여 바로 다운로드)
     - 다운로드 받은 파일을  ```아이작 설치 폴더\mods``` 폴더에 풀기
     - 압축을 풀은 모드 폴더에서 ```eid_config.lua``` 오른쪽 클릭 후 연결 프로그램 -> 메모장
-    - ```["Language"] = "en_us"```를 ```["Language"] = "ko_kr"```으로 수정 후 저장
+    - ```["Language"] = "en_us"```를 ```["Language"] = "ko_kr"```으로 수정 후 저장 -->
 
 ## 모드의 기능을 설정하고 싶다면?
 
