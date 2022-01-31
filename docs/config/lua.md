@@ -72,7 +72,7 @@
 텍스트박스의 크기 비율을 설정하는 바로가기 키를 설정합니다. (키보드 전용)  
 해당 키를 누르면 크기 비율을 0.5, 1.0, 1.5배 순서로 적용되며 꾹 눌렀을 경우 세부 배율이 조절됩니다.
 설정값은 [이 링크](https://wofsauge.github.io/IsaacDocs/rep/enums/Keyboard.html)에서 확인할 수 있습니다.  
-기본값 : Keyboard.KEY_F5 (++f5++키)
+기본값 : -1 (없음)
 
 ### Transparency
 !!! note "" 
@@ -113,7 +113,7 @@ HUD 기준점을 설정합니다. (애프터버스 + 전용)
     대응 옵션 : EID > General > **Textbox Width**
 
 텍스트박스의 넓이를 설정합니다. 기본 설정은 폰트마다 다릅니다.  
-기본값 : 115
+기본값 : 130(한글 150)
 
 !!! note "예시" 
     === "Boxwidth 100"
@@ -301,6 +301,21 @@ April's Fool 챌린지에서 아이템의 설명을 출력할지 설정합니다
 아이템의 퀄리티를 보여줄지 설정합니다. (리펜턴스 전용)  
 기본값 : true  
 
+### ModIndicatorDisplay
+!!! note "" 
+    대응 옵션 : EID > Visuals > **Mod indicator displayed for:**
+
+모드 아이템의 출신 모드를 보여줍니다.
+기본값 : "None"  
+
+### ModIndicatorTextColor
+!!! note "" 
+    대응 옵션 : EID > Color > **Mod Indicator**
+
+아이템 이름 텍스트의 색상을 설정합니다.  
+텍스트 색상은 "eid_data.lua" 파일에서 확인할 수 있습니다.  
+기본값 : "LightOrange"  
+
 ## Transformations
 
 ### TransformationText
@@ -412,11 +427,7 @@ Options? 아이템으로 드랍된 선택형 알약의 설명을 출력할지 �
 !!! note "" 
     대응 옵션 : EID > Display > **Glitched Item Infos**
 
-글리치 아이템의 예상 효과를 표시합니다.  
-!!! warning "추가 옵션 필요" 
-    글리치 아이템의 대략적인 효과는 아이작 로그 파일에 기록됩니다. 일반적인 방법으로는 모드가 로그 파일에 접근할 수 없으며 추가 실행 옵션에 ```--luadebug```를 추가해준 후 아이작을 실행시켜야 합니다. ```--luadebug``` 옵션은 일부 악성 모드가 다른 모드의 파일이나 컴퓨터 내 파일을 건들 수 있으므로 가급적이면 사용하지 않는 것을 권장합니다.
-!!! warning "주의" 
-    글리치 아이템의 효과는 예상 설명이며 추가로 설명에 없는 또 다른 효과가 발생할 수 있습니다.
+글리치 아이템의 예상 효과를 표시합니다. 자세한 설명은 [여기서](../howto/advanced#tmtrainer) 확인할 수 있습니다.
 기본값 : true  
 
 ## Sacrifice rooms
@@ -446,6 +457,15 @@ Options? 아이템으로 드랍된 선택형 알약의 설명을 출력할지 �
 크레인 게임에 있는 아이템의 설명을 출력할지 설정합니다. (리펜턴스 전용)  
 기본값 : true  
 
+## Void Stat Increases
+
+### DisplayVoidStatInfo
+!!! note "" 
+    대응 옵션 : EID > Display > **Void Stat Increase**
+
+Void 아이템, Black Rune의 예상 스탯 증가량을 보여줍니다.
+기본값 : false  
+
 ## Bag of Crafting
 
 ### DisplayBagOfCrafting
@@ -473,6 +493,23 @@ Options? 아이템으로 드랍된 선택형 알약의 설명을 출력할지 �
 ### CraftingResultKey
 
 ### CraftingResultButton
+
+## Save Game
+
+### SaveGameNumber
+!!! note "" 
+    대응 옵션 : EID > Save Game > **Current Save Game**
+
+설명모드가 사용할 세이브파일을 선택합니다. 0으로 설정시 해당 기능을 비활성화합니다.  
+기본값 : 0  
+
+### ItemCollectionColor
+!!! note "" 
+    대응 옵션 : EID > Save Game > **Collection Page Highlight color**
+    
+아직 컬렉션에 없는 아이템의 텍스트의 색상을 설정합니다.  
+텍스트 색상은 "eid_data.lua" 파일에서 확인할 수 있습니다.  
+기본값 : "Fade"  
 
 ## Mouse Controls
 

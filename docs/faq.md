@@ -45,3 +45,37 @@
 - [아이작의 번제 갤러리 : 뉴비들이 자주 묻는 질문 모음](https://gall.dcinside.com/m/tboi/41131)
 - [아이작의 번제 갤러리 : 아이작의 번제 정보/팁글 모음](https://gall.dcinside.com/m/tboi/38515)
 - [아이작의 번제 갤러리 : 아이작의 번제 리펜턴스 DLC 정보 모음](https://gall.dcinside.com/m/tboi/25602)
+
+### 기타 댓글 및 제보
+
+<div class="giscus"></div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="kohashiwakaba/Isaac-EID-Korean-Guide"
+        data-repo-id="R_kgDOGqUX-g"
+        data-category="Giscus comments"
+        data-category-id="DIC_kwDOGqUX-s4CA7JX"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="ko"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<!-- <script>
+  const schemebtn = document.queryselector('.md-header__options')
+  function utterancesTheme () {
+    if (document.querySelector('.giscus-frame')) {
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'github-dark' : 'github-light'
+      const message = {
+        type: 'set-theme',
+        theme: theme
+      };
+      const iframe = document.querySelector('.giscus-frame');
+      iframe.contentWindow.postMessage(message, 'https://giscus.app');
+    }
+  }
+</script> -->
