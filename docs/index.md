@@ -63,13 +63,13 @@ Blackcreamtea가 번역, 혹은 제작했던 [한글 설명 모드](https://stea
 
 ## 모드 설치 및 한국어 설정 방법
 - 스팀 버전 : [External item descriptions](https://steamcommunity.com/sharedfiles/filedetails/?id=836319872) 모드 구독 중 두 설정 방법 중 하나를 따라주세요.
-!!! info "스팀 창작마당 버전은 생각 이상으로 업데이트가 느리다"
-    아이템 설명 모드는 Wofsauge를 비롯한 여러 개발자가 개발하는 모드입니다. 따라서 개발자 및 번역가들이 Github 프로젝트에 먼저 올린 후 일정 간격 이후 스팀 창작마당에 업로드 됩니다. 스팀 버전보다도 빠른 업데이트를 받고자 한다면 [Github 프로젝트](https://github.com/wofsauge/External-Item-Descriptions)에서 직접 받으시는 걸 권장드립니다.
+!!! info "스팀 창작마당 버전은 정기적으로 업데이트된다"
+    아이템 설명 모드는 Wofsauge를 비롯한 여러 개발자가 개발하는 모드입니다. 따라서 개발자 및 번역가들이 Github 프로젝트에 먼저 올린 후 한국 시간 기준 매주 월요일 아침에 스팀 창작마당에 업로드 됩니다. 스팀 버전보다도 빠른 업데이트를 받고자 한다면 [Github 프로젝트](https://github.com/wofsauge/External-Item-Descriptions)에서 직접 받으시는 걸 권장드립니다.
 - Mod Config Menu로 설정 :
     - [Mod Config Menu - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=2487535818), 혹은 [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독 
     - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입
     - EID -> General -> Language를 'Korean'으로 설정 (아래 그림 참조)
-    - 이외의 옵션 설정 방법은 [이 페이지](./config/lua.md)를 확인해 주세요.  
+    - 이외의 옵션 설정 방법은 [이 페이지](./config/configmenu.md)를 확인해 주세요.  
     ![한국어 설정](./img/guide_first.jpg){: width="500"}
     - 위 이미지처럼 되어 있다면 아이템 설명이 이제 한글로 표시됩니다. 
 
@@ -95,8 +95,7 @@ Blackcreamtea가 번역, 혹은 제작했던 [한글 설명 모드](https://stea
 
 ## 모드의 기능을 설정하고 싶다면?
 
-(준비 중, 추후 업데이트 예정)
-기본적으로 모든 모드의 기능은 설명 모드 폴더의 ```eid_config.lua``` 파일 및 Mod Config Menu를 통하여 설정할 수 있습니다.
+기본적으로 모든 모드의 기능은 설명 모드 폴더의 ```eid_config.lua``` 파일 및 Mod Config Menu를 통하여 설정할 수 있습니다. 설정할 수 있는 요소는 [여기서](../config/configmenu) 확인할 수 있습니다.
 
 ## 기타 링크
 

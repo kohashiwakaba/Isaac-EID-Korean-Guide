@@ -13,12 +13,7 @@ nav:
     - '알트 카인 레시피': howto/crafting.md
     - 'Github에서 바로 업데이트': howto/update-from-github.md
   - 옵션: 
-    - '주요 옵션': config/general.md
-    - '표시 옵션': config/display.md
-    - '스타일 옵션': config/visuals.md
-    - '조합법 옵션': config/crafting.md
-    - '마우스 옵션': config/mouse.md
-    - '색상 옵션': config/colors.md
+    - '주요 옵션': config/configmenu.md
     - '설정 파일 직접 수정': config/lua.md
   - API:
     - api/api.md
