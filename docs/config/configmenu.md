@@ -43,7 +43,7 @@ EID -> Display에서 표시할 설명의 유형을 설정할 수 있습니다.
 | **Trinket Infos** | 장신구의 설명을 보여줍니다. | `true` |
 | **Card Infos** | 카드/룬/영혼석의 설명을 보여줍니다. | `true` |
 | **Pill Infos** | 알약의 설명을 보여줍니다. | `true` |
-| **Glitched Item Infos** | 글리치 아이템의 설명을 보여줍니다. 자세한 내용은 [여기서](./howto/advanced#tmtrainer) 확인할 수 있습니다. | `true` |
+| **Glitched Item Infos** | 글리치 아이템의 설명을 보여줍니다. 자세한 내용은 [여기서](../../howto/advanced#tmtrainer) 확인할 수 있습니다. | `true` |
 | **Sacrifice Room Infos** | 다음 희생방 희생 시 발생 효과를 보여줍니다. | `true` |
 | **Dice Room Infos** | 현재 주사위방의 설명을 보여줍니다. | `true` |
 | **Crane Game Infos** | 크레인 게임에 있는 아이템의 설명을 보여줍니다. | `true` |
