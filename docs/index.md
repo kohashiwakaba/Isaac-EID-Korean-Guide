@@ -95,7 +95,7 @@ Blackcreamtea가 번역, 혹은 제작했던 [한글 설명 모드](https://stea
 
 ## 모드의 기능을 설정하고 싶다면?
 
-기본적으로 모든 모드의 기능은 설명 모드 폴더의 ```eid_config.lua``` 파일 및 Mod Config Menu를 통하여 설정할 수 있습니다. 설정할 수 있는 요소는 [여기서](../config/configmenu) 확인할 수 있습니다.
+기본적으로 모든 모드의 기능은 설명 모드 폴더의 ```eid_config.lua``` 파일 및 Mod Config Menu를 통하여 설정할 수 있습니다. 설정할 수 있는 요소는 [여기서](./config/configmenu) 확인할 수 있습니다.
 
 ## 기타 링크
 
