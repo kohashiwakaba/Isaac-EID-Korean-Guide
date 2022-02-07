@@ -48,6 +48,10 @@ EID -> Display에서 표시할 설명의 유형을 설정할 수 있습니다.
 | **Dice Room Infos** | 현재 주사위방의 설명을 보여줍니다. | `true` |
 | **Crane Game Infos** | 크레인 게임에 있는 아이템의 설명을 보여줍니다. | `true` |
 | **Void Stat Increase Infos** | Void 및 Black Rune 아이템 사용 시 예상되는 스탯 증가량을 보여줍니다. | `false` |
+| **Spindown Dice** | Spindown Dice(스핀다운 다이스) 아이템의 결과 미리보기 목록에 출력되는 아이템의 갯수를 설정합니다.<br/>0으로 설정시 해당 기능이 비할성화됩니다.(리펜턴스 전용) | `3` |
+| **Display IDs** | Spindown Dice 결과 미리보기 목록에서 ID 번호를 보여줍니다.(리펜턴스 전용) | `false` |
+| **Display names** | Spindown Dice 결과 미리보기 목록에서 아이템 이름를 보여줍니다.(리펜턴스 전용) | `false` |
+| **Skip Locked Items** | Spindown Dice 결과 미리보기 목록에서 해금되지 않은 아이템을 숨길지 설정합니다. (리펜턴스 전용) <br/>완전 작동을 보장하지는 않습니다. | `false` |
 | **Display Infos when obstructed**<br/>캐릭터가 갈 수 없는 곳의 픽업 아이템의 설명 ||
 | **Show again when having flight** | 비행 아이템 획득시 설명을 다시 보여줍니다. | `true` |
 | **Card Infos** | 장애물에 가로막힌 카드/룬의 설명을 보여줍니다. | `false` |

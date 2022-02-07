@@ -1,6 +1,10 @@
 !!! warning "해당 가이드는 제작중입니다."
     일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
 
+!!! info "마지막 업데이트 : 2022-02-04"
+    - 지속적인 버그 제보로 인하여 기존에 추가된 장신구가 제거되었습니다.
+    - Spindown Dice 목록에서 아이템 번호/ID 표시 기능이 추가되었습니다.
+
 ## For Non-Korean users
 !!! note ""
     This (unfinished)documentation contains instruction or information for Korean users.  

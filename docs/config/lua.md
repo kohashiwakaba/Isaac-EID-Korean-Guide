@@ -56,7 +56,7 @@
 | "korean_galmoori9" | **갈무리9** |
 | "korean_galmoori11" | **갈무리11** |
 
-### Scale
+### Size
 !!! note "" 
     대응 옵션 : EID > Visuals > **Text Size**
 
@@ -65,7 +65,7 @@
 !!! warning ""
     **주의** : 0.5배 혹은 정수 배율이 아닌 경우 폰트가 깨져서 나올 수 있습니다.
 
-### ScaleKey
+### SizeHotkey
 !!! note "" 
     대응 옵션 : EID > Visuals > **Toggle Scale(Keyboard)**
 
@@ -533,8 +533,22 @@ Void 아이템, Black Rune의 예상 스탯 증가량을 보여줍니다.
 !!! note "" 
     대응 옵션 : EID > Display > **Spindown Dice**
 
-Spindown Dice 결과 미리보기 목록에 출력되는 아이템의 갯수를 설정합니다. (리펜턴스 전용)  
+Spindown Dice 결과 미리보기 목록에 출력되는 아이템의 갯수를 설정합니다. 0으로 설정시 해당 기능이 비할성화됩니다. (리펜턴스 전용)  
 기본값 : 3  
+
+### SpindownDiceDisplayID
+!!! note "" 
+    대응 옵션 : EID > Display > Spindown Dice - **Display IDs**
+
+Spindown Dice 결과 미리보기 목록에서 ID 번호를 보여줄지 설정합니다. (리펜턴스 전용)  
+기본값 : false  
+
+### SpindownDiceDisplayName
+!!! note "" 
+    대응 옵션 : EID > Display > Spindown Dice - **Display names**
+
+Spindown Dice 결과 미리보기 목록에서 아이템 이름을 보여줄지 설정합니다. (리펜턴스 전용)  
+기본값 : false  
 
 ### SpindownDiceSkipLocked
 !!! note "" 
