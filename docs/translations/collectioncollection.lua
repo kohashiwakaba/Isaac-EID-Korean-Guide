@@ -12,7 +12,7 @@
 -- Amalgamation
 { LANG = "ko_kr", NAME = "융합", DESC = "!!! 획득과 동시에 흡수됨#{{Trinket}} 장신구를 집을 때 50%의 확률로 흡수됩니다." },
 -- Anathema
-{ LANG = "ko_kr", NAME = "저주", DESC = "{{ArrowUp}} {{Damage}}공격력 배율 x1.8#!!! Black Candle 아이템이 제거됩니다.#!!! 매 층마다 저주가 항상 발동합니다." },
+{ LANG = "ko_kr", NAME = "저주", DESC = "{{ArrowUp}} {{Damage}}공격력 배율 x1.6#!!! Black Candle 아이템이 제거됩니다.#!!! 매 층마다 저주가 항상 발동합니다." },
 -- Chained spikey
 { LANG = "ko_kr", NAME = "묶인 뾰족이", DESC = "방 진입 시 랜덤 장애물을 중심으로 돌아가는 가시공을 소환합니다.#가시공은 장애물을 부술 수 있으며 적에게 접촉 시 15의 피해를 줍니다." },
 -- Reverse of the tower
