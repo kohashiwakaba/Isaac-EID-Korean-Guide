@@ -89,6 +89,8 @@
 { LANG = "ko_kr", NAME = "훔친 플래카드", DESC = "방 클리어 시 9%의 확률로 판매 아이템을 4개 소환합니다.#판매 아이템은 하나만 구매할 수 있으며 하나 구매 시 나머지는 사라집니다." },
 -- Temptation
 { LANG = "ko_kr", NAME = "유혹", DESC = "적 처치 시 일정 확률로 특수 코인을 드랍합니다.#특수 코인에 닿은 적들은 피해를 받습니다." },
+-- Mom's Dresser
+NAME = "엄마의 화장대" DESC = "폭탄으로 터트릴 시 {{Coin}}동전을 2~5개 드랍합니다.#낮은 확률로 기계가 폭발합니다."
 
 --[[ 
 	The Quarry Collection 
@@ -163,6 +165,8 @@ ko_kr = {
 { LANG = "ko_kr", NAME = "소용돌이 리치", DESC = "{{EmptyHeart}} 빈 최대 체력 +1#벌레류 몬스터가 매혹되거나 약화됩니다.#피격 시 아군 Leech를 소환합니다." },
 -- Willo
 { LANG = "ko_kr", NAME = "윌로", DESC = "#!!! 3마리가 소환됩니다.#적 주변을 돌며 화상을 입히는 눈물을 발사합니다." },
+-- Reflected 
+"{{SEWCOL_ColorReflect}}REFLECTED: 거울 형태:접촉 시 2배로 복사되나 피해를 받습니다.#"
 
 
 --[[ 
