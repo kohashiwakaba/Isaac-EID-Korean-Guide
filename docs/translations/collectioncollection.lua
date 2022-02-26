@@ -166,7 +166,7 @@ ko_kr = {
 -- Willo
 { LANG = "ko_kr", NAME = "윌로", DESC = "#!!! 3마리가 소환됩니다.#적 주변을 돌며 화상을 입히는 눈물을 발사합니다." },
 -- Reflected 
-"{{SEWCOL_ColorReflect}}REFLECTED: 거울 형태:접촉 시 2배로 복사되나 피해를 받습니다.#"
+"{{SEWCOL_ColorReflect}}거울 형태:접촉 시 2배로 복사되나 피해를 받습니다.#"
 
 
 --[[ 
