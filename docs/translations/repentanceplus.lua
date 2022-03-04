@@ -12,7 +12,7 @@
 	EID:addCollectible(CustomCollectibles.MAGIC_CUBE, "방 안의 모든 아이템을 다른 아이템으로 바꿉니다.#바뀐 아이템의 배열은 랜덤으로 결정됩니다.", "매직큐브", "ko_kr")
 	EID:addCollectible(CustomCollectibles.MAGIC_PEN, "눈물 발사키를 두번 연속 누르면 그 방향으로 {{ColorRainbow}}무지개{{CR}} 장판을 뿌립니다.#무지개 장판을 지나는 적들에게 랜덤 상태이상을 부여합니다#{{Blank}} (쿨타임 4초)", "마법의 펜", "ko_kr")
 	EID:addCollectible(CustomCollectibles.MARK_OF_CAIN, "에녹 패밀리어를 소환합니다. #사망시, 에녹을 제외한 다른 패밀리어 아이템이 있다면 모두 제거한 후 그 방에서 체력이 꽉 찬 상태로 부활합니다.#부활 이후 에녹 패밀리어는 알트 에녹으로 강화되며 캐릭터는 잠시동안 무적시간을 얻습니다. #{{Warning}} 단 한번만 발동됨", "카인의 표식", "ko_kr")
-	EID:addCollectible(CustomCollectibles.TEMPER_TANTRUM, "피격시 25%의 확률로 {{Collectible704}}폭주 상태로 돌입합니다.#폭주 상태에서 적에게 피해를 줄 경우 10%의 확률로 해당 게임에서 제거합니다.", "울화통", "ko_kr")
+	EID:addCollectible(CustomCollectibles.TEMPER_TANTRUM, "피격시 25%의 확률로 {{Collectible704}}폭주 상태로 돌입합니다.#폭주 상태에서 적에게 피해를 줄 경우 5%의 확률로 해당 게임에서 제거합니다.", "울화통", "ko_kr")
 	EID:addCollectible(CustomCollectibles.BAG_O_TRASH, "방 클리어시 파란 아군 파리를 생성하는 패밀리어를 소환합니다. #적 탄환을 막을 수 있으며 탄환을 막을 때마다 1%의 확률로 파리가 사라지면서 Breakfast 혹은 Nightsoil 장신구를 드랍합니다. #파리를 유지한 스테이지당 파란 아군 파리 생성량이 늘어납니다.", "쓰레기 봉지", "ko_kr")
 	EID:addCollectible(CustomCollectibles.CHERUBIM, "공격하는 방향으로 주변에 오라를 둘러싼 눈물을 발사합니다.", "케루빔", "ko_kr")
 	EID:addCollectible(CustomCollectibles.CHERRY_FRIENDS, "적 처치시 20%의 확률로 체리 패밀리어를 드랍합니다. #적이 체리 패밀리어 위를 지나가면 매혹시키는 방귀를 뀝니다.#방 클리어시 체리 패밀리어당 빨간하트 반칸을 드랍합니다.", "체리 친구들", "ko_kr")
@@ -50,8 +50,10 @@
 	EID:addCollectible(CustomCollectibles.HAND_ME_DOWNS, "{{ArrowUp}} {{Speed}}이동속도 +0.2 #게임오버시 캐릭터가 소지한 아이템 중 3개를 해당 스테이지에 드랍합니다.#다음 게임에서 해당 스테이지 진입시, 전 게임에서 드랍한 아이템을 획득할 수 있습니다.", "물려받은 물건", "ko_kr")
 	EID:addCollectible(CustomCollectibles.BOOK_OF_LEVIATHAN, "!!! 아이템 사용에 열쇠 필요:#사용 시 방 안의 모든 적을 무력화시킵니다.#무력화된 적은 이동속도가 매우 느려지며 12초 이후 처치됩니다. #열쇠 관련 장신구와의 시너지가 있습니다.", "레비아탄의 책", "ko_kr")
 	EID:addCollectible(CustomCollectibles.FRIENDLY_SACK, "방을 3개 클리어할 때마다 약한 패밀리어를 소환합니다(Dip, Blood clot, fly 등) #3번쨰 방이 보스방인 경우 아군 적을 대신 소환합니다.", "친구 자루", "ko_kr")	
-	EID:addCollectible(CustomCollectibles.MAGIC_MARKER, "획득 시 타로 카드를 하나 드랍합니다.#사용시, 현재 들고 있는 타로 타입의 카드 번호를 1씩 증가합니다.#{{Blank}}(역방향의 경우 1씩 감소)")
-	EID:addCollectible(CustomCollectibles.ULTRA_FLESH_KID, "적을 따라다니며 접촉한 적에게 피해를 줍니다.#빨간 하트를 일정량 모을 시 최대 3단계까지 진화할 수 있습니다.#최대 진화까지 총 하트 15개가 필요합니다.")
+	EID:addCollectible(CustomCollectibles.MAGIC_MARKER, "획득 시 타로 카드를 하나 드랍합니다.#사용시, 현재 들고 있는 타로 타입의 카드 번호를 1씩 증가합니다.#{{Blank}}(역방향의 경우 1씩 감소)", "마법의 마커", "ko_kr")
+	EID:addCollectible(CustomCollectibles.ULTRA_FLESH_KID, "적을 따라다니며 접촉한 적에게 피해를 줍니다.#빨간 하트를 일정량 모을 시 최대 3단계까지 진화할 수 있습니다.#최대 진화까지 총 하트 15개가 필요합니다.", "살코기 아이", "ko_kr")
+	EID:addCollectible(CustomCollectibles.VAULT_OF_HAVOC, "적 처치 시 금고에 적이 저장됩니다(최대 12)#사용 시, 최근에 처치한 적 12마리와 특수한 보스방에서 전투를 합니다.#해당 보스방 클리어 시 해당 방에서 전투한 적들의 총합 최대 체력에 비례한 보상을 받습니다.", "파괴의 금고", "ko_kr")
+
 
 	EID:addTrinket(CustomTrinkets.BASEMENT_KEY, "황금상자를 15%의 확률로 낡은 상자로 대체합니다.", "지하실 열쇠", "ko_kr")
 	EID:addTrinket(CustomTrinkets.KEY_TO_THE_HEART, "적 처치 시 5%의 확률로 고기상자를 드랍합니다.#고기상자에서는 하트류 픽업, 알약이나 몸체 관련 아이템 및 장신구를 드랍합니다.", "심장열쇠", "ko_kr")

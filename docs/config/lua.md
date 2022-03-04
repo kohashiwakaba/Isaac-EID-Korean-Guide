@@ -5,11 +5,12 @@
 ### Language
 !!! note "" 
     대응 옵션 : EID > General > **Language**
-언어를 설정합니다. 기본값은  ```"en_us"```이며 아이템 설명모드가 지원하는 언어 중 하나를 선택할 수 있습니다.  
-기본값 : "en_us"
+언어를 설정합니다. 기본값은  ```"auto"```이며 아이템 설명모드가 지원하는 언어 중 하나를 선택할 수 있습니다.  
+기본값 : "auto"
 
 | 값 | 언어 | 번역 작업자 |
 | ------------ | ------------- | ------------- |
+| "auto" | **게임 언어 자동 매칭**(리펜턴스 한정) |  |
 | "en_us" | **영어**(English) | Wofsauge |
 | "en_us_detailed" | **영어, 설명 자세하게**(English Detailed) | Wofsauge |
 | "fr" | **프랑스어**(French) | Nicolas Delvaux |
@@ -23,6 +24,8 @@
 | "tr_tr" | **터키어**(Turkish) | Mert Dutal |
 | "ko_kr" | **한국어**(Korean) | Blackcreamtea, 미카 |
 | "zh_cn" | **중국어**(Chinese) | Xheepey87, frto027 |
+| "ja_jp" | **일본어**(Japanese) | prefab |
+| "cs_cz" | **체코어**(Czech) | domcizzz |
 
 ### TranslateItemName
 !!! note "" 
