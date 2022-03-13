@@ -105,7 +105,7 @@
 
 
 	EID:addTrinket(CustomTrinkets.BASEMENT_KEY, "황금상자를 15%의 확률로 낡은 상자로 대체합니다.", "지하실 열쇠", "ko_kr")
-	EID:addTrinket(CustomTrinkets.KEY_TO_THE_HEART, "적 처치 시 5%의 확률로 고기상자를 드랍합니다.#고기상자에서는 하트류 픽업, 알약이나 몸체 관련 아이템 및 장신구를 드랍합니다.", "심장열쇠", "ko_kr")
+	EID:addTrinket(CustomTrinkets.KEY_TO_THE_HEART, "적 처치 시 5%의 확률로 생체상자를 드랍합니다.#생체상자에서는 하트류 픽업, 알약이나 몸체 관련 아이템 및 장신구를 드랍합니다.", "심장열쇠", "ko_kr")
 	EID:addTrinket(CustomTrinkets.JUDAS_KISS, "적과 접촉 시 해당 적에게 표식을 부여합니다. ({{Collectible618}}Rotten Tomato와 비슷한 효과)", "유다의 키스", "ko_kr")
 	EID:addTrinket(CustomTrinkets.TRICK_PENNY, "도박기계, 거지류, 잠긴 상자에서 동전/폭탄/열쇠 사용 시 17%의 확률로 소모되지 않습니다.", "속임수 동전", "ko_kr")
 	EID:addTrinket(CustomTrinkets.SLEIGHT_OF_HAND, "17%의 확률로 한 단계 더 높은 동전이 소환됩니다: #페니 -> 1+1 페니 -> 끈적이는 니켈 -> 니켈 -> 다임 -> 럭키 페니 -> 황금 페니", "교묘한 손기술", "ko_kr")
@@ -186,7 +186,7 @@
 	EID:addEntity(5, 10, 94, "사악한 하트", "???", "ko_kr")
 	EID:addEntity(5, 10, 95, "매춘 하트", "???", "ko_kr")
 	EID:addEntity(5, 10, 96, "구두쇠 하트", "???", "ko_kr")
-	EID:addEntity(5, 10, 97, "공허 하트", "{Collectible706}} 소지한 상태에서 스테이지 진입 시 심연의 파리를 획득합니다.", "ko_kr")
+	EID:addEntity(5, 10, 97, "공허 하트", "{{Collectible706}} 소지한 상태에서 스테이지 진입 시 심연의 파리를 획득합니다.", "ko_kr")
 	EID:addEntity(5, 10, 98, "굳은 하트", "열쇠 1개를 소모하여 소울하트 1.5칸을 획득합니다.", "ko_kr")
 	EID:addEntity(5, 10, 99, "신뢰 하트", "{{Collectible712}} 소지한 상태에서 스테이지 진입 시 레메게톤 불꽃을 소환합니다.", "ko_kr")
 	EID:addEntity(5, 10, 100, "방랑자 하트", "습득 시 빨간하트를, 빨간하트를 주울 수 없으면 블랙하트를 획득합니다.", "ko_kr")
