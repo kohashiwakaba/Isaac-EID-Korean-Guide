@@ -131,7 +131,7 @@
 	EID:addCard(CustomConsumables.KING_OF_SPADES, "열쇠와 황금열쇠를 모두 소모하여 그에 비례한 수의 픽업 아이템을 소환합니다. #장신구는 최소 9개, 아이템은 최소 21개의 열쇠가 필요합니다.", "스페이드 K", "ko_kr")
 	EID:addCard(CustomConsumables.KING_OF_CLUBS, "폭탄과 황금폭탄을 모두 소모하여 그에 비례한 수의 픽업 아이템을 소환합니다. #장신구는 최소 9개, 아이템은 최소 21개의 폭탄이 필요합니다.", "클럽 K", "ko_kr")
 	EID:addCard(CustomConsumables.KING_OF_DIAMONDS, "동전을 모두 소모하여 그에 비례한 수의 픽업 아이템을 소환합니다. #장신구는 최소 21개, 아이템은 최소 54개의 동전이 필요합니다.", "다이아 K", "ko_kr")
-	EID:addCard(CustomConsumables.BAG_TISSUE, "방 안의 모든 픽업을 소모하여 그 중 가장 품질이 좋은 8개의 픽업을 기반으로 아이템을 하나 소환합니다.#픽업이 희귀할수록 (예시:{{EthernalHeart}}이터널하트, {{Battery}}메가배터리) #{{Warning}} 방 안의 픽업이 8개 미만일 경우 아이템이 소환되지 않습니다.", "여행용 티슈", "ko_kr")
+	EID:addCard(CustomConsumables.BAG_TISSUE, "방 안의 모든 픽업을 소모하여 그 중 가장 품질이 좋은 8개의 픽업을 기반으로 아이템을 하나 소환합니다.#픽업이 희귀할수록 (예시:{{EthernalHeart}}이터널하트, {{Battery}}메가배터리) 소환되는 아이템의 퀄리티가 높아집니다.#{{Warning}} 방 안의 픽업이 8개 미만일 경우 아이템이 소환되지 않습니다.", "여행용 티슈", "ko_kr")
 	EID:addCard(CustomConsumables.JOKER_Q, "블랙마켓으로 텔레포트합니다.", "조커?", "ko_kr")
 	EID:addCard(CustomConsumables.UNO_REVERSE_CARD, "{{Collectible422}} Glowing Hour Glass 효과 발동:#사용 시 이전 방의 시점으로 시간을 되돌립니다.", "되돌리기 카드", "ko_kr")
 	EID:addCard(CustomConsumables.LOADED_DICE, "{{ArrowUp}} 현재 방에서 {{Luck}}행운 +10", "속임수 주사위", "ko_kr")
