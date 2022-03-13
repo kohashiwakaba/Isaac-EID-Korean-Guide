@@ -4,7 +4,7 @@
 
  ]]
 
--- Metadata start
+-- Metadatas for blank card/clear rune/placebo start
 
 	EID:addCardMetadata(CustomConsumables.RED_RUNE, 4, true)
 	EID:addCardMetadata(CustomConsumables.QUASAR_SHARD, 6, true)
