@@ -115,11 +115,11 @@
 	EID:addTrinket(CustomTrinkets.WAIT_NO, "무효과: 이미 부러진 완드입니다.", "안돼에에에", "ko_kr")
 	EID:addTrinket(CustomTrinkets.EDENS_LOCK, "피격 시 소지한 아이템 중 하나가 다른 아이템으로 바뀝니다.#루트 진행 아이템은 이 장신구의 효과를 받지 않습니다.", "에덴의 자물쇠", "ko_kr")
 	EID:addTrinket(CustomTrinkets.PIECE_OF_CHALK, "클리어하지 않은 방에 진입 시 밟은 적들을 매우 느려지게 하는 분필가루를 뿌립니다. #분필가루는 10초동안 지속됩니다.", "분필 조각", "ko_kr")
-	EID:addTrinket(CustomTrinkets.ADAMS_RIB, "사망 시, Eve 캐릭터로 부활합니다.", "아담의 갈비뼈", "ko_kr")
+	EID:addTrinket(CustomTrinkets.ADAMS_RIB, "사망 시, 22%의 확률로 Eve 캐릭터로 부활합니다.", "아담의 갈비뼈", "ko_kr")
 	EID:addTrinket(CustomTrinkets.NIGHT_SOIL, "스테이지 진입 시 저주가 걸릴 확률이 75% 감소합니다.", "분뇨", "ko_kr")
 	EID:addTrinket(CustomTrinkets.BONE_MEAL, "스테이지 진입 시 효과 발동:#{{ArrowUp}} {{Damage}}공격력 배율 x1.1 #{{ArrowUp}} 캐릭터의 크기가 커집니다. #이 효과는 영구적으로 적용됩니다.", "뼛가루", "ko_kr")
 	EID:addTrinket(CustomTrinkets.TORN_PAGE, "책 종류의 아이템이 증폭되거나 전혀 새로운 효과를 발동하며 충전 속도가 빨라집니다. #이 장신구는 책방에서만 33%의 확률로 등장합니다.", "찢어진 페이지", "ko_kr")
-	EID:addTrinket(CustomTrinkets.EMPTY_PAGE, "책 종류의 아이템 사용시 랜덤 액티브 아이템 하나를 추가로 발동합니다. #아이템을 돌리는 효과, 캐릭터를 사망시키거나 자해하는 아이템은 발동되지 않습니다. #이 장신구는 책방에서만 33%의 확률로 등장합니다.", "빈 페이지", "ko_kr")
+	EID:addTrinket(CustomTrinkets.EMPTY_PAGE, "책 종류의 아이템 사용시 일정 확률로 랜덤 액티브 아이템 하나를 추가로 발동합니다.#{{Blank}} (확률은 액티브 충전 칸 수에 비례)#아이템을 돌리는 효과, 캐릭터를 사망시키거나 자해하는 아이템은 발동되지 않습니다. #이 장신구는 책방에서만 33%의 확률로 등장합니다.", "빈 페이지", "ko_kr")
 	EID:addTrinket(CustomTrinkets.BABY_SHOES, "적과 보스의 크기 및 피격 판정 범위를 20% 감소시킵니다.", "꼬까신", "ko_kr")
 	EID:addTrinket(CustomTrinkets.KEY_KNIFE, "피격시 5%의 확률로 {{Collectible705}}Dark Arts 효과 발동 #악마방에서의 빨간상자 등장 빈도가 증가합니다.", "열쇠칼", "ko_kr")
 	EID:addTrinket(CustomTrinkets.SHATTERED_STONE, "열쇠 혹은 폭탄을 주울 시 일정 확률로 랜덤 자폭 파리를 생성합니다. #생성 확률은 주운 픽업의 레어도에 비례합니다.", "조각난 석상", "ko_kr")
@@ -158,11 +158,11 @@
 	--
 	EID:addCard(CustomConsumables.CROWN_OF_GREED , "{{Coin}} 황금 동전을 1~2개 드랍합니다.#{{ArrowDown}} 드랍한 황금 동전 개수 당 {{Luck}}운 -1", "탐욕의 왕관", "ko_kr")
 	EID:addCard(CustomConsumables.FLOWER_OF_LUST, "현재 방을 다시 시작하며 방 클리어 시 더 좋은 보상을 드랍합니다.", "색욕의 꽃", "ko_kr")
-	EID:addCard(CustomConsumables.ACID_OF_SLOTH, "방 안의 모든 적들을 50% 느리게 하며 처치 시 독장판을 생성합니다.", "나태의 독", "ko_kr")
-	EID:addCard(CustomConsumables.VOID_OF_GLUTTONY, "방 안의 모든 적들을 흡수합니다. #흡수한 적들의 최대 체력에 따라 캐릭터의 최대 체력 +1, 혹은 Cyst 적을 뱉습니다.", "식탐의 공허", "ko_kr")
+	EID:addCard(CustomConsumables.ACID_OF_SLOTH, "방 안의 모든 적들을 50% 느리게 하며 처치 시 독가스를 생성합니다.", "나태의 독", "ko_kr")
+	EID:addCard(CustomConsumables.VOID_OF_GLUTTONY, "방 안의 모든 적들을 흡수합니다. #흡수한 적들의 최대 체력에 따라 캐릭터의 최대 체력 +1, 혹은 Cyst 적을 뱉습니다.#시간이 지날수록 체력을 서서히 회복하나 {{Speed}}이동속도가 감소합니다.", "식탐의 공허", "ko_kr")
 	EID:addCard(CustomConsumables.APPLE_OF_PRIDE, "{{ArrowUp}} 모든 능력치 증가#!!! 피격 시 해제됩니다.", "교만의 사과", "ko_kr")
-	EID:addCard(CustomConsumables.CANINE_OF_WRATH, "방 안의 모든 적들이 15의 폭발 피해를 받습니다. #{{Warning}} 캐릭터도 폭발 피해를 받을 수 있음 #적이 폭발로 처치될 때마다 서서히 감소하는 공격력이 증가합니다.", "분노의 송곳니", "ko_kr")
-	EID:addCard(CustomConsumables.MASK_OF_ENVY, "#{{ArrowUp}}연사 증가 #모든 최대 체력을 {{BoneHeart}}뼈하트+{{RottenHeart}}썩은하트로 바꾸며 소울하트와 위치를 서로 바꿉니다.", "질투의 가면", "ko_kr")
+	EID:addCard(CustomConsumables.CANINE_OF_WRATH, "방 안의 모든 적들이 15의 폭발 피해를 받습니다. #{{Warning}} 캐릭터도 폭발 피해를 받을 수 있음 #{{Damage}} 적이 폭발로 처치될 때마다 서서히 감소하는 공격력이 증가합니다.", "분노의 송곳니", "ko_kr")
+	EID:addCard(CustomConsumables.MASK_OF_ENVY, "모든 최대 체력을 {{BoneHeart}}뼈하트+{{RottenHeart}}썩은하트로 바꿉니다.", "질투의 가면", "ko_kr")
 
 
 	
