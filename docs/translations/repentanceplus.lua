@@ -5,7 +5,7 @@
  ]]
 
 -- Metadatas for blank card/clear rune/placebo start
-
+--[[ 
 	EID:addCardMetadata(CustomConsumables.RED_RUNE, 4, true)
 	EID:addCardMetadata(CustomConsumables.QUASAR_SHARD, 6, true)
 	EID:addCardMetadata(CustomConsumables.BUSINESS_CARD, 4, false)
@@ -47,7 +47,7 @@
 	EID:addPillMetadata(CustomPills.PHANTOM_PAINS, 4, "2")
 	EID:addPillMetadata(CustomPills.YUM, 12, "3+")
 	EID:addPillMetadata(CustomPills.YUCK, 6, "2+")
-
+ ]]
 -- Metadata end
 
 -- Korean description start
@@ -197,6 +197,7 @@
 -- Korean Translation end
 
 -- Modifier description start
+--[[ 
 TornPageDesc = {}
 TornPageDesc["en_us"] = {
 	[-1] = "<No effect (probably because the book is modded)>", --Modded books
@@ -300,4 +301,4 @@ local function KeyTrinketsCallback(descObj)
 		EID:appendToDescription(descObj, refTables[refID])
 	end
 	return descObj
-end
+end ]]
