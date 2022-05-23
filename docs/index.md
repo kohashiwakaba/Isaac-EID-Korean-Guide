@@ -1,13 +1,13 @@
 !!! warning "해당 가이드는 제작중입니다."
     일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
+    [자주묻는 질문은 여기로](./faq)
 
-!!! info "마지막 업데이트 : 2022-04-16"
-    - 크레인 게임이 여러 대 있을 경우 생기는 문제 수정
-    - Book of Virtues가 세트에 2개로 카운트되는 현상 수정
-    - 모드로 추가된 카드가 룬으로 판별되던 문제 수정
-    - Flip 소지 시 뒷면 아이템만 있는 경우 설명이 표시되지 않던 문제 수정
-    - 변신세트 카운트 기능 개선
-    - 설명 업데이트 내역: [변경 내역 보기](https://github.com/wofsauge/External-Item-Descriptions/pull/446/files)
+!!! info "마지막 업데이트 : 2022-05-02"
+    - 크레인 게임 + 빛나는 모래시계 사용 시 발생하는 버그 수정
+    - 사망 증명서 방 감지 기능 개선
+    - 창세기 관련 버그 수정
+    - 알트 카인 레시피 옵션 버그 및 Bilnd 저주 관련 버그 수정
+    - 설명 업데이트 내역: [1차](https://github.com/wofsauge/External-Item-Descriptions/pull/448/files) / [2차](https://github.com/wofsauge/External-Item-Descriptions/pull/454/files)
 
 ## For Non-Korean users
 !!! note ""
