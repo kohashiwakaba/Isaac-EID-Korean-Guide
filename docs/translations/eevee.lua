@@ -272,7 +272,7 @@ local Descriptions = {
 		Collectibles_Modified = CollectiblesDescs_Modified_SPA,
 		Trinkets_Modified = TrinketDescs_Modified_SPA,
 		Eevee = "Eevee"
-	}
+	},
 	["ko_kr"] = {
 		Collectibles = CollectibleDescs_KR,
 		Trinkets = TrinketDescs_KR,
@@ -301,6 +301,12 @@ for lang, desctable in pairs(Descriptions) do
 	for trinketID, desc in pairs(desctable.Trinkets) do
 		EID:addTrinket(trinketID, desc[2], desc[1], lang)
 	end
+	--[[ for trinketID, desc in pairs(desctable.Trinkets_Golden) do
+		if not EID.descriptions[lang].goldenTrinketEffects then
+			EID.descriptions[lang].goldenTrinketEffects = {}
+		end
+		EID:addGoldenTrinketMetadata(trinketID, {desc[2], desc[3]}, 0, 3, lang)
+	end ]]
 	for cardID, desc in pairs(desctable.Cards) do
 		EID:addCard(cardID, desc[2], desc[1], lang)
 	end
