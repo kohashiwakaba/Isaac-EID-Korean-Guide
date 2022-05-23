@@ -23,5 +23,5 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=836319872
 ## 한글 설명 제작 중인 모드
 - **Epiphany : Tarnished Characters** - ZRwilson 외 다수 : https://steamcommunity.com/sharedfiles/filedetails/?id=2635111236
 - **RoR 2 Chests And Items** - CaMpeR [REBORN] : https://steamcommunity.com/sharedfiles/filedetails/?id=2614017397 
-
+- **Eevee: Reunited** - Sanio : https://steamcommunity.com/sharedfiles/filedetails/?id=2653691445
 
