@@ -181,7 +181,7 @@ local TrinketDescs_Modified_SPA = {
 
 -- Korean Descriptions
 local CollectibleDescs_KR = {
-	[EEVEEMOD.CollectibleType.SNEAK_SCARF] = { "소매치기 스카프", "↑ {{Speed}}이동속도 +0.3#{{Confusion}} 방 안의 모든 적들이 혼란에 빠집니다.#캐릭터가 적에게 다가갈 경우 그 적의 혼란 상태가 풀립니다.#!!! (보스에게는 무효과)" },
+	[EEVEEMOD.CollectibleType.SNEAK_SCARF] = { "살짝스카프", "↑ {{Speed}}이동속도 +0.3#{{Confusion}} 방 안의 모든 적들이 혼란에 빠집니다.#캐릭터가 적에게 다가갈 경우 그 적의 혼란 상태가 풀립니다.#!!! (보스에게는 무효과)" },
 	[EEVEEMOD.CollectibleType.SHINY_CHARM] = { "빛나는부적", "↑ {{Luck}}운 +2#!!! 적들이 '색이 다른 챔피언'이 될 확률 증가#'색이 다른 챔피언'은 체력이 5배이며 캐릭터에게서 멀어지며 10초 후 사라집니다.#'색이 다른 챔피언' 처치 시 100%의 확률로 황금 장신구를 드랍합니다." },
 	[EEVEEMOD.CollectibleType.BLACK_GLASSES] = { "검은안경", "↑ {{Damage}}최종 공격력 +0.5#{{Damage}} 현재 게임에서 {{ColorOrange}}악마 거래로 획득한 아이템의 원래 가격{{CR}}만큼 공격력 배율이 +10%p만큼 증가합니다." },
 	[EEVEEMOD.CollectibleType.COOKIE_JAR[6]] = { "쿠키가 담긴 병", "{{Heart}} 사용 시 체력 1칸을 회복합니다.#↓ {{Speed}}사용 시 이동속도 -0.2#감소한 이동속도는 시간이 지날수록 서서히 돌아옵니다.#↑ 6회 사용 시 최대 체력이 2칸 증가하며 병이 사라집니다." },
@@ -192,13 +192,13 @@ local CollectibleDescs_KR = {
 	[EEVEEMOD.CollectibleType.WONDEROUS_LAUNCHER] = { "미라클슈터", "사용 시 픽업을 소모하여 발사합니다.#{{ButtonRT}}버튼을 사용하여 소모할 픽업을 선택할 수 있으며 소모한 픽업에 따라 투사체의 효과가 달라집니다:#{{Coin}} 소모한 동전의 개수에 비례하여 명중한 적에게 피해를 줍니다.#{{Key}} {{Collectible" .. CollectibleType.COLLECTIBLE_SHARP_KEY .. "}}Sharp Key 아이템과 동일#{{Bomb}} 폭탄을 투척합니다.#{{PoopPickup}} 적 명중 시 현재 선택된 종류의 똥을 소환합니다." },
 	[EEVEEMOD.CollectibleType.BAG_OF_POKEBALLS] = { "몬스터볼 가방", "!!! 방 12개 클리어 시 랜덤 몬스터볼을 드랍합니다:#{{Card" .. EEVEEMOD.PokeballType.POKEBALL .. "}} 몬스터볼: 50%#{{Card" .. EEVEEMOD.PokeballType.GREATBALL .. "}} 슈퍼볼: 30% #{{Card" .. EEVEEMOD.PokeballType.ULTRABALL .. "}} 하이퍼볼: 20%" },
 	[EEVEEMOD.CollectibleType.MASTER_BALL] = { "마스터볼", "!!! 일회용#{{Throwable}} 사용 시 공격하는 방향으로 몬스터볼을 던집니다.#몬스터볼에 맞은 적 및 보스는 100%의 확률로 포획되며 잠시 후 아군 상태로 소환되며 체력을 대폭 회복합니다.#방 이동시 혹은 포획 시도에 실패한 마스터볼 획득 시 즉시 재충전됩니다." },
-	[EEVEEMOD.CollectibleType.POKE_STOP] = { "포켓스탑", "획득 시 포켓스탑 하나를 드랍합니다.#매 스테이지마다 랜덤 특수방에서 포켓스탑 하나가 소환됩니다.#포켓스탑 픽업 습득 시 {{Coin}}/{{Key}}/{{Bomb}} 픽업과 소환된 특수방에 따라 다른 픽업 아이템을 드랍합니다." },
+	[EEVEEMOD.CollectibleType.POKE_STOP] = { "포켓스톱", "획득 시 포켓스톱 하나를 드랍합니다.#매 스테이지마다 랜덤 특수방에서 포켓스톱 하나가 소환됩니다.#포켓스톱 픽업 습득 시 {{Coin}}/{{Key}}/{{Bomb}} 픽업과 소환된 특수방에 따라 다른 픽업 아이템을 드랍합니다." },
 	[EEVEEMOD.Birthright.TAIL_WHIP] = { "꼬리흔들기", "사용 시 꼬리를 한 바퀴 흔들며 근처의 적을 밀쳐내며 탄환을 반사합니다.#{{Weakness}} 밀친 적을 5초동안 약화시킵니다." },
 }
 local TrinketDescs_KR = {
 	[EEVEEMOD.TrinketType.EVIOLITE] = { "진화의휘석", "!!! 완성된 변신 세트가 없을 경우:#↑ {{Speed}}이동속도 +0.2#↑ {{Tears}}연사 배율 x1.1#↑ {{Damage}}공격력 배율 x1.1#↑ {{Range}}사거리 +2#↑ {{Shotspeed}}탄속 +0.2" },
 	[EEVEEMOD.TrinketType.LOCKON_SPECS] = { "록온안경", "↑ {{Damage}}공격력 배율 x2.0#↑ {{Range}}사거리 +3#↑ {{Shotspeed}}탄속 +0.3#!!! 패널티 피격 시 일정 확률로 사라지며 사라지지 않았을 경우 사라질 확률 +10%" },
-	[EEVEEMOD.TrinketType.ALERT_SPECS] = { "알리미안경", "Greed류 공격 피격 시에도 동전을 잃지 않습니다." },
+	[EEVEEMOD.TrinketType.ALERT_SPECS] = { "경계안경", "Greed류 공격 피격 시에도 동전을 잃지 않습니다." },
 }
 local TrinketDescs_Golden_KR = {
 	[EEVEEMOD.TrinketType.EVIOLITE] = {
