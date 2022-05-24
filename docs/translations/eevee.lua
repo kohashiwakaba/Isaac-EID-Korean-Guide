@@ -192,7 +192,7 @@ local CollectibleDescs_KR = {
 	[EEVEEMOD.CollectibleType.WONDEROUS_LAUNCHER] = { "미라클슈터", "사용 시 픽업을 소모하여 발사합니다.#{{ButtonRT}}버튼을 사용하여 소모할 픽업을 선택할 수 있으며 소모한 픽업에 따라 투사체의 효과가 달라집니다:#{{Coin}} 소모한 동전의 개수에 비례하여 명중한 적에게 피해를 줍니다.#{{Key}} {{Collectible" .. CollectibleType.COLLECTIBLE_SHARP_KEY .. "}}Sharp Key 아이템과 동일#{{Bomb}} 폭탄을 투척합니다.#{{PoopPickup}} 적 명중 시 현재 선택된 종류의 똥을 소환합니다." },
 	[EEVEEMOD.CollectibleType.BAG_OF_POKEBALLS] = { "몬스터볼 가방", "!!! 방 12개 클리어 시 랜덤 몬스터볼을 드랍합니다:#{{Card" .. EEVEEMOD.PokeballType.POKEBALL .. "}} 몬스터볼: 50%#{{Card" .. EEVEEMOD.PokeballType.GREATBALL .. "}} 슈퍼볼: 30% #{{Card" .. EEVEEMOD.PokeballType.ULTRABALL .. "}} 하이퍼볼: 20%" },
 	[EEVEEMOD.CollectibleType.MASTER_BALL] = { "마스터볼", "!!! 일회용#{{Throwable}} 사용 시 공격하는 방향으로 몬스터볼을 던집니다.#몬스터볼에 맞은 적 및 보스는 100%의 확률로 포획되며 잠시 후 아군 상태로 소환되며 체력을 대폭 회복합니다.#방 이동시 혹은 포획 시도에 실패한 마스터볼 획득 시 즉시 재충전됩니다." },
-	[EEVEEMOD.CollectibleType.POKE_STOP] = { "포켓스톱", "획득 시 포켓스톱 하나를 드랍합니다.#매 스테이지마다 랜덤 특수방에서 포켓스톱 하나가 소환됩니다.#포켓스톱 픽업 습득 시 {{Coin}}/{{Key}}/{{Bomb}} 픽업과 소환된 특수방에 따라 다른 픽업 아이템을 드랍합니다." },
+	[EEVEEMOD.CollectibleType.POKE_STOP] = { "포켓스톱", "획득 시 포켓스톱 하나를 배치합니다.#매 스테이지마다 랜덤 특수방에서 포켓스톱이 배치됩니다.#배치된 포켓스톱 위치로 이동 시 {{Coin}}/{{Key}}/{{Bomb}} 픽업과 소환된 특수방에 따라 다른 픽업 아이템을 드랍합니다." },
 	[EEVEEMOD.Birthright.TAIL_WHIP] = { "꼬리흔들기", "사용 시 꼬리를 한 바퀴 흔들며 근처의 적을 밀쳐내며 탄환을 반사합니다.#{{Weakness}} 밀친 적을 5초동안 약화시킵니다." },
 }
 local TrinketDescs_KR = {
