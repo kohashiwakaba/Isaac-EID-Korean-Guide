@@ -29,6 +29,15 @@ end
 Mod:AddCallback(ModCallbacks.MC_POST_RENDER,Mod_EID_Support.ChangePosition)
 
 if EID then
+	-- changing mod's name and indicator for EID --
+	-----------------------------------------------
+  EID._currentMod = "Corrupted_Characters"
+	EID:setModIndicatorName("Epiphany")
+	local CustomSprite = Sprite()
+	CustomSprite:Load("gfx/Tarnished_eid_logo_icon.anm2", true)
+	EID:addIcon("Epiphany ModIcon", "TarnishedIcon", 0, 8, 8, 6, 6, CustomSprite)
+	EID:setModIndicatorIcon("Epiphany ModIcon")
+	
 	EID:addTrinket(Mod.Mod_Dads_Wallet.dads_wallet, "Pennies have greatly increased chance to spawn as nothing, nickels or dimes", "Dad's Wallet", "en_us")
 	EID:addCard(Mod.Mod_Exclamation_Mark_Card.exclamation_mark_card, "Triggers The Void {{Collectible477}} on a random low quality passive item you currently have #(Small stat upgrade to a random stat for each item)", "! Card", "en_us")
 	EID:addCollectible(Mod.Mod_First_Page.first_page, "Spawn Isaac as a secondary character with all of the passive items you currently have for the current room", "First Page", "en_us")
@@ -39,62 +48,69 @@ if EID then
 	EID:addCard(Mod.Mod_Essence_Of_Magdalene.essence_of_magdalene, "Fires a barrage of Cardiac Arrest shots#Damage increases as the barrage approaches its end", "Essence of Magdalene", "en_us")
 	EID:addCollectible(Mod.Mod_Story_Cube.story_cube, "Turn trinkets in the current room into 3 random cards each", "Story Cube", "en_us")
 	EID:addCollectible(Mod.Mod_True_Love.true_love, "Charge into the enemy, dealing damage and knockback#An enemy hitting an obstacle after being charged will take extra damage#Enemies killed by hitting an obstacle will drop temporary hearts {{Heart}}", "True Love", "en_us")
-	EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "↑ +2 health up#56% chance to block contact damage", "Warm Coat", "en_us")
+	EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "{{ArrowUp}} +2 health up#56% chance to block contact damage", "Warm Coat", "en_us")
 	EID:addCollectible(Mod.Mod_Weird_Heart.weird_heart, "Rerolls all of your current health into different types of hearts", "Weird Heart", "en_us")
-	EID:addCard(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, "↓ Your number of keys is halved#↑ Coins, bombs, and hearts increase by a third of your original number of keys", "Two of Spades?", "en_us")
+	EID:addCard(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, "{{ArrowDown}} Your number of keys is halved#{{ArrowUp}} Coins, bombs, and hearts increase by a third of your original number of keys", "Two of Spades?", "en_us")
 	EID:addCard(Mod.Mod_Essence_Of_Judas.essence_of_judas, "Turn up to 2 collectibles in the room into a choice between a devil and an angel item", "Essence of Judas", "en_us")
 	EID:addCard(Mod.Mod_Essence_Of_Cain.essence_of_cain, "Reseal all chests in the room#Fix all broken machines in the room", "Essence of Cain", "en_us")
+	EID:addCard(Mod.Mod_Essence_Of_Eden.essence_of_eden, "All items in the room will reroll into items of the same quality upon entering new rooms when held", "Essence of Eden", "en_us")
 	EID:addCard(Mod.Mod_Go_To_Jail.go_to_jail, "Shackle enemies near the player#Lasts 15 seconds", "Go To Jail Card", "en_us")
 	EID:addCollectible(Mod.Mod_Savage_Chains.savage_chains, "Shackles the player in place#While shackled, your damage and tears rise", "Savage Chains", "en_us")
 	EID:addCollectible(Mod.Mod_Broken_Halo.broken_halo, "Spawns a trap door to a devil deal at the start of each floor", "Broken Halo", "en_us")
 	EID:addTrinket(Mod.Mod_Dimensional_Key.dimensional_key, "Killing a normal boss yields a 15% chance to spawn a void portal", "Dimensional Key", "en_us")
 	EID:addTrinket(Mod.Mod_Black_Key.black_key, "The door to Boss Rush stays open even after 20 minutes", "Black Key", "en_us")
 	EID:addTrinket(Mod.Mod_Hells_Eye.hells_eye, "5% chance to spawn a purgatory soul when firing a tear", "Hell's Eye", "en_us")
-	EID:addCollectible(Mod.Mod_Dark_Power.dark_power, "↑ +0.5 damage#↓ All other stats slightly reduced", "Dark Power", "en_us")
+	EID:addTrinket(Mod.Mod_Paper_Airplane.paper_airplane, "25% chance to replace an enemy with a glitchy gaper when entering a room", "Paper Airplane", "en_us")
+	EID:addCollectible(Mod.Mod_Dark_Power.dark_power, "{{ArrowUp}} +0.5 damage#{{ArrowDown}} All other stats slightly reduced", "Dark Power", "en_us")
 	EID:addCollectible(Mod.Mod_Chains_Of_Pain.chains_of_pain, "Attacking an enemy causes all enemies of the same type to take damage", "Chains of Pain", "en_us")
-	EID:addCollectible(Mod.Mod_Old_Knife.old_knife, "Chargeable familar that stabs enemies and causes bleeding damage for 3 seconds#↑ Spawns a +1.5 damage buff aura while the knife is stuck inside enemy", "Old Knife", "en_us")
+	EID:addCollectible(Mod.Mod_Old_Knife.old_knife, "Chargeable familar that stabs enemies and causes bleeding damage for 3 seconds#{{ArrowUp}} Spawns a +1.5 damage buff aura while the knife is stuck inside enemy", "Old Knife", "en_us")
 	EID:addCollectible(Mod.Mod_Thirty_Pieces_Of_Silver.thirty_pieces_of_silver, "{{Coin}}+30 coins#Gives coins when clearing a room#The fewer coins you have, the higher your damage", "Thirty Pieces of Silver", "en_us")
+	EID:addCollectible(Mod.Mod_Printer.printer, "When using an active item while holding a card, infuse the active item's ability into the card#Each time the same type of card is used, the item's ability is also activated", "Printer", "en_us")
+	EID:addCollectible(Mod.Mod_Zip_Bombs.zip_bombs, "Bombs' explosions repeat up to 3 times", "Zip Bombs", "en_us")	
+	EID:addCollectible(Mod.Mod_Segmentation_Fault.segmentation_fault, "Tears have a chance to reroll an enemy or remove it", "Segmentation Fault", "en_us")
+	EID:addCard(Mod.Mod_DrawOneCard.draw_one_card, "Remove the last two passive items you took#Spawn an item that is one quality higher than the item with the higher among the items removed", "Draw One Card", "en_us")
 	EID:addBirthright(Mod.table_type_id["ISAAC"], "Blighted Dice can reroll items into items of higher quality", "Tarnished Isaac","en_us")
-	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "Soul hearts{{SoulHeart}} can spawn when using Cardiac Arrest at low health#Hearts spawned from Cardiac Arrest will be attracted to the player", "Tarnished Magdalene", "en_us")
+	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "Soul hearts{{SoulHeart}} can spawn when using Cardiac Arrest at low health", "Tarnished Magdalene", "en_us")
 	EID:addBirthright(Mod.table_type_id["CAIN"], "Increase bag capacity by one item", "Tarnished Cain", "en_us")
 	EID:addBirthright(Mod.table_type_id["JUDAS"], "Extra clones for each phase#Phase 1: 5 clones#Phase 2: 7 clones#Phase 3: 11 clones", "Tarnished Judas", "en_us")
 	-- Final Wishes has multiplie IDs for its' multiple sprites so we need to do this
 	local final_wishes_desc = "Consumes the closest item to the player and spawns pickups#Adds an extra option of the same/higher quality for item pedestals to cycle through#{{Warning}} Taking an item resets the number of options"
 	for i = 0, 5 do EID:addCollectible(Mod.Mod_Final_Wishes.final_wishes - i, final_wishes_desc, "Final Wishes", "en_us") end
+	EID:addEntity(5, 30, 2092, "Multitool", "{{Warning}} Consumed when using your next key#Opens most doors and chests, nullifying the price for opening them", "en_us")
 end
 
 --Russian Translation
 
 if EID then
-	EID:addTrinket(Mod.Mod_Dads_Wallet.dads_wallet, "Монеты с высоким шансом могут замениться на ничего, пятак или червонец ", "ru")
-  EID:addCard(Mod.Mod_Exclamation_Mark_Card.exclamation_mark_card, "активирует эффект{{Collectible477}} к нескольким предметам низкого качества что у вас есть#(Небольшая прибавка к характеристикам за каждый)", "Кошелёк Отца", "ru")
-  EID:addCollectible(Mod.Mod_First_Page.first_page, "Создаёт Айзека со всеми пассивными предметами, что у вас есть как второго персонажа на одну комнату", "Первая Страница", "ru")
-  EID:addCollectible(Mod.Mod_Moms_Hug.moms_hug, "Зажимая пробел вы сможете взять врага, после чего его можно кинуть с раскруткой зажимая кнопки атаки#При держании врага ему будет наноситься урон, который равняется вашему урону вдвойне#Убив врага объятием он выбросит несколько красных сердец которые пропадут если их не подобрать{{Heart}}", "Объятье Мамы", "ru")
-  EID:addCollectible(Mod.Mod_Mothers_Shadow.mothers_shadow, "{{Warning}}Накладывает на вас проклятие темноты до конца забега#С потолка начинают падать ножи, которые наносят урон врагам", "Тень Матери", "ru")
-  EID:addCard(Mod.Mod_Queen_Of_Hearts_R.queen_of_hearts_r, "Спавнит много сломанных сердец#↑ Подбирание данных сердец увеличит ваш урон#Каждый этаж одно сломанное сердце убирается", "Королева Червей?", "ru")
-  EID:addCard(Mod.Mod_Essence_Of_Isaac.essence_of_isaac, "Заменяет один пассивный предмет что у вас есть который вы можете выбрать #Вы можете взять один из двух предметов которые появятся при замене", "Эссенция Айзека", "ru")
-  EID:addCard(Mod.Mod_Essence_Of_Magdalene.essence_of_magdalene, "Стреляет большим залпом снарядов сердец от предмета Сердечный приступ#К концу урон выстрелов увеличивается", "Эссенция Магдалены", "ru")
-  EID:addCollectible(Mod.Mod_Story_Cube.story_cube, "Превращает все брелоки в комнате в три случайные карты таро","Куб сюжета","ru")
-  EID:addCollectible(Mod.Mod_True_Love.true_love, "Айзек делает рывок во врагов#, Если враг ударится об окружение то получит доп. урон#Из монстров убитых окружением выпадают исчезающие сердца", "Истинная Любовь", "ru")
-  EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "↑ +2 Красных сердца#Даёт шанс 56% заблокировать урон", "Тёплое Пальто", "ru")
-  EID:addCollectible(Mod.Mod_Weird_Heart.weird_heart, "Случайно изменяет сердца игрока", "Загадочное Сердце", "ru")
-  EID:addCard(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, "↓ Уменьшает количество ключей в два раза #↑ монеты, бомбы, и сердца повышаются на треть от количества потерянных ключей", "Козырь двух пик", "ru")
-  EID:addCard(Mod.Mod_Essence_Of_Judas.essence_of_judas, "Превращает до двух предметов комнаты в выбор между дьявольским(и) и ангельским(и) предметам(и)", "Эссенция Иуды", "ru")
-  EID:addCard(Mod.Mod_Essence_Of_Cain.essence_of_cain, "Заново закрывает все сундуки в комнате#Чинит все автоматы в комнате", "Эссенция Каина", "ru")
-  EID:addCard(Mod.Mod_Go_To_Jail.go_to_jail, "Заковывает в цепи всех врагов что близко к вам подойдут#Действует 15 секунд", "Карта Иди в тюрьму", "ru")
-  EID:addCollectible(Mod.Mod_Savage_Chains.savage_chains, "Сковывает игрока цепями не позволяя двигаться#Пока игрок скован он получает прибавку к урону и скорострельности", "Оковы Дикаря", "ru")
-  EID:addCollectible(Mod.Mod_Broken_Halo.broken_halo, "Создаёт проход в начале каждого этажа в комнату сделки с дьяволом", "Сломанный Нимб", "ru")
-  EID:addTrinket(Mod.Mod_Dimensional_Key.dimensional_key, "Убийство обычного босса с шансом 5% создаст проход на уровень пустота", "Межпространственный ключ ", "ru")
-  EID:addTrinket(Mod.Mod_Black_Key.black_key, "Проход в комнату вызова будет открыт даже после истечения 20 минут", "Чёрный Ключ", "ru")
-  EID:addTrinket(Mod.Mod_Hells_Eye.hells_eye, "5% шанс создать призрака чистилища при стрельбе", "Око Ада", "ru")
-  EID:addCollectible(Mod.Mod_Dark_Power.dark_power, "↑ +0.5 урона#↓ Все остальные характеристики немного понижаются", "Сила тьмы", "ru")
-  EID:addCollectible(Mod.Mod_Chains_Of_Pain.chains_of_pain, "Атакуя врага все враги того же типа получат урон", "Цепи Боли", "ru")
-  EID:addCollectible(Mod.Mod_Old_Knife.old_knife, "Спутник с рывком который втыкается во врагов и даёт им эффект кровотечения на 3 секунды#↑ Создаёт ауру пока воткнут во врага, аура даёт +1.5 урона.", "Старый Нож", "ru")
-  EID:addCollectible(Mod.Mod_Thirty_Pieces_Of_Silver.thirty_pieces_of_silver, "{{Coin}}+30 Монет#При зачистке комнаты вам даётся немного монет#Чем меньше у вас монет тем больше прибавка к урону", "30 Сребреников", "ru")
-  EID:addBirthright(Mod.table_type_id["ISAAC"], "Blighted Dice может заменить предмет на предметы качества выше", "Tarnished Айзек", "ru")
-  EID:addBirthright(Mod.table_type_id["MAGDALENE"], "Синии сердца {{SoulHeart}}могут появиться при использовании предмета Сердечный приступ с маленьким здоровьем#Сердца созданные предметом Сердечный приступ теперь потихоньку притягиваются к игроку", "Tarnished Магдалина", "ru")
-  EID:addBirthright(Mod.table_type_id["CAIN"], "Увеличивает максимальное количество предметов которые можно положить в мешок до трёх", "Tarnished Каин","ru")
-  EID:addBirthright(Mod.table_type_id["JUDAS"], "Доп. Клоны каждую фазу#Фаза 1: 5 клонов#Фаза 2: 7 клонов#Фаза 3: 11 клонов", "Tarnished Иуда","ru")
+	EID:addTrinket(Mod.Mod_Dads_Wallet.dads_wallet, "Монеты с высоким шансом могут замениться на ничего, пятак или червонец ", "Кошелёк Отца", "ru")
+	EID:addCard(Mod.Mod_Exclamation_Mark_Card.exclamation_mark_card, "активирует эффект{{Collectible477}} к нескольким предметам низкого качества что у вас есть#(Небольшая прибавка к характеристикам за каждый)", "Карта !", "ru")
+	EID:addCollectible(Mod.Mod_First_Page.first_page, "Создаёт Айзека со всеми пассивными предметами, что у вас есть как второго персонажа на одну комнату", "Первая Страница", "ru")
+	EID:addCollectible(Mod.Mod_Moms_Hug.moms_hug, "Зажимая пробел вы сможете взять врага, после чего его можно кинуть с раскруткой зажимая кнопки атаки#При держании врага ему будет наноситься урон, который равняется вашему урону вдвойне#Убив врага объятием он выбросит несколько красных сердец которые пропадут если их не подобрать{{Heart}}", "Объятье Мамы", "ru")
+	EID:addCollectible(Mod.Mod_Mothers_Shadow.mothers_shadow, "{{Warning}}Накладывает на вас проклятие темноты до конца забега#С потолка начинают падать ножи, которые наносят урон врагам", "Тень Матери", "ru")
+	EID:addCard(Mod.Mod_Queen_Of_Hearts_R.queen_of_hearts_r, "Спавнит много сломанных сердец#↑ Подбирание данных сердец увеличит ваш урон#Каждый этаж одно сломанное сердце убирается", "Королева Червей?", "ru")
+	EID:addCard(Mod.Mod_Essence_Of_Isaac.essence_of_isaac, "Заменяет один пассивный предмет что у вас есть который вы можете выбрать #Вы можете взять один из двух предметов которые появятся при замене", "Эссенция Айзека", "ru")
+	EID:addCard(Mod.Mod_Essence_Of_Magdalene.essence_of_magdalene, "Стреляет большим залпом снарядов сердец от предмета Сердечный приступ#К концу урон выстрелов увеличивается", "Эссенция Магдалены", "ru")
+	EID:addCollectible(Mod.Mod_Story_Cube.story_cube, "Превращает все брелоки в комнате в три случайные карты таро","Куб сюжета","ru")
+	EID:addCollectible(Mod.Mod_True_Love.true_love, "Айзек делает рывок во врагов#, Если враг ударится об окружение то получит доп. урон#Из монстров убитых окружением выпадают исчезающие сердца", "Истинная Любовь", "ru")
+	EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "{{ArrowUp}} +2 Красных сердца#Даёт шанс 56% заблокировать урон", "Тёплое Пальто", "ru")
+	EID:addCollectible(Mod.Mod_Weird_Heart.weird_heart, "Случайно изменяет сердца игрока", "Загадочное Сердце", "ru")
+	EID:addCard(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, "{{ArrowDown}} Уменьшает количество ключей в два раза #{{ArrowUp}} монеты, бомбы, и сердца повышаются на треть от количества потерянных ключей", "Козырь двух пик", "ru")
+	EID:addCard(Mod.Mod_Essence_Of_Judas.essence_of_judas, "Превращает до двух предметов комнаты в выбор между дьявольским(и) и ангельским(и) предметам(и)", "Эссенция Иуды", "ru")
+	EID:addCard(Mod.Mod_Essence_Of_Cain.essence_of_cain, "Заново закрывает все сундуки в комнате#Чинит все автоматы в комнате", "Эссенция Каина", "ru")
+	EID:addCard(Mod.Mod_Go_To_Jail.go_to_jail, "Заковывает в цепи всех врагов что близко к вам подойдут#Действует 15 секунд", "Карта Иди в тюрьму", "ru")
+	EID:addCollectible(Mod.Mod_Savage_Chains.savage_chains, "Сковывает игрока цепями не позволяя двигаться#Пока игрок скован он получает прибавку к урону и скорострельности", "Оковы Дикаря", "ru")
+	EID:addCollectible(Mod.Mod_Broken_Halo.broken_halo, "Создаёт проход в начале каждого этажа в комнату сделки с дьяволом", "Сломанный Нимб", "ru")
+	EID:addTrinket(Mod.Mod_Dimensional_Key.dimensional_key, "Убийство обычного босса с шансом 5% создаст проход на уровень пустота", "Межпространственный ключ ", "ru")
+	EID:addTrinket(Mod.Mod_Black_Key.black_key, "Проход в комнату вызова будет открыт даже после истечения 20 минут", "Чёрный Ключ", "ru")
+	EID:addTrinket(Mod.Mod_Hells_Eye.hells_eye, "5% шанс создать призрака чистилища при стрельбе", "Око Ада", "ru")
+	EID:addCollectible(Mod.Mod_Dark_Power.dark_power, "{{ArrowUp}} +0.5 урона#{{ArrowDown}} Все остальные характеристики немного понижаются", "Сила тьмы", "ru")
+	EID:addCollectible(Mod.Mod_Chains_Of_Pain.chains_of_pain, "Атакуя врага все враги того же типа получат урон", "Цепи Боли", "ru")
+	EID:addCollectible(Mod.Mod_Old_Knife.old_knife, "Спутник с рывком который втыкается во врагов и даёт им эффект кровотечения на 3 секунды#{{ArrowUp}} Создаёт ауру пока воткнут во врага, аура даёт +1.5 урона.", "Старый Нож", "ru")
+	EID:addCollectible(Mod.Mod_Thirty_Pieces_Of_Silver.thirty_pieces_of_silver, "{{Coin}}+30 Монет#При зачистке комнаты вам даётся немного монет#Чем меньше у вас монет тем больше прибавка к урону", "30 Сребреников", "ru")
+	EID:addBirthright(Mod.table_type_id["ISAAC"], "Blighted Dice может заменить предмет на предметы качества выше", "Tarnished Айзек", "ru")
+	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "Синии сердца {{SoulHeart}}могут появиться при использовании предмета Сердечный приступ с маленьким здоровьем#Сердца созданные предметом Сердечный приступ теперь потихоньку притягиваются к игроку", "Tarnished Магдалина", "ru")
+	EID:addBirthright(Mod.table_type_id["CAIN"], "Увеличивает максимальное количество предметов которые можно положить в мешок до трёх", "Tarnished Каин","ru")
+	EID:addBirthright(Mod.table_type_id["JUDAS"], "Доп. Клоны каждую фазу#Фаза 1: 5 клонов#Фаза 2: 7 клонов#Фаза 3: 11 клонов", "Tarnished Иуда","ru")
 	-- Final Wishes has multiplie IDs for its' multiple sprites so we need to do this
 	local final_wishes_desc = "Пожирает ближайший предмет в комнате, давая случайные расходники#Добавляет доп.выбор предметов такого же качества или выше для пьедесталов с предметами#{{Warning}} Подобрав предмет обнуляет количество доп. предметов"
 	for i = 0, 5 do EID:addCollectible(Mod.Mod_Final_Wishes.final_wishes - i, final_wishes_desc, "Последние Желания", "ru") end
@@ -107,7 +123,7 @@ if EID then
 	EID:addCollectible(Mod.Mod_Isaac.broken_dice, "!!! 충전 시 강제로 {{Collectible"..Mod.Mod_Isaac.broken_dice.."}}Blighted Dice로 변경됨#{{BrokenHeart}} 충전되지 않은 상태에서만 사용할 수 있으며 사용 시 하트 한칸과 현재 선택된 아이템을 제거하고 현재 방의 아이템을 1개 소환, 소지 불가능 체력 +1#이 아이템을 소지한 상태에서 아이템 획득을 시도하면 아이템이 사라지면서 {{Collectible"..Mod.Mod_Isaac.broken_dice.."}}Blighted Dice로 바뀝니다.", "망가진 주사위", "ko_kr")
 	EID:addCollectible(Mod.Mod_Magdalene.heart_attack, "사용 시 체력 한칸을 깎고 공격한 방향으로 캐릭터의 공격력 x3의 피해를 주는 하트 투사체를 발사합니다.#{{HalfHeart}} 하트로 적을 맞출 때마다 일정 시간 이후 사라지는 빨간하트 픽업을 드랍합니다.#{{BrokenHeart}} 체력이 부족한 상태에서 사용 시 소지 불가능 체력이 대신 추가됩니다.", "심장마비", "ko_kr")
 	EID:addCollectible(Mod.Mod_Cain.throwing_bag, "사용 시 현재 방의 투척 가방을 전부 수집합니다.#쿨타임은 가방 수에 비례합니다.#아이템을 드는 도중 사용 시 들고 있는 아이템을 흡수합니다.#아이템 2개를 흡수할 때마다 새로운 투척 가방이 생성됩니다.", "투척 가방", "ko_kr")
-
+  EID:addCollectible(Mod.Mod_Eden.debugItem, "사용 시 충전량 2칸을 소모하여 소지 중인 아이템을 모두 바꿉니다.#완충 상태에서 아이템을 드는 도중 사용 시 충전량을 전부 소모하여 들고 있는 아이템을 보호합니다.", "디버그", "ko_kr")
 
 	EID:addTrinket(Mod.Mod_Dads_Wallet.dads_wallet, "동전이 매우 높은 확률로 니켈 혹은 다임으로 바뀝니다.#동전이 일정 확률로 등장하지 않습니다.", "아빠의 지갑", "ko_kr")
 	EID:addCard(Mod.Mod_Exclamation_Mark_Card.exclamation_mark_card, "{{Collectible477}} 등급이 가장 낮은 아이템 중 하나를 흡수하여 랜덤 능력치를 증가시킵니다.", "! 카드", "ko_kr")
@@ -121,26 +137,34 @@ if EID then
 	EID:addCollectible(Mod.Mod_True_Love.true_love, "사용 시 적을 향해 돌진합니다. #{{Heart}} 부딪힌 적은 피해를 입으며 매우 강한 넉백을 받으며 장애물에 부딪힐 때 추가 피해를, 이 피해로 적을 처치한 경우 일정 시간 후 사라지는 하트를 드랍합니다.", "진정한 사랑", "ko_kr")
 	EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "↑ {{Heart}}최대 체력 +2#56%의 확률로 접촉 피해를 막습니다.", "따스한 코트", "ko_kr")
 	EID:addCollectible(Mod.Mod_Weird_Heart.weird_heart, "사용 시 캐릭터가 소지한 모든 하트를 랜덤 하트로 바꿉니다.", "이상한 심장", "ko_kr")
-	EID:addCard(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, "↓ 사용 시 현재 소지 중인 열쇠의 개수를 절반으로 감소시킵니다.#↑ 감소시킨 열쇠의 66%만큼 동전, 하트, 폭탄의 개수를 증가시킵니다.", "스페이드 2?", "ko_kr")
+	EID:addCard(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, "↓ 사용 시 현재 소지 중인 열쇠의 개수를 절반으로 감소시킵니다.#↑ 감소시킨 열쇠의 33%만큼 동전, 하트, 폭탄의 개수를 증가시킵니다.", "스페이드 2?", "ko_kr")
 	EID:addCard(Mod.Mod_Essence_Of_Judas.essence_of_judas, "사용 시 최대 2개의 현재 방의 아이템을 각각 악마방/천사방의 아이템으로 분해합니다.#각각 분해된 아이템 당 하나만 획득할 수 있습니다.", "유다의 정수", "ko_kr")
 	EID:addCard(Mod.Mod_Essence_Of_Cain.essence_of_cain, "현재 방의 열린 상자를 다시 잠그어 다시 열 수 있는 상태로 바꿉니다.#현재 방의 망가진 기계를 고쳐 다시 사용할 수 있는 상태로 바꿉니다.", "카인의 정수", "ko_kr")
+  EID:addCard(Mod.Mod_Essence_Of_Eden.essence_of_eden, "사용 시 방 안의 모든 아이템을 특수 등급 아이템으로 바꿉니다. 특수 등급 아이템은 새로운 방을 입장할 때마다 같은 등급의 다른 아이템으로 바꿉니다.", "에덴의 정수", "ko_kr")
 	EID:addCard(Mod.Mod_Go_To_Jail.go_to_jail, "캐릭터와 가장 가까운 적을 15초동안 묶습니다.", "감옥 카드", "ko_kr")
 	EID:addCollectible(Mod.Mod_Savage_Chains.savage_chains, "사용 시 캐릭터를 현재 위치에 고정시킵니다.#고정되어 있는 동안 {{DamageSmall}}공격력과 {{TearsSmall}}연사가 서서히 증가하며 고정 해제 시 서서히 감소합니다.", "황량한 쇠사슬", "ko_kr")
 	EID:addCollectible(Mod.Mod_Broken_Halo.broken_halo, "스테이지 첫 방에 {{DevilRoom}}악마방 아이템을 파는 상점으로 갈 수 있는 사다리가 생성됩니다.#!!! 사다리는 방을 벗어나면 사라집니다.", "깨진 광륜", "ko_kr")
 	EID:addTrinket(Mod.Mod_Dimensional_Key.dimensional_key, "{{DeliriumSmall}} 스테이지 보스 처치 시 15%의 확률로 Void 스테이지로 향하는 포탈을 소환합니다.", "차원의 열쇠", "ko_kr")
 	EID:addTrinket(Mod.Mod_Black_Key.black_key, "20분이 지나도 보스 러시에 진입할 수 있습니다.", "검은 열쇠", "ko_kr")
 	EID:addTrinket(Mod.Mod_Hells_Eye.hells_eye, "눈물을 발사할 때마다 5%의 확률로 연옥의 유령을 소환합니다.", "지옥의 눈", "ko_kr")
+  EID:addTrinket(Mod.Mod_Paper_Airplane.paper_airplane, "방 입장 시 적을 25%의 확률로 Glitchy gaper로 바꿉니다.", "종이비행기", "ko_kr")
 	EID:addCollectible(Mod.Mod_Dark_Power.dark_power, "↑ {{DamageSmall}}공격력 +0.5#↓ 모든 능력치가 미세하게 감소합니다.", "어둠의 힘", "ko_kr")
 	EID:addCollectible(Mod.Mod_Chains_Of_Pain.chains_of_pain, "적 공격 시 같은 종류의 모든 적이 피해를 받습니다.", "고통의 사슬", "ko_kr")
-	EID:addCollectible(Mod.Mod_Old_Knife.old_knife, "{{Chargeable}} 충전 후 공격 시 공격하는 방향으로 날아갑니다.#{{BleedingOut}} 적에게 꽃히면 3초동안 출혈 피해를 주고 오라가 생기며 오라 안에 있을 시 {{DamageSmall}}공격력 +1.5 증가합니다.", "낡은 단검", "ko_kr")
+	EID:addCollectible(Mod.Mod_Old_Knife.old_knife, "{{Chargeable}} 충전 후 공격 시 공격하는 방향으로 날아갑니다.#{{BleedingOut}} 적에게 꽃히면 3초동안 출혈 피해를 주고 오라가 생기며 오라 안에 있을 시 {{DamageSmall}}공격력이 +1.5 증가합니다.", "낡은 단검", "ko_kr")
 	EID:addCollectible(Mod.Mod_Thirty_Pieces_Of_Silver.thirty_pieces_of_silver, "{{Coin}} 동전 +30#방 클리어 시 일정량의 동전을 획득합니다.#{{DamageSmall}} 소지하고 있는 동전이 적을수록 공격력이 증가합니다.", "30냥의 은화", "ko_kr")
+  EID:addCollectible(Mod.Mod_Printer.printer, "카드를 소지한 상태에서 액티브 아이템 사용 시 해당 액티브 아이템의 효과를 카드에 복사합니다.#복사된 카드와 같은 종류의 카드 사용 시 복사한 액티브 아이템의 효과를 같이 사용합니다.", "프린터", "ko_kr")
+	EID:addCollectible(Mod.Mod_Zip_Bombs.zip_bombs, "폭탄이 일정 간격마다 최대 3번까지 폭발합니다.", "압축 폭탄", "ko_kr")	
+	EID:addCollectible(Mod.Mod_Segmentation_Fault.segmentation_fault, "3.33%의 확률로 오류 눈물을 발사하며 오류 눈물에 맞은 적은 바뀌거나 즉사합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 15 이상일 때 25% 확률", "세그멘테이션 오류", "ko_kr")
+	EID:addCard(Mod.Mod_DrawOneCard.draw_one_card, "최근에 획득한 패시브 아이템 2개를 제거합니다.#제거한 아이템의 등급보다 높은 등급의 아이템을 하나 소환합니다.", "드로우 1", "ko_kr")
 	EID:addBirthright(Mod.table_type_id["ISAAC"], "Blighted Dice 사용 시 나오는 아이템 중 하나가 25%의 확률로 한 단계 더 높은 아이템으로 등장합니다.", "Tarnished Isaac","ko_kr")
-	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "{{SoulHeart}} Cardiac Arrest로 적을 맞출 시 체력이 낮은 경우 소울하트도 드랍할 수 있습니다.# Cardiac Arrest의 효과로 드랍된 하트 픽업이 캐릭터의 위치로 따라옵니다.", "Tarnished Magdalene", "ko_kr")
+	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "{{SoulHeart}} Cardiac Arrest로 적을 맞출 시 체력이 낮은 경우 소울하트도 드랍할 수 있습니다.", "Tarnished Magdalene", "ko_kr")
 	EID:addBirthright(Mod.table_type_id["CAIN"], "3개의 아이템을 조합하여 가방을 생성합니다.", "Tarnished Cain", "ko_kr")
 	EID:addBirthright(Mod.table_type_id["JUDAS"], "각 페이즈별 생성되는 그림자의 개수가 증가합니다.#{{Blank}} 페이즈 1: 그림자 5개#{{Blank}} 페이즈 2: 그림자 7개#{{Blank}} 페이즈 3: 그림자 11개", "Tarnished Judas", "ko_kr")
+	EID:addBirthright(Mod.table_type_id["EDEN"], "#모든 Glitched Gaper가 항상 매혹에 걸립니다.#!!!(아군이 되지는 않음)#적을 맞출 시 일정 확률로 해당 적을 Glitched Gaper로 바꿉니다.", "Tarnished Eden", "ko_kr")
 	-- Final Wishes has multiplie IDs for its' multiple sprites so we need to do this
 	local final_wishes_desc = "사용 시 캐릭터와 가장 가까운 아이템을 여러 개의 픽업 아이템으로 분해합니다.#분해한 횟수만큼 다음 아이템이 기존의 아이템보다 같거나 더 높은 등급의 랜덤한 아이템과 1초마다 전환되며 전환되는 아이템 중 하나를 선택할 수 있습니다.#{{Warning}} 아이템 획득 시 추가 선택지 개수가 초기화됩니다."
 	for i = 0, 5 do EID:addCollectible(Mod.Mod_Final_Wishes.final_wishes - i, final_wishes_desc, "마지막 소원", "ko_kr") end
+	EID:addEntity(5, 30, 2092, "만능열쇠", "!!! 열쇠 사용 시 소모됨#대가가 필요한 모든 요소를 대가 없이 열 수 있습니다.", "ko_kr")
 end
 
 -- Todo: Add Tarnished player icons for EID and co-op ex: 
@@ -185,7 +209,11 @@ BagItems["en_us"] = {
   [261] = "#{{Collectible"..itemId .."}} :↑Increase bag size and damage #bag deals less damage the longer they're airborne",
   [132] = "#{{Collectible"..itemId .."}} :↑Bag deal more damage the further it travels",
   [371] = "#{{Collectible"..itemId .."}} :Chance to spawn a troll bomb when swinging the bag",
-  [577] = "#{{Collectible"..itemId .."}} :{{Warning}} Kills you at a random time after taking damage whilst swinging the bag#↑ Deals x5 damage whilst swinging"
+  [577] = "#{{Collectible"..itemId .."}} :{{Warning}} Kills you at a random time after taking damage whilst swinging the bag#{{ArrowUp}} Deals x5 damage whilst swinging",
+  [258] = "#{{Collectible"..itemId .."}} :The bag gains 4 random synergies that get rerolled every time it's used",
+  [585] = "#{{Collectible"..itemId .."}} :{{Warning}} Whilst airborne the bag can take away soul hearts{{SoulHeart}}#{{ArrowUp}} The more soul hearts the bag consumes the more damage it does",
+  [352] = "#{{Collectible"..itemId .."}} :{{Warning}} The bag breaks upon fall, unable to be retrieved until a new room#{{ArrowUp}} Deals x5 damage when thrown",
+  [316] = "#{{Collectible"..itemId .."}} :{{Warning}} When hit whilst swinging, has a 5% chance to teleport to a random room#Extra pseudo-bags are fired when the bag is thrown"
 }
 
 BagItems["ru"] = {
@@ -224,7 +252,8 @@ BagItems["ru"] = {
   [261] = "#{{Collectible"..itemId .."}} :↑Увеличивает размер и урон мешка #Чем дольше мешок находится в полёте тем меньше он наносит урона",
   [132] = "#{{Collectible"..itemId .."}} :↑Урон мешка увеличивается в зависимости от дальности полёта",
   [371] = "#{{Collectible"..itemId .."}} :Шанс создать троль бомбу при раскручивании мешка",
-  [577] = "#{{Collectible"..itemId .."}} :{{Warning}} Убивает игрока через случайный промежуток времени после получения урона при раскручивании мешка#↑ Наносит x5 урона при раскрутке мешка"
+  [577] = "#{{Collectible"..itemId .."}} :{{Warning}} Убивает игрока через случайный промежуток времени после получения урона при раскручивании мешка#↑ Наносит x5 урона при раскрутке мешка",
+  [258] = "#{{Collectible"..itemId .."}} :Мешок получает 4 случайных эффекта других мешков, эффекты меняются с каждым использованием"
 }
 
 BagItems["ko_kr"] = {
