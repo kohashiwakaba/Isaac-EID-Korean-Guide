@@ -37,6 +37,20 @@ if EID then
 	CustomSprite:Load("gfx/Tarnished_eid_logo_icon.anm2", true)
 	EID:addIcon("Epiphany ModIcon", "TarnishedIcon", 0, 8, 8, 6, 6, CustomSprite)
 	EID:setModIndicatorIcon("Epiphany ModIcon")
+
+	-- For Blank Card/Clear Rune display --
+  -- EID doesn't have number icons beyond 12
+	EID:addCardMetadata(Mod.Mod_Exclamation_Mark_Card.exclamation_mark_card, 12, false)
+	EID:addCardMetadata(Mod.Mod_Queen_Of_Hearts_R.queen_of_hearts_r, 6, false)
+	EID:addCardMetadata(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, 4, false)
+	EID:addCardMetadata(Mod.Mod_Go_To_Jail.go_to_jail, 4, false)
+	--EID:addCardMetadata(Mod.Mod_DrawOneCard.draw_one_card, 16, false)
+
+	EID:addCardMetadata(Mod.Mod_Essence_Of_Isaac.essence_of_isaac, 12, true)
+	EID:addCardMetadata(Mod.Mod_Essence_Of_Magdalene.essence_of_magdalene, 12, true)
+	EID:addCardMetadata(Mod.Mod_Essence_Of_Judas.essence_of_judas, 4, true)
+	EID:addCardMetadata(Mod.Mod_Essence_Of_Cain.essence_of_cain, 4, true)
+	EID:addCardMetadata(Mod.Mod_Essence_Of_Eden.essence_of_eden, 6, true)
 	
 	EID:addTrinket(Mod.Mod_Dads_Wallet.dads_wallet, "Pennies have greatly increased chance to spawn as nothing, nickels or dimes", "Dad's Wallet", "en_us")
 	EID:addCard(Mod.Mod_Exclamation_Mark_Card.exclamation_mark_card, "Triggers The Void {{Collectible477}} on a random low quality passive item you currently have #(Small stat upgrade to a random stat for each item)", "! Card", "en_us")
