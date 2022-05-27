@@ -351,7 +351,7 @@ local DrugBagItems = {[143] = true, [493] = true, [13] = true, [475] = true, [14
 
 --Bag Synergies--
 local function appendBagItemDescriptions(descObj)
-  language = EID.getLanguage() or "en_us"
+  local language = EID.getLanguage() or "en_us"
 
   if language == "ru" then
     EID:appendToDescription(descObj, (BagItems["ru"][descObj.ObjSubType] or BagItems["en_us"][descObj.ObjSubType]) or "")
