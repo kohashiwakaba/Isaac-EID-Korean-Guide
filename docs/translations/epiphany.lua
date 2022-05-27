@@ -310,7 +310,7 @@ BagItems["ko_kr"] = {
   [258] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} !!!가방을 던질 때마다 4종류의 랜덤 가방 시너지 효과가 적용됩니다.",
   [585] = "#{{ColorCyan}}소지 시:{{CR}} !!! 충전하는 동안 {{SoulHeart}}소울하트 충전량을 소모합니다.#{{ArrowUp}} 소모한 소울하트 충전량만큼 추가 피해를 줍니다.",
   [352] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방이 5배의 피해를 주나 방당 한 번만 던질 수 있습니다.",
-  [316] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 충전하는 동안 피격 시 5%의 확률로 랜덤한 방으로 순간이동합니다.##{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방을 5번 연속으로 던집니다."
+  [316] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 충전하는 동안 피격 시 5%의 확률로 랜덤한 방으로 순간이동합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방을 5번 연속으로 던집니다."
 }
 
 
