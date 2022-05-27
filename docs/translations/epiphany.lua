@@ -307,7 +307,10 @@ BagItems["ko_kr"] = {
   [132] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} ↑가방이 멀리 나갈수록 피해량이 증가합니다.",
   [371] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} !!!충전하는 동안 트롤 폭탄을 소환합니다.",
   [577] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} !!!패널티 피격 시 그 이후부터 충전하는 동안 캐릭터가 즉사할 확률이 생깁니다.#{{Collectible"..itemId .."}} ↑가방의 피해량 x5(중첩 불가)",
-  [258] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} !!!가방을 던질 때마다 랜덤 가방 시너지 효과가 적용됩니다.",
+  [258] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} !!!가방을 던질 때마다 4종류의 랜덤 가방 시너지 효과가 적용됩니다.",
+  [585] = "#{{ColorCyan}}소지 시:{{CR}} !!! 충전하는 동안 {{SoulHeart}}소울하트 충전량을 소모합니다.#{{ArrowUp}} 소모한 소울하트 충전량만큼 추가 피해를 줍니다.",
+  [352] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방이 5배의 피해를 주나 방당 한 번만 던질 수 있습니다.",
+  [316] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 충전하는 동안 피격 시 5%의 확률로 랜덤한 방으로 순간이동합니다.##{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방을 5번 연속으로 던집니다."
 }
 
 
