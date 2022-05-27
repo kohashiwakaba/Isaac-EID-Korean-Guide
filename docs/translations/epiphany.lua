@@ -172,9 +172,9 @@ if EID then
 	EID:addCard(Mod.Mod_DrawOneCard.draw_one_card, "최근에 획득한 패시브 아이템 2개를 제거합니다.#제거한 아이템의 등급보다 높은 등급의 아이템을 하나 소환합니다.", "드로우 1", "ko_kr")
 	EID:addBirthright(Mod.table_type_id["ISAAC"], "Blighted Dice 사용 시 나오는 아이템 중 하나가 25%의 확률로 한 단계 더 높은 아이템으로 등장합니다.", "Tarnished Isaac","ko_kr")
 	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "{{SoulHeart}} Cardiac Arrest로 적을 맞출 시 체력이 낮은 경우 소울하트도 드랍할 수 있습니다.", "Tarnished Magdalene", "ko_kr")
-	EID:addBirthright(Mod.table_type_id["CAIN"], "3개의 아이템을 조합하여 가방을 생성합니다.", "Tarnished Cain", "ko_kr")
+	EID:addBirthright(Mod.table_type_id["CAIN"], "3개의 아이템을 조합하여 가방을 생성합니다.#!!! Throwing Bag를 조합하는데 필요한 아이템의 개수가 3개로 증가합니다.", "Tarnished Cain", "ko_kr")
 	EID:addBirthright(Mod.table_type_id["JUDAS"], "각 페이즈별 생성되는 그림자의 개수가 증가합니다.#{{Blank}} 페이즈 1: 그림자 5개#{{Blank}} 페이즈 2: 그림자 7개#{{Blank}} 페이즈 3: 그림자 11개", "Tarnished Judas", "ko_kr")
-	EID:addBirthright(Mod.table_type_id["EDEN"], "#모든 Glitched Gaper가 항상 매혹에 걸립니다.#!!!(아군이 되지는 않음)#적을 맞출 시 일정 확률로 해당 적을 Glitched Gaper로 바꿉니다.", "Tarnished Eden", "ko_kr")
+	EID:addBirthright(Mod.table_type_id["EDEN"], "#모든 Glitched Gaper가 항상 매혹에 걸립니다.#!!! (아군이 되지는 않음)#적 명중 시 일정 확률로 해당 적을 Glitched Gaper로 바꿉니다.", "Tarnished Eden", "ko_kr")
 	-- Final Wishes has multiplie IDs for its' multiple sprites so we need to do this
 	local final_wishes_desc = "사용 시 캐릭터와 가장 가까운 아이템을 여러 개의 픽업 아이템으로 분해합니다.#분해한 횟수만큼 다음 아이템이 기존의 아이템보다 같거나 더 높은 등급의 랜덤한 아이템과 1초마다 전환되며 전환되는 아이템 중 하나를 선택할 수 있습니다.#{{Warning}} 아이템 획득 시 추가 선택지 개수가 초기화됩니다."
 	for i = 0, 5 do EID:addCollectible(Mod.Mod_Final_Wishes.final_wishes - i, final_wishes_desc, "마지막 소원", "ko_kr") end
@@ -347,21 +347,8 @@ local DrugBagItems = {[143] = true, [493] = true, [13] = true, [475] = true, [14
 						[195] = true, [127] = true, [340] = true}
 
 --Bag Synergies--
-EID:addDescriptionModifier("Bag Items", 
-function(descObj)
-  if not (descObj.ObjType == 5 and descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE) or not EID:PlayersHaveCharacter(Mod.table_type_id["CAIN"]) then return false end
-	return
-	(BagItems["en_us"][descObj.ObjSubType] or GoldenBagItems[descObj.ObjSubType] or SackBagItems[descObj.ObjSubType] or AngelBagItems[descObj.ObjSubType] or PoopBagItems[descObj.ObjSubType]
-	or SpiderBagItems[descObj.ObjSubType] or SharpBagItems[descObj.ObjSubType] or FartBagItems[descObj.ObjSubType] or FlyBagItems[descObj.ObjSubType] or GuppyBagItems[descObj.ObjSubType]
-	or PoisonBagItems[descObj.ObjSubType] or BookBagItems[descObj.ObjSubType] or MysticBagItems[descObj.ObjSubType] or DevilBagItems[descObj.ObjSubType] or MomBagItems[descObj.ObjSubType]
-	or DrugBagItems[descObj.ObjSubType])
-end,
-function(descObj)
-  return appendBagItemDescriptions(descObj, EID:getLanguage())
-end)
-
-local function appendBagItemDescriptions(descObj, language)
-  language = language or "en_us"
+local function appendBagItemDescriptions(descObj)
+  language = EID.getLanguage() or "en_us"
 
   if language == "ru" then
     EID:appendToDescription(descObj, (BagItems["ru"][descObj.ObjSubType] or BagItems["en_us"][descObj.ObjSubType]) or "")
@@ -422,3 +409,16 @@ local function appendBagItemDescriptions(descObj, language)
   end
 
 end
+
+EID:addDescriptionModifier("Bag Items", 
+function(descObj)
+  if not (descObj.ObjType == 5 and descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE) or not EID:PlayersHaveCharacter(Mod.table_type_id["CAIN"]) then return false end
+	return
+	(BagItems["en_us"][descObj.ObjSubType] or GoldenBagItems[descObj.ObjSubType] or SackBagItems[descObj.ObjSubType] or AngelBagItems[descObj.ObjSubType] or PoopBagItems[descObj.ObjSubType]
+	or SpiderBagItems[descObj.ObjSubType] or SharpBagItems[descObj.ObjSubType] or FartBagItems[descObj.ObjSubType] or FlyBagItems[descObj.ObjSubType] or GuppyBagItems[descObj.ObjSubType]
+	or PoisonBagItems[descObj.ObjSubType] or BookBagItems[descObj.ObjSubType] or MysticBagItems[descObj.ObjSubType] or DevilBagItems[descObj.ObjSubType] or MomBagItems[descObj.ObjSubType]
+	or DrugBagItems[descObj.ObjSubType])
+end,
+appendBagItemDescriptions)
+
+EID._currentMod = "Corrupted_Characters_reserved" -- to prevent other mods overriding Epiphany mod items
