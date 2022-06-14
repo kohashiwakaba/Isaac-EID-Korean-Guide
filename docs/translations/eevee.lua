@@ -3,7 +3,7 @@ local eid = {}
 if not EID then return eid end
 
 local eeveeIcons = Sprite()
-eeveeIcons:Load("gfx/ui/eid_eevee_icons.anm2")
+eeveeIcons:Load("gfx/ui/eid_eevee_icons.anm2", true)
 local Player = {
 	Eevee = "Player" .. EEVEEMOD.PlayerType.EEVEE,
 	--[[ Flareon = "Player"..EEVEEMOD.PlayerType.FLAREON,
@@ -32,38 +32,38 @@ EID:addIcon("Card" .. EEVEEMOD.PokeballType.POKEBALL, "Poke Balls", 0, 9, 9, -1,
 EID:addIcon("Card" .. EEVEEMOD.PokeballType.GREATBALL, "Poke Balls", 1, 9, 9, -1, 0, eeveeIcons)
 EID:addIcon("Card" .. EEVEEMOD.PokeballType.ULTRABALL, "Poke Balls", 2, 9, 9, -1, 0, eeveeIcons)
 
-EID:setModIndicatorName(EEVEEMOD.Name)
+EID:setModIndicatorName(EEVEEMOD.Name.." ")
 EID:setModIndicatorIcon(Player.Eevee)
 
 --English descriptions
 local CollectibleDescs_EN = {
-	[EEVEEMOD.CollectibleType.SNEAK_SCARF] = { "Sneak Scarf", "{{ArrowUp}} +0.3 {{Speed}} Speed up#All enemies in the room are permanently confused#Coming within close proximity of a confused enemy this way clears it of its confusion status. Getting out of range will not re-confuse it#Does not affect bosses" },
-	[EEVEEMOD.CollectibleType.SHINY_CHARM] = { "Shiny Charm", "{{ArrowUp}} +2 {{Luck}} Luck up#Highly increases the chance for normal enemies to become shiny#Shiny enemies have increased health, will run away from the player, and disappear after some time#Shiny enemies drop a Golden Trinket on death" },
-	[EEVEEMOD.CollectibleType.BLACK_GLASSES] = { "Black Glasses", "{{ArrowUp}} +0.5 Flat Damage up#{{Damage}} Gain a small Damage multiplier for each Devil Deal taken based on the cost of the item without modifiers#Works retroactively with deals taken before picking up the item" },
-	[EEVEEMOD.CollectibleType.COOKIE_JAR[6]] = { "Cookie Jar", "Upon use, heals 1 full {{Heart}} Red Heart, up to 6 times#{{ArrowDown}} -0.2 {{Speed}} Speed down on every use, but goes away slowly over time#{{ArrowUp}} On the final use, is consumed and grants +2 {{Heart}} Red Heart containers" },
+	[EEVEEMOD.CollectibleType.SNEAK_SCARF] = { "Sneak Scarf", "↑ {{Speed}} +0.3 Speed up#All enemies in the room are permanently confused#Coming within close proximity of a confused enemy this way clears it of its confusion status. Getting out of range will not re-confuse it#Does not affect bosses" },
+	[EEVEEMOD.CollectibleType.SHINY_CHARM] = { "Shiny Charm", "↑ {{Luck}} +2 Luck up#Highly increases the chance for normal enemies to become shiny#Shiny enemies have increased health, will run away from the player, and disappear after some time#Shiny enemies drop a Golden Trinket on death" },
+	[EEVEEMOD.CollectibleType.BLACK_GLASSES] = { "Black Glasses", "↑ {{Damage}} +0.5 Flat Damage up#{{Damage}} Gain a small Damage multiplier for each Devil Deal taken based on the cost of the item without modifiers#Works retroactively with deals taken before picking up the item" },
+	[EEVEEMOD.CollectibleType.COOKIE_JAR] = { "Cookie Jar", "{{Heart}} Upon use, heals 1 full Red Heart, up to 6 times#{{Speed}} -0.2 Speed down on every use, but goes away slowly over time#{{Heart}} On the final use, is consumed and grants +2 Red Heart containers" },
 	[EEVEEMOD.CollectibleType.STRANGE_EGG] = { "Strange Egg", "Charges +1 bar per floor#Can be used when not fully charged, with different effects based on its charge:#{{Battery}} {{ColorYellow}}1{{ColorWhite}}: Heals 3 {{Heart}} Red Hearts#{{Battery}} {{ColorYellow}}2{{ColorWhite}}: Spawns {{Collectible" .. CollectibleType.COLLECTIBLE_BREAKFAST .. "}} Breakfast and 2 {{Heart}} Red Hearts#{{Battery}} {{ColorYellow}}3{{ColorWhite}}: Spawns {{Collectible" .. EEVEEMOD.CollectibleType.LIL_EEVEE .. "}} Lil Eevee and 2 {{Heart}} Red Hearts" },
 	[EEVEEMOD.CollectibleType.LIL_EEVEE] = { "Lil Eevee", "Normal tear familiar#The familiar's form changes randomly when Isaac uses a rune, having different tears for each form#Possible tears are similar to that of {{" .. Player.Eevee .. "}} Eevee and their Eeveelutions" },
 	[EEVEEMOD.CollectibleType.BAD_EGG] = { "Bad EGG", "Blocks projectiles, up to 32 before breaking#{{Warning}} Upon breaking, replaces a random owned famliiar with a duplicate {{Collectible" .. EEVEEMOD.CollectibleType.BAD_EGG_DUPE .. "}} Bad EGG, and restores Bad EGG#Duplicates block less projectiles and disappear when breaking, respawning when Bad EGG breaks#If no other familiars are owned when broken, outside of duped Bad EGGs, removes Bad EGG and Spawns {{Collectible" .. EEVEEMOD.CollectibleType.STRANGE_EGG .. "}} Strange Egg" },
 	[EEVEEMOD.CollectibleType.BAD_EGG_DUPE] = { "Duped Bad EGG", "Blocks projectiles, up to 8 before disappearing#{{Warning}} Can only be respawned if {{Collectible" .. EEVEEMOD.CollectibleType.BAD_EGG .. "}} Bad EGG is owned and that familiar 'breaks'" },
 	[EEVEEMOD.CollectibleType.WONDEROUS_LAUNCHER] = { "Wonderous Launcher", "Uses your pickups as ammunition and launches them:#{{Coin}} Amount consumed and damage dealt depends on coin count#{{Key}} Behaves like {{Collectible" .. CollectibleType.COLLECTIBLE_SHARP_KEY .. "}} Sharp Key#{{Bomb}} Fires a bomb with all the player's bomb effects#{{PoopPickup}} If throwable, consumes your next spell in queue. Spawns its respective poop on contact." },
-	[EEVEEMOD.CollectibleType.BAG_OF_POKEBALLS] = { "Bag of Poké Balls", "Every 12 rooms, spawns a random type of Poké Ball#50% {{Card" .. EEVEEMOD.PokeballType.POKEBALL .. "}} Poké Ball #30% {{Card" .. EEVEEMOD.PokeballType.GREATBALL .. "}} Great Ball #20% {{Card" .. EEVEEMOD.PokeballType.ULTRABALL .. "}} Ultra Ball" },
+	[EEVEEMOD.CollectibleType.BAG_OF_POKEBALLS] = { "Bag of Poké Balls", "Every 12 rooms, spawns a random type of Poké Ball#50% {{Card" .. EEVEEMOD.PokeballType.POKEBALL .. "}} Poké Ball#30% {{Card" .. EEVEEMOD.PokeballType.GREATBALL .. "}} Great Ball#20% {{Card" .. EEVEEMOD.PokeballType.ULTRABALL .. "}} Ultra Ball" },
 	[EEVEEMOD.CollectibleType.MASTER_BALL] = { "Master Ball - {{Throwable}}", "Can be thrown at an enemy or boss to capture them, turning them into a friendly companion#{{Warning}} Successful capture results in this item being destroyed#Walking over the ball or leaving the room instantly recharges the item#Has an extreme effect on the captured enemy's health" },
 	[EEVEEMOD.CollectibleType.POKE_STOP] = { "Poke Stop", "Spawns a Poke Stop on first pickup. Every floor a Poke Stop appears in a random special room#Interacting with it has it drop a random assortment of {{Coin}} Coins, {{Key}} Keys, and {{Bomb}} Bombs, and a special pickup based on the type of room it's in" },
 	[EEVEEMOD.Birthright.TAIL_WHIP] = { "Tail Whip", "Extends a tail out that spins in a circle, knocking back enemies and projectiles#Enemies hit are given a {{Weakness}} Weakness effect for 5 seconds#Projectiles hit can damage enemies" },
 }
 local TrinketDescs_EN = {
-	[EEVEEMOD.TrinketType.EVIOLITE] = { "Eviolite", "Grants the following stats if you don't have a transformation:#{{ArrowUp}} +0.2 {{Speed}} Speed up#{{ArrowUp}} +10% {{Tears}} Tears Up#{{ArrowUp}} +10% {{Damage}} Damage Multiplier#{{ArrowUp}} +2 {{Range}} Range up#{{ArrowUp}} +0.2 {{Shotspeed}} Shot Speed up" },
-	[EEVEEMOD.TrinketType.LOCKON_SPECS] = { "Lock-On Specs", "{{ArrowUp}} +100% {{Damage}} Damage Multiplier#{{ArrowUp}} +3 {{Range}} Range up#{{ArrowUp}} +0.3 {{Shotspeed}} Shot Speed up#{{Warning}} Taking damage may destroy the trinket. If not, chance of destroying it increases by +10%" },
+	[EEVEEMOD.TrinketType.EVIOLITE] = { "Eviolite", "Grants the following stats if you don't have a transformation:#↑ {{Speed}} +0.2 Speed up#↑ +10% {{Tears}} Tears Up#↑ {{Damage}} +10% Damage Multiplier#↑ {{Range}} +2 Range up#↑ {{Shotspeed}} +0.2 Shot Speed up" },
+	[EEVEEMOD.TrinketType.LOCKON_SPECS] = { "Lock-On Specs", "↑ {{Damage}} +100% Damage Multiplier#↑ {{Range}} +3 Range up#↑ {{Shotspeed}} +0.3 Shot Speed up#{{Warning}} Taking damage may destroy the trinket. If not, chance of destroying it increases by +10%" },
 	[EEVEEMOD.TrinketType.ALERT_SPECS] = { "Alert Specs", "Prevents Isaac from dropping coins caused by taking damage from Greed enemies and projectiles" },
 }
 local TrinketDescs_Golden_EN = {
 	[EEVEEMOD.TrinketType.EVIOLITE] = {
-		[2] = "Grants the following stats if you don't have a transformation:#{{ArrowUp}} +{{ColorGold}}0.3{{ColorWhite}} {{Speed}} Speed up#{{ArrowUp}} +{{ColorGold}}15%{{ColorWhite}} {{Tears}} Tears Up#{{ArrowUp}} +{{ColorGold}}15%{{ColorWhite}} {{Damage}} Damage Multiplier#{{ArrowUp}} +{{ColorGold}}4{{ColorWhite}} {{Range}} Range up#{{ArrowUp}} +{{ColorGold}}0.4{{ColorWhite}} {{Shotspeed}} Shot Speed up",
-		[3] = "Grants the following stats if you don't have a transformation:#{{ArrowUp}} +{{ColorGold}}0.4{{ColorWhite}} {{Speed}} Speed up#{{ArrowUp}} +{{ColorGold}}40%{{ColorWhite}} {{Tears}} Tears Up#{{ArrowUp}} +{{ColorGold}}40%{{ColorWhite}} {{Damage}} Damage Multiplier#{{ArrowUp}} +{{ColorGold}}6{{ColorWhite}} {{Range}} Range up#{{ArrowUp}} +{{ColorGold}}0.4{{ColorWhite}} {{Shotspeed}} Shot Speed up",
+		[2] = "Grants the following stats if you don't have a transformation:#↑ {{Speed}} +{{ColorGold}}0.3{{ColorWhite}} Speed up#↑ {{Tears}} +{{ColorGold}}15%{{ColorWhite}} Tears Up#↑ {{Damage}} +{{ColorGold}}15%{{ColorWhite}} Damage Multiplier#↑ {{Range}} +{{ColorGold}}4{{ColorWhite}} Range up#↑ {{Shotspeed}} +{{ColorGold}}0.4{{ColorWhite}} Shot Speed up",
+		[3] = "Grants the following stats if you don't have a transformation:#↑ {{Speed}} +{{ColorGold}}0.4{{ColorWhite}} Speed up#↑ {{Tears}} +{{ColorGold}}40%{{ColorWhite}} Tears Up#↑ {{Damage}} +{{ColorGold}}40%{{ColorWhite}} Damage Multiplier#↑ {{Range}} +{{ColorGold}}6{{ColorWhite}} Range up#↑ {{Shotspeed}} +{{ColorGold}}0.4{{ColorWhite}} Shot Speed up",
 	},
 	[EEVEEMOD.TrinketType.LOCKON_SPECS] = {
-		[2] = "{{ArrowUp}} +{{ColorGold}}200%{{ColorWhite}} {{Damage}} Damage Multiplier#{{ArrowUp}} +{{ColorGold}}6{{ColorWhite}} {{Range}} Range up#{{ArrowUp}} +{{ColorGold}}0.6{{ColorWhite}} {{Shotspeed}} Shot Speed up#{{Warning}} Taking damage may destroy the trinket. If not, chance of destroying it increases by +{{ColorGold}}20%{{ColorWhite}}",
-		[3] = "{{ArrowUp}} +{{ColorGold}}300%{{ColorWhite}} {{Damage}} Damage Multiplier#{{ArrowUp}} +{{ColorGold}}9{{ColorWhite}} {{Range}} Range up#{{ArrowUp}} +{{ColorGold}}0.9{{ColorWhite}} {{Shotspeed}} Shot Speed up#{{Warning}} Taking damage may destroy the trinket. If not, chance of destroying it increases by +{{ColorGold}}30%{{ColorWhite}}",
+		[2] = "↑ {{Damage}} +{{ColorGold}}200%{{ColorWhite}} Damage Multiplier#↑ {{Range}} +{{ColorGold}}6{{ColorWhite}} Range up#↑ {{Shotspeed}} +{{ColorGold}}0.6{{ColorWhite}} Shot Speed up#{{Warning}} Taking damage may destroy the trinket. If not, chance of destroying it increases by +{{ColorGold}}20%{{ColorWhite}}",
+		[3] = "↑ {{Damage}} +{{ColorGold}}300%{{ColorWhite}} Damage Multiplier#↑ {{Range}} +{{ColorGold}}9{{ColorWhite}} Range up#↑ {{Shotspeed}} +{{ColorGold}}0.9{{ColorWhite}} Shot Speed up#{{Warning}} Taking damage may destroy the trinket. If not, chance of destroying it increases by +{{ColorGold}}30%{{ColorWhite}}",
 	},
 }
 local CardDescs_EN = {
@@ -94,7 +94,7 @@ local CollectiblesDescs_Modified_EN = {
 	[CollectibleType.COLLECTIBLE_NEPTUNUS] = "{{ColorRed}}No effect",
 	[CollectibleType.COLLECTIBLE_SOY_MILK] = "Stars continuously orbit Eevee and fire additional stars based on firerate, releasing once Eevee stops firing",
 	[CollectibleType.COLLECTIBLE_SPRINKLER] = "{{Warning}} Does not copy Swift's homing, spectral, or auto-aim",
-	[CollectibleType.COLLECTIBLE_SPIRIT_SWORD] = "Swift stars spawn around you during the spin attack, shooting forward when finishing the spin#{{ArrowDown}} Can no longer fire projectiles",
+	[CollectibleType.COLLECTIBLE_SPIRIT_SWORD] = "Swift stars spawn around you during the spin attack, shooting forward when finishing the spin#↓ Can no longer fire projectiles",
 	[CollectibleType.COLLECTIBLE_SUMPTORIUM] = "{{Warning}} Clots do not copy Swift's homing, spectral, or auto-aim",
 	[CollectibleType.COLLECTIBLE_TECH_X] = "Stars are replaced with technology orbs, firing laser rings on release",
 	[CollectibleType.COLLECTIBLE_TECHNOLOGY] = "Stars are replaced with technology orbs, firing lasers on release",
@@ -109,10 +109,10 @@ local TrinketDescs_Modified_EN = {
 
 --Spanish descriptions
 local CollectibleDescs_SPA = {
-	[EEVEEMOD.CollectibleType.SNEAK_SCARF] = { "Bufanda de escape", "{{ArrowUp}} {{Speed}} Velocidad +0.3#{{Confusion}} Todos los enemigos en la sala quedarán confundidos#Acercarse a un anemigo revertirá su estado de confusión. Alejarse no lo volverá a confundir#No afecta a los jefes" },
-	[EEVEEMOD.CollectibleType.SHINY_CHARM] = { "Amuleto Iris", "{{ArrowUp}} {{Luck}} Suerte +2#Aumenta demasiado la posibilidad de que los enemigos sean {{ColorRainbow}}Variocolor{{CR}}#Estos enemigos tienen más salud, correrán lejos del jugador y desaparecerán tras un tiempo#Estos pueden soltar una baratija dorada al morir" },
-	[EEVEEMOD.CollectibleType.BLACK_GLASSES] = { "Lentes oscuros", "{{ArrowUp}} Daño +0.5{{Damage}}#{{DevilRoom}} Recibes un pequeño multiplicador de daño por cada trato con el Diablo que hayas hecho#Trabaja de forma retroactiva con los tratos hechos antes de tomar el objeto" },
-	[EEVEEMOD.CollectibleType.COOKIE_JAR[6]] = { "Tarro de galletas", "{{Heart}} Cura un corazón rojo en cada uso hasta 6 veces#{{ArrowDown}} {{Speed}} Velocidad -0.2 por cada uso, pero se reestablece tras un tiempo#{{Heart}} Tras su último uso, es consumido y otorga 2 contenedores de corazón" },
+	[EEVEEMOD.CollectibleType.SNEAK_SCARF] = { "Bufanda de escape", "↑ {{Speed}} Velocidad +0.3#{{Confusion}} Todos los enemigos en la sala quedarán confundidos#Acercarse a un anemigo revertirá su estado de confusión. Alejarse no lo volverá a confundir#No afecta a los jefes" },
+	[EEVEEMOD.CollectibleType.SHINY_CHARM] = { "Amuleto Iris", "↑ {{Luck}} Suerte +2#Aumenta demasiado la posibilidad de que los enemigos sean {{ColorRainbow}}Variocolor{{CR}}#Estos enemigos tienen más salud, correrán lejos del jugador y desaparecerán tras un tiempo#Estos pueden soltar una baratija dorada al morir" },
+	[EEVEEMOD.CollectibleType.BLACK_GLASSES] = { "Lentes oscuros", "↑ Daño +0.5{{Damage}}#{{DevilRoom}} Recibes un pequeño multiplicador de daño por cada trato con el Diablo que hayas hecho#Trabaja de forma retroactiva con los tratos hechos antes de tomar el objeto" },
+	[EEVEEMOD.CollectibleType.COOKIE_JAR] = { "Tarro de galletas", "{{Heart}} Cura un corazón rojo en cada uso hasta 6 veces#{{Speed}} Velocidad -0.2 por cada uso, pero se reestablece tras un tiempo#{{Heart}} Tras su último uso, es consumido y otorga 2 contenedores de corazón" },
 	[EEVEEMOD.CollectibleType.BAD_EGG] = { "Huevo malo", "Bloquea hasta 32 proyectiles antes de romperse#{{Warning}} al momento de romperse, reemplaza uno de tus familiares con {{Collectible" .. EEVEEMOD.CollectibleType.BAD_EGG_DUPE .. "}} un Huevo Malo#Los duplicados bloquean menos proyectiles y desaparecen al romperse, reapareciendo cuando el huevo malo se rompe#Si no hay otro familiar al romperse, a parte de los huevos malos duplicados, remueve un Huevo Malo y lo reemplaza con un {{Collectible" .. EEVEEMOD.CollectibleType.STRANGE_EGG .. "}} Huevo extraño" },
 	[EEVEEMOD.CollectibleType.BAD_EGG_DUPE] = { "Huevo malo duplicado", "Bloquea hasta 8 proyectiles antes de desaparecer#{{Warning}} Sólo se puede regenerar si es que se tiene al {{Collectible" .. EEVEEMOD.CollectibleType.BAD_EGG .. "}} Huevo Malo y ese familiar se 'rompe'" },
 	[EEVEEMOD.CollectibleType.STRANGE_EGG] = { "Strange Egg", "Recibe +1 carga por piso#Puede ser usado sin estar completamente cargado, con distintos efectos en base a sus cargas:#{{Battery}} {{ColorYellow}}1{{ColorWhite}}: {{Heart}} Cura 3 corazones rojos#{{Battery}} {{ColorYellow}}2{{ColorWhite}}: Genera {{Collectible" .. CollectibleType.COLLECTIBLE_BREAKFAST .. "}} Desayuno y {{Heart}} 2 corazones rojos#{{Battery}} {{ColorYellow}}3{{ColorWhite}}: Spawns {{Collectible" .. EEVEEMOD.CollectibleType.LIL_EEVEE .. "}} Lil Eevee and 2 {{Heart}} Red Hearts" },
@@ -121,21 +121,21 @@ local CollectibleDescs_SPA = {
 	[EEVEEMOD.CollectibleType.BAG_OF_POKEBALLS] = { "Bolsa de Pokébolas", "Cada 12 salas, genera una Pokébola aleatoria#{{Card" .. EEVEEMOD.PokeballType.POKEBALL .. "}} 50% de posibilidad de una Pokébola #{{Card" .. EEVEEMOD.PokeballType.GREATBALL .. "}} 30% de posibilidad de una Superbola#{{Card" .. EEVEEMOD.PokeballType.ULTRABALL .. "}} 20% de posibilidad de una Ultrabola" },
 	[EEVEEMOD.CollectibleType.MASTER_BALL] = { "Master Ball - {{Throwable}}", "Puede ser lanzado a un enemigo o un jefe para capturarlo, Convirtíendolo en un compañero#{{Warning}} Una captura exitosa destruirá el objeto#Caminar sobre la bola o dejar la sala recargará el objeto#Tiene un efecto extremo en la salud del capturado" },
 	[EEVEEMOD.CollectibleType.POKE_STOP] = { "Poképarada", "Se generará una Poképarada al momento de tomarlo. En cada piso aparecerá una Poképarada en una sala especial aleatoria#Interactuar con esta soltará una cierta cantidad de {{Coin}} Monedas, {{Key}} Llaves, y {{Bomb}} Bombas, junto a un recolectable especial basado en la sala" },
-	[EEVEEMOD.Birthright.TAIL_WHIP] = { "Látigo", "Extiende una cola que ace un ataque giratorio, aplicando retroceso a los enemigos y reflectando disparos#{{Weakness}} Los enemigos golpeados reciben un efecto de debilidad por 5 segundos#Los proyectiles pueden dañar a los enemigos" },
+	[EEVEEMOD.Birthright.TAIL_WHIP] = { "Látigo", "Extiende una cola que hace un ataque giratorio, aplicando retroceso a los enemigos y reflectando disparos#{{Weakness}} Los enemigos golpeados reciben un efecto de debilidad por 5 segundos#Los proyectiles pueden dañar a los enemigos" },
 }
 local TrinketDescs_SPA = {
-	[EEVEEMOD.TrinketType.EVIOLITE] = { "Mineral Evolutivo", "Otorga los siguientes aumentos de estadísticas si no te has transformado:#{{ArrowUp}} {{Speed}} Velocidad +0.2#{{ArrowUp}} {{Tears}} Lágrimas +10% #{{ArrowUp}} {{Damage}} Multiplicador de daño +10% #{{ArrowUp}} {{Range}} Alcance +2#{{ArrowUp}} {{Shotspeed}} Vel. de tiro +0.2" },
-	[EEVEEMOD.TrinketType.LOCKON_SPECS] = { "Lock-On Specs", "{{ArrowUp}} {{Damage}} Multiplicador de daño +100% #{{ArrowUp}} {{Range}} Alcance +3#{{ArrowUp}} {{Shotspeed}} Vel. de tiro +0.3#{{Warning}} Recibir daño puede destruir el trinket. Si no, la posibilidad de que ocurra aumenta en +10%" },
+	[EEVEEMOD.TrinketType.EVIOLITE] = { "Mineral Evolutivo", "Otorga los siguientes aumentos de estadísticas si no te has transformado:#↑ {{Speed}} Velocidad +0.2#↑ {{Tears}} Lágrimas +10% #↑ {{Damage}} Multiplicador de daño +10% #↑ {{Range}} Alcance +2#↑ {{Shotspeed}} Vel. de lágrimas +0.2" },
+	[EEVEEMOD.TrinketType.LOCKON_SPECS] = { "Lock-On Specs", "↑ {{Damage}} Multiplicador de daño +100% #↑ {{Range}} Alcance +3#↑ {{Shotspeed}} Vel. de lágrimas +0.3#{{Warning}} Recibir daño puede destruir el trinket. Si no, la posibilidad de que ocurra aumenta en +10%" },
 	[EEVEEMOD.TrinketType.ALERT_SPECS] = { "Alert Specs", "Evita que el jugador pierda monedas por los ataques de Ultra Codicia" },
 }
 local TrinketDescs_Golden_SPA = {
 	[EEVEEMOD.TrinketType.EVIOLITE] = {
-		[2] = "Otorga los siguientes aumentos de stats si no tienes una transformación:#{{ArrowUp}} {{Speed}} Velocidad +{{ColorGold}}0.3{{CR}}#{{ArrowUp}} {{Tears}} Lágrimas +{{ColorGold}}15%{{CR}}#{{ArrowUp}} +{{ColorGold}}15%{{CR}} {{Damage}} Multiplicador de daño +{{ColorGold}}15%{{CR}}#{{ArrowUp}} {{Range}} Alcance +{{ColorGold}}4{{CR}}#{{ArrowUp}} {{Shotspeed}} Vel. de tiro +{{ColorGold}}0.4{{CR}}",
-		[3] = "Otorga los siguientes aumentos de stats si no tienes una transformación:#{{ArrowUp}} {{Speed}} Velocidad +{{ColorGold}}0.4{{CR}}#{{ArrowUp}} {{Tears}} Lágrimas +{{ColorGold}}40%{{CR}}#{{ArrowUp}} +{{ColorGold}}40%{{CR}} {{Damage}} Multiplicador de daño +{{ColorGold}}15%{{CR}}#{{ArrowUp}} {{Range}} Alcance +{{ColorGold}}6{{CR}}#{{ArrowUp}} {{Shotspeed}} Vel. de tiro +{{ColorGold}}0.4{{CR}}",
+		[2] = "Otorga los siguientes aumentos de stats si no tienes una transformación:#↑ {{Speed}} Velocidad +{{ColorGold}}0.3{{CR}}#↑ {{Tears}} Lágrimas +{{ColorGold}}15%{{CR}}#↑ +{{ColorGold}}15%{{CR}} {{Damage}} Multiplicador de daño +{{ColorGold}}15%{{CR}}#↑ {{Range}} Alcance +{{ColorGold}}4{{CR}}#↑ {{Shotspeed}} Vel. de lágrimas +{{ColorGold}}0.4{{CR}}",
+		[3] = "Otorga los siguientes aumentos de stats si no tienes una transformación:#↑ {{Speed}} Velocidad +{{ColorGold}}0.4{{CR}}#↑ {{Tears}} Lágrimas +{{ColorGold}}40%{{CR}}#↑ +{{ColorGold}}40%{{CR}} {{Damage}} Multiplicador de daño +{{ColorGold}}15%{{CR}}#↑ {{Range}} Alcance +{{ColorGold}}6{{CR}}#↑ {{Shotspeed}} Vel. de lágrimas +{{ColorGold}}0.4{{CR}}",
 	},
 	[EEVEEMOD.TrinketType.LOCKON_SPECS] = {
-		[2] = "{{ArrowUp}} {{Damage}} Multiplicador de daño +{{ColorGold}}200%{{CR}}#{{ArrowUp}} {{Range}} Alcance +{{ColorGold}}6{{CR}}#{{ArrowUp}} {{Shotspeed}} Vel. de tiro +{{ColorGold}}0.6{{CR}}#{{Warning}} Redibir daño puede destruir la baratija. Si no, esta posibilidad aumentará en un +{{ColorGold}}20%{{ColorWhite}}",
-		[3] = "{{ArrowUp}} {{Damage}} Multiplicador de daño +{{ColorGold}}300%{{CR}}#{{ArrowUp}} {{Range}} Alcance +{{ColorGold}}9{{CR}}#{{ArrowUp}} {{Shotspeed}} Vel. de tiro +{{ColorGold}}0.9{{CR}}#{{Warning}} Redibir daño puede destruir la baratija. Si no, esta posibilidad aumentará en un +{{ColorGold}}30%{{ColorWhite}}",
+		[2] = "↑ {{Damage}} Multiplicador de daño +{{ColorGold}}200%{{CR}}#↑ {{Range}} Alcance +{{ColorGold}}6{{CR}}#↑ {{Shotspeed}} Vel. de lágrimas +{{ColorGold}}0.6{{CR}}#{{Warning}} Redibir daño puede destruir la baratija. Si no, esta posibilidad aumentará en un +{{ColorGold}}20%{{ColorWhite}}",
+		[3] = "↑ {{Damage}} Multiplicador de daño +{{ColorGold}}300%{{CR}}#↑ {{Range}} Alcance +{{ColorGold}}9{{CR}}#↑ {{Shotspeed}} Vel. de lágrimas +{{ColorGold}}0.9{{CR}}#{{Warning}} Redibir daño puede destruir la baratija. Si no, esta posibilidad aumentará en un +{{ColorGold}}30%{{ColorWhite}}",
 	},
 }
 local CardDescs_SPA = {
@@ -144,7 +144,7 @@ local CardDescs_SPA = {
 	[EEVEEMOD.PokeballType.ULTRABALL] = { "Ultra Ball - {{Throwable}}", "Lánzalo a un enemigo o jefe para capturarlo#{{Charm}} Los enemigos capturados tendrán un encanto permantente#La bola se puede romper después de la captura#Los jefes pueden resistirse a la captura en base a sus efectos de estado y su PV, la bola siempre se romperá tras la captura#{{Card" .. EEVEEMOD.PokeballType.POKEBALL .. "}} Posibilidad de captura x3, efecto amplio en los PV" },
 }
 local BirthrightDescs_SPA = {
-	[EEVEEMOD.PlayerType.EEVEE] = { "Eevee", "{{Collectible" .. EEVEEMOD.Birthright.TAIL_WHIP .. "}} Da a Eevee la habilidad Tail Whip#Gira la cola de Eevee, haciendo retroceder enemigos y rechazando disparos" },
+	[EEVEEMOD.PlayerType.EEVEE] = { "Eevee", "{{Collectible" .. EEVEEMOD.Birthright.TAIL_WHIP .. "}} Da a Eevee la habilidad Látigo#Gira la cola de Eevee, haciendo retroceder enemigos y rechazando disparos" },
 }
 local CollectiblesDescs_Modified_SPA = {
 	[CollectibleType.COLLECTIBLE_ALMOND_MILK] = "Las estrellas orbitarán constantemente sobre Eevee y dispararán estrellas adicionales basadas en la cadencia de fuego additional#Soltar hará que Eevee deje de disparar",
@@ -166,7 +166,7 @@ local CollectiblesDescs_Modified_SPA = {
 	[CollectibleType.COLLECTIBLE_NEPTUNUS] = "{{ColorRed}} Sin efecto",
 	[CollectibleType.COLLECTIBLE_SOY_MILK] = "Las estrellas orbitarán constantemente sobre Eevee y dispararán estrellas adicionales basadas en la cadencia de fuego additional#Soltar hará que Eevee deje de disparar",
 	[CollectibleType.COLLECTIBLE_SPRINKLER] = "{{Warning}} No copia ninguno de los efectos especiales de Rapidez",
-	[CollectibleType.COLLECTIBLE_SPIRIT_SWORD] = "Las estrellas de Rapidez se generarán durante el ataque giratorio, disparándose en cuanto termine el ataque#{{ArrowDown}} Ya no puedes disparar",
+	[CollectibleType.COLLECTIBLE_SPIRIT_SWORD] = "Las estrellas de Rapidez se generarán durante el ataque giratorio, disparándose en cuanto termine el ataque#↓ Ya no puedes disparar",
 	[CollectibleType.COLLECTIBLE_SUMPTORIUM] = "{{Warning}} Los coágulos no copian ninguno de los efectos especiales de Rapidez ",
 	[CollectibleType.COLLECTIBLE_TECH_X] = "Las estrellas se reemplazan con orbes de Tecnología, disparan anillos láser al ser soltados",
 	[CollectibleType.COLLECTIBLE_TECHNOLOGY] = "Las estrellas se reemplazan con orbes de Tecnología, disparan láseres al ser soltados",
@@ -184,7 +184,7 @@ local CollectibleDescs_KR = {
 	[EEVEEMOD.CollectibleType.SNEAK_SCARF] = { "살짝스카프", "↑ {{Speed}}이동속도 +0.3#{{Confusion}} 방 안의 모든 적들이 혼란에 빠집니다.#캐릭터가 적에게 다가갈 경우 그 적의 혼란 상태가 풀립니다.#!!! (보스에게는 무효과)" },
 	[EEVEEMOD.CollectibleType.SHINY_CHARM] = { "빛나는부적", "↑ {{Luck}}운 +2#!!! 적들이 '색이 다른 챔피언'이 될 확률 증가#'색이 다른 챔피언'은 체력이 5배이며 캐릭터에게서 멀어지며 10초 후 사라집니다.#'색이 다른 챔피언' 처치 시 100%의 확률로 황금 장신구를 드랍합니다." },
 	[EEVEEMOD.CollectibleType.BLACK_GLASSES] = { "검은안경", "↑ {{Damage}}최종 공격력 +0.5#{{Damage}} 현재 게임에서 {{ColorOrange}}악마 거래로 획득한 아이템의 원래 가격{{CR}}만큼 공격력 배율이 +10%p만큼 증가합니다." },
-	[EEVEEMOD.CollectibleType.COOKIE_JAR[6]] = { "쿠키가 담긴 병", "{{Heart}} 사용 시 체력 1칸을 회복합니다.#↓ {{Speed}}사용 시 이동속도 -0.2#감소한 이동속도는 시간이 지날수록 서서히 돌아옵니다.#↑ 6회 사용 시 최대 체력이 2칸 증가하며 병이 사라집니다." },
+	[EEVEEMOD.CollectibleType.COOKIE_JAR] = { "쿠키가 담긴 병", "{{Heart}} 사용 시 체력 1칸을 회복합니다.#↓ {{Speed}}사용 시 이동속도 -0.2#감소한 이동속도는 시간이 지날수록 서서히 돌아옵니다.#↑ 6회 사용 시 최대 체력이 2칸 증가하며 병이 사라집니다." },
 	[EEVEEMOD.CollectibleType.STRANGE_EGG] = { "이상한 알", "!!! 스테이지 진입 시에만 1칸 충전#사용 시 현재 충전량에 따라 다른 효과를 발동합니다:#{{Battery}} {{ColorYellow}}1{{CR}}: {{Heart}}체력 3칸 회복#{{Battery}} {{ColorYellow}}2{{CR}}: {{Collectible" .. CollectibleType.COLLECTIBLE_BREAKFAST .. "}}Breakfast + {{Heart}}빨간하트 2개 드랍#{{Battery}} {{ColorYellow}}3{{CR}}: {{Collectible" .. EEVEEMOD.CollectibleType.LIL_EEVEE .. "}}Lil Eevee + {{Heart}}빨간하트 2개 드랍" },
 	[EEVEEMOD.CollectibleType.LIL_EEVEE] = { "리틀 이브이", "공격하는 방향으로 공격력 3.5의 눈물을 발사합니다.#룬을 사용할 때마다 형태가 바뀌며 각 형태마다 다른 눈물을 발사합니다.#{{" .. Player.Eevee .. "}} 눈물효과는 이브이 캐릭터 및 진화형태 중에서 정해집니다." },
 	[EEVEEMOD.CollectibleType.BAD_EGG] = { "오류투성이 알", "적의 탄환을 막아주며 최대 32회 막아줄 시 알이 깨집니다.#!!! 알이 깨질 시 소지 중인 패밀리어 중 하나를 감염시켜 복제된 {{Collectible" .. EEVEEMOD.CollectibleType.BAD_EGG_DUPE .. "}}Bad EGG 패밀리어로 바꾼 후 Bad EGG를 다시 소환합니다.#복제된 Bad EGG는 최대 8회까지만 막아주며 원본 Bad EGG 파괴 시 다시 소환됩니다.#알이 깨질 시 감염시킬 패밀리어 및 복제된 Bad EGG가 하나도 없을 경우 {{Collectible" .. EEVEEMOD.CollectibleType.STRANGE_EGG .. "}}Strange Egg를 소환하며 사라집니다." },
@@ -289,53 +289,20 @@ local function EIDDesc()
 	return Descriptions[EID:getLanguage()] or Descriptions["en_us"]
 end
 
-for lang, desctable in pairs(Descriptions) do
-	for itemID, desc in pairs(desctable.Collectibles) do
-		EID:addCollectible(itemID, desc[2], desc[1], lang)
-		if itemID == EEVEEMOD.CollectibleType.COOKIE_JAR[6] then
-			for i = 1, 5 do
-				EID:addCollectible(EEVEEMOD.CollectibleType.COOKIE_JAR[i], desc[2], desc[1], lang)
-			end
-		end
+for language, descs in pairs(Descriptions) do
+	for itemID, desc in pairs(descs.Collectibles) do
+		EID:addCollectible(itemID, desc[2], desc[1], language)
 	end
-	for trinketID, desc in pairs(desctable.Trinkets) do
-		EID:addTrinket(trinketID, desc[2], desc[1], lang)
+	for trinketID, desc in pairs(descs.Trinkets) do
+		EID:addTrinket(trinketID, desc[2], desc[1], language)
 	end
-	--[[ for trinketID, desc in pairs(desctable.Trinkets_Golden) do
-		if not EID.descriptions[lang].goldenTrinketEffects then
-			EID.descriptions[lang].goldenTrinketEffects = {}
-		end
-		EID:addGoldenTrinketMetadata(trinketID, {desc[2], desc[3]}, 0, 3, lang)
-	end ]]
-	for cardID, desc in pairs(desctable.Cards) do
-		EID:addCard(cardID, desc[2], desc[1], lang)
+	for cardID, desc in pairs(descs.Cards) do
+		EID:addCard(cardID, desc[2], desc[1], language)
 	end
-	for playerType, desc in pairs(desctable.Birthrights) do
-		EID:addBirthright(playerType, desc[2], desc[1], lang)
+	for playerType, desc in pairs(descs.Birthrights) do
+		EID:addBirthright(playerType, desc[2], desc[1], language)
 	end
 end
-
-
---[[ 
-for itemID, desc in pairs(EIDDesc().Collectibles) do
-	EID:addCollectible(itemID, desc[2], desc[1], "en_us")
-	if itemID == EEVEEMOD.CollectibleType.COOKIE_JAR[6] then
-		for i = 1, 5 do
-			EID:addCollectible(EEVEEMOD.CollectibleType.COOKIE_JAR[i], desc[2], desc[1], "en_us")
-		end
-	end
-end
-for trinketID, desc in pairs(EIDDesc().Trinkets) do
-	EID:addTrinket(trinketID, desc[2], desc[1], "en_us")
-end
-for cardID, desc in pairs(EIDDesc().Cards) do
-	EID:addCard(cardID, desc[2], desc[1], "en_us")
-end
-for playerType, desc in pairs(EIDDesc().Birthrights) do
-	EID:addBirthright(playerType, desc[2], desc[1], "en_us")
-end
- ]]
-
 
 --Unique descriptions for Eevee
 local function AddEeveeText(descObj)

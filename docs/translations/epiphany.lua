@@ -51,6 +51,14 @@ if EID then
 	EID:addCardMetadata(Mod.Mod_Essence_Of_Judas.essence_of_judas, 4, true)
 	EID:addCardMetadata(Mod.Mod_Essence_Of_Cain.essence_of_cain, 4, true)
 	EID:addCardMetadata(Mod.Mod_Essence_Of_Eden.essence_of_eden, 6, true)
+
+	EID:addCollectible(Mod.Mod_Isaac.blighted_dice, "Removes selected item and spawns 2 collectibles#Same item pool and quality of items will be spawned#Only one can be taken#!!! Turns into {{Collectible"..Mod.Mod_Isaac.broken_dice.."}}Broken Dice on item spawn", "Blighted Dice", "en_us")
+	EID:addCollectible(Mod.Mod_Isaac.broken_dice, "Spawns an item from the current room's item pool#{{BrokenHeart}} Turns 1 Heart Container or 2 Soul Hearts into a Broken Heart#!!! Turns into {{Collectible"..Mod.Mod_Isaac.blighted_dice.."}}Blighted Dice when fully charged#Touching any pedestal item will destroy it and charge immediately", "Broken Dice", "en_us")
+	EID:addCollectible(Mod.Mod_Magdalene.heart_attack, "Consumes a full heart and throw it#{{HalfHeart}} Deals 3x of TR Magdalene's damage and spawns temporary hearts on hit#{{BrokenHeart}} Broken Hearts will be added on 1 or less total hearts", "Cardiac Arrest", "en_us")
+	EID:addCollectible(Mod.Mod_Cain.throwing_bag, "Recalls all bags on use#When used while holding an item, consume and bag it#New bag will be created per 2 bagged items", "Throwing Bag", "en_us")
+	--EID:addCollectible(Mod.Mod_Judas.descent, "Switch position with his diametrically opposite clone#Deals damage alongside the line patterns created between the shadows", "Descent", "ko_kr")
+  EID:addCollectible(Mod.Mod_Eden.debugItem, "Consumes 2 charges and rerolls TR Eden's current item on use#When used while holding an item and fully charged, consumes 12 charges and protects the held item from TR Eden's reroll", "Debug", "en_us")
+
 	
 	EID:addTrinket(Mod.Mod_Dads_Wallet.dads_wallet, "Pennies have greatly increased chance to spawn as nothing, nickels or dimes", "Dad's Wallet", "en_us")
 	EID:addCard(Mod.Mod_Exclamation_Mark_Card.exclamation_mark_card, "Triggers The Void {{Collectible477}} on a random low quality passive item you currently have #(Small stat upgrade to a random stat for each item)", "! Card", "en_us")
@@ -62,7 +70,7 @@ if EID then
 	EID:addCard(Mod.Mod_Essence_Of_Magdalene.essence_of_magdalene, "Fires a barrage of Cardiac Arrest shots#Damage increases as the barrage approaches its end", "Essence of Magdalene", "en_us")
 	EID:addCollectible(Mod.Mod_Story_Cube.story_cube, "Turn trinkets in the current room into 3 random cards each", "Story Cube", "en_us")
 	EID:addCollectible(Mod.Mod_True_Love.true_love, "Charge into the enemy, dealing damage and knockback#An enemy hitting an obstacle after being charged will take extra damage#Enemies killed by hitting an obstacle will drop temporary hearts {{Heart}}", "True Love", "en_us")
-	EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "{{ArrowUp}} +2 health up#56% chance to block contact damage", "Warm Coat", "en_us")
+	EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "{{ArrowUp}} +2 health up#56% chance to block any source of damage", "Warm Coat", "en_us")
 	EID:addCollectible(Mod.Mod_Weird_Heart.weird_heart, "Rerolls all of your current health into different types of hearts", "Weird Heart", "en_us")
 	EID:addCard(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, "{{ArrowDown}} Your number of keys is halved#{{ArrowUp}} Coins, bombs, and hearts increase by a third of your original number of keys", "Two of Spades?", "en_us")
 	EID:addCard(Mod.Mod_Essence_Of_Judas.essence_of_judas, "Turn up to 2 collectibles in the room into a choice between a devil and an angel item", "Essence of Judas", "en_us")
@@ -147,21 +155,21 @@ if EID then
 	EID:addCollectible(Mod.Mod_Moms_Hug.moms_hug, "사용하는 동안 적을 집을 수 있으며 사용 중 공격 버튼을 누르면 적을 집은 상태에서 회전할 수 있습니다.#집은 적은 초당 캐릭터의 공격력 x2의 피해를 받습니다.#{{Heart}} 집은 적을 처치 시 일정 시간 후 사라지는 하트를 드랍합니다.", "엄마의 포옹", "ko_kr")
 	EID:addCollectible(Mod.Mod_Mothers_Shadow.mothers_shadow, "!!! {{CurseDarknessSmall}}주변이 항상 어두워집니다.#{{Blank}} (저주 판정을 받지 않음)#주기적으로 적 위에서 칼이 떨어집니다.", "엄마의 그림자", "ko_kr")
 	EID:addCard(Mod.Mod_Queen_Of_Hearts_R.queen_of_hearts_r, "{{BrokenHeart}} 부서진 하트를 7~16개 드랍합니다.#↑ 부서진 하트를 주울 시 공격력 증가#스테이지 진입 시 소지 불가능 체력이 한칸 감소합니다.", "하트 Q?", "ko_kr")
-	EID:addCard(Mod.Mod_Essence_Of_Isaac.essence_of_isaac, "선택한 아이템을 다른 아이템으로 바꿉니다.#2개의 아이템 중 하나를 선택할 수 있습니다.", "아이작의 정수", "ko_kr")
+	EID:addCard(Mod.Mod_Essence_Of_Isaac.essence_of_isaac, "사용 시 아이템 선택창이 나오며 다시 사용 시 선택된 아이템을 제거하고 제거한 아이템의 배열과 등급이 같은 아이템을 2개 소환합니다.#2개의 아이템 중 하나를 선택할 수 있습니다.", "아이작의 정수", "ko_kr")
 	EID:addCard(Mod.Mod_Essence_Of_Magdalene.essence_of_magdalene, "{{Collectible"..Mod.Mod_Magdalene.heart_attack.."}} 공격하는 방향으로 Cardiac Arrest의 하트 투사체를 빠르게 난사합니다.", "막달레나의 정수", "ko_kr")
 	EID:addCollectible(Mod.Mod_Story_Cube.story_cube, "사용 시 현재 방의 장신구를 카드로 바꿉니다.", "Story Cube", "ko_kr")
 	EID:addCollectible(Mod.Mod_True_Love.true_love, "사용 시 적을 향해 돌진합니다. #{{Heart}} 부딪힌 적은 피해를 입으며 매우 강한 넉백을 받으며 장애물에 부딪힐 때 추가 피해를, 이 피해로 적을 처치한 경우 일정 시간 후 사라지는 하트를 드랍합니다.", "진정한 사랑", "ko_kr")
-	EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "↑ {{Heart}}최대 체력 +2#56%의 확률로 접촉 피해를 막습니다.", "따스한 코트", "ko_kr")
+	EID:addCollectible(Mod.Mod_Warm_Coat.warm_coat, "↑ {{Heart}}최대 체력 +2#피격 시 56%의 확률로 피해를 받지 않습니다.", "따스한 코트", "ko_kr")
 	EID:addCollectible(Mod.Mod_Weird_Heart.weird_heart, "사용 시 캐릭터가 소지한 모든 하트를 랜덤 하트로 바꿉니다.", "이상한 심장", "ko_kr")
 	EID:addCard(Mod.Mod_Reverse_Two_of_Spades.reverse_two_of_spades, "↓ 사용 시 현재 소지 중인 열쇠의 개수를 절반으로 감소시킵니다.#↑ 감소시킨 열쇠의 33%만큼 동전, 하트, 폭탄의 개수를 증가시킵니다.", "스페이드 2?", "ko_kr")
-	EID:addCard(Mod.Mod_Essence_Of_Judas.essence_of_judas, "사용 시 최대 2개의 현재 방의 아이템을 각각 악마방/천사방의 아이템으로 분해합니다.#각각 분해된 아이템 당 하나만 획득할 수 있습니다.", "유다의 정수", "ko_kr")
+	EID:addCard(Mod.Mod_Essence_Of_Judas.essence_of_judas, "사용 시 현재 방의 아이템 중 최대 2개를 각각 악마방/천사방의 아이템으로 분해합니다.#각각 분해된 아이템 당 하나만 획득할 수 있습니다.", "유다의 정수", "ko_kr")
 	EID:addCard(Mod.Mod_Essence_Of_Cain.essence_of_cain, "현재 방의 열린 상자를 다시 잠그어 다시 열 수 있는 상태로 바꿉니다.#현재 방의 망가진 기계를 고쳐 다시 사용할 수 있는 상태로 바꿉니다.", "카인의 정수", "ko_kr")
-  EID:addCard(Mod.Mod_Essence_Of_Eden.essence_of_eden, "사용 시 방 안의 모든 아이템을 특수 등급 아이템으로 바꿉니다. 특수 등급 아이템은 새로운 방을 입장할 때마다 같은 등급의 다른 아이템으로 바꿉니다.", "에덴의 정수", "ko_kr")
+  EID:addCard(Mod.Mod_Essence_Of_Eden.essence_of_eden, "사용 시 방 안의 모든 아이템을 특수 등급 아이템으로 바꿉니다. 특수 등급 아이템은 새로운 방을 입장할 때마다 같은 등급의 다른 아이템으로 바꿉니다.(TR Eden과 동일)", "에덴의 정수", "ko_kr")
 	EID:addCard(Mod.Mod_Go_To_Jail.go_to_jail, "캐릭터와 가장 가까운 적을 15초동안 묶습니다.", "감옥 카드", "ko_kr")
 	EID:addCollectible(Mod.Mod_Savage_Chains.savage_chains, "사용 시 캐릭터를 현재 위치에 고정시킵니다.#고정되어 있는 동안 {{DamageSmall}}공격력과 {{TearsSmall}}연사가 서서히 증가하며 고정 해제 시 서서히 감소합니다.", "황량한 쇠사슬", "ko_kr")
 	EID:addCollectible(Mod.Mod_Broken_Halo.broken_halo, "스테이지 첫 방에 {{DevilRoom}}악마방 아이템을 파는 상점으로 갈 수 있는 사다리가 생성됩니다.#!!! 사다리는 방을 벗어나면 사라집니다.", "깨진 광륜", "ko_kr")
 	EID:addTrinket(Mod.Mod_Dimensional_Key.dimensional_key, "{{DeliriumSmall}} 스테이지 보스 처치 시 15%의 확률로 Void 스테이지로 향하는 포탈을 소환합니다.", "차원의 열쇠", "ko_kr")
-	EID:addTrinket(Mod.Mod_Black_Key.black_key, "20분이 지나도 보스 러시에 진입할 수 있습니다.", "검은 열쇠", "ko_kr")
+	EID:addTrinket(Mod.Mod_Black_Key.black_key, "20분이 지나도 보스러시에 진입할 수 있습니다.", "검은 열쇠", "ko_kr")
 	EID:addTrinket(Mod.Mod_Hells_Eye.hells_eye, "눈물을 발사할 때마다 5%의 확률로 연옥의 유령을 소환합니다.", "지옥의 눈", "ko_kr")
   EID:addTrinket(Mod.Mod_Paper_Airplane.paper_airplane, "방 입장 시 적을 25%의 확률로 Glitchy gaper로 바꿉니다.", "종이비행기", "ko_kr")
 	EID:addCollectible(Mod.Mod_Dark_Power.dark_power, "↑ {{DamageSmall}}공격력 +0.5#↓ 모든 능력치가 미세하게 감소합니다.", "어둠의 힘", "ko_kr")
@@ -169,11 +177,11 @@ if EID then
 	EID:addCollectible(Mod.Mod_Old_Knife.old_knife, "{{Chargeable}} 충전 후 공격 시 공격하는 방향으로 날아갑니다.#{{BleedingOut}} 적에게 꽃히면 3초동안 출혈 피해를 주고 오라가 생기며 오라 안에 있을 시 {{DamageSmall}}공격력이 +1.5 증가합니다.", "낡은 단검", "ko_kr")
 	EID:addCollectible(Mod.Mod_Thirty_Pieces_Of_Silver.thirty_pieces_of_silver, "{{Coin}} 동전 +30#방 클리어 시 일정량의 동전을 획득합니다.#{{DamageSmall}} 소지하고 있는 동전이 적을수록 공격력이 증가합니다.", "30냥의 은화", "ko_kr")
   EID:addCollectible(Mod.Mod_Printer.printer, "카드를 소지한 상태에서 액티브 아이템 사용 시 해당 액티브 아이템의 효과를 카드에 복사합니다.#복사된 카드와 같은 종류의 카드 사용 시 복사한 액티브 아이템의 효과를 같이 사용합니다.", "프린터", "ko_kr")
-	EID:addCollectible(Mod.Mod_Zip_Bombs.zip_bombs, "폭탄이 일정 간격마다 최대 3번까지 폭발합니다.", "압축 폭탄", "ko_kr")	
+	EID:addCollectible(Mod.Mod_Zip_Bombs.zip_bombs, "↑ {{Bomb}}폭탄 +5#폭탄이 일정 간격마다 최대 3번까지 폭발합니다.", "압축 폭탄", "ko_kr")	
 	EID:addCollectible(Mod.Mod_Segmentation_Fault.segmentation_fault, "3.33%의 확률로 오류 눈물을 발사하며 오류 눈물에 맞은 적은 바뀌거나 즉사합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 15 이상일 때 25% 확률", "세그멘테이션 오류", "ko_kr")
 	EID:addCard(Mod.Mod_DrawOneCard.draw_one_card, "최근에 획득한 패시브 아이템 2개를 제거합니다.#제거한 아이템의 등급보다 높은 등급의 아이템을 하나 소환합니다.", "드로우 1", "ko_kr")
-	EID:addBirthright(Mod.table_type_id["ISAAC"], "Blighted Dice 사용 시 나오는 아이템 중 하나가 25%의 확률로 한 단계 더 높은 아이템으로 등장합니다.", "Tarnished Isaac","ko_kr")
-	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "{{SoulHeart}} Cardiac Arrest로 적을 맞출 시 체력이 낮은 경우 소울하트도 드랍할 수 있습니다.", "Tarnished Magdalene", "ko_kr")
+	EID:addBirthright(Mod.table_type_id["ISAAC"], "{{Collectible"..Mod.Mod_Isaac.blighted_dice.."}} Blighted Dice 사용 시 나오는 아이템 중 하나가 25%의 확률로 한 단계 더 높은 아이템으로 등장합니다.", "Tarnished Isaac","ko_kr")
+	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "{{Collectible"..Mod.Mod_Magdalene.heart_attack.."}} Cardiac Arrest로 적을 맞출 시 체력이 낮은 경우 {{SoulHeart}}소울하트도 드랍할 수 있습니다.", "Tarnished Magdalene", "ko_kr")
 	EID:addBirthright(Mod.table_type_id["CAIN"], "3개의 아이템을 조합하여 가방을 생성합니다.#!!! Throwing Bag를 조합하는데 필요한 아이템의 개수가 3개로 증가합니다.", "Tarnished Cain", "ko_kr")
 	EID:addBirthright(Mod.table_type_id["JUDAS"], "각 페이즈별 생성되는 그림자의 개수가 증가합니다.#{{Blank}} 페이즈 1: 그림자 5개#{{Blank}} 페이즈 2: 그림자 7개#{{Blank}} 페이즈 3: 그림자 11개", "Tarnished Judas", "ko_kr")
 	EID:addBirthright(Mod.table_type_id["EDEN"], "#모든 Glitched Gaper가 항상 매혹에 걸립니다.#!!! (아군이 되지는 않음)#적 명중 시 일정 확률로 해당 적을 Glitched Gaper로 바꿉니다.", "Tarnished Eden", "ko_kr")
@@ -275,35 +283,35 @@ BagItems["ru"] = {
 BagItems["ko_kr"] = {
   [118] = "#{{ColorCyan}}소지 시:{{CR}} 충전하는 동안 혈사 고리를 발동시킵니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 투척 방향의 반대방향으로 혈사포를 발사합니다.", 
   [52] = "#{{ColorCyan}}소지 시:{{CR}} 가방이 무언가에 부딪힐 때 작은 폭탄을 설치합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 무언가에 부딪히는 즉시 폭발합니다.",
-  [3] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물에 유도 효과가 생깁니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방에 유도 효과가 생깁니다.",
+  [3] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이에 유도 효과가 생깁니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방에 유도 효과가 생깁니다.",
   [579] = "#{{Collectible"..itemId .."}} {{Throwable}}흡수 후 투척 시:{{CR}} 가방의 공격 범위가 커집니다.",
-  [213] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 적의 탄환을 막습니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방이 적의 탄환을 막습니다.",
-  [233] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 캐릭터 주변을 공전합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 가방에서 흩뿌려지는 눈물이 가방 주위를 공전합니다.",
-  [494] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물에 위의 아이템의 효과가 적용됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 짧은 유도 레이저가 발사됩니다.",
-  [597] = "#{{ColorCyan}}소지 시:{{CR}} 충전하는 동안 랜덤 방향으로 눈물을 발사합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방에서 흩뿌려지는 눈물의 갯수가 증가하며 떠있는 동안 눈물을 흩뿌립니다.",
-  [221] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물에 위의 아이템의 효과가 적용됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방의 체공 시간이 대폭 증가합니다.",
-  [114] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 칼로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 적을 관통하며 3배의 피해를 줍니다.",
+  [213] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 적의 탄환을 막습니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방이 적의 탄환을 막습니다.",
+  [233] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 캐릭터 주변을 공전합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 가방의 돌덩이가 가방 주위를 공전합니다.",
+  [494] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이에 위의 아이템의 효과가 적용됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 짧은 유도 레이저가 발사됩니다.",
+  [597] = "#{{ColorCyan}}소지 시:{{CR}} 충전하는 동안 랜덤 방향으로 눈물을 발사합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방의 돌덩이의 갯수가 증가하며 떠있는 동안 눈물을 흩뿌립니다.",
+  [221] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이에 위의 아이템의 효과가 적용됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방의 체공 시간이 대폭 증가합니다.",
+  [114] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 칼로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 적을 관통하며 3배의 피해를 줍니다.",
   [237] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 적을 관통하며 1.5배의 피해를 줍니다.",
-  [317] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 땅에 닿을 시 독장판이 생성됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 가방 밑에 독장판을 설치하며 무언가에 부딪히는 순간 장판의 크기가 커집니다.",
-  [68] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 레이저로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방의 체공 시간이 대폭 길어지며 떠있는 동안 투척 방향으로 레이저를 발사합니다.",
+  [317] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 땅에 닿을 시 독장판이 생성됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 가방 밑에 독장판을 설치하며 무언가에 부딪히는 순간 장판의 크기가 커집니다.",
+  [68] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 레이저로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방의 체공 시간이 대폭 길어지며 떠있는 동안 투척 방향으로 레이저를 발사합니다.",
   [152] = "#{{ColorCyan}}소지 시:{{CR}} 충전하는 동안 지속 레이저를 발사합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방의 체공 시간이 대폭 길어지며 떠있는 동안 투척 방향으로 얇은 레이저를 발사합니다.",
   [244] = "#{{ColorCyan}}소지 후 투척 시:{{CR}} 랜덤 벌레 효과가 적용된 레이저를 같이 발사합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방의 체공 시간이 대폭 길어지며 떠있는 동안 랜덤 방향으로 레이저를 발사합니다.",
-  [149] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 작은 구토제 폭탄으로 바뀌며 폭발한 지점에 독장판을 생성합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 무언가에 부딪히는 즉시 폭발합니다.",
+  [149] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 작은 구토제 폭탄으로 바뀌며 폭발한 지점에 독장판을 생성합니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 무언가에 부딪히는 즉시 폭발합니다.",
   [395] = "#{{ColorCyan}}소지 시:{{CR}} 충전하는 동안 레이저 고리를 발동시킵니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방의 체공 시간이 대폭 길어지며 떠있는 동안 주변에 원형 레이저를 두릅니다.",
   [168] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 랜덤 방향으로 로켓을 추가로 흩뿌립니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방의 체공 시간이 대폭 길어지며 떠있는 동안 투척 방향으로 로켓을 발사합니다.",
   [329] = "#{{ColorCyan}}소지 시:{{CR}} 캐릭터를 느리게 따라오는 눈물 하나가 소환되며 가방과 부딪히면 눈물의 크기가 커지면서 가방과 함께 발사됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방이 땅에 떨어지지 않으며 {{ColorOrange}}수동으로 주울 수 없습니다{{CR}}.",
-  [533] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 하얀색 빛줄기 눈물로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 랜덤 방향으로 하얀색 빛줄기 눈물을 발사합니다.",
-  [531] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 Haemolacria 눈물로 바뀝니다#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 무언가에 부딪힐 때 작은 눈물 여러개가 추가로 흩어집니다.", 
-  [570] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물에 랜덤 눈물 효과가 적용됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방을 던질 때마다 랜덤 상태이상이 적용됩니다.",
-  [331] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물에 후광이 생깁니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 랜덤 방향으로 후광이 붙은 눈물을 발사합니다.",
-  [182] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물에 위의 아이템의 효과가 적용됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방에 유도 효과가 생기며 피해량이 2.3배로 증가합니다.#{{Collectible"..itemId .."}} 가방이 무언가에 부딪힐 때 신성한 눈물을 추가로 흩뿌립니다.",
-  [374] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물에 10%의 확률로 빛줄기가 나가는 눈물로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 적과 부딪힐 때 빛줄기가 나갑니다.",
-  [5] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 더 멀리 나갑니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 플레이어에게 되돌아옵니다.",
-  [418] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물이 일정 확률로 랜덤 효과의 눈물로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 랜덤 방향으로 랜덤 효과가 적용된 눈물을 발사합니다.",
-  [596] = "#{{ColorCyan}}소지 시:{{CR}} 가방에서 흩뿌려지는 눈물에 빙결 효과가 생깁니다.(!!!모습은 일반 눈물과 동일)#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방으로 적 처치 시 적이 얼어붙습니다.",
+  [533] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 하얀색 빛줄기 눈물로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 랜덤 방향으로 하얀색 빛줄기 눈물을 발사합니다.",
+  [531] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 Haemolacria 눈물로 바뀝니다#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 무언가에 부딪힐 때 작은 눈물 여러개가 추가로 흩어집니다.", 
+  [570] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이에 랜덤 눈물 효과가 적용됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방을 던질 때마다 랜덤 상태이상이 적용됩니다.",
+  [331] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이에 후광이 생깁니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 랜덤 방향으로 후광이 붙은 눈물을 발사합니다.",
+  [182] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이에 위의 아이템의 효과가 적용됩니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방에 유도 효과가 생기며 피해량이 2.3배로 증가합니다.#{{Collectible"..itemId .."}} 가방이 무언가에 부딪힐 때 신성한 눈물을 추가로 흩뿌립니다.",
+  [374] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이에 10%의 확률로 빛줄기가 나가는 눈물로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 적과 부딪힐 때 빛줄기가 나갑니다.",
+  [5] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 더 멀리 나갑니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 플레이어에게 되돌아옵니다.",
+  [418] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이가 일정 확률로 랜덤 효과의 눈물로 바뀝니다.#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 떠있는 동안 랜덤 방향으로 랜덤 효과가 적용된 눈물을 발사합니다.",
+  [596] = "#{{ColorCyan}}소지 시:{{CR}} 가방의 돌덩이에 빙결 효과가 생깁니다.(!!!모습은 일반 돌덩이와 동일)#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 시:{{CR}} 가방으로 적 처치 시 적이 얼어붙습니다.",
   [562] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 무언가에 부딪힐 때 공격력 x11의 피해를 주는 지진파를 내보냅니다.",
   [691] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} !!!투척 3초 이후 폭발합니다.",
-  [628] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 적과 부딪힐 때 2%의 확률로 랜덤 아이템 하나를 소환합니다.(50회 부딪힐 시 확정 소환)",
+  [628] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 가방이 적과 부딪힐 때 2%의 확률로 그 방의 아이템 하나를 소환합니다.(50회 부딪힐 때 확정 소환)",
   [169] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} ↑가방의 크기와 피해량이 증가하고 적을 관통하나 관통할 때마다 가방의 크기가 줄어듭니다.",
   [261] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} ↑가방의 크기와 피해량이 증가하나 멀리 나갈수록 피해량이 감소합니다.",
   [132] = "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} ↑가방이 멀리 나갈수록 피해량이 증가합니다.",
@@ -375,21 +383,21 @@ local function appendBagItemDescriptions(descObj)
     return descObj
   elseif language == "ko_kr" then
     EID:appendToDescription(descObj, (BagItems["ko_kr"][descObj.ObjSubType] or BagItems["en_us"][descObj.ObjSubType]) or "")
-    EID:appendToDescription(descObj, GoldenBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 10% 확률로 동전을 드랍하며 5%의 확률로 적을 석화시킵니다." or "")
-    EID:appendToDescription(descObj, SackBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 일정 확률로 자루를 드랍합니다." or "")
-    EID:appendToDescription(descObj, AngelBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 일정 확률로 {{Collectible568}}Divine Intervention 방패를 시전합니다." or "")
-    EID:appendToDescription(descObj, PoopBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 일정 확률로 랜덤 똥을 소환합니다." or "")
-    EID:appendToDescription(descObj, SpiderBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 무언가에 부딪힐 시 일정 확률로 {{Collectible461}}Parasitoid 눈물을 내뱉습니다." or "")
-    EID:appendToDescription(descObj, SharpBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 적을 출혈시킵니다." or "")
-    EID:appendToDescription(descObj, FartBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 일정 확률로 방귀를 뀝니다." or "")
-    EID:appendToDescription(descObj, FlyBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 일정 확률로 파란 자폭 파리를 소환합니다." or "")
-    EID:appendToDescription(descObj, GuppyBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 파란 자폭 파리를 소환합니다." or "")
-    EID:appendToDescription(descObj, PoisonBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 적을 중독시킵니다." or "")
-    EID:appendToDescription(descObj, BookBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 일정 확률로 카드를 드랍합니다." or "")
-    EID:appendToDescription(descObj, MysticBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 일정 확률로 룬을 드랍합니다." or "")
-    EID:appendToDescription(descObj, DevilBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 일정 확률로 {{Collectible684}}Hungry Soul 유령을 소환합니다." or "")
-    EID:appendToDescription(descObj, MomBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 시 10% 확률로 엄마 발을 소환합니다." or "")
-    EID:appendToDescription(descObj, DrugBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 무언가에 부딪힐 시 랜덤 효과의 눈물을 내뱉습니다." or "")
+    EID:appendToDescription(descObj, GoldenBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 10% 확률로 동전을 드랍하며 5%의 확률로 적을 석화시킵니다." or "")
+    EID:appendToDescription(descObj, SackBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 일정 확률로 자루를 드랍합니다." or "")
+    EID:appendToDescription(descObj, AngelBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 일정 확률로 {{Collectible568}}Divine Intervention 방패를 시전합니다." or "")
+    EID:appendToDescription(descObj, PoopBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 일정 확률로 랜덤 똥을 소환합니다." or "")
+    EID:appendToDescription(descObj, SpiderBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 무언가에 부딪힐 때 일정 확률로 {{Collectible461}}Parasitoid 눈물을 내뱉습니다." or "")
+    EID:appendToDescription(descObj, SharpBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 적을 출혈시킵니다." or "")
+    EID:appendToDescription(descObj, FartBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 일정 확률로 방귀를 뀝니다." or "")
+    EID:appendToDescription(descObj, FlyBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 일정 확률로 파란 자폭 파리를 소환합니다." or "")
+    EID:appendToDescription(descObj, GuppyBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 파란 자폭 파리를 소환합니다." or "")
+    EID:appendToDescription(descObj, PoisonBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 적을 중독시킵니다." or "")
+    EID:appendToDescription(descObj, BookBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 일정 확률로 카드를 드랍합니다." or "")
+    EID:appendToDescription(descObj, MysticBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 일정 확률로 룬을 드랍합니다." or "")
+    EID:appendToDescription(descObj, DevilBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 일정 확률로 {{Collectible684}}Hungry Soul 유령을 소환합니다." or "")
+    EID:appendToDescription(descObj, MomBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 적에게 부딪힐 때 10% 확률로 엄마 발을 소환합니다." or "")
+    EID:appendToDescription(descObj, DrugBagItems[descObj.ObjSubType] and "#{{Collectible"..itemId .."}} {{Throwable}}{{ColorOrange}}흡수 후 투척 시:{{CR}} 무언가에 부딪힐 때 랜덤 효과의 눈물을 내뱉습니다." or "")
 
     return descObj
   else
