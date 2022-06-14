@@ -87,6 +87,7 @@ if EID then
 	EID:addBirthright(Mod.table_type_id["MAGDALENE"], "Soul hearts{{SoulHeart}} can spawn when using Cardiac Arrest at low health", "Tarnished Magdalene", "en_us")
 	EID:addBirthright(Mod.table_type_id["CAIN"], "Increase bag capacity by one item", "Tarnished Cain", "en_us")
 	EID:addBirthright(Mod.table_type_id["JUDAS"], "Extra clones for each phase#Phase 1: 5 clones#Phase 2: 7 clones#Phase 3: 11 clones", "Tarnished Judas", "en_us")
+	EID:addBirthright(Mod.table_type_id["EDEN"], "All Glitched Gapers are charmed permanently#!!! Does NOT become friendly#Tears have 10% chance to turn an enemy into a glitched friendly gaper.", "Tarnished Eden", "en_us")
 	-- Final Wishes has multiplie IDs for its' multiple sprites so we need to do this
 	local final_wishes_desc = "Consumes the closest item to the player and spawns pickups#Adds an extra option of the same/higher quality for item pedestals to cycle through#{{Warning}} Taking an item resets the number of options"
 	for i = 0, 5 do EID:addCollectible(Mod.Mod_Final_Wishes.final_wishes - i, final_wishes_desc, "Final Wishes", "en_us") end
@@ -133,10 +134,11 @@ end
 -- Korean Translation
 
 if EID then
-	EID:addCollectible(Mod.Mod_Isaac.blighted_dice, "사용 시 현재 선택된 아이템을 제거하고 현재 방의 아이템을 2개 소환합니다.#2개 중 하나만 획득할 수 있습니다.#소환되는 아이템의 등급은 제거한 아이템과 같은 등급의 아이템이 등장합니다.#!!! 사용 시 이 아이템은 {{Collectible"..Mod.Mod_Isaac.broken_dice.."}}Broken Dice로 바뀝니다.", "병든 주사위", "ko_kr")
-	EID:addCollectible(Mod.Mod_Isaac.broken_dice, "!!! 충전 시 강제로 {{Collectible"..Mod.Mod_Isaac.broken_dice.."}}Blighted Dice로 변경됨#{{BrokenHeart}} 충전되지 않은 상태에서만 사용할 수 있으며 사용 시 하트 한칸과 현재 선택된 아이템을 제거하고 현재 방의 아이템을 1개 소환, 소지 불가능 체력 +1#이 아이템을 소지한 상태에서 아이템 획득을 시도하면 아이템이 사라지면서 {{Collectible"..Mod.Mod_Isaac.broken_dice.."}}Blighted Dice로 바뀝니다.", "망가진 주사위", "ko_kr")
+	EID:addCollectible(Mod.Mod_Isaac.blighted_dice, "사용 시 현재 선택된 아이템을 제거하고 제거한 아이템의 배열과 등급이 같은 아이템을 2개 소환하며 둘 중 하나만 획득할 수 있습니다.#!!! 사용 시 이 아이템은 {{Collectible"..Mod.Mod_Isaac.broken_dice.."}}Broken Dice로 바뀝니다.", "병든 주사위", "ko_kr")
+	EID:addCollectible(Mod.Mod_Isaac.broken_dice, "!!! 충전 시 강제로 {{Collectible"..Mod.Mod_Isaac.blighted_dice.."}}Blighted Dice로 변경됨#{{BrokenHeart}} 충전되지 않은 상태에서만 사용할 수 있으며 사용 시 하트 한칸과 현재 선택된 아이템을 제거하고 현재 방의 아이템을 1개 소환, 소지 불가능 체력 +1#이 아이템을 소지한 상태에서 아이템 획득을 시도하면 아이템이 사라지면서 {{Collectible"..Mod.Mod_Isaac.blighted_dice.."}}Blighted Dice로 바뀝니다.", "망가진 주사위", "ko_kr")
 	EID:addCollectible(Mod.Mod_Magdalene.heart_attack, "사용 시 체력 한칸을 깎고 공격한 방향으로 캐릭터의 공격력 x3의 피해를 주는 하트 투사체를 발사합니다.#{{HalfHeart}} 하트로 적을 맞출 때마다 일정 시간 이후 사라지는 빨간하트 픽업을 드랍합니다.#{{BrokenHeart}} 체력이 부족한 상태에서 사용 시 소지 불가능 체력이 대신 추가됩니다.", "심장마비", "ko_kr")
 	EID:addCollectible(Mod.Mod_Cain.throwing_bag, "사용 시 현재 방의 투척 가방을 전부 수집합니다.#쿨타임은 가방 수에 비례합니다.#아이템을 드는 도중 사용 시 들고 있는 아이템을 흡수합니다.#아이템 2개를 흡수할 때마다 새로운 투척 가방이 생성됩니다.", "투척 가방", "ko_kr")
+	--EID:addCollectible(Mod.Mod_Judas.descent, "사용 시 캐릭터 반대편의 분신과 자리를 맞바꾸며 모든 분신의 대각선상에 있는 적에게 피해를 줍니다.", "급습", "ko_kr")
   EID:addCollectible(Mod.Mod_Eden.debugItem, "사용 시 충전량 2칸을 소모하여 소지 중인 아이템을 모두 바꿉니다.#완충 상태에서 아이템을 드는 도중 사용 시 충전량을 전부 소모하여 들고 있는 아이템을 보호합니다.", "디버그", "ko_kr")
 
 	EID:addTrinket(Mod.Mod_Dads_Wallet.dads_wallet, "동전이 매우 높은 확률로 니켈 혹은 다임으로 바뀝니다.#동전이 일정 확률로 등장하지 않습니다.", "아빠의 지갑", "ko_kr")
