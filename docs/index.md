@@ -2,12 +2,10 @@
     일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
     [자주묻는 질문은 여기로](./faq)
 
-!!! info "마지막 업데이트 : 2022-05-02"
-    - 크레인 게임 + 빛나는 모래시계 사용 시 발생하는 버그 수정
-    - 사망 증명서 방 감지 기능 개선
-    - 창세기 관련 버그 수정
-    - 알트 카인 레시피 옵션 버그 및 Bilnd 저주 관련 버그 수정
-    - 설명 업데이트 내역: [1차](https://github.com/wofsauge/External-Item-Descriptions/pull/448/files) / [2차](https://github.com/wofsauge/External-Item-Descriptions/pull/454/files)
+!!! info "마지막 업데이트 : 2022-06-17"
+    - Item Reminder(리마인더) 기능 추가 : Tab 키를 꾹 누른 상태에서 현재 소지 중인 액티브/카드/알약/장신구 및 현재 방에서 획득한 아이템의 정보를 보여줍니다.
+    - Sanguine Bond 아이템의 예측 기능 추가(기본값으로 표시되지 않게 설정됨)
+    - 모드 지원을 위한 신규 아이콘 추가
 
 ## For Non-Korean users
 !!! note ""

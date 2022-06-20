@@ -94,6 +94,22 @@ EID -> Visuals에서 표시할 설명의 스타일을 설정할 수 있습니다
 | **Display Object ID** | 아이템의 ID를 보여줍니다(5.100.331) | `false` |
 | **Mod indicator displayed for** | 모드 아이템의 출신 모드를 보여줍니다. | `none` |
 
+## 리마인더 설정
+
+EID -> Reminder에서 특수 설명(리마인더) 옵션을 설정할 수 있습니다.
+
+| 옵션 | 설명 | 기본값 |
+| ------------ | ------------- | ------------- |
+| **Item Reminder Description** | 특정 키를 누른 상태에서 리마인더(특수 설명)를 보여줍니다. | `true` |
+| **Hold to Show** | 리마인더를 보여줄 단축키를 설정합니다.<br>이 단축키는 Flip, Spindown Dice, Bag of Crafting의 레시피 등 Tab 키를 사용하는 모든 EID 기능에 영향을 줍니다. | `Tab` |
+| **Recent Items** | 리마인더에서 현재 방에서 최근 획득한 아이템의 설명을 보여줍니다.(최대 8) | `1` |
+| **Active Items** | 리마인더에서 현재 소지 중인 액티브 아이템의 설명을 보여줍니다.(최대 2) | `1` |
+| **Pocket Items** | 리마인더에서 현재 소지 중인 카드/알약/특수 액티브의 설명을 보여줍니다.(최대 2/4) | `1` |
+| **Trinkets** | 리마인더에서 현재 소지 중인 장신구의 설명을 보여줍니다.(최대 2) | `2` |
+| **Poop Spells** | 알트 ??? 플레이 시 리마인더에서 다음에 사용될 똥의 설명을 보여줍니다.(최대 6) | `1` |
+| **Show Hidden Information** | 리마인더에서 숨겨진 정보를 표시합니다.(Zodiac, Liberty Cap 등) | `false` |
+| **Show RNG Predictions** | 리마인더에서 다음 이벤트 및 사용에 대한 예측 결과를 표시합니다.(Teleport! 등) | `false` |
+
 ## 조합의 가방 설정
 
 | 옵션 | 설명 | 기본값 |
