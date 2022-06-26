@@ -1,3 +1,18 @@
+!!! danger "구 한글 설명모드 사용자 필독"
+    <span style="color:red;font-weight:700;font-size:1rem">반드시 이 페이지 전부를 정독한 후 설명모드를 사용하여 주십시오!</span>
+
+    **2022-06-25일자로 구 한글 설명모드가 창작마당에서 삭제되었습니다.** 이후 게임 실행 시 해당 모드가 제거되며 원본 설명모드를 이용하셔야 합니다.   
+    일부 원본 설명모드의 기본값이 구 한글 설명모드의 기본값과 달라 언어 이외에 추가 설정을 진행해 주어야 합니다.   
+    추가 설정이 필요한 항목은 아래와 같습니다:   
+
+    - [Mod Config Menu - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=2487535818), 혹은 [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독   
+    - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입   
+        - EID -> General -> **Language**를 '**Korean**'으로 설정 (이미 한국어인 경우 스킵)   
+        - EID -> General -> **Name Language**를 '**Current + English**'로 설정   
+        - EID -> General -> **Indicator**를 '**arrow**'로 설정   
+        - EID -> Display -> **Description Refresh Rate**를 '**60**'으로 설정   
+
+
 !!! warning "해당 가이드는 제작중입니다."
     일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
     [자주묻는 질문은 여기로](./faq)
@@ -36,8 +51,8 @@ Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1�
 ![아이템 표시 스타일](https://steamuserimages-a.akamaihd.net/ugc/964219973643822883/4354AE9676356B121ED0C70259F6FE1CB0174E2B/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
 
 - **게임 내에서 F2 키로 설명 켜기/끄기 가능**
-- 액티브/패시브/패밀리어 아이템, 장신구, 카드/알약, 희생방, 주사위방의 타입과 효과 출력 및 출력 여부 설정 가능
-- Tab 키를 눌러 현재 소지 중인 액티브, 장신구, 카드/알약 출력 및 출력 여부 설정 가능
+- 액티브/패시브/패밀리어 아이템, 장신구, 카드/알약, 희생방/Sanguine Bond 악마방, 주사위방의 타입과 효과 출력 및 출력 여부 설정 가능
+- Tab 키를 눌러 현재 방에서 획득한 아이템 및 현재 소지 중인 액티브, 장신구, 카드/알약 출력 및 출력 여부 설정 가능
 - (리펜턴스) 아이템의 퀄리티(등급) 출력
 - 아이템의 액티브 충전량, 변신세트 출력
 - 텍스트의 크기, 위치, 투명도, 색상, 인식 범위 설정 가능
