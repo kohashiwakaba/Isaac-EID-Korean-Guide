@@ -65,5 +65,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.highlight
+  - pymdownx.critic
+  - pymdownx.caret
   - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 copyright: Copyright &copy; 2022 kohashiwakaba aka. 미카
