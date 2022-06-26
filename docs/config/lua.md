@@ -179,6 +179,15 @@ HUD 기준점을 설정합니다. (애프터버스 + 전용)
 전투 중에 아이템 설명을 숨길지 설정합니다.  
 기본값 : false
 
+### RefreshRate
+!!! note "" 
+    대응 옵션 : EID > Display > **Description Refresh Rate**
+
+설명모드의 설명 새로고침 주기를 설정합니다.(초당 n회 새로고침)   
+숫자가 높을수록 설명모드가 더 빠르게 반응하나 게임 성능이 하락할 수 있습니다.   
+값 : 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60
+기본값 : 30
+
 ### DisableObstructionOnFlight
 !!! note "" 
     대응 옵션 : EID > General > **Show again when having flight**
@@ -192,6 +201,42 @@ HUD 기준점을 설정합니다. (애프터버스 + 전용)
 
 도전과제 해금이 불가능할하거나 알트 카인 플레이 시 아이템을 추가하거나 배열을 바꾸는 모드를 사용하는 경우 경고문을 숨길지 설정합니다.  
 기본값 : false
+
+## Co-op / Multiple Descriptions
+
+### CoopDescriptions
+
+!!! note "" 
+    대응 옵션 : EID > Display > **Co-op Player Descriptions**
+
+멀티 플레이 시 모든 플레이어의 인식 범위에 있는 아이템의 설명을 보여줍니다.   
+2개 이상의 아이템의 설명이 동시에 보여질 경우 2번째 아이템부터는 아이템 바로 밑에서 설명이 표시됩니다.  
+기본값 : true
+
+### PairedPlayerDescriptions
+
+!!! note "" 
+    대응 옵션 : EID > Display > **Paired Player Descriptions**
+
+2개의 캐릭터를 한 플레이어가 동시에 조종할 경우 연결된 플레이어(Esau, Tainted Forgotten)가 인식 범위에 있어도 아이템의 설명을 보여줍니다.  
+기본값 : false
+
+### DisplayAllNearby
+
+!!! note "" 
+    대응 옵션 : EID > General > **Display All Objects In Range**
+
+인식 범위 안에 있는 모든 설명을 출렧합니다.   
+주의: 설명이 정상적으로 출력되지 않거나 가려질 수 있습니다.   
+기본값 : false
+
+### MaxDescriptionsToDisplay
+
+!!! note "" 
+    대응 옵션 : EID > General > **Max Descriptions to Display**
+
+출력되는 최대 설명의 개수를 설정합니다. (일부 상황에만 적용)
+기본값 : 99
 
 ## Display Modes
 
@@ -207,7 +252,7 @@ HUD 기준점을 설정합니다. (애프터버스 + 전용)
 | "default" | **기본값** : 모든 아이템의 설명이 고정된 위치에 표시됩니다. |
 | "local" | **아이템 위치** 애프터버스의 아이템 설명 모드와 같이 아이템의 설명이 각 아이템 주변에 표시됩니다. |
 
-### LocalScale
+### LocalModeSize
 !!! note "" 
     대응 옵션 : EID > Visuals > **Text Size(local mode)**
 
@@ -219,6 +264,30 @@ HUD 기준점을 설정합니다. (애프터버스 + 전용)
     대응 옵션 : EID > Visuals > **Local mode centered**
 
 아이템 설명을 아이템 주변에 표시할 때 가운데 정렬을 할지 설정합니다.  
+기본값 : true  
+
+## Icons
+
+### MarkupSize
+!!! note "" 
+    대응 옵션 : EID > Visuals > **Markup Icon Size**
+
+아이콘의 크기를 설정합니다.   
+값 : "default", "big", "small"
+기본값 : default  
+
+### StatChangeIcons
+!!! note "" 
+    대응 옵션 : EID > Visuals > **Stat Change Icons**
+
+스탯 증감 라인의 아이콘을 보여줍니다.  
+기본값 : false  
+
+### StatAndPickupBulletpoints
+!!! note "" 
+    대응 옵션 : EID > Visuals > **Stat/Pickup Bulletpoint Icons**
+
+각 줄의 라인 말머리표 대신 아이콘을 보여주는 것을 허용합니다.  
 기본값 : true  
 
 ## Curse
@@ -335,6 +404,13 @@ April's Fool 챌린지에서 아이템의 설명을 출력할지 설정합니다
 아이템의 변신세트 이름을 아이콘으로 보여줄지 설정합니다.  
 기본값 : true  
 
+### TransformationProgress
+!!! note "" 
+    대응 옵션 : EID > Visuals > **Display Transform Progress**
+
+아이템의 변신세트 상황을 보여줍니다.  
+기본값 : true  
+
 ### TransformationColor
 !!! note "" 
     대응 옵션 : EID > Color > **Transformations**
@@ -431,7 +507,7 @@ Options? 아이템으로 드랍된 선택형 알약의 설명을 출력할지 �
     대응 옵션 : EID > Display > **Glitched Item Infos**
 
 글리치 아이템의 예상 효과를 표시합니다. 자세한 설명은 [여기서](../howto/advanced#tmtrainer) 확인할 수 있습니다.
-기본값 : true  
+기본값 : false (--luadebug 상태일 때 true)  
 
 ## Sacrifice rooms
 
@@ -441,6 +517,22 @@ Options? 아이템으로 드랍된 선택형 알약의 설명을 출력할지 �
 
 희생방의 희생 보상 설명을 출력할지 설정합니다.  
 기본값 : true  
+
+## Sanguine Bond
+
+### DisplaySanguineInfo
+!!! note "" 
+    대응 옵션 : EID > Display > **Sanguine Bond Infos**
+
+Sanguine Bond 악마방의 희생 보상 설명을 출력할지 설정합니다.  
+기본값 : true  
+
+### PredictionSanguineBond
+!!! note "" 
+    대응 옵션 : EID > Display > **Predict Sanguine Bond Result**
+
+Sanguine Bond의 다음 희생 보상을 보여줍니다.  
+기본값 : false  
 
 ## Dice rooms
 
@@ -469,6 +561,72 @@ Options? 아이템으로 드랍된 선택형 알약의 설명을 출력할지 �
 Void 아이템, Black Rune의 예상 스탯 증가량을 보여줍니다.
 기본값 : false  
 
+## Item Reminder Description
+
+### ItemReminderEnabled
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Item Reminder Description**
+
+특정 키를 누른 상태에서 리마인더(특수 설명)를 보여줍니다.
+기본값 : true  
+
+### BagOfCraftingToggleKey
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Hold to Show**
+
+리마인더를 보여줄 단축키를 설정합니다.   
+이 단축키는 Flip, Spindown Dice, Bag of Crafting의 레시피 등 Tab 키를 사용하는 모든 EID 기능에 영향을 줍니다.
+기본값 : ButtonAction.ACTION_MAP (++tab++키)  
+
+### ItemReminderShowRecentItem
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Recent Items**
+
+리마인더에서 현재 방에서 최근 획득한 아이템의 설명을 보여줍니다.(최대 8)
+기본값 : 1  
+
+### ItemReminderShowActiveDesc
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Active Items**
+
+리마인더에서 현재 소지 중인 액티브 아이템의 설명을 보여줍니다.(최대 2)
+기본값 : 1  
+
+### ItemReminderShowPocketDesc
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Pocket Items**
+
+리마인더에서 현재 소지 중인 카드/알약/특수 액티브의 설명을 보여줍니다.(최대 2/4)
+기본값 : 1  
+
+### ItemReminderShowTrinketDesc
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Trinkets**
+
+리마인더에서 현재 소지 중인 장신구의 설명을 보여줍니다.(최대 2)
+기본값 : 2  
+
+### ItemReminderShowPoopDesc
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Poop Spells**
+
+알트 ??? 플레이 시 리마인더에서 다음에 사용될 똥의 설명을 보여줍니다.(최대 6)
+기본값 : 1  
+
+### ItemReminderShowHiddenInfo
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Show Hidden Information**
+
+리마인더에서 숨겨진 정보를 표시합니다.(Zodiac, Liberty Cap 등)
+기본값 : false  
+
+### ItemReminderShowRNGCheats
+!!! note "" 
+    대응 옵션 : EID > Reminder > **Show RNG Predictions**
+
+리마인더에서 다음 이벤트 및 사용에 대한 예측 결과를 표시합니다.(Teleport! 등)
+기본값 : false  
+
 ## Bag of Crafting
 
 ### DisplayBagOfCrafting
@@ -482,8 +640,6 @@ Void 아이템, Black Rune의 예상 스탯 증가량을 보여줍니다.
 ### BagOfCraftingCombinationMax
 
 ### BagOfCraftingRandomResults
-
-### BagOfCraftingToggleKey
 
 ### BagOfCraftingDisplayNames
 

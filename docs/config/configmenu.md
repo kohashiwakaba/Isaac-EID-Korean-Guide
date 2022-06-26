@@ -31,7 +31,8 @@ EID -> General에서 기본 설정을 할 수 있습니다.
 | **Hide in Battle** | 방 안에 적이 있을 경우 설명을 자동으로 숨깁니다. | `false` |
 | **Indicator** | 설명 출력중인 아이템의 표시방법을 설정합니다.<br/>![인디케이터](https://steamuserimages-a.akamaihd.net/ugc/964219973643822883/4354AE9676356B121ED0C70259F6FE1CB0174E2B/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)<br/> - `none` : 없음<br/> - `arrow` : 화살표<br/> - `blink` : 깜빡임<br/> - `border` : 테두리 깜빡임<br/> - `highlight` : 테두리 | `none` |
 | **Max Distance** | 아이템이 인식되는 범위를 설정합니다. | `5` |
-| **Display All Objects In Range** | 인식 범위 안에 있는 모든 설명을 출렧합니다.<br/>주의: 설명이 정상적으로 출력되지 않거나 가려질 수 있습니다. | `false` |
+| **Display All Objects In Range** | 인식 범위 안에 있는 모든 설명을 출력합니다.<br/>주의: 설명이 정상적으로 출력되지 않거나 가려질 수 있습니다. | `false` |
+| **Max Descriptions to Display** | 출력되는 최대 설명의 개수를 설정합니다. (일부 상황에만 적용) | `99` |
 | **RESET CONFIG TO DEFAULT** | 설명모드 설정을 초기화합니다. |  |
 
 ## 표시 설정
@@ -52,6 +53,8 @@ EID -> Display에서 표시할 설명의 유형을 설정할 수 있습니다.
 | **Dice Room Infos** | 현재 주사위방의 설명을 보여줍니다. | `true` |
 | **Crane Game Infos** | 크레인 게임에 있는 아이템의 설명을 보여줍니다. | `true` |
 | **Void Stat Increase Infos** | Void 및 Black Rune 아이템 사용 시 예상되는 스탯 증가량을 보여줍니다. | `false` |
+| **Sanguine Bond Infos** | Sanguine Bond 가시가 생성된 악마방 진입 시 해당 가시의 확률표를 보여줍니다. | `true` |
+| **Predict Sanguine Bond Result** | Sanguine Bond 가시가 생성된 악마방에서 다음 희생 시 예상 효과를 보여줍니다. | `false` |
 | **Spindown Dice** | Spindown Dice(스핀다운 다이스) 아이템의 결과 미리보기 목록에 출력되는 아이템의 갯수를 설정합니다.<br/>0으로 설정시 해당 기능이 비할성화됩니다.(리펜턴스 전용) | `3` |
 | **Display IDs** | Spindown Dice 결과 미리보기 목록에서 ID 번호를 보여줍니다.(리펜턴스 전용) | `false` |
 | **Display names** | Spindown Dice 결과 미리보기 목록에서 아이템 이름를 보여줍니다.(리펜턴스 전용) | `false` |
@@ -90,9 +93,10 @@ EID -> Visuals에서 표시할 설명의 스타일을 설정할 수 있습니다
 | **Display Item Icon** | 아이템의 아이콘을 보여줍니다. | `true` |
 | **Display Transformation Name** | 아이템이 속한 변신세트의 이름을 보여줍니다. | `true` |
 | **Display Transformation Icon** | 아이템이 속한 변신세트의 아이콘을 보여줍니다. | `true` |
+| **Display Transformation Progress** | 아이템이 속한 변신세트의 진행 상태을 보여줍니다. | `true` |
 | **Display Quality Info** | (리펜턴스 전용)아이템의 퀄리티를 보여줍니다. | `true` |
 | **Display Object ID** | 아이템의 ID를 보여줍니다(5.100.331) | `false` |
-| **Mod indicator displayed for** | 모드 아이템의 출신 모드를 보여줍니다. | `none` |
+| **Display Mod indicator** | 모드 아이템의 출신 모드를 보여줍니다. | `none` |
 
 ## 리마인더 설정
 
