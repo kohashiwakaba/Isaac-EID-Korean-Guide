@@ -33,7 +33,7 @@
 	EID:addTrinket(Enums.Trinkets.STARDUST, "적 처치 시 15%의 확률로 Book of Virtues의 불꽃을 소환합니다.#!!! {{Shop}}상점에 해당 장신구를 드랍할 경우 니켈로 바뀝니다.", "우주진", "ko_kr")--Golden Trinket modifier for EID is required : (15/30/45)% chance, Nickel/Dime/Dime
 	EID:addTrinket(Enums.Trinkets.METEORITE, "{{Collectible"..Enums.Collectibles.EXTINCTION_EVENT.."}} 눈물을 발사할 때마다 15%의 확률로 메테오를 랜덤한 위치에 떨어트립니다.#{{Burning}} 메테오가 땅에 충돌하면 폭발하며 공격력 x0~x2의 피해를 주며 화상을 입힙니다.#캐릭터는 메테오와 충돌 시 폭발의 피해를 받지 않습니다.", "운석", "ko_kr")--Golden Trinket modifier for EID is required : (15/30/45)% chance
 	EID:addTrinket(Enums.Trinkets.CRYING_PEBBLE, "Spode 변신세트 아이템 소지 시 개당 {{TearsSmall}}연사가 0.35 증가합니다.", "슬픈 조약돌", "ko_kr")-- Marked as 'items that counts towards spode transformations', as crying pebble does not use 'stars' tag / Golden Trinket modifier for EID is required : (0.35/0.7/1.05) tears up
-	EID:addTrinket(Enums.Trinkets.MOONSTONE, "{{Rune}} 상자를 열거나 색돌/기계류를 부술 때 10%의 확률로 룬/영혼석을 추가로 드랍합니다.#{{Planetarium}}천체관/{{AbPlanetarium}}버려진 천체관 최초 입장 시 {{Rune}}룬/영혼석을 반드시 드랍합니다.#{{Collectible"..Enums.Collectibles.BABY_PLUTO.."}} 특정 아이템과의 숨겨진 시너지가 있습니다.", "월석", "ko_kr")
+	EID:addTrinket(Enums.Trinkets.MOONSTONE, "{{Rune}} 상자를 열거나 색돌/기계류를 부술 때 10%의 확률로 룬/영혼석을 추가로 드랍합니다.#{{Planetarium}}천체관/{{AbPlanetarium}}버려진 천체관 최초 입장 시 {{Rune}}룬/영혼석을 반드시 드랍합니다.#{{Collectible"..Enums.Collectibles.BABY_PLUTO.."}} 특정 아이템과의 숨겨진 시너지가 있습니다.", "월석 조각", "ko_kr")
 	EID:addTrinket(Enums.Trinkets.SEXTANT, "맵에 {{Planetarium}}천체관의 위치가 표시됩니다.#새로운 방 진입 시 15%의 확률로 캐릭터가 있는 방에서 2칸 이내에 있는 스테이지 구조 및 특수방/{{SecretRoom}}비밀방/{{SuperSecretRoom}}일급비밀방 맵에 표시합니다.", "육분의", "ko_kr")
 	EID:addTrinket(Enums.Trinkets.ALIEN_TRANSMITTER, "적이 확률적으로 외계인에게 납치됩니다.", "외계 송신기", "ko_kr")
 	EID:addTrinket(Enums.Trinkets.POLARIS, "!!! 보스방의 보스 처치 후 악마방/천사방의 문이 등장하지 않았을 경우:#그 층의 {{BossRoom}}보스방 보상이 동전 거래가 필요한 {{AngelRoom}}천사방 아이템이나 체력 거래가 필요한 {{DevilRoom}}악마방 아이템으로 대체됩니다.#해당 거래는 악마 거래로 취급되지 않습니다.", "폴라리스", "ko_kr")
@@ -42,7 +42,7 @@
 	EID:addCard(Enums.Cards.THE_UNKNOWN, "랜덤 타로 카드의 효과를 발동합니다.#{{ErrorRoom}} 낮은 확률로 오류방으로 이동합니다.", "XXII - 알 수 없음", "ko_kr")
 	EID:addCard(Enums.Cards.BETELGEUSE, "{{Collectible483}} 그 방에서 Mama Mega의 폭발을 일으킵니다.", "베텔게우스", "ko_kr")
 	EID:addCard(Enums.Cards.SIRIUS, "액티브 아이템 충전량을 초과분까지 모두 충전합니다.#일반적인 충전이 불가능한 아이템도 강제로 충전할 수 있습니다.", "시리우스", "ko_kr")
-	EID:addCard(Enums.Cards.ALPHA_CENTAURI, "방 안의 아이템 및 픽업 아이템을 제거합니다.#제거한 픽업 아이템 당 50%의 확률로 Book of Virtues의 기본 불꽃을 소환합니다.#제거한 아이템 당 현재 방에 따라 특수 불꽃 5개씩 소환합니다.", "센타우루스자리 알파", "ko_kr")
+	EID:addCard(Enums.Cards.ALPHA_CENTAURI, "방 안의 아이템 및 픽업 아이템을 제거합니다.#제거한 픽업 아이템 당 50%의 확률로 Book of Virtues의 기본 불꽃을 소환합니다.#제거한 아이템 당 현재 방에 따라 특수 불꽃을 5개씩 소환합니다.", "센타우루스자리 알파", "ko_kr")
 	-- Golden Trinket modifiers. Korean data only, because English descriptions did not have exact effect, or chance
   EID:addGoldenTrinketMetadata(Enums.Trinkets.METEORITE, nil, {15}, 3, "ko_kr")
   EID:addGoldenTrinketMetadata(Enums.Trinkets.CRYING_PEBBLE, nil, {0.35}, 3, "ko_kr")
@@ -70,7 +70,7 @@
 
 
   --Plz ignore below
-  
+  --[[ 
   local function AndromedaCondition(descObj)
     if descObj.ObjType ~= 5 or descObj.ObjVariant ~= PickupVariant.PICKUP_COLLECTIBLE then
       return false
@@ -115,4 +115,4 @@
       EID:appendToDescription(descObj, iconStr.. andromedaShiftDesc .. "{{CR}}")
     end
     return descObj
-  end
+  end ]]
