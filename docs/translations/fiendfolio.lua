@@ -6,6 +6,164 @@
   Fiend Folio Official Wiki : https://fiendfolio.wiki.gg/wiki/Fiend_Folio_Wiki
 ]]
 
+if EID then
+end
+
+-- example datas
+FiendFolio.ExternalDescriptions = {
+  COLLECTIBLE = {
+    [FiendFolio.ITEM.COLLECTIBLE.PYROMANCY] = {
+      ID = FiendFolio.ITEM.COLLECTIBLE.PYROMANCY,
+      EID = {
+        -- Only en_us does not require quotes
+        -- Other languages require quotes if translators want to display item name as their languages for HUD.
+        ["en_us"] = {
+          Name = "Pyromancy",
+          Desc = "Orbital fireballs periodically spawn around the player, up to three#Double-tap the shoot button to shoot out a fireball, leaving a trail of flames and exploding on contact"
+        },
+        ["ko_kr"] = {
+          Name = "방화술사",
+          Desc = "주기적으로 캐릭터의 주변을 도는 Fiend의 파이어볼이 최대 3마리까지 생성됩니다.#공격키를 두번 누르면 파이어볼을 발사합니다.#발사한 파이어볼은 지나간 자리에 작은 불을 남기며 무언가에 부딪힐 시 폭발합니다.",
+          Quote = ""
+        }
+        Transformations = "12"
+      },
+      Encyclopedia = {
+        Pools = {  
+          Encyclopedia.ItemPools.POOL_DEVIL,
+          Encyclopedia.ItemPools.POOL_GREED_DEVIL,
+        },
+      }
+    }
+  },
+  CARDS = {
+    [FiendFolio.ITEM.CARD.CALLING_CARD] = {
+      ID = FiendFolio.ITEM.CARD.CALLING_CARD,
+      EID = {
+        ["en_us"] = {
+          Name = "Calling Card",
+          Desc = "Summons a friendly Psi Hunter."
+        },
+        ["ko_kr"] = {
+          Name = "방화술사",
+          Desc = "사용 시 아군 Psi Hunter를 소환합니다.",
+          Quote = ""
+        }
+        -- Cards/Runes for EID also require mimiccharge/isRune value for Blank Card/Clear Rune, and Bag of Crafting
+        -- Don't add mimiccharge/isRune if the card is object.
+        mimiccharge = 6, 
+        isRune = false, -- Setting isRune as true will make Clear rune display charges of the card. Blank Card charges will be shown otherwise.
+        -- EID automatically detects mimiccharge values for checking objects. Not adding metadatas for cards will make EID to detect the card as object.
+        -- Because of this, different variable name is required for Objects, which is for Pefectly Generic Object.
+        -- Pefectly Generic Object mimiccharge should be implemented manually See below.
+        objectmimic = 8, -- This is not required if the card is not object.
+      },
+    }
+  }
+  PILLS = {
+    [FiendFolio.ITEM.PILL.CYANIDE] = {
+      ID = FiendFolio.ITEM.PILL.CYANIDE,
+      EID = {
+        -- Unlike other entities, most pills don't use quotes
+        ["en_us"] = {
+          Name = "Cyanide",
+          Desc = "Gives a big stat boost#High chance of pills spawning on room clear#Kills the player after 60 seconds#Can be prevented by taking a pill"
+        },
+        ["ko_kr"] = {
+          Name = "나트륨",
+          Desc = "↑ 모든 능력치 증가#{{Pill}}방 클리어 시 알약이 등장할 확률이 대폭 증가합니다.#!!! {{Pill}}{{ColorRed}}다른 알약을 사용하지 않았을 경우 60초 후 캐릭터가 즉사합니다.",
+        }
+        -- Pills for EID also require mimiccharge, class value for Placebo, and False PHD.
+        -- Class is used by False PHD. "2-" for black heart, "3-" for +0.6 damage up. Don't set class values if the pill is not interacting with False PHD.
+        mimiccharge = 6,
+        class = "0"
+      },
+    }
+  }
+}
+if EID then
+  -- Adding descriptions
+  for id, collectibleDescTables in FiendFolio.ExternalDescriptions.COLLECTIBLE do
+    if collectibleDescTables.EID then
+      for language, entries in collectibleDescTables.EID do
+        EID:addCollectible(id, entries.Desc, entries.Name, language)
+      end
+      if collectibleDescTables.EID.Transformations then
+        EID:assignTransformation("collectible", id, collectibleDescTables.EID.Transformations)
+      end
+    end
+  end
+  for id, trinketDescTables in FiendFolio.ExternalDescriptions.TRINKET do
+    if trinketDescTables.EID then
+      for language, entries in trinketDescTables.EID do
+        EID:addTrinket(id, entries.Desc, entries.Name, language)
+        -- todo: add golden trinket metadatas
+      end
+      if trinketDescTables.EID.Transformations then
+        EID:assignTransformation("trinket", id, trinketDescTables.EID.Transformations)
+      end
+    end
+  end
+  for id, cardDescTables in FiendFolio.ExternalDescriptions.CARDS do
+    if cardDescTables.EID then
+      for language, entries in cardDescTables.EID do
+        EID:addCard(id, entries.Desc, entries.Name, language)
+      end
+      if cardDescTables.EID.mimiccharge or cardDescTables.EID.isRune then
+        EID:addCardMetadata(id, cardDescTables.EID.mimiccharge, cardDescTables.EID.isRune)
+      end
+    end
+  end
+  for id, pillDescTables in FiendFolio.ExternalDescriptions.PILLS do
+    if pillDescTables.EID then
+      for language, entries in pillDescTables.EID do
+        EID:addCard(id, entries.Desc, entries.Name, language)
+      end
+      if pillDescTables.EID.mimiccharge or pillDescTables.EID.class then
+        EID:addPillMetadata(id, pillDescTables.EID.mimiccharge, pillDescTables.EID.class)
+      end
+    end
+  end
+
+
+  -- Example for Perfect Generic Object
+  EID.descriptions["en_us"].PerfectlyGenericObjectCharge = "Perfectly Generic Object charge:"
+  EID.descriptions["ko_kr"].PerfectlyGenericObjectCharge = "Perfectly Generic Object 충전량:"
+  table.insert(EID.collectiblesToCheck, FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_1)
+  table.insert(EID.collectiblesToCheck, FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_2)
+  table.insert(EID.collectiblesToCheck, FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_3)
+  table.insert(EID.collectiblesToCheck, FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_4)
+  table.insert(EID.collectiblesToCheck, FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_5)
+  table.insert(EID.collectiblesToCheck, FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_6)
+  table.insert(EID.collectiblesToCheck, FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_8)
+  table.insert(EID.collectiblesToCheck, FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_12)
+  local function EIDPerfectObjectConditions(descObj)
+    if not (descObj.ObjType == 5 and descObj.ObjVariant == 300) or EID.cardMetadata[descObj.ObjSubType] then return false end
+    local numPlayers = game:GetNumPlayers()
+    for i = 0, numPlayers - 1 do
+      if Isaac.GetPlayer(i):HasCollectible(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_1) or (EID.absorbedItems[tostring(i)] and EID.absorbedItems[tostring(i)][tostring(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_1)]) then return true end
+      if Isaac.GetPlayer(i):HasCollectible(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_2) or (EID.absorbedItems[tostring(i)] and EID.absorbedItems[tostring(i)][tostring(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_2)]) then return true end
+      if Isaac.GetPlayer(i):HasCollectible(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_3) or (EID.absorbedItems[tostring(i)] and EID.absorbedItems[tostring(i)][tostring(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_3)]) then return true end
+      if Isaac.GetPlayer(i):HasCollectible(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_4) or (EID.absorbedItems[tostring(i)] and EID.absorbedItems[tostring(i)][tostring(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_4)]) then return true end
+      if Isaac.GetPlayer(i):HasCollectible(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_5) or (EID.absorbedItems[tostring(i)] and EID.absorbedItems[tostring(i)][tostring(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_5)]) then return true end
+      if Isaac.GetPlayer(i):HasCollectible(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_6) or (EID.absorbedItems[tostring(i)] and EID.absorbedItems[tostring(i)][tostring(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_6)]) then return true end
+      if Isaac.GetPlayer(i):HasCollectible(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_8) or (EID.absorbedItems[tostring(i)] and EID.absorbedItems[tostring(i)][tostring(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_8)]) then return true end
+      if Isaac.GetPlayer(i):HasCollectible(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_12) or (EID.absorbedItems[tostring(i)] and EID.absorbedItems[tostring(i)][tostring(FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_12)]) then return true end
+    end
+  end
+  
+  local function PerfectObjectCallback(descObj)
+    local text = EID:getDescriptionEntry("PerfectlyGenericObjectCharge") -- EID.descriptions["en_us"].PerfectlyGenericObjectCharge
+    local charge = FiendFolio.ExternalDescriptions.CARDS[descObj.ObjSubType].objectmimic -- Change this if referenced table is changed
+    if text ~= nil and charge ~= nil charge > 0 then
+      local iconStr = "#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.PERFECTLY_GENERIC_OBJECT_1.."}} {{ColorSilver}}"
+      EID:appendToDescription(descObj, iconStr..text.." {{"..charge.mimiccharge.."}}{{Battery}}")
+    end
+    return descObj
+  end
+  
+  EID:addDescriptionModifier("Perfectly Generic Object Charges", EIDPerfectObjectConditions, PerfectObjectCallback)
+end
 
 
 -- Additional datas for EID
@@ -92,38 +250,38 @@ EID:addCardMetadata(FiendFolio.ITEM.CARD.DOWNLOAD_FAILURE, 6, false)
 
 -- Birthright
 EID:addBirthright(FiendFolio.PLAYER.FIEND, "Fiend의 파이어볼이 적에게 유도되며;#발사 시 지나간 자리에 불길을 남기며;#폭파 시 적 처치 여부와 관계없이 33%의 확률로 Fiend의 부하를 추가로 소환합니다.", "", "ko_kr")
-EID:addBirthright(FiendFolio.PLAYER.BIEND, "Increases the chance of enemies dropping half black hearts when killed by the Malice charge attack.#Fiend's minions are randomly assigned hats upon spawning, each granting its wearer a differing amount of damage, tears, luck and tear size.", "Tainted Fiend", "ko_kr")
+EID:addBirthright(FiendFolio.PLAYER.BIEND, "{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.MALICE.."}}Malice로 적 처치 시 블랙하트를 드랍할 확률이 증가합니다.#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.MALICE.."}}Malice로 폼 전환 시마다 Fiend의 부하가 각각 랜덤 모자를 쓰며 모자에 따라 {{DamageSmall}}/{{TearsSmall}}/{{LuckSmall}}/{{TearSizeSmall}이 달라집니다.", "Tainted Fiend", "ko_kr")
 EID:addBirthright(Isaac.GetPlayerTypeByName("Golem"), "↑ {{LuckSmall}}행운 +2#색돌 파괴 시 소울하트 대신 석기 장신구를 드랍합니다.", "Golem", "ko_kr")
-EID:addBirthright(FiendFolio.PLAYER.SLIPPY, "Slippy now spawns lingering poison gas clouds when using the Golden Frog Head fart attack, in addition to the usual effects.", "Slippy", "ko_kr")
-EID:addBirthright(FiendFolio.PLAYER.CHINA, "카드/알약 슬롯에 {{Collectible"..FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE.."}}Horse Paste 아이템이 배정됩니다.#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE.."}} 사용 시 {{BrokenHeart}}소지 불가능 체력 -1", "China", "ko_kr")
+EID:addBirthright(FiendFolio.PLAYER.SLIPPY, "{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FROG_HEAD.."}}Golden Frog Head의 방귀의 크기에 따른 독가스를 추가로 남깁니다.", "Slippy", "ko_kr")
+EID:addBirthright(FiendFolio.PLAYER.CHINA, "카드/알약 슬롯에 {{Collectible"..FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE.."}}Horse Paste 아이템이 배정됩니다.#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE.."}} 사용 시 {{BrokenHeart}}부서진하트 -1", "China", "ko_kr")
 
 -- Cards/Objects/Runes
 EID:addCard(FiendFolio.ITEM.CARD.PLUS_3_FIREBALLS, "파이어볼 불꽃을 3마리 소환합니다.(최대 12)#공격키를 두번 누르면 불꽃을 소모하여 공격하는 방향으로 파이어볼을 발사합니다.", "파이어볼 +3", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.REVERSE_3_FIREBALLS, "Transform into a malice ball that bounces around the room.#Enemies killed have a chance to	 drop black hearts.", "파이어볼? +3", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.IMPLOSION, "Throws 3 fireballs that summon hollow minions on impact.#Hollow minions disappear on room clear.", "내부파열", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.CALLING_CARD, "Summons a friendly Psi Hunter.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.PLAGUE_OF_DECAY, "Grants 5 rotten hearts#Fills empty heart containers first, and then replaces existing hearts", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.GROTTO_BEAST, "Summons a charmed Fiend Folio beast.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.DEFUSE, "Transforms bomb rocks and troll bombs into bomb pickups.#Downgrades explosive enemies into their regular versions.", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.REVERSE_3_FIREBALLS, "{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.MALICE.."}} 캐릭터의 공격방향으로 벽에 여러번 부딪힐 때까지 돌진합니다.#돌진 상태에서 적 처치 시 낮은 확률로 {{BlackHeart}}블랙하트를 드랍합니다.", "파이어볼? +3", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.IMPLOSION, "사용 시 3방향으로 초록색 Fiend의 파이어볼 불꽃을 즉시 발사합니다.#파이어볼 폭파 시 Fiend의 부하를 소환합니다.#Fiend의 부하는 방 클리어 시 소멸합니다.", "내부파열", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.CALLING_CARD, "사용 시 아군 Psi Hunter 몬스터를 소환합니다.", "사신 호출 카드", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.PLAGUE_OF_DECAY, "사용 시 {{RottenHeart}}썩은하트 +5", "부패 역병", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.GROTTO_BEAST, "사용 시 Fiend Folio 출신의 아군 몬스터를 하나 소환합니다.", "어두운 곳의 짐승", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.DEFUSE, "사용 시 트롤폭탄 및 폭탄이 박힌 돌을 해체하여 폭탄 픽업으로 바꾸며;.#폭발성 몬스터를 일반형으로 바꿉니다.", "해체", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.POT_OF_GREED, "카드를 2장 드랍합니다.", "욕망의 항아리", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.DOWNLOAD_FAILURE, "Periodically cancels the AI of enemies/bosses in the room, with a chance for their AI to be replaced with that of Poople.", "다운로드 실패", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.SMALL_CONTRABAND, "Better hold onto this!#I heard a shady guy next floor is looking for it...", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.SKIP_CARD, "Clears the room of every grid, pick-up and enemy.#Rooms cleared using Skip Card do not contribute to active item charges nor drop reward pick-ups.#Can also skip boss rooms at the cost of no item pedestal dropping.#Can be used against final bosses to skip phases, excluding the final phase.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.CARDJITSU_SOCCER, "Summons a soccer ball that can be knocked around to damage enemies.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.CARDJITSU_FLOORING_UPGRADE, "Fills the floor of the room with a random creep type.", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.DOWNLOAD_FAILURE, "사용 시 그 방의 적은 일부 행동이 중단되거나;#Poople 몬스터의 행동을 합니다: 일정 확률로 미끄러지는 장판을 깔며 캐릭터와 대칭되는 위치로 이동합니다.", "다운로드 실패", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.SMALL_CONTRABAND, "!!! 소지하지 않은 상태에서는 특정 몬스터가 해당 카드를 훔칠 수 있습니다!#해당 카드를 검은 모자의 거지에게 배달 시 특수 배열의 아이템을 소환합니다.#!!! 사용 효과 없음", "작은 밀매품", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.SKIP_CARD, "사용 시 모든 오브젝트 및 엔티티(적/아이템 등)을 지웁니다.#스킵 카드로 방 클리어 시 액티브 아이템 게이지가 충전되지 않으며 방 클리어 보상이 소환되지 않습니다.#{{BossRoom}}보스방의 경우 아이템이 소환되지 않습니다.#최종 보스의 경우 해당 페이즈를 건너뛰지만 마지막 페이즈에서의 사용 시 면역입니다.", "스킵 카드", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.CARDJITSU_SOCCER, "사용 시 그 방에서 굴릴 수 있는 축구공을 소환합니다.#축구공은 접촉 시 적에게 속도에 비례한 피해를 줍니다.", "축구", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.CARDJITSU_FLOORING_UPGRADE, "사용 시 그 방 전체에 랜덤 장판을 깝니다.", "바닥 업그레이드", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.CARDJITSU_AC_3000, "{{Freezing}} 그 방에서 적 처치 시 해당 적을 얼립니다.", "", "ko_kr")
 
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_GRASS, "Inflicts all enemies in the room with poison.", "자연 속성 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_FIRE, "Inflicts all enemies in the room with burning.", "불 속성 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_WATER, "방 안의 적이 8방향으로 눈물을 쏘게 합니다.", "물 속성 에너지", "ko_kr")-- "Inflicts all enemies in the room with bloating."
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_LIGHTNING, "Causes all enemies in the room to periodically fire lasers.", "전기 속성 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_FIGHTING, "Inflicts all enemies in the room with berserk.#Berserked enemies periodically switch targets (including enemies), take bonus damage, move faster and cannot die during the duration.", "폭주 속성 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_PSYCHIC, "Inflicts all enemies in the room with confusion.", "초능력 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_COLORLESS, "Inflicts all enemies in the room with hemorrhaging.#Hemorrhaging enemies periodically take damage, spew blood tears randomly around themselves and leave blood creep on the ground that damages enemies.", "무속성 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_DARKNESS, "Inflicts all enemies in the room with fear.", "어둠 속성 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_METAL, "Inflicts all enemies in the room with bruising.#Bruised enemies take bonus damage from all sources of damage based on the number of stacks applied.", "강철 속성 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_FAIRY, "Inflicts all enemies in the room with charm.", "요정 속성 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_DRAGON, "Activates a random energy card effect.", "드래곤 속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_GRASS, "방 안의 모든 적을 4초간 {{Poison}}중독시킵니다.", "자연 속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_FIRE, "방 안의 모든 적에게 4초간 {{Burning}}화상을 입힙니다.", "불 속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_WATER, "방 안의 적이 4초간 8방향으로 파란 눈물을 여러번 쏩니다.#파란 눈물을 쏠 때마다 미세한 피해를 받습니다.", "물 속성 에너지", "ko_kr")-- "Inflicts all enemies in the room with bloating."
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_LIGHTNING, "방 안의 모든 적이 4초간 짧은 레이저를 발사하며 미세한 피해를 받습니다.", "전기 속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_FIGHTING, "방 안의 모든 적이 4초간 폭주 상태가 됩니다.#폭주 상태의 적은 공격 목표를 수시로 바꾸고 추가 피해를 받으나 더 빠르게 행동합니다.", "폭주 속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_PSYCHIC, "방 안의 모든 적이 4초간 {{Confusion}}혼란에 걸립니다.", "초능력 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_COLORLESS, "방 안의 모든 적이 4초간 {{Bleeding}}대출혈에 걸립니다.#대출혈 상태의 적은 주기적으로 피해를 받고 붉은 장판을 깔며 랜덤 방향으로 핏방울을 흩뿌립니다.", "무속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_DARKNESS, "방 안의 모든 적이 4초간 {{Fear}}공포에 걸립니다.", "어둠 속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_METAL, "방 안의 모든 적을 멍들게 합니다.#멍든 적은 해당 상태 중첩 수만큼 추가 피해를 받습니다.", "강철 속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_FAIRY, "방 안의 모든 적에게 4초간 {{Charm}}매혹을 겁니다.", "요정 속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_DRAGON, "사용 시 랜덤 에너지 계열 카드 효과를 발동합니다.", "드래곤 속성 에너지", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.TRAINER_CARD, "!!! 현재 미구현.#해당 카드 등장 시 Fiend Folio 제작진에게 문의해 주세요", "트레이너 카드", "ko_kr")
 
 EID:addCard(FiendFolio.ITEM.CARD.GLASS_D6, "{{Collectible105}} 사용 시 방 안의 모든 아이템을 다른 아이템으로 바꿉니다.", "유리 6면 조각", "ko_kr")
@@ -138,75 +296,82 @@ EID:addCard(FiendFolio.ITEM.CARD.GLASS_AZURITE_SPINDOWN, "{{Collectible" .. tost
 EID:addCard(FiendFolio.ITEM.CARD.GLASS_D2, "{{Collectible" .. tostring(FiendFolio.ITEM.COLLECTIBLE.D2) .. "}} 사용 시 주사위를 들며 공격방향으로 던집니다.#주사위에 닿은 적, 픽업 아이템, 눈물이 같은 유형의 다른 항목으로 바뀝니다.", "유리 2면 조각", "ko_kr")
 
 EID:addCard(FiendFolio.ITEM.CARD.GREEN_HOUSE, "그 방의 모든 적 및 픽업을 보관합니다.#보관된 적 및 픽업은 다음 방 진입 시 강제로 소환됩니다.", "녹색 모형집", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.BRICK_SEPERATOR, "{{Collectible631}} Activates the Meat Cleaver effect, splitting all enemies in the room into two smaller versions with 40% HP each.#Grants piercing tears for the room.", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.BRICK_SEPERATOR, "{{Collectible631}} 사용 시 방 안의 모든 적을 0.4배의 체력을 가진 적 2마리로 나누며;#그 방에서 공격이 적을 관통합니다.", "", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.PUZZLE_PIECE, "운세 퍼즐을 1/3만큼 기록합니다.#!!! 운세 퍼즐이 완성되면 해당 운세에 맞는 아이템을 소환합니다.", "퍼즐 조각", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.COOL_PHOTO, "Spawns 1-2 pennies.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.BLANK_LETTER_TILE, "The next button or key you press will grant a stat boost whenever it's held down, until the next floor.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.HORSE_PUSHPOP, "Heals 1 broken heart#Can only appear when playing as China", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.COOL_PHOTO, "{{Coin}}동전 1~2개를 소환합니다.", "멋진 사진", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.BLANK_LETTER_TILE, "사용 후 키 입력 시 그 스테이지에서 입력한 키를 키캡에 작성합니다.#작성된 키캡의 키를 누르고 있는 동안:#↑ {{DamageSmall}}공격력 +1#↑ {{TearsSmall}}연사 +1", "빈 키캡", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.HORSE_PUSHPOP, "!!! China 전용#사용 시 {{BrokenHeart}}부서진하트 -1", "말 푸시팝", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.TOP_HAT, "열린 상점 상자를 소환합니다.", "탑모자", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.GIFT_CARD, "Rerolls item pedestals into Mystery Gift", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.GIFT_CARD, "방 안의 모든 아이템을 {{Collectible515}}Mystery Gift로 바꿉니다.", "선물 카드", "ko_kr")
 
-EID:addCard(FiendFolio.ITEM.CARD.TREASURE_DISC, "1분간 3~5개의 {{TreasureRoom}}보물방 배열 패시브 아이템의 효과를 받습니다.", "보물의 디스크", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.SHOP_DISC, "1분간 3~5개의 {{Shop}}상점 배열 패시브 아이템의 효과를 받습니다.", "상점의 디스크", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.BOSS_DISC, "1분간 3~5개의 {{BossRoom}}보스방 배열 패시브 아이템의 효과를 받습니다.", "보스의 디스크", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.SECRET_DISC, "1분간 3~5개의 {{SecretRoom}}비밀방 배열 패시브 아이템의 효과를 받습니다.", "비밀의 디스크", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.DEVIL_DISC, "1분간 3~5개의 {{DevilRoom}}악마방 배열 패시브 아이템의 효과를 받습니다.", "악마의 디스크", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ANGEL_DISC, "1분간 3~5개의 {{AngelRoom}}천사방 배열 패시브 아이템의 효과를 받습니다.", "천사의 디스크", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.PLANETARIUM_DISC, "1분간 3~5개의 {{Planetarium}}천체관 배열 패시브 아이템의 효과를 받습니다.", "천체의 디스크", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.CHAOS_DISC, "1분간 3~5개의 {{Collectible402}}랜덤 배열 패시브 아이템의 효과를 받습니다.", "혼돈의 디스크", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.BROKEN_DISC, "1분간 3~5개의 {{Collectible347}}동일한 랜덤 패시브 아이템의 효과를 받습니다.", "망가진 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.TREASURE_DISC, "1분간 3~5개의 {{TreasureRoom}}보물방 배열 패시브 아이템의 효과를 받습니다.", "보믈방 체험판 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.SHOP_DISC, "1분간 3~5개의 {{Shop}}상점 배열 패시브 아이템의 효과를 받습니다.", "상점 체험판 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.BOSS_DISC, "1분간 3~5개의 {{BossRoom}}보스방 배열 패시브 아이템의 효과를 받습니다.", "보스방 체험판 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.SECRET_DISC, "1분간 3~5개의 {{SecretRoom}}비밀방 배열 패시브 아이템의 효과를 받습니다.", "비밀방 체험판 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.DEVIL_DISC, "1분간 3~5개의 {{DevilRoom}}악마방 배열 패시브 아이템의 효과를 받습니다.", "악마방 체험판 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ANGEL_DISC, "1분간 3~5개의 {{AngelRoom}}천사방 배열 패시브 아이템의 효과를 받습니다.", "천사방 체험판 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.PLANETARIUM_DISC, "1분간 3~5개의 {{Planetarium}}천체관 배열 패시브 아이템의 효과를 받습니다.", "천체관 체험판 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.CHAOS_DISC, "1분간 3~5개의 {{Collectible402}}랜덤 배열 패시브 아이템의 효과를 받습니다.", "혼돈의 체험판 디스크", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.BROKEN_DISC, "1분간 3~5개의 {{Collectible347}}동일한 랜덤 패시브 아이템의 효과를 받습니다.", "망가진 체험판 디스크", "ko_kr")
 
 
-EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_CLUBS, "Spawns 3 random bomb pickups.#All variants can spawn with equal chance.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_DIAMONDS, "Spawns 3 random coin pickups.#All variants can spawn with equal chance.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_SPADES, "Spawns 3 random key pickups.#All variants can spawn with equal chance.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_HEARTS, "Spawns 3 random heart pickups.#All variants can spawn with equal chance.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.JACK_OF_DIAMONDS, "Spawns 2-4 cursed pennies.#Converts all money in the room into cursed pennies.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.MISPRINTED_JACK_OF_CLUBS, "Spawns a golden troll bomb.#Converts all bombs in the room into troll bombs.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.JACK_OF_CLUBS, "Spawns 2-3 copper bombs.#Converts all bombs in the room into copper bombs.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.JACK_OF_SPADES, "Spawns 1-2 spicy keys.#Converts all keys in the room into spicy keys.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.JACK_OF_HEARTS, "Converts all of your soul/black hearts into immoral hearts.#!!! Spawns 1 immoral heart if you don't have any.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.KING_OF_CLUBS, "Spawns an unprimed Giga Bomb pickup.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.QUEEN_OF_DIAMONDS, "Converts all rocks/poops in the room into pennies.#!!! Pennies spawned this way disappear after some time.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.QUEEN_OF_CLUBS, "{{Collectible52}} Grants the effect of Dr. Fetus for the room, replacing the user's tears with bombs.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.QUEEN_OF_SPADES, "Spawns 1-10 keys.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.KING_OF_DIAMONDS, "Inflicts all enemies in the room with Midas freezing.#Converts some rocks in the room into Fool's Gold rocks.", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_CLUBS, "{{Bomb}} 랜덤 폭탄 픽업을 3개 소환합니다.#소환될 수 있는 폭탄의 종류는 각각 동일한 확률을 가집니다.", "클로버 3", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_DIAMONDS, "{{Coin}} 랜덤 동전 픽업을 3개 소환합니다.#소환될 수 있는 동전의 종류는 각각 동일한 확률을 가집니다.", "다이아 3", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_SPADES, "{{Key}} 랜덤 열쇠 픽업을 3개 소환합니다.#소환될 수 있는 열쇠의 종류는 각각 동일한 확률을 가집니다.", "스페이드 3", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_HEARTS, "{{Heart}} 랜덤 하트 픽업을 3개 소환합니다.#소환될 수 있는 하트의 종류는 각각 동일한 확률을 가집니다.", "하트 3", "ko_kr")
 
-EID:addCard(FiendFolio.ITEM.CARD.ACE_OF_WANDS, "Turns all pickups, chests and non-boss enemies in the room into batteries.#!!! Batteries spawned this way disappear after a short time.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.TWO_OF_WANDS, "Doubles the current charge of active items held by the user.#Adds one charge to active items that currently have no charge.#{{Collectible63}} Can be used to overcharge active items.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ACE_OF_PENTACLES, "Turns all pickups, chests and non-boss enemies in the room into trinkets.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.TWO_OF_PENTACLES, "Spawns copies of all trinkets currently held by the user.#Spawns a random trinket if no trinkets are currently held by the user.#!!! Does not spawn duplicates of gulped trinkets.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_PENTACLES, "Spawns 3 random trinkets, including Golem trinkets.#Trinkets spawned this way have a 50% chance of being golden.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.KING_OF_PENTACLES, "Converts all trinkets in the room and held by the user into golden trinkets.#!!! Has no effect on gulped trinkets.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ACE_OF_SWORDS, "Turns all pickups, chests and non-boss enemies in the room into blue flies, spiders and skuzz.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.TWO_OF_SWORDS, "Spawns a copy of all dip familiars and blue flies, spiders and skuzz in the room.#{{Collectible357}} Activates the Box of Friends effect, spawning a copy of all of the user's permanent familiars for the room.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_SWORDS, "Spawns 3 random blue flies, locusts, blue spiders, blue skuzz, fleas or dip familiars.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ACE_OF_CUPS, "Turns all pickups, chests and non-boss enemies in the room into pills.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_CUPS, "Spawns 3 random pills.#Pills spawned this way have a 50% chance of being horse pills.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.KING_OF_CUPS, "Converts all pills in the room and held by the user into horse pills.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.KING_OF_WANDS, "Upgrades batteries in the room to their next tier.", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.JACK_OF_DIAMONDS, "저주받은 동전 2~4개를 소환합니다.#그 방의 모든 동전 픽업을 저주받은 동전으로 바꿉니다.", "다이아 J", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.MISPRINTED_JACK_OF_CLUBS, "황금 트롤폭탄을 소환합니다.#그 방의 모든 폭탄 픽업을 트롤폭탄으로 바꿉니다.", "클로버 J?", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.JACK_OF_CLUBS, "구리폭탄 2~3개를 소환합니다.#그 방의 모든 폭탄 픽업을 구리폭탄으로 바꿉니다.", "클로버 J", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.JACK_OF_SPADES, "매운열쇠 2~3개를 소환합니다.#그 방의 모든 열쇠 픽업을 매운열쇠로 바꿉니다.", "스페이드 J", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.JACK_OF_HEARTS, "소지 중인 모든 소울하트/블랙하트를 이모럴하트로 바꿉니다.#소지 중인 {{SoulHeart}}/{{BlackHeart}}가 없을 경우 이모랄하트 하나를 드랍합니다.", "하트 J", "ko_kr")
 
-EID:addCard(FiendFolio.ITEM.CARD.MISPRINTED_JOKER, "Rerolls items in the room into items from the Devil or Angel item pools.#!!! Has a small chance to convert items in the room into holy or devilish-themed hearts/chests.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.THIRTEEN_OF_STARS, "{{Collectible721}} Spawns a glitched item, similar to those spawned by the TMTRAINER effect.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.REVERSE_KING_OF_CLUBS, "Causes a Giga Bomb explosion on top of the player.", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.KING_OF_CLUBS, "기가폭탄을 하나 소환합니다.#다음 폭탄 사용 시 기가폭탄이 설치되며 폭발한 자리에 구덩이가 생기고 적에게 300의 피해를 줍니다.", "클로버 K", "ko_kr")
+
+EID:addCard(FiendFolio.ITEM.CARD.QUEEN_OF_DIAMONDS, "방 안의 모든 돌덩이/똥 오브젝트를 동전으로 바꿉니다.#!!! 바뀐 동전은 잠시 후 사라집니다.", "다이아 Q", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.QUEEN_OF_CLUBS, "{{Collectible52}} 그 방에서 공격이 폭탄 발사 공격으로 변경됩니다.", "클로버 Q", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.QUEEN_OF_SPADES, "{{Key}}열쇠를 1~10개 소환합니다.", "스페이드 Q", "ko_kr")
+
+EID:addCard(FiendFolio.ITEM.CARD.KING_OF_DIAMONDS, "그 방의 적을 적을 멈추게 만들며 멈춘 적 처치시 {{Coin}}동전을 1~3개 드랍합니다.#일부 돌덩이 오브젝트를 금광으로 바꿉니다.", "다이아 K", "ko_kr")
+
+EID:addCard(FiendFolio.ITEM.CARD.ACE_OF_WANDS, "방 안의 모든 적과 픽업을 {{Battery}}배터리로 바꿉니다.#!!! 바뀐 배터리는 잠시 후 사라집니다.", "완드 A", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.TWO_OF_WANDS, "소지 중인 {{Battery}}액티브 아이템 충전량 x2.#충전량이 없을 시 충전량 1칸을 채워줍니다.#{{Collectible63}} 초과 충전이 가능합니다.", "완드 2", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.KING_OF_WANDS, "방 안의 {{Battery}}배터리 픽업을 강화시킵니다.", "완드 K", "ko_kr")
+
+EID:addCard(FiendFolio.ITEM.CARD.ACE_OF_PENTACLES, "방 안의 모든 적과 픽업을 장신구로 바꿉니다.", "펜타클 A", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.TWO_OF_PENTACLES, "소지 중인 장신구를 복제하여 소환합니다.#소지 중인 장신구가 없을 시 랜덤 장신구를 드랍합니다.#!!! 흡수한 장신구는 복제하지 않습니다.", "펜타클 2", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_PENTACLES, "랜덤 장신구(석기 장신구 포함)를 3개 소환합니다.#각 장신구는 50%의 확률로 황금 형태로 소환됩니다.", "펜타클 3", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.KING_OF_PENTACLES, "소지 중인 장신구를 황금 형태로 바꿉니다.#!!! 흡수한 장신구는 무효과", "펜타클 K", "ko_kr")
+
+EID:addCard(FiendFolio.ITEM.CARD.ACE_OF_SWORDS, "방 안의 모든 적과 픽업을 아군 자폭 파리/거미/벼룩으로 바꿉니다.", "소드 A", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.TWO_OF_SWORDS, "사용 시 방 안의 모든 아군 dip 및 자폭 파리/거미/벼룩을 복제하며;#{{Collectible357}} 그 방에서 소지중인 패밀리어를 복사합니다.#복사할 수 있는 패밀리어가 없다면 그 방에서 {{Collectible113}}Demon Baby 패밀리어를 소환합니다.", "소드 2", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_SWORDS, "사용 시 랜덤 색상의 아군 자폭 파리/거미/벼룩/flea/dip을 3마리 소환합니다.", "소드 3", "ko_kr")
+
+EID:addCard(FiendFolio.ITEM.CARD.ACE_OF_CUPS, "방 안의 모든 적과 픽업을 알약으로 바꿉니다.", "컵 A", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.THREE_OF_CUPS, "랜덤 알약을 3개 소환합니다.#각 알약은 50%의 확률로 거대 형태로 소환됩니다.", "컵 3", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.KING_OF_CUPS, "소지 중인 알약 및 방 안의 모든 알약을 거대 형태로 바꿉니다.", "컵 K", "ko_kr")
+
+EID:addCard(FiendFolio.ITEM.CARD.MISPRINTED_JOKER, "사용 시 방 안의 모든 아이템을 {{DevilRoom}}악마방/{{AngelRoom}}천사방 아이템으로 바꿉니다.#!!! 낮은 확률로 아이템이 아닌 성스러운/악한 테마의 하트/상자 픽업으로 바뀝니다.", "조커?", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.THIRTEEN_OF_STARS, "{{Collectible721}} 2~6개의 효과와 발동 조건이 혼합된 오류 아이템을 소환합니다.", "스타 13", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.REVERSE_KING_OF_CLUBS, "사용 시 사망하며 캐릭터의 자리에 기가폭탄의 폭발을 일으킵니다.", "클로버 K?", "ko_kr")
 
 EID:addCard(FiendFolio.ITEM.CARD.RUNE_ANSUS, "{{Collectible333}} (거짓)그 스테이지에서 맵에 특수방 위치, 비밀방 위치, 스테이지 구조가 표시됩니다.", "안수즈?", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.SOUL_OF_FIEND, "Spawns 5-8 hollow minions and 0-2 black heart minions.", "핀드의 영혼", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.SOUL_OF_FIEND, "사용 시 Fiend의 부하를 5~8마리(일반형)와 0~2마리(블랙형) 소환합니다.", "핀드의 영혼", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.SOUL_OF_GOLEM, "석기 장신구를 3개 드랍합니다.", "골렘의 영혼", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.SOUL_OF_RANDOM, "Activates a random soulstone effect.", "미지의 영혼석", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.SOUL_OF_RANDOM, "사용 시 랜덤 영혼석 효과를 발동합니다.", "미지의 영혼석", "ko_kr")
 
-EID:addCard(FiendFolio.ITEM.CARD.STORAGE_BATTERY_0, "Activate to store charge from your active item.#Activate again to recharge active item.#{{Collectible63}} Can be used to overcharge active items.#{{Card" .. tostring(Card.CORRODED_BATTERY_0) .. "}} Becomes corroded on floor start. After recharging active items, corroded batteries explode after a short delay.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.STORAGE_BATTERY_1, "Activate to store charge from your active item.#Activate again to recharge active item.#{{Collectible63}} Can be used to overcharge active items.#{{Card" .. tostring(Card.CORRODED_BATTERY_1) .. "}} Becomes corroded on floor start. After recharging active items, corroded batteries explode after a short delay.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.STORAGE_BATTERY_2, "Activate to store charge from your active item.#Activate again to recharge active item.#{{Collectible63}} Can be used to overcharge active items.#{{Card" .. tostring(Card.CORRODED_BATTERY_2) .. "}} Becomes corroded on floor start. After recharging active items, corroded batteries explode after a short delay.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.STORAGE_BATTERY_3, "Activate to store charge from your active item.#Activate again to recharge active item.#{{Collectible63}} Can be used to overcharge active items.#{{Card" .. tostring(Card.CORRODED_BATTERY_3) .. "}} Becomes corroded on floor start. After recharging active items, corroded batteries explode after a short delay.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.CORRODED_BATTERY_0, "Activate to store charge from your active item.#Activate again to recharge active item.#{{Collectible63}} Can be used to overcharge active items.#!!! After recharging active items, explodes after a short delay.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.CORRODED_BATTERY_1, "Activate to store charge from your active item.#Activate again to recharge active item.#{{Collectible63}} Can be used to overcharge active items.#!!! After recharging active items, explodes after a short delay.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.CORRODED_BATTERY_2, "Activate to store charge from your active item.#Activate again to recharge active item.#{{Collectible63}} Can be used to overcharge active items.#!!! After recharging active items, explodes after a short delay.", "", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.CORRODED_BATTERY_3, "Activate to store charge from your active item.#Activate again to recharge active item.#{{Collectible63}} Can be used to overcharge active items.#!!! After recharging active items, explodes after a short delay.", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.STORAGE_BATTERY_0, "사용 시 액티브 아이템의 충전량을 최대 3칸까지 저장합니다.#충전된 상태에서 재사용 시 충전량을 액티브 아이템으로 옮깁니다.#{{Collectible63}} 초과 충전이 가능합니다.#{{Card" .. tostring(Card.CORRODED_BATTERY_0) .. "}} 스테이지 진입 시 부식되며 부식된 상태에서 액티브 아이템 충전 시 잠시 후 충전한 위치에서 폭발합니다.", "보조 배터리", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.STORAGE_BATTERY_1, "사용 시 액티브 아이템의 충전량을 최대 3칸까지 저장합니다.#충전된 상태에서 재사용 시 충전량을 액티브 아이템으로 옮깁니다.#{{Collectible63}} 초과 충전이 가능합니다.#{{Card" .. tostring(Card.CORRODED_BATTERY_1) .. "}} 스테이지 진입 시 부식되며 부식된 상태에서 액티브 아이템 충전 시 잠시 후 충전한 위치에서 폭발합니다.", "보조 배터리", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.STORAGE_BATTERY_2, "사용 시 액티브 아이템의 충전량을 최대 3칸까지 저장합니다.#충전된 상태에서 재사용 시 충전량을 액티브 아이템으로 옮깁니다.#{{Collectible63}} 초과 충전이 가능합니다.#{{Card" .. tostring(Card.CORRODED_BATTERY_2) .. "}} 스테이지 진입 시 부식되며 부식된 상태에서 액티브 아이템 충전 시 잠시 후 충전한 위치에서 폭발합니다.", "보조 배터리", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.STORAGE_BATTERY_3, "사용 시 액티브 아이템의 충전량을 최대 3칸까지 저장합니다.#충전된 상태에서 재사용 시 충전량을 액티브 아이템으로 옮깁니다.#{{Collectible63}} 초과 충전이 가능합니다.#{{Card" .. tostring(Card.CORRODED_BATTERY_3) .. "}} 스테이지 진입 시 부식되며 부식된 상태에서 액티브 아이템 충전 시 잠시 후 충전한 위치에서 폭발합니다.", "보조 배터리", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.CORRODED_BATTERY_0, "사용 시 액티브 아이템의 충전량을 최대 3칸까지 저장합니다.#충전된 상태에서 재사용 시 충전량을 액티브 아이템으로 옮깁니다.#{{Collectible63}} 초과 충전이 가능합니다.#!!! 액티브 아이템 충전 시 잠시 후 충전한 위치에서 폭발합니다.", "부식된 배터리", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.CORRODED_BATTERY_1, "사용 시 액티브 아이템의 충전량을 최대 3칸까지 저장합니다.#충전된 상태에서 재사용 시 충전량을 액티브 아이템으로 옮깁니다.#{{Collectible63}} 초과 충전이 가능합니다.#!!! 액티브 아이템 충전 시 잠시 후 충전한 위치에서 폭발합니다.", "부식된 배터리", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.CORRODED_BATTERY_2, "사용 시 액티브 아이템의 충전량을 최대 3칸까지 저장합니다.#충전된 상태에서 재사용 시 충전량을 액티브 아이템으로 옮깁니다.#{{Collectible63}} 초과 충전이 가능합니다.#!!! 액티브 아이템 충전 시 잠시 후 충전한 위치에서 폭발합니다.", "부식된 배터리", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.CORRODED_BATTERY_3, "사용 시 액티브 아이템의 충전량을 최대 3칸까지 저장합니다.#충전된 상태에서 재사용 시 충전량을 액티브 아이템으로 옮깁니다.#{{Collectible63}} 초과 충전이 가능합니다.#!!! 액티브 아이템 충전 시 잠시 후 충전한 위치에서 폭발합니다.", "부식된 배터리", "ko_kr")
 
 -- Pills
 EID:addPill(FiendFolio.ITEM.PILL.CYANIDE, "↑ 모든 능력치 증가#{{Pill}}방 클리어 시 알약이 등장할 확률이 대폭 증가합니다.#!!! {{Pill}}{{ColorRed}}다른 알약을 사용하지 않았을 경우 60초 후 캐릭터가 즉사합니다.", "나트륨", "ko_kr")
-EID:addPill(FiendFolio.ITEM.PILL.MELATONIN, "Makes enemies drowsy", "멜라토닌", "ko_kr")
+EID:addPill(FiendFolio.ITEM.PILL.MELATONIN, "방 안의 적을 나른한 상태로 만듭니다.#나른한 적은 둔화되며 서서히 잠듭니다.#잠든 적을 맞추면 2배의 피해를 받으나 잠듦/나른한 상태가 해제됩니다.", "멜라토닌", "ko_kr")
 EID:addPill(FiendFolio.ITEM.PILL.HOLY_SHIT, "신성한 똥을 쌉니다.", "이런 젠장", "ko_kr")
 EID:addPill(FiendFolio.ITEM.PILL.HAEMORRHOIDS, "빨간 똥을 쌉니다.", "치질", "ko_kr")
 EID:addPill(FiendFolio.ITEM.PILL.FISH_OIL, "↑ 눈물크기 증가", "생선 기름", "ko_kr")
@@ -260,7 +425,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.CLEAR_CASE, "The next active item
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MODERN_OUROBOROS, "공격이 무언가에 부딪힐 때 기름 장판이 생기며 #캐릭터/불이 기름 장판에 닿으면 불이 붙습니다.#캐릭터는 이 불에 피해를 받지 않습니다.", "현대 우로보로스", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BLACK_LANTERN, "↑ {{BlackHeart}}블랙하트 +1#{{CurseCursedSmall}} 항상 저주에 걸리며 기존의 저주가 아닌 새로운 형태의 저주가 걸립니다.", "검은 랜턴", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.CRUCIFIX, "Enemies killed by tears will leave behind a short-lived ghost with an aura#Standing in the aura grants tears up, damage up and homing", "", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEDTIME_STORY, "Inflicts all enemies with drowsy#Drowsy enemies will slow down and eventually fall asleep#Damaging a sleeping enemy deals double damage but wakes them up", "", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEDTIME_STORY, "Inflicts all enemies with drowsy#나른한 적은 둔화되며 서서히 잠듭니다.#잠든 적을 맞추면 2배의 피해를 받으나 잠듦/나른한 상태가 해제됩니다.", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.PINHEAD, "확률적으로({{LuckSmall}}) 적을 귀속시키는 재봉틀 눈물을 발사합니다.#귀속된 적이 피해를 받을 시 다른 귀속된 적이 같이 피해를 받습니다.", "묶인 단추", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.PRANK_COOKIE, "공격할 때마다 확률적으로 랜덤한 상태이상 효과 공격이 나갑니다.#(hemorrhaging, bruising, drowsing, sewing, critting, etc.)", "장난꾸러기 쿠키", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DEVILS_HARVEST, "↑ 목숨 +1#사망 시 Fiend 캐릭터로 부활합니다.", "악마의 수확", "ko_kr")
@@ -277,7 +442,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.FIDDLE_CUBE, "Grants an increasin
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.AVGM, "여러 번 사용 시 동전을 하나 드랍합니다.#동전을 드랍할 때마다 다음 동전 드랍에 필요한 사용 횟수가 증가합니다.", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DEIMOS, "Familiar that fires hooks that latch onto and pull in enemies/pickups#Remains stationary while pulling in enemies/pickups#Inflicts enemies with bruising while hooked#On releasing enemies, inflicts them with hemorrhaging and fires blood tears in the direction they were released", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.PET_ROCK, "Pet rock familiar that can be pushed around and blocks shots#Fills pits when pushed into them", "", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.CONTRABAND, "Better hold onto this!#I heard a shady guy next floor is looking for it...", "", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.CONTRABAND, "!!! 소지하지 않은 상태에서는 특정 몬스터가 해당 아이템을 훔칠 수 있습니다!#해당 카드를 검은 모자의 거지에게 배달 시 특수 배열의 아이템을 소환합니다.", "밀매품", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.ETERNAL_D12, "Switches between two modes#With two charges, has a high chance to reroll grids and a low chance to wipe away grids#With one charge, has a low chance to reroll grids and a high chance to wipe away grids", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.ETERNAL_D12_ALT, "Switches between two modes#With two charges, has a high chance to reroll grids and a low chance to wipe away grids#With one charge, has a low chance to reroll grids and a high chance to wipe away grids", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GLIZZY, "↑ {{HalfHeart}}절반 채워진 최대 체력 +1#↑ {{SpeedSmall}}이동속도 +0.1#↑ {{TearsSmall}}연사 +0.1#↑ {{DamageSmall}}공격력 +0.1#↑ {{RangeSmall}}사거리 +0.1#↑ {{ShotspeedSmall}}탄속 +0.1#↑ {{LuckSmall}}행운 +0.1", "글리지 소시지", "ko_kr")
@@ -310,7 +475,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.SPINDLE, "획득 시 디스크를
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.AZURITE_SPINDOWN, "On use, rerolls all trinkets in the room by decreasing their internal ID number by one.", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.KING_WORM, "On use, grants the effect of a random worm trinket for the current room#5 second cooldown", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.HEART_OF_CHINA, "체력이 없거나 꽉 찬 상태에서 빨간하트 습득 시 특수 체력 게이지가 채워집니다.#특수 체력 게이지 완충 시 {{EmptyHeart}}빈 최대 체력 +1 증가#특수 체력 게이지의 총량은 현재 소지 중인 최대 체력에 비례하며;#{{ButtonRT}}버튼을 꾹 누르거나 빨간하트 근처에 있을 때 캐릭터 위에 표시됩니다.", "차이나의 심장", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE, "!!! China 전용#사용 시 {{BrokenHeart}}소지 불가능 체력 -1", "", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE, "!!! China 전용#사용 시 {{BrokenHeart}}부서진하트 -1", "말 접착제", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DADS_DIP, "↑ {{Heart}}병든 최대 체력 +1", "아빠의 디핑소스", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.YICK_HEART, "사용 시 병든하트 +1", "조용한 하트", "ko_kr")
 
