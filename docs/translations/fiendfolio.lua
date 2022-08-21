@@ -296,7 +296,7 @@ EID:addCard(FiendFolio.ITEM.CARD.GLASS_AZURITE_SPINDOWN, "{{Collectible" .. tost
 EID:addCard(FiendFolio.ITEM.CARD.GLASS_D2, "{{Collectible" .. tostring(FiendFolio.ITEM.COLLECTIBLE.D2) .. "}} 사용 시 주사위를 들며 공격방향으로 던집니다.#주사위에 닿은 적, 픽업 아이템, 눈물이 같은 유형의 다른 항목으로 바뀝니다.", "유리 2면 조각", "ko_kr")
 
 EID:addCard(FiendFolio.ITEM.CARD.GREEN_HOUSE, "그 방의 모든 적 및 픽업을 보관합니다.#보관된 적 및 픽업은 다음 방 진입 시 강제로 소환됩니다.", "녹색 모형집", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.BRICK_SEPERATOR, "{{Collectible631}} 사용 시 방 안의 모든 적을 0.4배의 체력을 가진 적 2마리로 나누며;#그 방에서 공격이 적을 관통합니다.", "", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.BRICK_SEPERATOR, "{{Collectible631}} 사용 시 방 안의 모든 적을 0.4배의 체력을 가진 적 2마리로 나누며;#그 방에서 공격이 적을 관통합니다.", "브릭분해기", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.PUZZLE_PIECE, "운세 퍼즐을 1/3만큼 기록합니다.#!!! 운세 퍼즐이 완성되면 해당 운세에 맞는 아이템을 소환합니다.", "퍼즐 조각", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.COOL_PHOTO, "{{Coin}}동전 1~2개를 소환합니다.", "멋진 사진", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.BLANK_LETTER_TILE, "사용 후 키 입력 시 그 스테이지에서 입력한 키를 키캡에 작성합니다.#작성된 키캡의 키를 누르고 있는 동안:#↑ {{DamageSmall}}공격력 +1#↑ {{TearsSmall}}연사 +1", "빈 키캡", "ko_kr")
