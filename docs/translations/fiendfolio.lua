@@ -91,7 +91,7 @@ EID:addCardMetadata(FiendFolio.ITEM.CARD.DOWNLOAD_FAILURE, 6, false)
 -- constants_items.lua
 
 -- Birthright
-EID:addBirthright(FiendFolio.PLAYER.FIEND, "Fiend의 파이어볼이 적에게 유도되며;#발사 시 지나간 자리에 불길을 남기며;#폭파 시 적 처치 여부와 관계없이 Fiend의 부하를 추가로 소환합니다.", "", "ko_kr")
+EID:addBirthright(FiendFolio.PLAYER.FIEND, "Fiend의 파이어볼이 적에게 유도되며;#발사 시 지나간 자리에 불길을 남기며;#폭파 시 적 처치 여부와 관계없이 33%의 확률로 Fiend의 부하를 추가로 소환합니다.", "", "ko_kr")
 EID:addBirthright(FiendFolio.PLAYER.BIEND, "Increases the chance of enemies dropping half black hearts when killed by the Malice charge attack.#Fiend's minions are randomly assigned hats upon spawning, each granting its wearer a differing amount of damage, tears, luck and tear size.", "Tainted Fiend", "ko_kr")
 EID:addBirthright(Isaac.GetPlayerTypeByName("Golem"), "↑ {{LuckSmall}}행운 +2#색돌 파괴 시 소울하트 대신 석기 장신구를 드랍합니다.", "Golem", "ko_kr")
 EID:addBirthright(FiendFolio.PLAYER.SLIPPY, "Slippy now spawns lingering poison gas clouds when using the Golden Frog Head fart attack, in addition to the usual effects.", "Slippy", "ko_kr")
@@ -218,14 +218,14 @@ EID:addPill(FiendFolio.ITEM.PILL.SPIDER_UNBOXING, "아군 거미를 여러 마�
 
 -- Collectibles
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.PYROMANCY, "주기적으로 캐릭터의 주변을 도는 Fiend의 파이어볼이 최대 3마리까지 생성됩니다.#공격키를 두번 누르면 파이어볼을 발사합니다.#발사한 파이어볼은 지나간 자리에 작은 불을 남기며 무언가에 부딪힐 시 폭발합니다.", "방화술사", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.FIEND_FOLIO, "Summons a Fiend Folio helper to assist you in the room!", "", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.FIEND_FOLIO, "사용 시 그 방에서 Fiend Folio 출신 아군 보스를 소환합니다.#소환된 아군 보스는 일부 패턴 사용 후 떠납니다.", "", "ko_kr")
 
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.D2, "사용 시 주사위를 들며 공격방향으로 던집니다.#주사위에 닿은 적, 픽업 아이템, 눈물이 같은 유형의 다른 항목으로 바뀝니다.", "2면 주사위", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.STORE_WHISTLE, "Spawns a shop chest nearby", "", "ko_kr")
 
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DICE_BAG, "방 8개({{Collectible247}}:3개) 클리어 시 유리 주사위 조각을 드랍합니다.#유리 주사위 조각은 각 주사위를 일회성으로 사용할 수 있습니다.#Glass D4 및 Glass D100 사용 시 Dice Bag도 보존됩니다.", "주사위 가방", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.LIL_FIEND, "대각선으로 이동하며 적 및 탄환과 접촉 시 일정 확률로 Fiend의 부하를 소환합니다.#Lil Fiend로 소환된 Fiend의 부하는 방 클리어 시 사라지며 블랙하트를 드랍하지 않습니다.#{{Collectible247}}BFFs 소지 시 접촉 판정 크기 및 부하 소환 확률 증가", "리틀 핀드", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BABY_CRATER, "Whilst you are shooting, Baby Crater creates a circle of tears similar to the enemy Craterface#Tears are released when you stop firing#With BFFs your Baby Crater can support a larger ring#Baby Crater can drop from polyps in the womb", "", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BABY_CRATER, "공격하는 동안 크레이터 주변을 도는 눈물을 최대 8개까지 모으며;#공격키를 떼면 모은 눈물을 발사합니다.#Womb 스테이지의 핏덩이 오브젝트 파괴 시 낮은 확률로 소환됩니다.", "크레이터 아기", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MAMA_SPOOTER, "적을 추적하며 주기적으로 적을 향해 눈물을 발사합니다.", "미스 스푸터", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.RANDY_THE_SNAIL, "방 안을 느리게 돌아다니며 캐릭터 및 캐릭터의 눈물과 접촉 시 껍질에 숨으면서 굴러갑니다.#굴러가는 도중 캐릭터/눈물 및 적과 계속 접촉하여 연속적으로 굴릴 수 있습니다.#{{Collectible247}}BFFs 소지 시 접촉 판정 크기 및 피해량 증가", "달팽이 랜디", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.CORN_KERNEL, "LVL1: Wavy orbital#LVL2: Orbital that shoots weak explosions#LVL3: Familiar that teleports and chases enemies#LVL4: Familiar that teleports and shoots explosive corn", "", "ko_kr")
@@ -243,7 +243,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.NUGGET_BOMBS, "Bombs spawn a Poot
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DEVILS_UMBRELLA, "Sometimes fire a flurry of weak tears that spawn yellow creep#Frequency scales with Luck", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEE_SKIN, "Every tear fired triggers 3 weaker tears spread evenly around the player#Each time this effect triggers, the angle of all tears is incremented clockwise", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.ALPHA_COIN, "25% chance to spawn a coin#25% to spawn a card/pill#A variety of effects based on the current room and exploration", "", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DADS_WALLET, "Shop items can be purchased even if unaffordable#Debt gives a multiplicative damage down#Drops a credit card on pickup", "", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DADS_WALLET, "획득 시 {{Card43}}Credit Card를 드랍합니다.#소지 중인 동전이 부족해도 상점 아이템을 구매할 수 있습니다.#부족한 금액 당 {{DamageDown}}공격력이 감소합니다.", "아빠의 지갑", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.FROG_HEAD, "사용 버튼을 누르고 있는 동안 캐릭터를 멈추게 합니다.#멈춘 시간에 비례하여 적을 밀어내는 방귀를 뀝니다.", "황금 개구리 머리", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEGINNERS_LUCK, "↑ +5 luck up#↓ -0.5 luck per how many floors down you are#At minimum will grant +1 luck", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DICHROMATIC_BUTTERFLY, "피격 판정 크기가 줄어들며 피격 판정의 범위가 표시됩니다.#탄환을 가까스로 피할 시 그 방에서 {{DamageSmall}}공격력 +0.2(최대 +3)#일정 확률로 공격력 x1.25의 강한 유도 공격이 나갑니다.", "색이 다른 나비", "ko_kr")
@@ -359,7 +359,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.TELEBOMBS, "+5 bombs#A target fol
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DEVILS_DAGGER, "공격방향으로 단검을 추가로 발사합니다.#적 처치 시 단검을 강화시킬 수 있는 보석을 드랍합니다.", "악마의 단검", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.STRANGE_RED_OBJECT, "↑ +1 red heart#↑ +0.3 damage#↑ +0.05 speed#↑ +2 luck", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.D3, "캐릭터 주위를 돌며 통과한 눈물을 다른 눈물로 바꿉니다.", "3면 주사위", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.EMOJI_GLASSES, "Fire emoji tears that each have a unique effect#Cycles through 3 different emojis at a time", "", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.EMOJI_GLASSES, "3개의 이모지 모양의 눈물을 번갈아 발사합니다.#이모지에 따라 다른 눈물 효과가 적용됩니다.", "이모지 안경", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.SACK_OF_SPICY, "Sack familiar that spawns spicy keys", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DEVILS_ABACUS, "Count with your tears for an increasing damage and tears up#Counting counts as firing X amount of tears and stopping", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DAZZLING_SLOT, "Pay 5 cents to turn an enemy into a one use Golden Slot Machine", "", "ko_kr")
@@ -405,14 +405,14 @@ EID:addTrinket(TrinketType.TRINKET_CHILI_POWDER, "Key pickups are turned into sp
 EID:addTrinket(TrinketType.TRINKET_GMO_PENNY, "Chance to take a random pill when picking up a coin.#Scales with luck.", "", "ko_kr")
 EID:addTrinket(TrinketType.TRINKET_MOLTEN_PENNY, "Chance to smelt your current trinket when picking up a coin.#Scales with luck.", "", "ko_kr")
 
-EID:addTrinket(TrinketType.TRINKET_BLOODY_SANDPAPER, "Isaac no longer has movement momentum.", "", "ko_kr")
-EID:addTrinket(TrinketType.TRINKET_RIGHT_HAND, "Chests have a 1/3 chance of becoming eternal chests.", "", "ko_kr")
-EID:addTrinket(TrinketType.TRINKET_RED_RIBBON, "Half eternal hearts become full eternal hearts", "", "ko_kr")
+EID:addTrinket(TrinketType.TRINKET_BLOODY_SANDPAPER, "캐릭터의 이동 관성을 제거하여 이동키를 떼면 즉시 멈춥니다.", "피 묻은 사포", "ko_kr")
+EID:addTrinket(TrinketType.TRINKET_RIGHT_HAND, "{{EternalChest}} 상자가 33%의 확률로 이터널 상자로 교체됩니다.", "오른손목", "ko_kr")
+EID:addTrinket(TrinketType.TRINKET_RED_RIBBON, "{{EternalHeart}} 이터널하트 반칸 픽업을 한칸 픽업으로 바꿉니다.#{{Heart}} 한칸짜리 이터널하트 획득 즉시 최대 체력 +1", "빨간 리본", "ko_kr")
 
-EID:addTrinket(TrinketType.TRINKET_FLEA_MELTDOWN, "Creates an orange skuzz when entering a new room.#This skuzz will ignite enemies.", "", "ko_kr")
-EID:addTrinket(TrinketType.TRINKET_FLEA_DELUGE, "Creates a cyan skuzz when entering a new room.#This skuzz will leave damaging creep.", "", "ko_kr")
-EID:addTrinket(TrinketType.TRINKET_FLEA_POLLUTION, "Creates a purple skuzz when entering a new room.#This skuzz will slow enemies.", "", "ko_kr")
-EID:addTrinket(TrinketType.TRINKET_FLEA_PROPAGANDA, "Creates a beige skuzz when entering a new room.#This skuzz will charm enemies.", "", "ko_kr")
+EID:addTrinket(TrinketType.TRINKET_FLEA_MELTDOWN, "방 입장 시 적 적에게 {{Burning}}화상을 입히는 주황색 아군 거미를 소환합니다.", "붕괴의 벼룩", "ko_kr")
+EID:addTrinket(TrinketType.TRINKET_FLEA_DELUGE, "방 입장 시 적과 접촉 시 8방향으로 눈물을 흩뿌리는 푸른색 아군 거미를 소환합니다.", "홍수의 벼룩", "ko_kr")
+EID:addTrinket(TrinketType.TRINKET_FLEA_POLLUTION, "방 입장 시 적을 {{Slow}}느려지게 하는 보라색 아군 거미를 소환합니다.", "오염의 벼룩", "ko_kr")
+EID:addTrinket(TrinketType.TRINKET_FLEA_PROPAGANDA, "방 입장 시 적을 {{Charm}}매혹시키는 보라색 아군 거미를 소환합니다.", "선전의 벼룩", "ko_kr")
 
 EID:addTrinket(TrinketType.TRINKET_FUZZY_PENNY, "Creates a blue skuzz when picking up a penny.", "", "ko_kr")
 EID:addTrinket(TrinketType.TRINKET_CHUNK_OF_TAR, "방 진입 시 아군 blot을 1~3마리 소환합니다.", "타르 덩이", "ko_kr")
@@ -652,3 +652,15 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.GEODE_FOSSIL, "↑ +8 range#↑ +5 extra ran
 
 -- Golden Trinket Metadata for Golem
 EID:addGoldenTrinketMetadata(FiendFolio.ITEM.ROCK.BRICK_ROCK, nil, {15}, 3, "ko_kr")
+
+
+
+
+-- Descriptions missing:
+--[[ 
+FiendFolio.ITEM.TRINKET.MASSIVE_AMETHYST -- Massive Amethyst
+
+
+
+ ]]
+
