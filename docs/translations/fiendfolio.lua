@@ -277,7 +277,7 @@ EID:addCard(FiendFolio.ITEM.CARD.ENERGY_WATER, "방 안의 적이 4초간 8방�
 EID:addCard(FiendFolio.ITEM.CARD.ENERGY_LIGHTNING, "방 안의 모든 적이 4초간 짧은 레이저를 발사하며 미세한 피해를 받습니다.", "전기 속성 에너지", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.ENERGY_FIGHTING, "방 안의 모든 적이 4초간 폭주 상태가 됩니다.#폭주 상태의 적은 공격 목표를 수시로 바꾸고 추가 피해를 받으나 더 빠르게 행동합니다.", "폭주 속성 에너지", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.ENERGY_PSYCHIC, "방 안의 모든 적이 4초간 {{Confusion}}혼란에 걸립니다.", "초능력 에너지", "ko_kr")
-EID:addCard(FiendFolio.ITEM.CARD.ENERGY_COLORLESS, "방 안의 모든 적이 4초간 {{Bleeding}}대출혈에 걸립니다.#대출혈 상태의 적은 주기적으로 피해를 받고 붉은 장판을 깔며 랜덤 방향으로 핏방울을 흩뿌립니다.", "무속성 에너지", "ko_kr")
+EID:addCard(FiendFolio.ITEM.CARD.ENERGY_COLORLESS, "방 안의 모든 적이 4초간 {{BleedingOut}}대출혈에 걸립니다.#대출혈 상태의 적은 주기적으로 피해를 받고 붉은 장판을 깔며 랜덤 방향으로 핏방울을 흩뿌립니다.", "무속성 에너지", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.ENERGY_DARKNESS, "방 안의 모든 적이 4초간 {{Fear}}공포에 걸립니다.", "어둠 속성 에너지", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.ENERGY_METAL, "방 안의 모든 적을 멍들게 합니다.#멍든 적은 해당 상태 중첩 수만큼 추가 피해를 받습니다.", "강철 속성 에너지", "ko_kr")
 EID:addCard(FiendFolio.ITEM.CARD.ENERGY_FAIRY, "방 안의 모든 적에게 4초간 {{Charm}}매혹을 겁니다.", "요정 속성 에너지", "ko_kr")
