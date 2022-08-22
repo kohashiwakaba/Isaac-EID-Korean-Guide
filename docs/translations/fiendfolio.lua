@@ -432,7 +432,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.PEACH_CREEP, "벽을 따라 움�
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GMO_CORN, "↑ {{Heart}}최대 체력 +1#↑ {{DamageSmall}}공격력 +1#{{Pill}} 획득 시 강제로 랜덤 알약을 7개({{Collectible252}}:10개) 사용합니다.", "유전자 변형 옥수수", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.COOL_SUNGLASSES, "↑ {{Coin}}동전 +6#{{SpeedSmall}} 동전과 가까울수록 이동속도가 빨라집니다.#{{Coin}} 동전 획득 시 방 전체에게 피해를 줍니다.#!!! 방 진입 시 소지 중인 동전 3개를 강제로 랜덤 위치에 뿌립니다.", "멋진 선글라스", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN, "적 처치 시 5%의 확률로 Fiend의 부하를 소환합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 14 이상일 때 20% 확률#소지한 {{FFImmoralHeartTint}}{{SoulHeart}}이모럴하트에 비례하여 소환 확률이 추가로 증가합니다.#Fiend의 부하는 방 클리어 시 소멸합니다.", "핀드의 뿔", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.RISKS_REWARD, "사용 시 방 안의 아이템을 등급이 더 높은 아이템으로 바꿉니다.#!!! 특수한 이공간에서 Hermit 처치 시에만 충전됩니다.", "위험에 따른 보상", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.RISKS_REWARD, "!!!#스테이지 당 1회만 사용 가능:#사용 시 방 안의 아이템을 특수한 이공간으로 빨아들이며 더 높은 등급의 아이템으로 바꿉니다.#검은 포탈을 통해 특수한 이공간으로 이동할 수 있으며 이공간에서 Hermit 처치 시 바뀐 아이템을 획득할 수 있습니다.", "위험에 따른 보상", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.SPARE_RIBS, "↑ {{BoneHeart}}뼈하트 +1#피격 시 일정 확률로 뼛조각 여러개를 발사합니다.#뼛조각은 발사 후 캐릭터에게 되돌아오며 적 및 탄환을 막아줍니다.", "여분의 뼛조각", "ko_kr")
 
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BACON_GREASE, "↑ {{EmptyHeart}}빈 최대 체력 +1#↓ {{Heart}}빨간하트 -1#↑ {{ShotspeedSmall}}탄속 +0.15", "베이컨 지방", "ko_kr")
