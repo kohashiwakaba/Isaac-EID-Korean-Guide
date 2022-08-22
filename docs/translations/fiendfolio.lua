@@ -432,7 +432,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.PEACH_CREEP, "벽을 따라 움�
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GMO_CORN, "↑ {{Heart}}최대 체력 +1#↑ {{DamageSmall}}공격력 +1#{{Pill}} 획득 시 강제로 랜덤 알약을 7개({{Collectible252}}:10개) 사용합니다.", "유전자 변형 옥수수", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.COOL_SUNGLASSES, "↑ {{Coin}}동전 +6#{{SpeedSmall}} 동전과 가까울수록 이동속도가 빨라집니다.#{{Coin}} 동전 획득 시 방 전체에게 피해를 줍니다.#!!! 방 진입 시 소지 중인 동전 3개를 강제로 랜덤 위치에 뿌립니다.", "멋진 선글라스", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN, "적 처치 시 5%의 확률로 Fiend의 부하를 소환합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 14 이상일 때 20% 확률#소지한 {{FFImmoralHeartTint}}{{SoulHeart}}이모럴하트에 비례하여 소환 확률이 추가로 증가합니다.#Fiend의 부하는 방 클리어 시 소멸합니다.", "핀드의 뿔", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.RISKS_REWARD, "!!!#스테이지 당 1회만 사용 가능:#사용 시 방 안의 아이템을 특수한 이공간으로 빨아들이며 더 높은 등급의 아이템으로 바꿉니다.#검은 포탈을 통해 특수한 이공간으로 이동할 수 있으며 이공간에서 Hermit 처치 시 바뀐 아이템을 획득할 수 있습니다.", "위험에 따른 보상", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.RISKS_REWARD, "!!! 스테이지 당 1회만 사용 가능:#사용 시 방 안의 아이템을 특수한 이공간으로 빨아들이며 더 높은 등급의 아이템으로 바꿉니다.#검은 포탈을 통해 특수한 이공간으로 이동할 수 있으며 이공간에서 Hermit 처치 시 바뀐 아이템을 획득할 수 있습니다.", "위험에 따른 보상", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.SPARE_RIBS, "↑ {{BoneHeart}}뼈하트 +1#피격 시 일정 확률로 뼛조각 여러개를 발사합니다.#뼛조각은 발사 후 캐릭터에게 되돌아오며 적 및 탄환을 막아줍니다.", "여분의 뼛조각", "ko_kr")
 
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BACON_GREASE, "↑ {{EmptyHeart}}빈 최대 체력 +1#↓ {{Heart}}빨간하트 -1#↑ {{ShotspeedSmall}}탄속 +0.15", "베이컨 지방", "ko_kr")
@@ -440,7 +440,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.NUGGET_BOMBS, "↑ {{Bomb}}폭탄
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DEVILS_UMBRELLA, "때때로 적에게 피해를 주는 노란 장판을 까는 작은 눈물을 여러 개 흩뿌립니다.#{{LuckSmall}}행운이 높을수록 노란 눈물의 주기가 짧아집니다.", "악마의 우산", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEE_SKIN, "눈물을 발사할 때마다 3방향으로 공격력 x0.3의 눈물을 발사합니다.#3방향 눈물은 시계방향으로 서서히 돌아가면서 발사됩니다.", "꿀벌의 몸통", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.ALPHA_COIN, "사용 시 각각 발동:#25% 의 확률로 {{Coin}}동전을 드랍합니다.#25%의 확률로 {{Card}}카드/{{Pill}}알약을 드랍합니다.#현재 방 및 스테이지 진행 상태에 따라 다른 효과를 발동합니다.", "알파 코인", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DADS_WALLET, "획득 시 {{Card43}}Credit Card를 드랍합니다.#소지 중인 동전이 부족해도 상점 아이템을 구매할 수 있습니다.#부족한 금액 당 {{DamageDown}}공격력이 감소합니다.", "아빠의 지갑", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DADS_WALLET, "획득 시 {{Card43}}Credit Card를 드랍합니다.#소지 중인 동전이 부족해도 상점 아이템을 구매할 수 있습니다.#부족한 금액 당 {{DamageSmall}}공격력이 감소합니다.", "아빠의 지갑", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.FROG_HEAD, "사용 버튼을 누르고 있는 동안 캐릭터를 멈추게 합니다.#멈춘 시간에 비례하여 적을 밀어내는 방귀를 뀝니다.", "황금 개구리 머리", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEGINNERS_LUCK, "↑ {{LuckSmall}}행운 +5#↓ -0.5 스테이지 진행 당 {{LuckSmall}}행운 -0.5(최소 1)", "초심자의 행운", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DICHROMATIC_BUTTERFLY, "피격 판정 크기가 줄어들며 피격 판정의 범위가 표시됩니다.#탄환을 가까스로 피할 시 그 방에서 {{DamageSmall}}공격력 +0.2(최대 +3)#일정 확률로 공격력 x1.25의 강한 유도 공격이 나갑니다.", "색이 다른 나비", "ko_kr")
@@ -511,7 +511,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE, "!!! China 전용#�
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DADS_DIP, "↑ {{Heart}}병든 최대 체력 +1", "아빠의 디핑소스", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.YICK_HEART, "사용 시 {{FFMorbidHeartTint}}{{RottenHeart}}병든하트 +1", "조용한 하트", "ko_kr")
 
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.LIL_LAMB, "{{Chargeable}} 공격키를 1초 이상 누르면 충전되며 공격키를 떼면 {{Collectible149}}공격력 25의 폭발성 구토제를 발사합니다.#캐릭터가 이 폭발로 피해를 받을 시 몸통과 머리가 분리되며 적을 향해 자동으로 공격합니다.", "리틀 램", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.LIL_LAMB, "{{Chargeable}} 공격키를 1초 이상 누르면 충전되며 공격키를 떼면 {{Collectible149}}공격력 25의 폭발성 구토제를 발사합니다.#캐릭터가 이 폭발로 피해를 받을 시 몸통과 머리가 분리되며 분리된 몸통 근처의 적을 향해 자동으로 공격합니다.", "리틀 램", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GRAPPLING_HOOK, "사용 시 공격방향으로 후크를 던지며 공격키를 떼면 후크의 위치로 이동합니다.#구덩이와 장애물을 넘어갈 수 있으며 후크에서 떼도 장애물 위에 착지할 수 있습니다.#!!! 후크 해제 시 구덩이에 떨어지면 체력 반칸의 피해를 받습니다.", "그래플링 후크", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.CETUS, "피격 시 2초간 푸른 장판을 까는 눈물을 흩뿌립니다.", "고래자리", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MALICE, "사용 시 캐릭터의 공격방향으로 벽에 부딪힐 때까지 돌진합니다.#돌진 상태에서 적 처치 시 낮은 확률로 {{BlackHeart}}블랙하트를 드랍합니다.", "악의", "ko_kr")
