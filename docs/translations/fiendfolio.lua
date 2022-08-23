@@ -828,37 +828,68 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.REFUND_FOSSIL, "다른 화석 분해 시 {{T
 EID:addTrinket(FiendFolio.ITEM.ROCK.LEFT_FOSSIL, "{{Trinket61}} 모든 상자가 {{RedChest}}빨간상자로 교체됩니다.#분해 시 {{RedChest}}빨간상자를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "왼손목 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.THANK_YOU_FOSSIL, "거지가 2배로 보답합니다.#분해 시 Judgement 카드를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "감사의 화석", "ko_kr")
 
-EID:addTrinket(FiendFolio.ITEM.ROCK.CURVED_GEODE, "↑ +1 damage#↑ +0.5 extra damage if holding another Geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.HAUNTED_GEODE, "Chance for spectral+piercing tears, scales with luck#Increased chance if holding another Geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.HEALTH_GEODE, "When the player drops to 1 red heart or less, heals red hearts and breaks#+1 soul heart if holding another Geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.LITTLE_GEODE, "Size down#Extra size down if holding another Geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.QUICK_GEODE, "↑ Boosts speed to 1.75 in cleared rooms#+0.10 speed up if holding another Geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.WEBBY_GEODE, "(20 + 2x Luck) % chance to fire a slowing tear#Slowing tears leave large puddles of white creep if they hit an enemy you're holding another Geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.LUCKY_GEODE, "↑ +3 Luck#↑ Bonus +2 Luck if holding another Geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.PHLEGMY_GEODE, "(10 + Luck) % chance to fire a booger tear#Booger tears gain slowing if holding another geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.LOB_GEODE, "↑ +6 range#↑ +3 extra range if holding another Geode#Tears are now shot in an arc#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.SODALITE_GEODE, "Luck-affected chance to shoot crit tears that deal quintuple damage#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.PLACEBEODE, "Permanent geode bonus when smelted#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.WARM_GEODE, "↑ Damage and Shotspeed up when near a fire#If holding another Geode, tears also inflict burn when standing near a fire#Warm floors give a passive stat buff.!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.CHAIN_GEODE, "Broken Rocks have a 40% chance to break nearby rocks#Nearby rocks have a 70% chance to break, along with a 20% chance for pits to fill#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.RUSTY_GEODE, "↑ +6 Damage that decays over time#If holding another Geode, decays at a slower rate#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.FRAGMENTED_ONYX_GEODE, "10% chance to inflict fear.#If holding another Geode, increases to 15% chance and feared enemies take extra damage equal to the Devil Deal chance.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.QUANTUM_GEODE, "Fire in a triple shot.#Once a tear hits an enemy, the rest vanish.#If holding another geode, the tears vanish once two land.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.TECHNOLOGICAL_GEODE, "Fire a short ranged technology 2 beam that deals 30% damage.#If holding another geode, fire 2 parallel beams instead.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.RUBBER_GEODE, "Chance to fire bouncing tennis balls that inflict bruise and deal knockback.#If holding another geode, higher chance to fire as well as more knockback and shot speed.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.CALZONE_GEODE, "Chance to fire a chubber shot that inflicts Baited and boomerangs back.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.TOUGH_GEODE, "Chance to not destroy a rock upon crushing.#With another held geode, increases chances.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.TIPSY_GEODE, "Grants a damage up and the player's movement slowly shifts about randomly.#With another geode, increases damage and movement.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.VINYL_GEODE_A, "Increases damage and shotspeed.#Flips to the B Side on the first floor of the chapter which increases tears and speed.#With another geode, grants a minor tears and speed up.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.VINYL_GEODE_B, "Increases tears and speed.#Flips to the A Side on second floor of the chapter which increases damage and shotspeed.#With another geode, grants a minor damage and shotspeed up.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.PRISMATIC_GEODE, "Chance for enemies to drop Prism Shards on death that boost a random stat for 10 seconds.#Chance to drop an extra shard on room clear.#Shard duration is increased by 5 seconds and doubled in potency if holding another geode.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.FRACTAL_GEODE, "Chance to fire a spiralling shot that inflicts Drowsy.#With another held geode, higher odds and shot has a chance to immediately inflict sleep.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.GMO_GEODE, "Taking a pill will also take a second random pill.#Also take an additional positive pill if holding two geodes.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.SWALLOWED_GEODE, "Spawn a penny when damaged.#When holding another geode, gain a chance to spawn a doubled penny.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.CURVED_GEODE, "↑ {{DamageSmall}}공격력 +1#↑ 다른 정동석 소지 시 {{DamageSmall}}추가 공격력 +0.5#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "굽은 정동", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.HAUNTED_GEODE, "확률적으로({{LuckSmall}}) 적과 장애물을 관통하는 눈물을 발사합니다.#다른 정동석 소지 시 확률 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.HEALTH_GEODE, "전체 체력이 빨간하트 1칸 이하일 때 {{Heart}}체력을 전부 회복합니다.#!!! 최대 체력이 1칸일 경우 빨간하트 반칸일 때 발동#다른 정동석 소지 시 {{SoulHeart}}소울하트를 추가로 획득합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.LITTLE_GEODE, "캐릭터의 크기가 작아집니다.#다른 정동석 소지 시 추가로 작아집니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.QUICK_GEODE, "↑ 클리어한 방에서 {{SpeedSmall}}이동속도가 최소 1.75 이상으로 고정됩니다.#다른 정동석 소지 시 {{SpeedSmall}}고정 이동속도 +0.1#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.WEBBY_GEODE, "확률적으로(20% + 2x{{LuckSmall}}%p) {{Slow}}적을 둔화시키는 눈물을 발사합니다.#다른 정동석 소지 시 둔화 눈물로 적을 맞추면 적을 느리게 하는 흰색 장판을 생성합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.LUCKY_GEODE, "↑ {{LuckSmall}}행운 +3#↑ 다른 정동석 소지 시 {{LuckSmall}}추가 행운 +2#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.PHLEGMY_GEODE, "확률적으로(10% + {{LuckSmall}}%p) 접착 눈물이 나가며 접착 눈물이 적에게 붙을 시 10초동안 지속 피해를 입힙니다.#다른 정동석 소지 시 접촉 눈물이 {{Slow}}적을 둔화시킵니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.LOB_GEODE, "↑ {{RangeSmall}}사거리 +6#↑ 다른 정동석 소지 시 {{RangeSmall}}추가 사거리 +3#눈물을 곡선형으로 발사합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.SODALITE_GEODE, "확률적으로({{LuckSmall}}) 공격력 x5의 피해를 주는 치명타 눈물을 발사합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.PLACEBEODE, "무효과#흡수 시 추가 정동석 소지 효과를 받습니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.WARM_GEODE, "캐릭터가 불 주변에 있는 동안 {{DamageSmall}}공격력/{{ShotspeedSmall}}탄속 증가#다른 정동석 소지 시 캐릭터가 불 주변에 있는 동안 {{Burning}}적에게 화상을 입히는 눈물을 발사합니다.#따뜻한 스테이지에서는 위 효과가 항상 발동합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.CHAIN_GEODE, "장애물 파괴 시 40%의 확률로 인접한 장애물을 파괴합니다.#다른 정동석 소지 시 확률이 70%로 증가하며 추가로 20%의 확률로 인접한 구덩이를 메웁니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.RUSTY_GEODE, "↑ {{DamageSmall}}서서히 감소하는 공격력 +8#다른 정동석 소지 시 공격력 감소 속도가 느려집니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.FRAGMENTED_ONYX_GEODE, "10%의 확률로 적을 {{Fear}}도망가게 하는 공격이 나갑니다.#다른 정동석 소지 시 확률이 15%로 증가하며 {{Fear}}공포 상태의 적에게 현재 악마방 확률에 비례한 추가 피해를 줍니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.QUANTUM_GEODE, "눈물이 3갈래로 나가며 하나를 명중시키면 나머지는 사라집니다.#다른 정동석 소지 시 두개를 명중시키면 나머지는 사라집니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.TECHNOLOGICAL_GEODE, "공격방향으로 캐릭터의 공격력 x0.3의 매우 짧은 레이저를 발사합니다.#다른 정동석 소지 시 레이저를 2개 동시에 발사합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.RUBBER_GEODE, "확률적으로 튕겨져 나가며 적을 멍들게 하고 강하게 밀쳐내는 테니스공을 발사합니다.#다른 정동석 소지 시 테니스공 발사 확률 및 밀쳐내는 강도와 탄속이 추가로 증가합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.CALZONE_GEODE, "확률적으로(5% + 5x{{LuckSmall}}%p) {{Bait}}적에게 표식을 걸며 캐릭터에게 다시 돌아오는 처비를 발사합니다.#다른 정동석 소지 시 확률 +10%p#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.TOUGH_GEODE, "분해 시 확률적으로 장신구가 소모되지 않고 보존됩니다.#다른 정동석 소지 시 보존 확률 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.TIPSY_GEODE, "↑ {{DamageSmall}}공격력 배율 x2#움직임이 불안정해집니다.#다른 정동석 소지 시 {{DamageSmall}}공격력 배율 x3.5, 이동 불안정성 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.VINYL_GEODE_A, "↑ {{DamageSmall}}공격력 +1#↑ {{ShotspeedSmall}}탄속 +0.24#짝수 스테이지 진입 시 뒷면으로 뒤집습니다.({{SpeedSmall}}/{{TearsSmall}} 증가)#다른 정동석 소지 시:#↑ {{SpeedSmall}}이동속도 +0.07#↑ {{TearsSmall}}눈물 딜레이 -0.6#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.VINYL_GEODE_B, "↑ {{SpeedSmall}}이동속도 +0.2#↑ {{TearsSmall}}눈물 딜레이 -1.8#홀수 스테이지 진입 시 앞면으로 뒤집습니다.({{DamageSmall}}/{{ShotspeedSmall}} 증가)#다른 정동석 소지 시:#↑ {{DamageSmall}}공격력 +0.3#↑ {{ShotspeedSmall}}탄속 +0.08#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.PRISMATIC_GEODE, "적 처치 시 확률적으로 랜덤 능력치를 10초동안 증가시켜주는 프리즘 조각을 드랍합니다.#방 클리어 시 확률적으로 프리즘 조각을 추가로 드랍합니다.#다른 정동석 소지 시 증가량 및 지속시간 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.FRACTAL_GEODE, "확률적으로 적을 나른하게 만드는 눈물을 회오리 모양으로 발사합니다.#다른 정동석 소지 시 확률적으로 나른한 적을 즉시 잠들게 합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.GMO_GEODE, "다른 정동석 소지 시 랜덤 효과의 알약을 강제로 사용합니다.#다른 정동석 소지 시 긍정적 효과의 랜덤 알약을 추가로 사용합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.SWALLOWED_GEODE, "피격 시 {{Coin}}동전을 하나 드랍합니다.#다른 정동석 소지 시 확률적으로 1+1 동전을 드랍합니다..#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "", "ko_kr")
 
-EID:addTrinket(FiendFolio.ITEM.ROCK.GEODE_FOSSIL, "↑ +8 range#↑ +5 extra range if holding another Geode#Gives a common or rare Geode trinket when crushed#Gives an additional common or rare Geode trinket when crushed, if holding another Geode#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}}+{{ColorRed}}화석{{CR}} 타입", "", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.GEODE_FOSSIL, "↑ {{RangeSmall}}사거리 +8#↑ 다른 정동석 소지 시 {{RangeSmall}}추가 사거리 +6#분해 시 랜덤 정동석을 드랍합니다.#다른 정동석 소지 시 랜덤 정동석을 추가로 드랍합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}}+{{ColorRed}}화석{{CR}} 타입", "", "ko_kr")
+
+local diceTable = {
+  [880] = {"12", "12번", "{{Collectible386}} 스테이지 안의 모든 장애물 변경"}
+}
+EID:updateDescriptionsViaTable(diceTable, EID.descriptions["ko_kr"].dice)
 
 -- Golden Trinket Metadata for Golem
 EID:addGoldenTrinketMetadata(FiendFolio.ITEM.ROCK.BRICK_ROCK, nil, {15}, 3, "ko_kr")
+
+local function FF_EIDKR_RockCondition(descObj)
+  if EID:getLanguage() ~= "ko_kr" then return false end
+  if not (descObj.ObjType == EntityType.ENTITY_PICKUP and descObj.ObjVariant == PickupVariant.PICKUP_TRINKET) then return false end
+  return FiendFolio.IsRockTrinket(descObj.ObjSubType) and descObj.ObjSubType ~= FiendFolio.ITEM.ROCK.PLACEBEODE
+end
+local function FF_EIDKR_RockCallback(descObj)
+  local isFossil = FiendFolio.IsFossil(descObj.ObjSubType)
+  local isGeode = FiendFolio.IsGeode(descObj.ObjSubType)
+  local appendDesc = "#!!! 석기 장신구 : "
+
+  if isFossil and isGeode then
+    appendDesc = appendDesc .. "{ColorTeal}}정동석{{CR}}+{{ColorRed}}화석{{CR}} 타입"
+  elseif isFossil then
+    appendDesc = appendDesc .. "{{ColorRed}}화석{{CR}} 타입"
+  elseif isGeode then
+    appendDesc = appendDesc .. "{{ColorTeal}}정동석{{CR}} 타입"
+  elseif descObj.ObjSubType ~= FiendFolio.ITEM.ROCK.PLACEBEODE then
+    appendDesc = appendDesc .. "일반 타입"
+  end
+
+  EID:appendToDescription(descObj, desc)
+  return descObj
+end
+EID:addDescriptionModifier("FF_EIDKR_GolemTrinkets", FF_EIDKR_RockCondition, FF_EIDKR_RockCallback)
+
 
 
