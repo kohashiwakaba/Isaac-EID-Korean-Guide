@@ -859,7 +859,8 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.SWALLOWED_GEODE, "피격 시 {{Coin}}동전�
 EID:addTrinket(FiendFolio.ITEM.ROCK.GEODE_FOSSIL, "↑ {{RangeSmall}}사거리 +8#↑ 다른 정동석 소지 시 {{RangeSmall}}추가 사거리 +6#분해 시 랜덤 정동석을 드랍합니다.#다른 정동석 소지 시 랜덤 정동석을 추가로 드랍합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}}+{{ColorRed}}화석{{CR}} 타입", "", "ko_kr")
 
 local diceTable = {
-  [880] = {"12", "12번", "{{Collectible386}} 스테이지 안의 모든 장애물 변경"}
+  [881] = {"881", "12번", "{{Collectible386}} 스테이지 안의 모든 장애물 변경"}
+  [882] = {"882", "12번", "{{Collectible386}} 스테이지 안의 모든 장애물 변경"},
 }
 EID:updateDescriptionsViaTable(diceTable, EID.descriptions["ko_kr"].dice)
 
