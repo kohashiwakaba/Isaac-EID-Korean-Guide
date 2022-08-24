@@ -588,9 +588,9 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MOMS_STOCKINGS, "↑ {{RangeSmall
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GOLDEN_POPSICLE, "↑ {{SoulHeart}}소울하트 +1#↑ {{LuckSmall}}행운 +2#황금 픽업 아이템 하나를 드랍합니다.", "황금 아이스크림", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.TIME_ITSELF, "확률적으로 적에게 다중 유클리드를 거는 공격이 나갑니다.#공격이 다중 유클리드 상태의 적을 통과할 수 있으며 2개로 복제되어 나갑니다.", "시간 그 자체", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.EMPTY_BOOK, "사용 시 이야기를 작성합니다.#작성한 이야기에 따라 쿨타임 및 효과가 달라집니다.", "빈 공책", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2, "", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4, "", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6, "", "나의 이야기", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.HOST_ON_TOAST, "↑ {{DamageSmall}}공격력 +0.5#↑ {{RangeSmall}}사거리 +0.38", "호스트 발린 토스트", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BAG_OF_BOBBIES, "방 클리어 시 일정 확률로 {{Collectible8}}Fragile Bobby를 소환합니다.#{{Collectible8}} Fragile bobby는 Brother Bobby와 동일하나 5회 피격 시 사라집니다.", "보비 가방", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BOX_TOP, "↑ {{LuckSmall}}행운 +2#{{Card"..FiendFolio.ITEM.CARD.PUZZLE_PIECE.."}}퍼즐 조각을 드랍합니다.", "박스 탑", "ko_kr")
@@ -937,18 +937,21 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
   local effects
   local multiplier
   local existingEffects = FiendFolio.savedata.run.emptybookeffects
-  local appendDesc = ""
+  local appendDesc = "!!! 사용 시:"
+  local shouldAppend = true
   if existingEffects then
     if existingEffects and existingEffects[checkNames[descObj.ObjSubType]] then
       effects = existingEffects[checkNames[descObj.ObjSubType]]
       multiplier = Isaac.GetItemConfig():GetCollectible(descObj.ObjSubType).MaxCharges
       multiplier = multiplier and multiplier / 2
     else
+      shouldAppend = false
+      appendDesc = "!!! 랜덤 효과를 2번 발동합니다."
       effects = {"wild", "wild"}
       multiplier = 2
     end
 
-    if effects and multiplier then
+    if effects and multiplier and shouldAppend then
       for _, effect in ipairs(effects) do
         while effect == "wild" do
           appendDesc = appendDesc .. "#랜덤 효과를 발동합니다."
@@ -974,7 +977,7 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
             [2] = "20 + (3 * 현재 스테이지)",
             [3] = "30 + (4 * 현재 스테이지)"
           }
-          appendDesc = appendDesc .. "#{{Fear}} " .. rangeStr .. "적에게 " .. dmgStrings[multiplier] .. "만큼의 피해를 줍니다."
+          appendDesc = appendDesc .. "#" .. rangeStr .. "적에게 " .. dmgStrings[multiplier] .. "만큼의 피해를 줍니다."
         elseif effect == "profitable" then
           local coinStrings = {
             [1] = "페니 2개를 드랍합니다.",
@@ -983,7 +986,7 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
           }
           appendDesc = appendDesc .. "#{{Coin}} " .. coinStrings[multiplier]
         elseif effect == "religious" then
-          appendDesc = appendDesc .. "#{{Collectible584}} Book of Virtues의 불꽃을 " ..tostring(multiplier) .. "개 소환합니다."
+          appendDesc = appendDesc .. "#{{Collectible584}} Book of Virtues의 불꽃을 " ..tostring(math.ceil(multiplier)) .. "개 소환합니다."
         elseif effect == "love" then
           local heartStrings = {
             [1] = "#{{HalfHeart}} 빨간하트 반칸을 드랍합니다.",
@@ -1001,17 +1004,17 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
           appendDesc = appendDesc .. "#{{Collectible294}} " .. funnyStrings[multiplier] .. "방귀를 뀝니다."
 
         elseif effect == "mischievous" then
-          appendDesc = appendDesc .. "#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN.."}} Fiend의 부하를 " ..tostring(multiplier) .. "마리 소환합니다."
+          appendDesc = appendDesc .. "#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN.."}} Fiend의 부하를 " ..tostring(math.ceil(multiplier)) .. "마리 소환합니다."
         elseif effect == "festering" then
-          appendDesc = appendDesc .. "#파란 아군 자폭 벼룩을" .. tostring(multiplier * 2) .. "마리 소환합니다."
+          appendDesc = appendDesc .. "#파란 아군 자폭 벼룩을 " .. tostring(math.ceil(multiplier * 2)) .. "마리 소환합니다."
         end
       end
     end
-    EID:appendToDescription(descObj, appendDesc)
+    descObj.Description = appendDesc .. descObj.Description
+    --EID:appendToDescription(descObj, appendDesc)
   end
   return descObj
 end
-
 
 EID:addDescriptionModifier("FF_EIDKR_GolemMachines", FF_EIDKR_RockSlotCondition, FF_EIDKR_RockSlotCallback)
 EID:addDescriptionModifier("FF_EIDKR_EmptyBook", FF_EIDKR_EmptyBookCondition, FF_EIDKR_EmptyBookCallback)
