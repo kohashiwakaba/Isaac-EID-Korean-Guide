@@ -921,7 +921,97 @@ local function FF_EIDKR_RockSlotCallback(descObj)
 
   return descObj
 end
+
+local FF_EIDKR_EmptyBookCondition(descObj)
+  if EID:getLanguage() ~= "ko_kr" then return false end
+  if not FiendFolio.savedata.run.emptybookeffects then return false end
+  if not (descObj.ObjType == EntityType.ENTITY_PICKUP and descObj.ObjVariant == EntityVariant.PICKUP_COLLECTIBLE) then return false end
+  return (descObj.ObjSubType == FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2 or descObj.ObjSubType == FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4 or descObj.ObjSubType == FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6)
+end
+local checkNames = {
+  [FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2] = "short story",
+  [FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4] = "average story",
+  [FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6] = "long story",
+}
+local FF_EIDKR_EmptyBookCallback(descObj)
+  local effects
+  local multiplier
+  local existingEffects = FiendFolio.savedata.run.emptybookeffects
+  if existingEffects then
+    if existingEffects and existingEffects[checkNames[descObj.ObjSubType]] then
+      effects = existingEffects[checkNames[descObj.ObjSubType]]
+      multiplier = Isaac.GetItemConfig():GetCollectible(descObj.ObjSubType).MaxCharges
+      multiplier = multiplier and multiplier / 2
+    else
+      effects = {"wild", "wild"}
+      multiplier = 2
+    end
+
+    if effects and multiplier then
+      for _, effect in ipairs(effects) do
+        while effect == "wild" do
+          appendDesc = appendDesc .. "#랜덤 효과를 발동합니다."
+        end
+        if effect == "sad" then
+          appendDesc = appendDesc .. "#그 방에서 {{TearsSmall}}연사 +" .. (0.25 * multiplier)
+        elseif effect == "frightning" then
+          local rangeStr = multiplier == 1 and "주변의 " or "그 방의 "
+          local durations = {
+            [1] = "7", [2] = "5", [3] = "8"
+          }
+          appendDesc = appendDesc .. "#{{Fear}} " .. rangeStr .. "적에게 " .. durations[multiplier] .. "초동안 공포를 겁니다."
+        elseif effect == "shocking" then
+          local rangeStr = multiplier == 1 and "주변의 " or "그 방의 "
+          local durations = {
+            [1] = 7, [2] = 5, [3] = 8
+          }
+          appendDesc = appendDesc .. "#{{FFBruise}} " .. rangeStr .. "적을 " .. tostring(math.ceil(durations[multiplier] * 1.5)) .. "초동안 멍들게 합니다."
+        elseif effect == "violent" then
+          local rangeStr = multiplier == 1 and "주변의 " or "그 방의 "
+          local dmgStrings = {
+            [1] = "15 + (3 * 현재 스테이지)",
+            [2] = "20 + (3 * 현재 스테이지)",
+            [3] = "30 + (4 * 현재 스테이지)"
+          }
+          appendDesc = appendDesc .. "#{{Fear}} " .. rangeStr .. "적에게 " .. dmgStrings[multiplier] .. "만큼의 피해를 줍니다."
+        elseif effect == "profitable" then
+          local coinStrings = {
+            [1] = "페니 2개를 드랍합니다.",
+            [2] = "페니 1개와 랜덤 동전을 드랍합니다.",
+            [3] = "페니 1개, 랜덤 동전 1개, 랜덤 픽업 1개를 드랍합니다."
+          }
+          appendDesc = appendDesc .. "#{{Coin}} " .. coinStrings[multiplier]
+        elseif effect == "religious" then
+          appendDesc = appendDesc .. "#{{Collectible584}} Book of Virtues의 불꽃을 " ..tostring(multiplier) .. "개 소환합니다."
+        elseif effect == "love" then
+          local heartStrings = {
+            [1] = "#{{HalfHeart}} 빨간하트 반칸을 드랍합니다.",
+            [2] = "#{{Heart}} 빨간하트 한칸을 드랍합니다.",
+            [3] = "#{{SoulHeart}} 소울하트 한칸을 드랍합니다."
+          }
+          appendDesc = appendDesc .. heartStrings[multiplier]
+
+        elseif effect == "funny" then
+          local funnyStrings = {
+            [1] = "적을 밀쳐내는 ",
+            [2] = "적을 밀쳐내는 독",
+            [3] = "주변의 적을 {{Poison}}중독시키는 거대한 독"
+          }
+          appendDesc = appendDesc .. "#{{Collectible294}} " .. funnyStrings[multiplier] .. "방귀를 뀝니다."
+
+        elseif effect == "mischievous" then
+          appendDesc = appendDesc .. "#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN.."}} Fiend의 부하를 " ..tostring(multiplier) .. "마리 소환합니다."
+        elseif effect == "festering" then
+          appendDesc = appendDesc .. "#파란 아군 자폭 벼룩을" .. tostring(multiplier * 2) .. "마리 소환합니다."
+        end
+      end
+    end
+  end
+end
+
+
 EID:addDescriptionModifier("FF_EIDKR_GolemMachines", FF_EIDKR_RockSlotCondition, FF_EIDKR_RockSlotCallback)
+EID:addDescriptionModifier("FF_EIDKR_EmptyBook", FF_EIDKR_EmptyBookCondition, FF_EIDKR_EmptyBookCallback)
 
 local diceTable = {
   [881] = {"881", "12번", "{{Collectible386}} 스테이지 안의 모든 장애물 변경"},
