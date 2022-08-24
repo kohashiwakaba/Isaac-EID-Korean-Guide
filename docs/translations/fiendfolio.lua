@@ -597,7 +597,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BOX_TOP, "↑ {{LuckSmall}}행운
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.KINDA_EGG, "↑ {{Heart}}최대 체력 +1#카드/알약/룬이 아닌 랜덤 오브젝트를 드랍합니다.", "이래뵈도 알", "ko_kr")
 
 -- Trinkets
-EID:addTrinket(TrinketType.TRINKET_SHARD_OF_CHINA, "체력이 없거나 꽉 찬 상태에서 빨간하트 습득 시 특수 체력 게이지가 채워집니다.#채워진 게이지 1칸 당 {{DamageSmal}}공격력 +1.5#게이지 완충 시 자동으로 흡수되어 공격력 증가 효과가 영구적으로 적용됩니다.#특수 체력 게이지는 {{ButtonRT}}버튼을 꾹 누르거나 빨간하트 근처에 있을 때 캐릭터 위에 표시됩니다.", "차이나의 조각", "ko_kr")
+EID:addTrinket(TrinketType.TRINKET_SHARD_OF_CHINA, "체력이 없거나 꽉 찬 상태에서 빨간하트 습득 시 특수 체력 게이지가 채워집니다.#채워진 게이지 1칸 당 {{DamageSmall}}공격력 +1.5#게이지 완충 시 자동으로 흡수되어 공격력 증가 효과가 영구적으로 적용됩니다.#특수 체력 게이지는 {{ButtonRT}}버튼을 꾹 누르거나 빨간하트 근처에 있을 때 캐릭터 위에 표시됩니다.", "차이나의 조각", "ko_kr")
 EID:addTrinket(TrinketType.TRINKET_BIFURCATED_STARS, "맵에 {{BossRoom}}보스방의 위치가 표시됩니다.#{{BossRoom}}보스방 클리어 시 보스방 출구가 {{TreasureRoom}}보물방으로 향하게 바뀝니다.", "찢어진 별", "ko_kr")
 EID:addTrinket(TrinketType.TRINKET_FORTUNE_WORM, "↑ {{ShotspeedSmall}}탄속 +0.2#↑ {{LuckSmall}}행운 +2#확률적으로({{LuckSmall}}) 적에게 명중 시 운세를 보여주는 공격력 x1.05의 포춘쿠키를 발사합니다.", "운세 지렁이", "ko_kr")
 EID:addTrinket(TrinketType.TRINKET_FOOLS_GOLD, "방 클리어 보상이 일정 확률로 {{FFCursedPennyTint}}{{Coin}}저주받은 동전으로 바뀝니다.", "바보를 위한 금덩이", "ko_kr")
@@ -797,7 +797,7 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.FRIENDLY_RAPID_FIRE_OPAL, "방 입장 시 12
 EID:addTrinket(FiendFolio.ITEM.ROCK.BREAKFAST_FOSSIL, "분해 시 {{Heart}}최대 체력 +1#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "아침밥 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.SACK_FOSSIL, "{{GrabBag}} 픽업 아이템을 일정 확률로 픽업 자루로 바꿉니다.#{{GrabBag}} 분해 시 픽업 자루를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "자루 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.COPROLITE_FOSSIL, "방 최초 입장 시 파란 아군 자폭 파리를 하나 소환합니다.#분해 시 파란 아군 자폭 파리를 12마리 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "코프롤라이트", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.BEETER_FOSSIL, "눈물을 발사할 때마다 다른 방향으로 공격력 x0.4의 눈물을 발사합니다.#눈물은 시계방향으로 서서히 돌아가면서 발사됩니다.#분해 시 아군 Beeter롤 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "더 좋은 화석", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.BEETER_FOSSIL, "눈물을 발사할 때마다 다른 방향으로 공격력 x0.4의 눈물을 발사합니다.#눈물은 시계방향으로 서서히 돌아가면서 발사됩니다.#분해 시 아군 Beeter롤 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "벌꿀 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.FLY_FOSSIL, "방 최초 입장 시 랜덤 색상의 아군 자폭 파리를 하나 소환합니다.#분해 시 적의 탄환을 막아주는 파리 한마리를 얻습니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "파리 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.GMO_FOSSIL, "{{Pill}} 보스 처치 시 랜덤 알약 2개를 강제로 사용합니다.#{{Pill}} 분해 시 랜덤 알약 3개를 강제로 사용합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "GMO 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.SWORD_FOSSIL, "↑ {{DamageSmall}}공격력 +0.3#↑ {{TearsSmall}}공격 딜레이 -1#↑ {{RangeSmall}}사거리 +0.75#↑ {{ShotspeedSmall}}탄속 +0.2#분해 시 능력치 상승량의 절반만큼 영구적으로 증가합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "검의 화석", "ko_kr")
@@ -808,7 +808,7 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.FOSSILIZED_FOSSIL, "다른 화석 타입 장
 EID:addTrinket(FiendFolio.ITEM.ROCK.FISH_FOSSIL, "피격 시 파란 아군 자폭 파리를 1~4마리 소환합니다.#분해 시 아군 Portal 몬스터를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "생선 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.RUNIC_FOSSIL, "{{Rune}} 모든 장신구가 룬으로 바뀝니다.#{{Rune}}룬 사용 시 {{Card55}}Rune Shard를 드랍합니다.#분해 시 {{Card55}}Rune Shard 4개를 추가로 드랍합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "룬 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.CANNED_FOSSIL, "피격 시 적을 밀쳐내는 랜덤 방귀를 뀝니다.#분해 시 아군 Litter bug를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "취한 화석", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.BALANCED_FOSSIL, "{{Heart}}/{{Coin}}/{{Key}}/{{Bomb}}의 개수가 적은 경우 방 클리어 보상을 50%의 확률로 {{Heart}}/{{Coin}}/{{Key}}/{{Bomb}}로 바꿉니다., if you have little.#분해 시 가장 적게 소지중인 픽업 아이템 3개를 추가로 드랍합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "균형의 화석", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.BALANCED_FOSSIL, "{{Heart}}/{{Coin}}/{{Key}}/{{Bomb}}의 개수가 적은 경우 방 클리어 보상을 50%의 확률로 {{Heart}}/{{Coin}}/{{Key}}/{{Bomb}}로 바꿉니다.#분해 시 가장 적게 소지중인 픽업 아이템 3개를 추가로 드랍합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "균형의 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.BURIED_FOSSIL, "스테이지 당 하나씩 바닥에 틈새가 생기고 그 틈새를 {{Bomb}}폭탄으로 터트릴 시 화석 장신구를 드랍합니다.#분해 시 랜덤 화석 장신구를 추가로 드랍합니다.#Dark Room 스테이지의 무덤을 {{Bomb}}폭탄으로 열 수 있습니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "묻혀있는 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.TRIPPY_FOSSIL, "{{Collectible398}} 확률적으로 적을 작아지게 만드는 공격이 나갑니다.#작아진 적은 밟아 죽일 수 있습니다.#분해 시 캐릭터의 크기가 작아집니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "환각 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.MAXS_FOSSIL, "{{Collectible445}} {{SecretRoom}}{{SuperSecretRoom}}비밀방이 연결되어 있을 경우 개 울음소리가 납니다.#분해 시 이후에 등장하는 색돌 하나가 밝혀집니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "맥스의 화석", "ko_kr")
@@ -830,7 +830,7 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.THANK_YOU_FOSSIL, "거지가 2배로 보답�
 
 EID:addTrinket(FiendFolio.ITEM.ROCK.CURVED_GEODE, "↑ {{DamageSmall}}공격력 +1#↑ 다른 정동석 소지 시 {{DamageSmall}}추가 공격력 +0.5#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "굽은 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.HAUNTED_GEODE, "확률적으로({{LuckSmall}}) 적과 장애물을 관통하는 눈물을 발사합니다.#다른 정동석 소지 시 확률 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "공포의 정동", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.HEALTH_GEODE, "전체 체력이 빨간하트 1칸 이하일 때 {{Heart}}체력을 전부 회복합니다.#!!! 최대 체력이 1칸일 경우 빨간하트 반칸일 때 발동#다른 정동석 소지 시 {{SoulHeart}}소울하트를 추가로 획득합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "체력의 정동", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.HEALTH_GEODE, "!!! 일회용#전체 체력이 빨간하트 1칸 이하일 때 {{Heart}}체력을 전부 회복합니다.#!!! 최대 체력이 1칸일 경우 빨간하트 반칸일 때 발동#다른 정동석 소지 시 {{SoulHeart}}소울하트를 추가로 획득합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "체력의 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.LITTLE_GEODE, "캐릭터의 크기가 작아집니다.#다른 정동석 소지 시 추가로 작아집니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "작은 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.QUICK_GEODE, "↑ 클리어한 방에서 {{SpeedSmall}}이동속도가 최소 1.75 이상으로 고정됩니다.#다른 정동석 소지 시 {{SpeedSmall}}고정 이동속도 +0.1#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "신속의 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.WEBBY_GEODE, "확률적으로(20% + 2x{{LuckSmall}}%p) {{Slow}}적을 둔화시키는 눈물을 발사합니다.#다른 정동석 소지 시 둔화 눈물로 적을 맞추면 적을 느리게 하는 흰색 장판을 생성합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "거미 정동", "ko_kr")
@@ -857,6 +857,71 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.GMO_GEODE, "다른 정동석 소지 시 랜�
 EID:addTrinket(FiendFolio.ITEM.ROCK.SWALLOWED_GEODE, "피격 시 {{Coin}}동전을 하나 드랍합니다.#다른 정동석 소지 시 확률적으로 1+1 동전을 드랍합니다..#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "삼켜진 페니", "ko_kr")
 
 EID:addTrinket(FiendFolio.ITEM.ROCK.GEODE_FOSSIL, "↑ {{RangeSmall}}사거리 +8#↑ 다른 정동석 소지 시 {{RangeSmall}}추가 사거리 +6#분해 시 랜덤 정동석을 드랍합니다.#다른 정동석 소지 시 랜덤 정동석을 추가로 드랍합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}}+{{ColorRed}}화석{{CR}} 타입", "정동화석", "ko_kr")
+
+EID:addEntity(6, 1020, 0, "채굴기", "현재 들고 있는 장신구와 {{Coin}}동전 3개를 소모하여 다른 석기 장신구로 교체합니다.", "ko_kr")
+EID:addEntity(6, 1021, 0, "분해기", "현재 들고 있는 장신구를 {{SoulHeart}}소울하트 1~1.5개로 분해합니다.", "ko_kr")
+EID:addEntity(6, 1022, 0, "은둔자", "{{SoulHeart}}소울하트 1.5칸을 소모하여 현재 소지 중인 석기 장신구를 흡수합니다.#!!! 흡수된 석기 장신구의 효과는 원래 효과의 33%로 줄어듭니다.", "ko_kr")
+EID:addEntity(6, 1023, 0, "???", "나중에 다시 와주세요.", "ko_kr")
+EID:addEntity(6, 1024, 0, "정동 골렘", "!!! 스테이지 당 일회용#현재 들고 있는 장신구를 {{ColorTeal}}정동석{{CR}} 장신구 2개로 바꿉니다.#정동성 타입의 장신구는 해당 장신구를 복제합니다.", "ko_kr")
+EID:addEntity(6, 1024, 1, "정동 골렘", "!!! 이미 사용됨. 다음 스테이지부터 등장 시 다시 사용할 수 있습니다.", "ko_kr")
+
+local function FF_EIDKR_RockSlotCondition(descObj)
+  if EID:getLanguage() ~= "ko_kr" then return false end
+  if not descObj.ObjType == EntityType.ENTITY_SLOT then return false end
+  if not descObj.Entity then return end
+  if descObj.ObjVariant == 1020 
+  or descObj.ObjVariant == 1021
+  or descObj.ObjVariant == 1022
+  or (descObj.ObjVariant == 1024 and descObj.ObjSubType == 0)
+  then 
+    local holdUpRockRange = 100
+
+    local game = Game()
+    local slot = descObj.Entity
+    local anim = slot:GetSprite():GetAnimation()
+    for i=0, game:GetNumPlayers()-1 do
+      local player = game:GetPlayer(i)
+      local data = player:GetData()
+      
+      if player and player:Exists() then
+        local trinket = FiendFolio.GetMostRecentRockTrinket(player)
+        local price = FiendFolio.GetGrindPriceForTrinket(trinket, player)
+			
+        local shouldHoldUpRockTrinket = trinket > 0
+          and (data.holdingUpRockTouchingPickup or 0) == 0
+          and not player:IsHoldingItem()
+          and (anim == 'Idle' or anim == 'IdleRandom')
+          and player.Position:Distance(slot.Position) < holdUpRockRange
+          and player:GetShootingInput():Length() < 0.1
+          and not (slot.Variant == 1020 and player:GetNumCoins() < price)
+          and not (slot.Variant == 1022 and player:GetSoulHearts() < 3)
+        
+        return shouldHoldUpRockTrinket
+      end
+        
+    end
+  end
+end
+
+local function FF_EIDKR_RockSlotCallback(descObj)
+  for i = 0, Game():GetNumPlayers() -1 do
+    local player = Isaac.GetPlayer()
+    local data = player:GetData()
+    local trinket = FiendFolio.GetMostRecentRockTrinket(player)
+    if data.isHoldingUpRockTrinket and trinket > 0 then
+      trinket = trinket % TrinketType.TRINKET_GOLDEN_FLAG
+      local demoDescObj = EID:getDescriptionObj(5, 350, trinket)
+
+      local appendDesc = "#!!! 아래 장신구가 소모됨 : #"
+      appendDesc = appendDesc .. "{{Trinket"..trinket.."}} {{ColorEIDObjName}}" .. demoDescObj.Name .. "#" .. demoDescObj.Description .. "#"
+      EID:appendToDescription(descObj, appendDesc)
+      break
+    end
+  end
+
+  return descObj
+end
+EID:addDescriptionModifier("FF_EIDKR_GolemMachines", FF_EIDKR_RockSlotCondition, FF_EIDKR_RockSlotCallback)
 
 local diceTable = {
   [881] = {"881", "12번", "{{Collectible386}} 스테이지 안의 모든 장애물 변경"},
