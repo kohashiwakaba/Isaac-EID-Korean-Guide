@@ -922,10 +922,10 @@ local function FF_EIDKR_RockSlotCallback(descObj)
   return descObj
 end
 
-local FF_EIDKR_EmptyBookCondition(descObj)
+local function FF_EIDKR_EmptyBookCondition(descObj)
   if EID:getLanguage() ~= "ko_kr" then return false end
   if not FiendFolio.savedata.run.emptybookeffects then return false end
-  if not (descObj.ObjType == EntityType.ENTITY_PICKUP and descObj.ObjVariant == EntityVariant.PICKUP_COLLECTIBLE) then return false end
+  if not (descObj.ObjType == EntityType.ENTITY_PICKUP and descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE) then return false end
   return (descObj.ObjSubType == FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2 or descObj.ObjSubType == FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4 or descObj.ObjSubType == FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6)
 end
 local checkNames = {
@@ -933,10 +933,11 @@ local checkNames = {
   [FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4] = "average story",
   [FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6] = "long story",
 }
-local FF_EIDKR_EmptyBookCallback(descObj)
+local function FF_EIDKR_EmptyBookCallback(descObj)
   local effects
   local multiplier
   local existingEffects = FiendFolio.savedata.run.emptybookeffects
+  local appendDesc = ""
   if existingEffects then
     if existingEffects and existingEffects[checkNames[descObj.ObjSubType]] then
       effects = existingEffects[checkNames[descObj.ObjSubType]]
@@ -1006,7 +1007,9 @@ local FF_EIDKR_EmptyBookCallback(descObj)
         end
       end
     end
+    EID:appendToDescription(descObj, appendDesc)
   end
+  return descObj
 end
 
 
