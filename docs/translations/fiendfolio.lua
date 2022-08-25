@@ -453,7 +453,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.COMMUNITY_ACHIEVEMENT, "↑ {{Dam
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.CHIRUMIRU, "↑ {{SoulHeart}}소울하트 +1#↑ {{DamageSmall}}공격력 +0.9#방 입장 시 모든 적을 0.9초간 석화시킵니다.", "", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GOLEMS_ORB, "↑ {{SoulHeart}}소울하트 +2#↑ {{SpeedSmall}}이동속도 +0.2#↑ {{ShotspeedSmall}}탄속 +0.23#↑ {{LuckSmall}}행운 +1", "골렘의 오브", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GOLEMS_ROCK, "획득 시 석기 장신구를 소환합니다.#사용 시 현재 소지 중인 장신구를 빻아 석기 장신구를 소환합니다.#석기 장신구는 일반적으로 등장하지 않으며 Golem 캐릭터 플레이 시에만 등장하는 특수 장신구입니다.", "골렘의 맷돌", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.LEFTOVER_TAKEOUT, "↑ {{Heart}}최대 체력 +1#↑ {{DamageSmall}}공격력 배율 x1.5#↑ {{TearsSmall}}공격 딜레이 x0.9#↑ {{RangeSmall}}사거리 +1.5#↑ {{SpeedSmall}}이동속도 +0.3#↑ {{LuckSmall}}행운 +1#확률적으로({{LuckSmall}}) 적에게 명중 시 운세를 보여주는 공격력 x1.05의 포춘쿠키를 발사합니다.", "먹다 남은 배달 음식", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.LEFTOVER_TAKEOUT, "↑ {{Heart}}최대 체력 +1#↑ {{DamageSmall}}공격력 배율 x1.5#↑ {{TearsSmall}}공격 딜레이 x0.9(연사 증가)#↑ {{RangeSmall}}사거리 +1.5#↑ {{SpeedSmall}}이동속도 +0.3#↑ {{LuckSmall}}행운 +1#확률적으로({{LuckSmall}}) 적에게 명중 시 운세를 보여주는 공격력 x1.05의 포춘쿠키를 발사합니다.", "먹다 남은 배달 음식", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.CLEAR_CASE, "!!!획득과 동시에 카드/알약 슬롯에 배치됨#소지한 상태에서 다음 액티브 아이템 획득 시 해당 액티브 아이템이 카드/알약 슬롯에 배치됩니다.", "투명 케이스", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MODERN_OUROBOROS, "공격이 무언가에 부딪힐 때 기름 장판이 생기며 #캐릭터/불이 기름 장판에 닿으면 불이 붙습니다.#캐릭터는 이 불에 피해를 받지 않습니다.", "현대 우로보로스", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BLACK_LANTERN, "↑ {{BlackHeart}}블랙하트 +1#{{CurseCursedSmall}} 항상 저주에 걸리며 기존의 저주가 아닌 새로운 형태의 저주가 걸립니다.", "검은 랜턴", "ko_kr")
@@ -588,9 +588,9 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MOMS_STOCKINGS, "↑ {{RangeSmall
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GOLDEN_POPSICLE, "↑ {{SoulHeart}}소울하트 +1#↑ {{LuckSmall}}행운 +2#황금 픽업 아이템 하나를 드랍합니다.", "황금 아이스크림", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.TIME_ITSELF, "확률적으로 적에게 다중 유클리드를 거는 공격이 나갑니다.#공격이 다중 유클리드 상태의 적을 통과할 수 있으며 2개로 복제되어 나갑니다.", "시간 그 자체", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.EMPTY_BOOK, "사용 시 이야기를 작성합니다.#작성한 이야기에 따라 쿨타임 및 효과가 달라집니다.", "빈 공책", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2, "", "나의 이야기", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4, "", "나의 이야기", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6, "", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.HOST_ON_TOAST, "↑ {{DamageSmall}}공격력 +0.5#↑ {{RangeSmall}}사거리 +0.38", "호스트 발린 토스트", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BAG_OF_BOBBIES, "방 클리어 시 일정 확률로 {{Collectible8}}Fragile Bobby를 소환합니다.#{{Collectible8}} Fragile bobby는 Brother Bobby와 동일하나 5회 피격 시 사라집니다.", "보비 가방", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BOX_TOP, "↑ {{LuckSmall}}행운 +2#{{Card"..FiendFolio.ITEM.CARD.PUZZLE_PIECE.."}}퍼즐 조각을 드랍합니다.", "박스 탑", "ko_kr")
@@ -711,11 +711,11 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.BLOODSTONE, "적 처치 시 {{DamageSmall}}�
 EID:addTrinket(FiendFolio.ITEM.ROCK.EMETIC_ANTIMONY, "{{Collectible149}}주기적으로 구토제 눈물을 발사합니다.#!!! 석기 장신구 : 일반 타입", "메스꺼운 안티몬", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.DOUBLE_RUBBLE, "채굴기로 이 장신구 소모 시 2개의 석기 장신구를 캐냅니다.#!!! 석기 장신구 : 일반 타입", "더블 재갈", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.ROCK_FROM_AN_ABYSS, "방 입장 시 20%의 확률로 적에게 심판을 겁니다.#심판 상태의 적은 명중 시마다 카운트가 감소하며;#카운트가 0이 될 때 추가 피해를 주며 심판 상태를 제거합니다.#!!! 석기 장신구 : 일반 타입", "심연에서 온 돌멩이", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.HECTOR, "↑ {{DamageSmall}}공격력 +1#↑ {{TearsSmall}}공격 딜레이 -1#↓ {{SpeedSmall}}이동속도 -0.1#피격 시 강제로 내려놓습니다.#!!! 석기 장신구 : 일반 타입", "헥토르", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.HECTOR, "↑ {{DamageSmall}}공격력 +1#↑ {{TearsSmall}}공격 딜레이 -1(연사 증가)#↓ {{SpeedSmall}}이동속도 -0.1#피격 시 강제로 내려놓습니다.#!!! 석기 장신구 : 일반 타입", "헥토르", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.VESSEL_ROCK, "소지 시 임시 체력의 역할을 하며 비어 있는 상태에서 피격 시 {{Trinket"..FiendFolio.ITEM.ROCK.POCKET_SAND.."}}Pocket Sand로 바뀝니다.#체력 거래에 사용할 수 없습니다.#{{EmptyHeart}} 현재 비어 있음#!!! 석기 장신구 : 일반 타입", "돌 그릇", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.HALF_VESSEL_ROCK, "소지 시 임시 체력의 역할을 하며 비어 있는 상태에서 피격 시 {{Trinket"..FiendFolio.ITEM.ROCK.POCKET_SAND.."}}Pocket Sand로 바뀝니다.#체력 거래에 사용할 수 없습니다.#{{HalfHeart}} 현재 반칸 채워짐#!!! 석기 장신구 : 일반 타입", "돌 그릇", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.FULL_VESSEL_ROCK, "소지 시 임시 체력의 역할을 하며 비어 있는 상태에서 피격 시 {{Trinket"..FiendFolio.ITEM.ROCK.POCKET_SAND.."}}Pocket Sand로 바뀝니다.#체력 거래에 사용할 수 없습니다.#{{FullHeart}} 현재 한칸 채워짐#!!! 석기 장신구 : 일반 타입", "돌 그릇", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.CONSTANT_ROCK_SHOOTER, "↑ {{TearsSmall}}공격 딜레이 -2.5#캐릭터가 자동으로 공격합니다.#!!! 석기 장신구 : 일반 타입", "무한 돌멩이 발사기", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.CONSTANT_ROCK_SHOOTER, "↑ {{TearsSmall}}공격 딜레이 -2.5(연사 증가)#캐릭터가 자동으로 공격합니다.#!!! 석기 장신구 : 일반 타입", "무한 돌멩이 발사기", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.ROBOT_ROCK, "적에게 랜덤 상태이상을 거는 짧은 레이저 2개를 시계방향으로 발사합니다.#!!! 석기 장신구 : 일반 타입", "로봇 돌덩이", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.ROCK_CANDY, "확률적으로({{LuckSmall}}) 적에게 {{Charm}}매혹을 거는 공격력 x1.5의 공격을 발사합니다.#적 처치 시 잠시 후 사라지는 {{HalfHeart}}설탕 크리스탈을 드랍합니다.#!!! 석기 장신구 : 일반 타입", "돌사탕", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.KEYSTONE, "{{Key}} 열쇠 소모 시 그 층에서 {{TearsSmall}}연사 +0.35, {{SpeedSmall}}이동속도 +0.1#!!! 석기 장신구 : 일반 타입", "쐐기돌", "ko_kr")
@@ -753,11 +753,11 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.TWINKLING_ROCK, "채굴기로 이 장신구 
 EID:addTrinket(FiendFolio.ITEM.ROCK.ROCK_CAKE, "채굴기로 이 장신구 소모 시 {{HalfHeart}}빨간하트를 반칸 회복합니다.#!!! 석기 장신구 : 일반 타입", "돌 케이크", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.CHARCOAL, "{{Collectible132}} 확률적으로 탄속이 느리지만 공격이 멀리 나갈수록 공격력이 증가하는 눈물을 발사합니다.#!!! 석기 장신구 : 일반 타입", "숯덩이", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.KNIFE_PEBBLE, "↑ {{DamageSmall}}공격력 +1.25#!!! 석기 장신구 : 일반 타입", "칼모양 조약돌", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.TEARDROP_PEBBLE, "↑ {{TearsSmall}}공격 딜레이 -2#!!! 석기 장신구 : 일반 타입", "물방울 조약돌", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.TEARDROP_PEBBLE, "↑ {{TearsSmall}}공격 딜레이 -2(연사 증가)#!!! 석기 장신구 : 일반 타입", "물방울 조약돌", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.ARROW_PEBBLE, "↑ {{RangeSmall}}사거리 +1.25#↑ {{ShotspeedSmall}}탄속 +0.2#!!! 석기 장신구 : 일반 타입", "활 조약돌", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.CLOVER_PEBBLE, "↑ {{LuckSmall}}행운 +3#!!! 석기 장신구 : 일반 타입", "클로버 조약돌", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.SHOE_PEBBLE, "↑ {{SpeedSmall}}이동속도 +0.3#!!! 석기 장신구 : 일반 타입", "신발 조약돌", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.FRUITY_PEBBLE, "↑ {{SpeedSmall}}이동속도 +0.15#↑ {{DamageSmall}}공격력 +0.3#↑ {{TearsSmall}}공격 딜레이 -0.7#↑ {{RangeSmall}}사거리 +0.75#↑ {{ShotspeedSmall}}탄속 +0.18#↑ {{LuckSmall}}행운 +1#!!! 석기 장신구 : 일반 타입", "과일 조약돌", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.FRUITY_PEBBLE, "↑ {{SpeedSmall}}이동속도 +0.15#↑ {{DamageSmall}}공격력 +0.3#↑ {{TearsSmall}}공격 딜레이 -0.7(연사 증가)#↑ {{RangeSmall}}사거리 +0.75#↑ {{ShotspeedSmall}}탄속 +0.18#↑ {{LuckSmall}}행운 +1#!!! 석기 장신구 : 일반 타입", "과일 조약돌", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.ACHILLES_ROCK, "적에게 랜덤 방향으로 급소가 생깁니다.#급소 명중 시 1.5배의 피해를 받습니다.#!!! 석기 장신구 : 일반 타입", "아킬레스석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.ELECTRUM, "액티브 아이템 사용 시 전류를 발산하여 주변의 적에게 캐릭터의 공격력 및 액티브 아이템 충전량에 비례한 피해를 줍니다.#!!! 석기 장신구 : 일반 타입", "엘렉트륨", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.PURE_QUARTZ, "피격 시 소울하트가 없으면 10초간 무적 상태가 되며 {{HolyMantleSmall}} 피격 시 피해를 1회 무시하는 보호막을 제공합니다.#!!! 석기 장신구 : 일반 타입", "순수한 쿼츠", "ko_kr")
@@ -800,7 +800,7 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.COPROLITE_FOSSIL, "방 최초 입장 시 파
 EID:addTrinket(FiendFolio.ITEM.ROCK.BEETER_FOSSIL, "눈물을 발사할 때마다 다른 방향으로 공격력 x0.4의 눈물을 발사합니다.#눈물은 시계방향으로 서서히 돌아가면서 발사됩니다.#분해 시 아군 Beeter롤 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "벌꿀 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.FLY_FOSSIL, "방 최초 입장 시 랜덤 색상의 아군 자폭 파리를 하나 소환합니다.#분해 시 적의 탄환을 막아주는 파리 한마리를 얻습니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "파리 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.GMO_FOSSIL, "{{Pill}} 보스 처치 시 랜덤 알약 2개를 강제로 사용합니다.#{{Pill}} 분해 시 랜덤 알약 3개를 강제로 사용합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "GMO 화석", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.SWORD_FOSSIL, "↑ {{DamageSmall}}공격력 +0.3#↑ {{TearsSmall}}공격 딜레이 -1#↑ {{RangeSmall}}사거리 +0.75#↑ {{ShotspeedSmall}}탄속 +0.2#분해 시 능력치 상승량의 절반만큼 영구적으로 증가합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "검의 화석", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.SWORD_FOSSIL, "↑ {{DamageSmall}}공격력 +0.3#↑ {{TearsSmall}}공격 딜레이 -1(연사 증가)#↑ {{RangeSmall}}사거리 +0.75#↑ {{ShotspeedSmall}}탄속 +0.2#분해 시 능력치 상승량의 절반만큼 영구적으로 증가합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "검의 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.FORTUNE_WORM_FOSSIL, "↑ {{ShotspeedSmall}}탄속 +0.2#↑ {{LuckSmall}}행운 +2#{{Trinket"..TrinketType.TRINKET_FORTUNE_WORM.."}} 확률적으로({{LuckSmall}}) 적에게 명중 시 운세를 보여주는 공격력 x1.05의 포춘쿠키를 발사합니다.#분해 시 {{SoulHeart}}소울하트를 추가로 드랍하며 랜덤 운세 3개를 보여줍니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "운세 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.PRIMORDIAL_FOSSIL, "{{Collectible317}} 6.66%의 확률로 여러 개의 독성 눈물을 흩뿌리면서 발사합니다.#분해 시 Golem 캐릭터의 시작 장신구를 추가로 드랍합니다. ({{Trinket"..FiendFolio.ITEM.ROCK.DIRT_CLUMP.."}} + {{Trinket"..FiendFolio.ITEM.ROCK.ROLLING_ROCK.."}})#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "원시 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.REROLLIGAN_FOSSIL, "{{Collectible285}} 적 명중 시 확률적으로 다른 적으로 바꿉니다.#분해 시 랜덤 유리 주사위 조각을 추가로 드랍합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "주사위 화석", "ko_kr")
@@ -849,8 +849,8 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.RUBBER_GEODE, "확률적으로 튕겨져 나
 EID:addTrinket(FiendFolio.ITEM.ROCK.CALZONE_GEODE, "확률적으로(5% + 5x{{LuckSmall}}%p) {{Bait}}적에게 표식을 걸며 캐릭터에게 다시 돌아오는 처비를 발사합니다.#다른 정동석 소지 시 확률 +10%p#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "칼초네 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.TOUGH_GEODE, "분해 시 확률적으로 장신구가 소모되지 않고 보존됩니다.#다른 정동석 소지 시 보존 확률 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "딱딱한 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.TIPSY_GEODE, "↑ {{DamageSmall}}공격력 배율 x2#움직임이 불안정해집니다.#다른 정동석 소지 시 {{DamageSmall}}공격력 배율 x3.5, 이동 불안정성 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "술취한 정동", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.VINYL_GEODE_A, "↑ {{DamageSmall}}공격력 +1#↑ {{ShotspeedSmall}}탄속 +0.24#짝수 스테이지 진입 시 뒷면으로 뒤집습니다.({{SpeedSmall}}/{{TearsSmall}} 증가)#다른 정동석 소지 시:#↑ {{SpeedSmall}}이동속도 +0.07#↑ {{TearsSmall}}눈물 딜레이 -0.6#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "비닐 정동 - 앞면", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.VINYL_GEODE_B, "↑ {{SpeedSmall}}이동속도 +0.2#↑ {{TearsSmall}}눈물 딜레이 -1.8#홀수 스테이지 진입 시 앞면으로 뒤집습니다.({{DamageSmall}}/{{ShotspeedSmall}} 증가)#다른 정동석 소지 시:#↑ {{DamageSmall}}공격력 +0.3#↑ {{ShotspeedSmall}}탄속 +0.08#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "비닐 정동 - 뒷면", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.VINYL_GEODE_A, "↑ {{DamageSmall}}공격력 +1#↑ {{ShotspeedSmall}}탄속 +0.24#짝수 스테이지 진입 시 뒷면으로 뒤집습니다.({{SpeedSmall}}/{{TearsSmall}} 증가)#다른 정동석 소지 시:#↑ {{SpeedSmall}}이동속도 +0.07#↑ {{TearsSmall}}공격 딜레이 -0.6(연사 증가)#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "비닐 정동 - 앞면", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.VINYL_GEODE_B, "↑ {{SpeedSmall}}이동속도 +0.2#↑ {{TearsSmall}}공격 딜레이 -1.8(연사 증가)#홀수 스테이지 진입 시 앞면으로 뒤집습니다.({{DamageSmall}}/{{ShotspeedSmall}} 증가)#다른 정동석 소지 시:#↑ {{DamageSmall}}공격력 +0.3#↑ {{ShotspeedSmall}}탄속 +0.08#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "비닐 정동 - 뒷면", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.PRISMATIC_GEODE, "적 처치 시 확률적으로 랜덤 능력치를 10초동안 증가시켜주는 프리즘 조각을 드랍합니다.#방 클리어 시 확률적으로 프리즘 조각을 추가로 드랍합니다.#다른 정동석 소지 시 증가량 및 지속시간 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "프리즘 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.FRACTAL_GEODE, "확률적으로 적을 나른하게 만드는 눈물을 회오리 모양으로 발사합니다.#다른 정동석 소지 시 확률적으로 나른한 적을 즉시 잠들게 합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "프랙탈 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.GMO_GEODE, "다른 정동석 소지 시 랜덤 효과의 알약을 강제로 사용합니다.#다른 정동석 소지 시 긍정적 효과의 랜덤 알약을 추가로 사용합니다.#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "GMO 정동", "ko_kr")
@@ -937,21 +937,18 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
   local effects
   local multiplier
   local existingEffects = FiendFolio.savedata.run.emptybookeffects
-  local appendDesc = "!!! 사용 시:"
-  local shouldAppend = true
+  local appendDesc = ""
   if existingEffects then
     if existingEffects and existingEffects[checkNames[descObj.ObjSubType]] then
       effects = existingEffects[checkNames[descObj.ObjSubType]]
       multiplier = Isaac.GetItemConfig():GetCollectible(descObj.ObjSubType).MaxCharges
       multiplier = multiplier and multiplier / 2
     else
-      shouldAppend = false
-      appendDesc = "!!! 랜덤 효과를 2번 발동합니다."
       effects = {"wild", "wild"}
       multiplier = 2
     end
 
-    if effects and multiplier and shouldAppend then
+    if effects and multiplier then
       for _, effect in ipairs(effects) do
         while effect == "wild" do
           appendDesc = appendDesc .. "#랜덤 효과를 발동합니다."
@@ -977,7 +974,7 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
             [2] = "20 + (3 * 현재 스테이지)",
             [3] = "30 + (4 * 현재 스테이지)"
           }
-          appendDesc = appendDesc .. "#" .. rangeStr .. "적에게 " .. dmgStrings[multiplier] .. "만큼의 피해를 줍니다."
+          appendDesc = appendDesc .. "#{{Fear}} " .. rangeStr .. "적에게 " .. dmgStrings[multiplier] .. "만큼의 피해를 줍니다."
         elseif effect == "profitable" then
           local coinStrings = {
             [1] = "페니 2개를 드랍합니다.",
@@ -986,7 +983,7 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
           }
           appendDesc = appendDesc .. "#{{Coin}} " .. coinStrings[multiplier]
         elseif effect == "religious" then
-          appendDesc = appendDesc .. "#{{Collectible584}} Book of Virtues의 불꽃을 " ..tostring(math.ceil(multiplier)) .. "개 소환합니다."
+          appendDesc = appendDesc .. "#{{Collectible584}} Book of Virtues의 불꽃을 " ..tostring(multiplier) .. "개 소환합니다."
         elseif effect == "love" then
           local heartStrings = {
             [1] = "#{{HalfHeart}} 빨간하트 반칸을 드랍합니다.",
@@ -1004,17 +1001,17 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
           appendDesc = appendDesc .. "#{{Collectible294}} " .. funnyStrings[multiplier] .. "방귀를 뀝니다."
 
         elseif effect == "mischievous" then
-          appendDesc = appendDesc .. "#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN.."}} Fiend의 부하를 " ..tostring(math.ceil(multiplier)) .. "마리 소환합니다."
+          appendDesc = appendDesc .. "#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN.."}} Fiend의 부하를 " ..tostring(multiplier) .. "마리 소환합니다."
         elseif effect == "festering" then
-          appendDesc = appendDesc .. "#파란 아군 자폭 벼룩을 " .. tostring(math.ceil(multiplier * 2)) .. "마리 소환합니다."
+          appendDesc = appendDesc .. "#파란 아군 자폭 벼룩을" .. tostring(multiplier * 2) .. "마리 소환합니다."
         end
       end
     end
-    descObj.Description = appendDesc .. descObj.Description
-    --EID:appendToDescription(descObj, appendDesc)
+    EID:appendToDescription(descObj, appendDesc)
   end
   return descObj
 end
+
 
 EID:addDescriptionModifier("FF_EIDKR_GolemMachines", FF_EIDKR_RockSlotCondition, FF_EIDKR_RockSlotCallback)
 EID:addDescriptionModifier("FF_EIDKR_EmptyBook", FF_EIDKR_EmptyBookCondition, FF_EIDKR_EmptyBookCallback)
