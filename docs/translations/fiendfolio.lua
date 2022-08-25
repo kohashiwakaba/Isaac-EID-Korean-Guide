@@ -282,7 +282,7 @@ end
 
 -- Birthright
 EID:addBirthright(FiendFolio.PLAYER.FIEND, "Fiend의 파이어볼이 적에게 유도되며;#발사 시 지나간 자리에 불길을 남기며;#폭파 시 적 처치 여부와 관계없이 33%의 확률로 Fiend의 부하를 추가로 소환합니다.#Fiend의 파이어볼로 적 처치 시 {{FFImmoralHeartTint}}{{SoulHeart}}이모럴하트 등장 확률이 증가합니다.", "Fiend", "ko_kr")
-EID:addBirthright(FiendFolio.PLAYER.BIEND, "{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.MALICE.."}}Malice로 적 처치 시 블랙하트를 드랍할 확률이 증가합니다.#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.MALICE.."}}Malice로 폼 전환 시마다 Fiend의 부하가 각각 랜덤 모자를 쓰며 모자에 따라 {{DamageSmall}}/{{TearsSmall}}/{{LuckSmall}}/{{TearSizeSmall}이 달라집니다.", "Tainted Fiend", "ko_kr")
+EID:addBirthright(FiendFolio.PLAYER.BIEND, "{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.MALICE.."}}Malice로 적 처치 시 블랙하트를 드랍할 확률이 증가합니다.#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.MALICE.."}}Malice로 폼 전환 시마다 Fiend의 부하가 각각 랜덤 모자를 쓰며 모자에 따라 {{DamageSmall}}/{{TearsSmall}}/{{LuckSmall}}/{{TearSizeSmall}}이 달라집니다.", "Tainted Fiend", "ko_kr")
 EID:addBirthright(Isaac.GetPlayerTypeByName("Golem"), "↑ {{LuckSmall}}행운 +2#색돌 파괴 시 소울하트 대신 석기 장신구를 드랍합니다.", "Golem", "ko_kr")
 EID:addBirthright(FiendFolio.PLAYER.SLIPPY, "{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FROG_HEAD.."}}Golden Frog Head의 방귀의 크기에 따른 독가스를 추가로 남깁니다.", "Slippy", "ko_kr")
 EID:addBirthright(FiendFolio.PLAYER.CHINA, "카드/알약 슬롯에 {{Collectible"..FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE.."}}Horse Paste 아이템이 배정됩니다.#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.HORSE_PASTE.."}} 사용 시 {{BrokenHeart}}부서진하트 -1", "China", "ko_kr")
@@ -443,7 +443,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEE_SKIN, "눈물을 발사할 �
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.ALPHA_COIN, "사용 시 각각 발동:#25% 의 확률로 {{Coin}}동전을 드랍합니다.#25%의 확률로 {{Card}}카드/{{Pill}}알약을 드랍합니다.#현재 방 및 스테이지 진행 상태에 따라 다른 효과를 발동합니다.", "알파 코인", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DADS_WALLET, "획득 시 {{Card43}}Credit Card를 드랍합니다.#소지 중인 동전이 부족해도 상점 아이템을 구매할 수 있습니다.#부족한 금액 당 {{DamageSmall}}공격력이 감소합니다.", "아빠의 지갑", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.FROG_HEAD, "사용 버튼을 누르고 있는 동안 캐릭터를 멈추게 합니다.#멈춘 시간에 비례하여 적을 밀어내는 방귀를 뀝니다.", "황금 개구리 머리", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEGINNERS_LUCK, "↑ {{LuckSmall}}행운 +5#↓ -0.5 스테이지 진행 당 {{LuckSmall}}행운 -0.5(최소 1)", "초심자의 행운", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BEGINNERS_LUCK, "↑ {{LuckSmall}}행운 +5#↓ 스테이지 진행 당 {{LuckSmall}}행운 -0.5(최소 1)", "초심자의 행운", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DICHROMATIC_BUTTERFLY, "피격 판정 크기가 줄어들며 피격 판정의 범위가 표시됩니다.#탄환을 가까스로 피할 시 그 방에서 {{DamageSmall}}공격력 +0.2(최대 +3)#일정 확률로 공격력 x1.25의 강한 유도 공격이 나갑니다.", "색이 다른 나비", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BIRTHDAY_GIFT, "{{Collectible515}} 모든 아이템이 Mystery Gift로 등장합니다.#바뀐 아이템 및 고정 드랍은 Mystery Gift로 변경되지 않습니다.", "생일 선물", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.IMP_SODA, "확률적으로({{LuckSmall}}) 치명타 피해를 주는 공격을 발사합니다.#치명타는 적에게 공격력 x5의 피해를 줍니다.", "도깨비 소다", "ko_kr")
@@ -552,7 +552,7 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.DADS_POSTICHE, "공격 시 확률
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.EXCELSIOR, "액티브 아이템 사용 시 유도성 로켓을 여러 발 발사합니다.#유도성 로켓의 발사 수량과 공격력은 사용한 액티브 아이템의 최대 충전량에 비례합니다.", "더 높이!", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GRIDDLED_CORN, "↑ {{BlackHeart}}블랙하트 +1#↑ {{DamageSmall}}공격력 +1#{{FFSpicyKeyTint}}{{Key}}매운열쇠를 드랍합니다.", "옥수수 철판구이", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.ETERNAL_D10, "사용 시 방 안의 모든 적을 바꾸며 낮은 확률로 적이 사라집니다.", "이터널 D10", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.TOY_CAMERA, "사용 후 공격하는 방향으로 사진을 촬영합니다.#캐릭터 촬영 시 {{TearsSmall}}빠르게 감소하는 연사가 대폭 증가합니다.#촬영 범위에 있는 적에게 혼란을 걸며 탄환을 없앱니다.#한번에 적을 4마리 이상 촬영 시 "..FiendFolio.ITEM.CARD.COOL_PHOTO.."Cool Photo를 드랍합니다.(방당 1회)", "장난감 카메라", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.TOY_CAMERA, "사용 후 공격하는 방향으로 사진을 촬영합니다.#캐릭터 촬영 시 {{TearsSmall}}빠르게 감소하는 연사가 대폭 증가합니다.#촬영 범위에 있는 적에게 혼란을 걸며 탄환을 없앱니다.#한번에 적을 4마리 이상 촬영 시 {{Card"..FiendFolio.ITEM.CARD.COOL_PHOTO.."}}Cool Photo를 드랍합니다.(방당 1회)", "장난감 카메라", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.HAPPYHEAD_AXE, "주기적으로 가장 가까운 적을 향해 사거리가 짧은 도끼를 던집니다.#도끼는 던진 방향의 반대방향으로 되돌아갑니다.", "칼데아 도끼", "ko_kr") -- Chaldean axe
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.PENNY_ROLL, "{{Coin}} 획득 시 페니류 장신구, 황금동전, 랜덤 동전 4개를 드랍합니다.", "페니 롤", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.EVIL_STICKER, "{{FFImmoralHeartTint}}{{SoulHeart}}이모럴하트, {{FFCursedPennyTint}}{{Coin}}저주받은 동전, 장난꾸러기 상자, {{FFSpicyKeyTint}}{{Key}}매운열쇠, {{FFCopperBombTint}}{{Bomb}}구리폭탄의 등장 확률이 증가합니다.", "악마 스티커", "ko_kr")
@@ -588,9 +588,9 @@ EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MOMS_STOCKINGS, "↑ {{RangeSmall
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.GOLDEN_POPSICLE, "↑ {{SoulHeart}}소울하트 +1#↑ {{LuckSmall}}행운 +2#황금 픽업 아이템 하나를 드랍합니다.", "황금 아이스크림", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.TIME_ITSELF, "확률적으로 적에게 다중 유클리드를 거는 공격이 나갑니다.#공격이 다중 유클리드 상태의 적을 통과할 수 있으며 2개로 복제되어 나갑니다.", "시간 그 자체", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.EMPTY_BOOK, "사용 시 이야기를 작성합니다.#작성한 이야기에 따라 쿨타임 및 효과가 달라집니다.", "빈 공책", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
-EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6, "이야기 작성이 완료된 책입니다.#작성한 이야기에 따라 쿨타임 및 사용 효과가 달라집니다.", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_2, "", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_4, "", "나의 이야기", "ko_kr")
+EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.MY_STORY_6, "", "나의 이야기", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.HOST_ON_TOAST, "↑ {{DamageSmall}}공격력 +0.5#↑ {{RangeSmall}}사거리 +0.38", "호스트 발린 토스트", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BAG_OF_BOBBIES, "방 클리어 시 일정 확률로 {{Collectible8}}Fragile Bobby를 소환합니다.#{{Collectible8}} Fragile bobby는 Brother Bobby와 동일하나 5회 피격 시 사라집니다.", "보비 가방", "ko_kr")
 EID:addCollectible(FiendFolio.ITEM.COLLECTIBLE.BOX_TOP, "↑ {{LuckSmall}}행운 +2#{{Card"..FiendFolio.ITEM.CARD.PUZZLE_PIECE.."}}퍼즐 조각을 드랍합니다.", "박스 탑", "ko_kr")
@@ -826,7 +826,7 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.NECROMANTIC_FOSSIL, "적 처치 시 확률�
 EID:addTrinket(FiendFolio.ITEM.ROCK.BRAIN_FOSSIL, "공격이 잠시동안 적에게 유도됩니다.#분해 시 The Magician 카드를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "두뇌 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.REFUND_FOSSIL, "다른 화석 분해 시 {{Trinket"..FiendFolio.ITEM.ROCK.POCKET_SAND.."}}Pocket Sand를 소환합니다.#채굴기로 {{Trinket"..FiendFolio.ITEM.ROCK.POCKET_SAND.."}}Pocket Sand 채굴 시 {{Coin}}을 소모하지 않습니다.#분해 시 {{Trinket"..FiendFolio.ITEM.ROCK.POCKET_SAND.."}}Pocket Sand 2개를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "흥정 화석", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.LEFT_FOSSIL, "{{Trinket61}} 모든 상자가 {{RedChest}}빨간상자로 교체됩니다.#분해 시 {{RedChest}}빨간상자를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "왼손목 화석", "ko_kr")
-EID:addTrinket(FiendFolio.ITEM.ROCK.THANK_YOU_FOSSIL, "거지가 2배로 보답합니다.#분해 시 Judgement 카드를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "감사의 화석", "ko_kr")
+EID:addTrinket(FiendFolio.ITEM.ROCK.THANK_YOU_FOSSIL, "거지가 픽업을 2배로 보답합니다.#!!! (패시브/액티브 보상은 미적용)#분해 시 Judgement 카드를 추가로 소환합니다.#!!! 석기 장신구 : {{ColorRed}}화석{{CR}} 타입", "감사의 화석", "ko_kr")
 
 EID:addTrinket(FiendFolio.ITEM.ROCK.CURVED_GEODE, "↑ {{DamageSmall}}공격력 +1#↑ 다른 정동석 소지 시 {{DamageSmall}}추가 공격력 +0.5#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "굽은 정동", "ko_kr")
 EID:addTrinket(FiendFolio.ITEM.ROCK.HAUNTED_GEODE, "확률적으로({{LuckSmall}}) 적과 장애물을 관통하는 눈물을 발사합니다.#다른 정동석 소지 시 확률 증가#!!! 석기 장신구 : {{ColorTeal}}정동석{{CR}} 타입", "공포의 정동", "ko_kr")
@@ -860,8 +860,8 @@ EID:addTrinket(FiendFolio.ITEM.ROCK.GEODE_FOSSIL, "↑ {{RangeSmall}}사거리 +
 
 EID:addEntity(6, 1020, 0, "채굴기", "현재 들고 있는 장신구와 {{Coin}}동전 3개를 소모하여 다른 석기 장신구로 교체합니다.", "ko_kr")
 EID:addEntity(6, 1021, 0, "분해기", "현재 들고 있는 장신구를 {{SoulHeart}}소울하트 1~1.5개로 분해합니다.", "ko_kr")
-EID:addEntity(6, 1022, 0, "은둔자", "{{SoulHeart}}소울하트 1.5칸을 소모하여 현재 소지 중인 석기 장신구를 흡수합니다.#!!! 흡수된 석기 장신구의 효과는 원래 효과의 33%로 줄어듭니다.", "ko_kr")
-EID:addEntity(6, 1023, 0, "???", "나중에 다시 와주세요.", "ko_kr")
+EID:addEntity(6, 1022, 0, "은둔자", "{{SoulHeart}}소울하트 1.5칸을 소모하여 현재 소지 중인 석기 장신구를 흡수합니다.#!!! 흡수된 석기 장신구의 효과는 원래 효과의 66%로 줄어듭니다.", "ko_kr")
+EID:addEntity(6, 1023, 0, "???", "이후 스테이지에 다시 와주세요.#폭파 시 랜덤 장신구를 드랍합니다.", "ko_kr")
 EID:addEntity(6, 1024, 0, "정동 골렘", "!!! 스테이지 당 일회용#현재 들고 있는 장신구를 {{ColorTeal}}정동석{{CR}} 장신구 2개로 바꿉니다.#정동성 타입의 장신구는 해당 장신구를 복제합니다.", "ko_kr")
 EID:addEntity(6, 1024, 1, "정동 골렘", "!!! 이미 사용됨. 다음 스테이지부터 등장 시 다시 사용할 수 있습니다.", "ko_kr")
 
@@ -937,18 +937,21 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
   local effects
   local multiplier
   local existingEffects = FiendFolio.savedata.run.emptybookeffects
-  local appendDesc = ""
+  local appendDesc = "!!! 사용 시:"
+  local shouldAppend = true
   if existingEffects then
     if existingEffects and existingEffects[checkNames[descObj.ObjSubType]] then
       effects = existingEffects[checkNames[descObj.ObjSubType]]
       multiplier = Isaac.GetItemConfig():GetCollectible(descObj.ObjSubType).MaxCharges
       multiplier = multiplier and multiplier / 2
     else
+      shouldAppend = false
+      appendDesc = "!!! 랜덤 효과를 2번 발동합니다."
       effects = {"wild", "wild"}
       multiplier = 2
     end
 
-    if effects and multiplier then
+    if effects and multiplier and shouldAppend then
       for _, effect in ipairs(effects) do
         while effect == "wild" do
           appendDesc = appendDesc .. "#랜덤 효과를 발동합니다."
@@ -974,7 +977,7 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
             [2] = "20 + (3 * 현재 스테이지)",
             [3] = "30 + (4 * 현재 스테이지)"
           }
-          appendDesc = appendDesc .. "#{{Fear}} " .. rangeStr .. "적에게 " .. dmgStrings[multiplier] .. "만큼의 피해를 줍니다."
+          appendDesc = appendDesc .. "#" .. rangeStr .. "적에게 " .. dmgStrings[multiplier] .. "만큼의 피해를 줍니다."
         elseif effect == "profitable" then
           local coinStrings = {
             [1] = "페니 2개를 드랍합니다.",
@@ -983,7 +986,7 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
           }
           appendDesc = appendDesc .. "#{{Coin}} " .. coinStrings[multiplier]
         elseif effect == "religious" then
-          appendDesc = appendDesc .. "#{{Collectible584}} Book of Virtues의 불꽃을 " ..tostring(multiplier) .. "개 소환합니다."
+          appendDesc = appendDesc .. "#{{Collectible584}} Book of Virtues의 불꽃을 " ..tostring(math.ceil(multiplier)) .. "개 소환합니다."
         elseif effect == "love" then
           local heartStrings = {
             [1] = "#{{HalfHeart}} 빨간하트 반칸을 드랍합니다.",
@@ -1001,13 +1004,14 @@ local function FF_EIDKR_EmptyBookCallback(descObj)
           appendDesc = appendDesc .. "#{{Collectible294}} " .. funnyStrings[multiplier] .. "방귀를 뀝니다."
 
         elseif effect == "mischievous" then
-          appendDesc = appendDesc .. "#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN.."}} Fiend의 부하를 " ..tostring(multiplier) .. "마리 소환합니다."
+          appendDesc = appendDesc .. "#{{Collectible"..FiendFolio.ITEM.COLLECTIBLE.FIENDS_HORN.."}} Fiend의 부하를 " ..tostring(math.ceil(multiplier)) .. "마리 소환합니다."
         elseif effect == "festering" then
-          appendDesc = appendDesc .. "#파란 아군 자폭 벼룩을" .. tostring(multiplier * 2) .. "마리 소환합니다."
+          appendDesc = appendDesc .. "#파란 아군 자폭 벼룩을 " .. tostring(math.ceil(multiplier * 2)) .. "마리 소환합니다."
         end
       end
     end
-    EID:appendToDescription(descObj, appendDesc)
+    descObj.Description = appendDesc .. descObj.Description
+    --EID:appendToDescription(descObj, appendDesc)
   end
   return descObj
 end
