@@ -25,6 +25,7 @@ nav:
     - '마크업 모음' : api/markup.md
   - 자주 묻는 질문: faq.md
   - 추천 모드: recommended.md
+  - 변경 내역: changelog.md
   - 모드 링크: https://steamcommunity.com/sharedfiles/filedetails/?id=836319872
 theme:
   name: material
