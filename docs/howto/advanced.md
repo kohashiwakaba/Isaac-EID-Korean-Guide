@@ -54,4 +54,179 @@
 | **엔티티 소환** | 특정 엔티티를 소환합니다. |
 | **방귀** | 반경 n칸만큼의 랜덤 방귀를 뀝니다. |
 
+??? note "아이템 효과 획득으로 발동될 수 있는 아이템 목록 / 출처 제공 : Hybrid"
+    - Sad Onion
+    - Inner Eye
+    - Spoon Bender
+    - My Reflection
+    - Number One
+    - Brother Bobby
+    - Magic Mushroom
+    - The Virus
+    - Roid Rage
+    - Transcendence
+    - Mom's Underwear
+    - Mom's Heels
+    - Mom's Lipstick
+    - Mom's Eye
+    - Distant Admiration
+    - Sister Maggy
+    - Growth Hormones
+    - Mini Mush
+    - Cube of Meat (모든 단계)
+    - Little Chubby
+    - Sack of Pennies
+    - Robo-Baby
+    - Little Chad
+    - The Relic
+    - Little Gish
+    - Little Steven
+    - The Wafer
+    - Mom's Contacts
+    - Guardian Angel
+    - Demon Baby
+    - Mom's Knife
+    - Ouija Board
+    - Dead Bird (피격 유무와 상관없이 새가 즉시 소환됨)
+    - Brimstone
+    - Odd Mushroom (Thin)
+    - Odd Mushroom (Large)
+    - Whore of Babylon (빨간하트 개수와 무관하게 즉시 발동)
+    - Forever Alone
+    - Bomb Bag
+    - Speed Ball
+    - Bum Friend
+    - Tough Love
+    - Peeper (스탯 미적용)
+    - Ghost Baby
+    - Harlequin Baby
+    - Daddy Longlegs
+    - Sacrificial Dagger
+    - Rainbow Baby
+    - Holy Water
+    - Guppy's Hairball
+    - Abel
+    - Mom's Key
+    - Mom's Eyeshadow
+    - Iron Bar
+    - The Guillotine
+    - Ball of Bandages (모든 단계)
+    - Anemic (피격 유무와 상관없이 장판 생성)
+    - Mom's Wig
+    - Mom's Perfume
+    - Death's Touch
+    - Experimental Treatment (스탯 변화량은 각 방마다 정해짐)
+    - 20/20 (공격력 감소 없음)
+    - Hive Mind
+    - Fire Mind
+    - Dark Matter
+    - Proptosis
+    - Smart Fly
+    - Dry Baby
+    - Juciy Sack
+    - Robo-Baby 2.0
+    - Rotten Baby
+    - Headless Baby
+    - Leech
+    - Mystery Sack
+    - BBF
+    - Bob's Brain
+    - Best Bud (피격 유무와 상관없이 파리가 즉시 소환됨)
+    - Lil Brimstone
+    - Lil Haunt
+    - Dark Bum
+    - Big Fan
+    - Sissy Longlegs
+    - Punching Bag
+    - Leo
+    - Holy Mantle
+    - Mysterious Liquid
+    - Gemini
+    - Cain's Other Eye
+    - ???'s Only Friend
+    - Samson's Chains
+    - Mongo Baby
+    - Blue Cap
+    - Synthoil
+    - Mom's Pearls
+    - The Wiz
+    - Incubus
+    - Fate's Reward
+    - Lil Chest
+    - Sworn Protector
+    - Friend Zone
+    - Lost Fly
+    - Charged Baby
+    - Holy Light
+    - Lil Gurdy
+    - Bumbo
+    - Censer
+    - Key Bum
+    - Rune Bag
+    - Seraphim
+    - Tractor Beam (연사 증가만 적용)
+    - God's Flesh
+    - Spider Mod
+    - Farting Baby
+    - Empty Vessel (빨간하트 개수와 상관없이 비행 항상 적용, 보호막은 발동되지 않음)
+    - Lusty Blood (효과 획득 시마다 스택 증가, 처치 시에는 스택이 증가하지 않음)
+    - Crown of Light (사거리, 탄속만 적용)
+    - Succubus
+    - Fruit Cake
+    - Obsessed Fan
+    - Head of the Keeper
+    - Papa Fly
+    - Multidimensional Baby
+    - Lil Loki
+    - Milk! (연사 증가만 적용됨)
+    - Dark Prince's Crown (빨간하트 개수와 상관없이 적용)
+    - Finger!
+    - Shade
+    - Depression
+    - Hushy
+    - Lil Monstro
+    - King Baby
+    - Big Chubby
+    - Acid Baby
+    - Yo Listen!
+    - Adrenaline
+    - Euthanasia
+    - Camo Undies
+    - Sack of Sacks
+    - Mom's Razor
+    - Bloodshot Eye
+    - Angry Fly
+    - Buddy in a Box
+    - Lil Delirium
+    - 7 Seals
+    - Angelic Prism
+    - Lil Spewer
+    - Mystery Egg
+    - Slipped Rib
+    - Hallowed Ground
+    - Pointy Rib
+    - Jaw Bone
+    - Blood Puppy
+    - Paschal Candle (아이템 효과 획득마다 연사 증가, 패밀리어는 없음)
+    - Eye of the Occult (눈물효과만 적용)
+    - Intruder (피격 시 거미를 뱉지 않음)
+    - Psy Fly
+    - Mars (대시 즉시 사용)
+    - Uranus
+    - Boiled Baby
+    - Freezer Baby
+    - Bird Cage (피격 유무와 상관없이 새가 즉시 소환됨)
+    - Lil Dumpy
+    - Bot Fly
+    - Tinytoma
+    - Fruity Plum
+    - Cube Baby
+    - Astral Projection (피격 시 효과가 즉시 발동됨)
+    - Lil Abaddon
+    - Lil Portal
+    - Worm Friend
+    - Inner Child (추가 목숨을 주지 않으나 부활 직후의 효과가 즉시 적용됨)
+    - Twisted Pair
+    - Mom's Ring
+
 일부 효과는 연속적으로 일어날 수 있으며 그 이전의 행동에 **성공**해야만 그 다음의 효과가 발동됩니다.

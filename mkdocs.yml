@@ -49,7 +49,9 @@ theme:
   font:
     text: IBM Plex Sans KR
 
-extra_css: [ css/pymdownx.css]
+extra_css: 
+  - css/pymdownx.css
+  - css/wakaba.css
 markdown_extensions:
   - tables
   - md_in_html

@@ -5,19 +5,35 @@
     일부 원본 설명모드의 기본값이 구 한글 설명모드의 기본값과 달라 언어 이외에 추가 설정을 진행해 주어야 합니다.   
     추가 설정이 필요한 항목은 아래와 같습니다:   
 
-    - [Mod Config Menu - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=2487535818), 혹은 [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독   
+    - [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독   
     - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입   
         - EID -> General -> **Language**를 '**Korean**'으로 설정 (이미 한국어인 경우 스킵)   
         - EID -> General -> **Name Language**를 '**Current + English**'로 설정   
         - EID -> General -> **Indicator**를 '**arrow**'로 설정   
         - EID -> Display -> **Description Refresh Rate**를 '**60**'으로 설정   
 
-
 !!! warning "해당 가이드는 제작중입니다."
     일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
     [자주묻는 질문은 여기로](./faq)
 
-!!! info "마지막 업데이트 : 2022-09-03"
+!!! pied-piper "마지막 업데이트 : 2022-09-20"
+    - **Mod Config Menu - Pure의 애프터버스+ 지원으로 더 이상 Continued 버전의 링크를 제공하지 않습니다.**
+    - 모드 설정 : 레시피 단축키를 표시하지 않도록 설정하는 옵션 추가
+    - 알리미 : Modeling Clay, Zodiac 아이템 정보 추가
+    - 알트 카인 레시피 : 들어있는 픽업 개수 초과 시 주황색으로 표시됨
+    - 알리미 : 레시피를 표시할 수 없는 경우 필요한 픽업 수 표시
+    - AB+ : 희생방 오류 수정
+    - AB+ : MCM + 레시피 옵션 관련 오류 수정
+
+??? info "이전 업데이트 : 2022-09-06"
+    - Void 및 Echo Chamber 소지 시 알리미가 표시되지 않던 문제 수정
+    - 최근 VURP! 사용 알약 표시 개선
+    - Flip 아이템 미리보기가 현재 플레이어만 동작하던 문제 수정
+    - 알리미 : 황금 알약 사용 체크 개선
+    - 한국어 설명 업데이트
+
+
+??? info "이전 업데이트 : 2022-09-03"
     - **Bag of Crafting 레시피를 기본으로 표시되게 변경**
     - Item Reminder에서 D1, D Infinity 상태 설명 추가
     - Item Reminder에서 Void가 흡수한 액티브 표시
@@ -92,15 +108,12 @@ Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1�
 !!! info "스팀 창작마당 버전은 정기적으로 업데이트된다"
     아이템 설명 모드는 Wofsauge를 비롯한 여러 개발자가 개발하는 모드입니다. 따라서 개발자 및 번역가들이 Github 프로젝트에 먼저 올린 후 한국 시간 기준 격주마다 스팀 창작마당에 업로드 됩니다. 스팀 버전보다도 빠른 업데이트를 받고자 한다면 [Github 프로젝트](https://github.com/wofsauge/External-Item-Descriptions)에서 직접 받으시는 걸 권장드립니다.
 - Mod Config Menu로 설정 :
-    - [Mod Config Menu - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=2487535818), 혹은 [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독 
+    - [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독 
     - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입
     - EID -> General -> Language를 'Korean'으로 설정 (아래 그림 참조)
     - 이외의 옵션 설정 방법은 [이 페이지](./config/configmenu.md)를 확인해 주세요.  
     ![한국어 설정](./img/guide_first.jpg){: width="500"}
     - 위 이미지처럼 되어 있다면 아이템 설명이 이제 한글로 표시됩니다. 
-
-!!! question "Mod Config Menu가 2개가 있네요?"
-    piber20가 제작, Chifilly가 리펜턴스용으로 옮긴 Mod Config Menu는 각 모드별 설정을 메모장 없이 쉽게 설정할 수 있게 해주는 모드입니다. 그러나 최근 아이템 위키 모드인 Encyclopedia(AgentCucco 제작)과의 충돌 발견 후 여러 문제가 발견됨에 따라 이후 Zamiel이 기존의 호환성 충돌 요소를 제거한 새로운 버전(Mod Config Menu - Pure)을 제작하였습니다. 두 버전 중 다른 모드와의 충돌이 적은 모드를 사용하는 것을 권장하며, 두 모드를 동시에 적용하면 안됩니다.
 
 - 직접 설정 :
     - 애프터버스 + : ```내 문서\My Games\Binding of Isaac Afterbirth + Mods\external item descriptions_836319872``` 폴더로,
