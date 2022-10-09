@@ -2,8 +2,11 @@
 # 변경 내역
 
 
-### 4.41(예정) <small>_ 2022-??-??</small> { id="4.41" }
+### 4.41 <small>_ 2022-10-09</small> { id="4.41" }
 
+ - 알약 사용 내역이 효과가 아닌 색상을 따라가도록 변경 (Only Show Used Pill Descriptions 옵션 전용)
+ - 알리미 : Echo chamber 최근 사용 내역에 알약 색상 표시
+ - Zodiac의 현재 효과 설명이 ItemReminderShowHiddenInfo 설정이 활성화 되어 있을 때만 표시하도록 변경
  - 한국어 설명 업데이트
 
 !!! note "변경 상세"
