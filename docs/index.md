@@ -16,7 +16,13 @@
     일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
     [자주묻는 질문은 여기로](./faq)
 
-!!! pied-piper "마지막 업데이트 : 2022-09-20"
+!!! pied-piper "마지막 업데이트 : 2022-10-09"
+    - 알약 사용 내역이 효과가 아닌 색상을 따라가도록 변경 (Only Show Used Pill Descriptions 옵션 전용)
+    - 알리미 : Echo chamber 최근 사용 내역에 알약 색상 표시
+    - Zodiac의 현재 효과 설명이 ItemReminderShowHiddenInfo 설정이 활성화 되어 있을 때만 표시하도록 변경
+    - 한국어 설명 업데이트 / [자세한 변경 내역](./changelog)
+
+??? info "이전 업데이트 : 2022-09-20"
     - **Mod Config Menu - Pure의 애프터버스+ 지원으로 더 이상 Continued 버전의 링크를 제공하지 않습니다.**
     - 모드 설정 : 레시피 단축키를 표시하지 않도록 설정하는 옵션 추가
     - 알리미 : Modeling Clay, Zodiac 아이템 정보 추가
