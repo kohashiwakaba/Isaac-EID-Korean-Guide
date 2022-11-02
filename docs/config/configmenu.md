@@ -119,7 +119,7 @@ EID -> Reminder에서 특수 설명(리마인더) 옵션을 설정할 수 있습
 | 옵션 | 설명 | 기본값 |
 | ------------ | ------------- | ------------- |
 | **Show Display** | 설정과 무관하게 스테이지 내에 픽업 아이템이 8개 이상 있어야 표시됩니다.<br/>always: 항상 표시<br/>hold: 가방을 들고 있는 도중에만 표시<br/>never: 레시피 기능 끄기 | `always` |
-| **Display Mode** | 조합 가방의 레시피 정보를 표시합니다.<br/>Recipe List: 조합법을 보여줍니다.<br/>Preview Only: 예상되는 조합 결과만 보여줍니다.<br/>No Recipies: 아이템 퀄리티, 배열의 아이템 등장 확률만 보여줍니다.<br/>Pickups Only: 현재 방/스테이지의 픽업 정보만 보여줍니다. | `No Recipies` |
+| **Display Mode** | 조합 가방의 레시피 정보를 표시합니다.<br/>Recipe List: 조합법을 보여줍니다.<br/>Preview Only: 예상되는 조합 결과만 보여줍니다.<br/>Itempool percentage: 아이템 퀄리티, 배열의 아이템 등장 확률만 보여줍니다.<br/>Pickups Only: 현재 방/스테이지의 픽업 정보만 보여줍니다. | `Recipe List` |
 | **Hide in Battle** | 방 안에 적이 있을 경우 조합법/가방 정보를 자동으로 숨깁니다. | `yes` |
 | **Show Recipies/Best Bag as** | 레시피 목록의 표시 방식을 설정합니다<br/>Groups: 각 아이템 별로 픽업의 갯수로 표시<br/>8 Icons: 각 픽업 1개 당 개별 아이콘으로 표시 | `Groups` |
 | **Load Modded Item Recipies** | 레시피 목록에서 모드 추가 아이템도 계산합니다.<br/>주의: 레시피가 제시한 모드 아이템의 비중값이 1이 아닌 경우 해당 모드 아이템이 아닌 다른 아이템이 등장할 수 있습니다. | `true` |

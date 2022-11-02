@@ -631,7 +631,7 @@ Void 아이템, Black Rune의 예상 스탯 증가량을 보여줍니다.
 
 ### DisplayBagOfCrafting
 
-### BagOfCraftingDisplayMode
+### BagOfCraftingDisplayRecipesMode
 
 ### BagOfCraftingHideInBattle
 

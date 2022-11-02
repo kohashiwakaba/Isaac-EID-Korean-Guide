@@ -2,6 +2,11 @@
 # 변경 내역
 
 
+### 4.42 <small>_ 2022-11-02</small> { id="4.42" }
+
+ - 레시피 : Bag Of Crafting Display Mode 옵션 재설정 - 이번 업데이트 이후 레시피 표시 여부가 초기화됩니다.
+ - 레시피 : No Recipies → Item Pool Percentage 명칭 변경
+
 ### 4.41 <small>_ 2022-10-09</small> { id="4.41" }
 
  - 알약 사용 내역이 효과가 아닌 색상을 따라가도록 변경 (Only Show Used Pill Descriptions 옵션 전용)
