@@ -1,6 +1,10 @@
 
 # 변경 내역
 
+!!! warning "이 페이지는 더 이상 업데이트 되지 않습니다."
+    변경점은 아래 페이지를 확인해 주세요.
+    - [Steam Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/changelog/836319872)
+    - [Github Project link](https://github.com/wofsauge/External-Item-Descriptions)
 
 ### 4.42 <small>_ 2022-11-02</small> { id="4.42" }
 
