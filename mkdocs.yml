@@ -31,7 +31,7 @@ theme:
   name: material
   icon:
     repo: fontawesome/brands/github
-  language: kr
+  language: ko
   features:
     - navigation.instant
     - navigation.tracking
@@ -43,6 +43,7 @@ theme:
     - toc.integrate
     - navigation.top
     - header.autohide
+    - navigation.footer
   palette: 
     scheme: dracula
     primary: deep purple

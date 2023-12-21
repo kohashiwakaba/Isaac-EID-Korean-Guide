@@ -14,7 +14,7 @@
 
 !!! warning "해당 가이드는 제작중입니다."
     일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
-    [자주묻는 질문은 여기로](./faq)
+    [자주묻는 질문은 여기로](./faq.md)
 
 ## For Non-Korean users
 !!! note ""
@@ -55,8 +55,8 @@ Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1�
 - 전투 중 설명 숨기기 설정 가능
 - 마우스 커서를 액티브 아이템과 픽업 그림에 올려 설명 확인 (베타)
 - 모드 아이템 설명 추가 가능([영어](https://github.com/wofsauge/External-Item-Descriptions/wiki)/[영어(모든 기능)](https://github.com/wofsauge/External-Item-Descriptions/blob/master/eid_api.lua)/한국어(준비중))
-- (리펜턴스) [알트 카인의 레시피 실시간 확인 (베타)](./howto/crafting)
-- (리펜턴스) [스핀다운 주사위 예상 결과 확인](./howto/advanced)
+- (리펜턴스) [알트 카인의 레시피 실시간 확인 (베타)](./howto/crafting.md)
+- (리펜턴스) [스핀다운 주사위 예상 결과 확인](./howto/advanced.md)
 
 ## ⭐⭐⭐사용 전 필독⭐⭐⭐
 !!! warning "모드 설치 전 필수 확인 사항"
@@ -108,7 +108,7 @@ Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1�
 
 ## 모드의 기능을 설정하고 싶다면?
 
-기본적으로 모든 모드의 기능은 설명 모드 폴더의 ```eid_config.lua``` 파일 및 Mod Config Menu를 통하여 설정할 수 있습니다. 설정할 수 있는 요소는 [여기서](./config/configmenu) 확인할 수 있습니다.
+기본적으로 모든 모드의 기능은 설명 모드 폴더의 ```eid_config.lua``` 파일 및 Mod Config Menu를 통하여 설정할 수 있습니다. 설정할 수 있는 요소는 [여기서](./config/configmenu.md) 확인할 수 있습니다.
 
 ## 기타 링크
 
