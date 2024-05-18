@@ -1,4 +1,4 @@
-!!! danger "구 한글 설명모드 사용자 필독"
+??? note "2023년 이전 구 한글 설명모드 관련"
     <span style="color:red;font-weight:700;font-size:1rem">반드시 이 페이지 전부를 정독한 후 설명모드를 사용하여 주십시오!</span>
 
     **2022-06-25일자로 구 한글 설명모드가 창작마당에서 삭제되었습니다.** 이후 게임 실행 시 해당 모드가 제거되며 원본 설명모드를 이용하셔야 합니다.   
@@ -54,9 +54,12 @@ Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1�
 - 상점의 카드, 알약 설명 출력 여부, 블라인드 저주 및 가려진 선택지일 때 아이템 설명 출력 여부 등 설정 가능
 - 전투 중 설명 숨기기 설정 가능
 - 마우스 커서를 액티브 아이템과 픽업 그림에 올려 설명 확인 (베타)
-- 모드 아이템 설명 추가 가능([영어](https://github.com/wofsauge/External-Item-Descriptions/wiki)/[영어(모든 기능)](https://github.com/wofsauge/External-Item-Descriptions/blob/master/eid_api.lua)/한국어(준비중))
-- (리펜턴스) [알트 카인의 레시피 실시간 확인 (베타)](./howto/crafting.md)
+- 모드 아이템 설명 추가 가능([영어](https://github.com/wofsauge/External-Item-Descriptions/wiki))
+- (리펜턴스) [알트 카인의 레시피 실시간 확인](./howto/crafting.md)
 - (리펜턴스) [스핀다운 주사위 예상 결과 확인](./howto/advanced.md)
+- (REPENTOGON) TMTRAINER 글리치 아이템 설명
+- (REPENTOGON) 컬렉션 페이지에서 설명 확인
+- (REPENTOGON) 기부 기계 다음 목표 수 확인
 
 ## ⭐⭐⭐사용 전 필독⭐⭐⭐
 !!! warning "모드 설치 전 필수 확인 사항"
@@ -90,6 +93,7 @@ Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1�
     - 위 이미지처럼 되어 있다면 아이템 설명이 이제 한글로 표시됩니다. 
 
 - 직접 설정 :
+    - Mod Config Menu가 적용 중인 경우 이 방법으로 설정할 수 없습니다.
     - 애프터버스 + : ```내 문서\My Games\Binding of Isaac Afterbirth + Mods\external item descriptions_836319872``` 폴더로,
     - 리펜턴스 : ```아이작 설치 폴더\mods\external item descriptions_836319872\``` 폴더로 이동
     - ```eid_config.lua``` 오른쪽 클릭 후 연결 프로그램 -> 메모장
