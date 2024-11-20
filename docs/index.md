@@ -1,3 +1,8 @@
+!!! warning "리펜턴스+ DLC 이용자 필독."
+    리펜턴스+ DLC는 현재 베타 상태이므로 창작마당 구독을 통한 모드 적용이 불가능합니다.
+    수동 모드 적용이 가능하나 정상 작동을 보장하지 않습니다.
+    [적용 방법은 여기로](./howto/update-from-github.md)
+
 ??? note "2023년 이전 구 한글 설명모드 관련"
     <span style="color:red;font-weight:700;font-size:1rem">반드시 이 페이지 전부를 정독한 후 설명모드를 사용하여 주십시오!</span>
 
@@ -31,8 +36,8 @@
 
 ---
 
-### 어? 한글 설명 모드가 있었지 않았나요?
-Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1월 한국어가 아이템 설명 모드와 통합되기 전에 많은 유저들이 절찬리에 애용했습니다. 애프터버스 + 까지는 읽기 좋은 소야 폰트를 사용하여 한국인이 더 쉽게 설명을 읽을 수 있게 하는 등 많은 고유 요소를 갖고 있었습니다. 하지만 리펜턴스 출시 이후 이러한 고유 요소가 오히려 독이 되어 한글 설명 모드만 키면 다른 모드가 모조리 먹통이 되는 등 점점 다양한 모드를 즐기는 것이 불가능하게 되면서 결국, 몇몇 유저의 제안 및 Wofsauge의 노력으로 기존 한국어 번역을 아이템 설명 모드에 포함시키게 되었습니다.
+??? note "어? 한글 설명 모드가 있었지 않았나요?"
+    Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1월 한국어가 아이템 설명 모드와 통합되기 전에 많은 유저들이 절찬리에 애용했습니다. 애프터버스 + 까지는 읽기 좋은 소야 폰트를 사용하여 한국인이 더 쉽게 설명을 읽을 수 있게 하는 등 많은 고유 요소를 갖고 있었습니다. 하지만 리펜턴스 출시 이후 이러한 고유 요소가 오히려 독이 되어 한글 설명 모드만 키면 다른 모드가 모조리 먹통이 되는 등 점점 다양한 모드를 즐기는 것이 불가능하게 되면서 결국, 몇몇 유저의 제안 및 Wofsauge의 노력으로 기존 한국어 번역을 아이템 설명 모드에 포함시키게 되었습니다.
 
 ---
 ## 아이템 설명 모드의 기능은?
@@ -119,7 +124,7 @@ Blackcreamtea가 번역, 혹은 제작했던 한글 설명 모드는 2022년 1�
 - [디시인사이드 아이작의 번제 갤러리](https://gall.dcinside.com/tboi)
 - [아카라이브 아이작의 번제 채널](https://arca.live/b/isaac)
 - [나무위키](https://namu.wiki)
-- [Platinum God](https://platinumgod.uk)
+- [Isaacguru](https://isaacguru.com)
 - [Binding of Isaac Rebirth Wiki](https://bindingofisaacrebirth.fandom.com/)
 - ~~[(구) 한국어 설명 모드(Blackcreamtea 제작)](https://steamcommunity.com/sharedfiles/filedetails/?id=1630138997)~~ (삭제됨)
 - ~~[(구) 한국어 설명 모드(Blackcreamtea 제작 / 애프터버스+ 전용, 이미지 타입)](https://steamcommunity.com/sharedfiles/filedetails/?id=2375611219)~~ (삭제됨)
