@@ -1,8 +1,3 @@
-!!! warning "리펜턴스+ DLC 이용자 필독."
-    리펜턴스+ DLC는 현재 베타 상태이므로 창작마당 구독을 통한 모드 적용이 불가능합니다.
-    수동 모드 적용이 가능하나 정상 작동을 보장하지 않습니다.
-    [적용 방법은 여기로](./howto/update-from-github.md)
-
 ??? note "2023년 이전 구 한글 설명모드 관련"
     <span style="color:red;font-weight:700;font-size:1rem">반드시 이 페이지 전부를 정독한 후 설명모드를 사용하여 주십시오!</span>
 

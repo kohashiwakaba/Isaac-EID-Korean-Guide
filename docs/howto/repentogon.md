@@ -14,6 +14,23 @@ REPENTOGON의 설치는 다른 모드와는 다르게 창작마당에서의 설�
 - 다운로드한 업데이트 프로그램을 열린 폴더에다가 압축 해제 (```isaac-ng.exe```와 ```REPENTOGONUpdater.exe```가 같은 폴더에 있어야 함)
 - ```REPENTOGONUpdater.exe``` 실행 후 ```Install``` 버튼 클릭
 
+### 리펜턴스+에서의 REPENTOGON 설치 방법
+
+리펜턴스+ DLC는 현재 REPENTOGON이 공식적으로 지원되지 않으나 개발 중 버전을 받을 수 있습니다. 개발 중 버전 특성 상 자동 업데이트가 지원되지 않습니다.
+
+- [REPENTOGON Github Actions](https://github.com/TeamREPENTOGON/REPENTOGON/actions/workflows/ci.yml) 접속
+- 목록에서의 'Build Project and Upload Artifact' 중 맨 위의 항목 클릭 (되도록 옆에 초록색 V 표시가 있는 것을 클릭해 주세요)
+
+![아티팩트 목록](../img/rgon_nightly_artifact1.png)
+
+- 하단의 Artifacts 우측의 다운로드 버튼 클릭
+
+![아티팩트 다운로드](../img/rgon_nightly_artifact2.png)
+
+- 다운로드 받은 압축 파일 내용을 아이작 설치 폴더에 풀기
+
+![아티팩트 압축 풀기](../img/rgon_nightly_artifact3.png)
+
 ### TMTRAINER
 
 ![글리치 아이템 설명](../img/tmtrainer_rgon.jpg)
