@@ -16,10 +16,11 @@ REPENTOGON의 설치는 다른 모드와는 다르게 창작마당에서의 설�
 
 ### 리펜턴스+에서의 REPENTOGON 설치 방법
 
-리펜턴스+ DLC는 현재 REPENTOGON이 공식적으로 지원되지 않으나 개발 중 버전을 받을 수 있습니다. 개발 중 버전 특성 상 자동 업데이트가 지원되지 않습니다.
+리펜턴스+ DLC는 현재 REPENTOGON이 공식적으로 지원되지 않으나 개발 중 버전을 받을 수 있습니다. 개발 버전 특성 상 자동 업데이트가 지원되지 않습니다.
 
 - [REPENTOGON Github Actions](https://github.com/TeamREPENTOGON/REPENTOGON/actions/workflows/ci.yml) 접속
 - 목록에서의 'Build Project and Upload Artifact' 중 맨 위의 항목 클릭 (되도록 옆에 초록색 V 표시가 있는 것을 클릭해 주세요)
+- Github 계정이 없는 경우 [nightly.link](https://nightly.link/TeamREPENTOGON/REPENTOGON/workflows/ci/main/REPENTOGON-main.zip)에서 다운로드
 
 ![아티팩트 목록](../img/rgon_nightly_artifact1.png)
 
