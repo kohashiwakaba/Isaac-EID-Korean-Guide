@@ -4,8 +4,13 @@
 
 ### Github에서 직접 받기 (개발 버전)
 
+!!! warning "리펜턴스+ REPENTOGON의 경우"
+    리펜턴스+에서 REPENTOGON 런처를 통한 실행의 경우 강제로 다운그레이드를 진행하므로 설명모드 역시 REPENTOGON 대응 버전인 1.9.7.12에 맞는 버전이 필요합니다.
+
+    - [리펜플 REPENTOGON 대응 버전](https://github.com/wofsauge/External-Item-Descriptions/releases/tag/V5.04)
+
 1. [https://github.com/wofsauge/External-Item-Descriptions](https://github.com/wofsauge/External-Item-Descriptions) 페이지 접속
-2. 오른쪽의 Code 버튼을 누르고 나온 네모 상자에서 Download Zip을 클릭합니다.  
+2. 오른쪽의 Code 버튼을 누르고 나온 네모 상자에서 Download Zip을 클릭합니다.
 ![프로젝트 사이트](../img/howto_git_update1.png)
 
 ### Github에서 직접 받기 (릴리즈 버전, 리펜턴스+ DLC 이용자는 여기로)
@@ -15,6 +20,7 @@
 ![프로젝트 사이트](../img/howto_mcm_git_install_r1.png)
 3. 릴리즈 페이지에서 external.item.descriptions.zip 링크를 클릭하여 다운로드
 ![프로젝트 사이트](../img/howto_mcm_git_install_r2.png)
+
 ### 아이작 모드 폴더 찾기
 1. 스팀 라이브러리에서 The Binding of Isaac: Rebirth 항목을 오른쪽 클릭
 2. 메뉴에서 관리 > 로컬 파일 탐색 클릭<br />

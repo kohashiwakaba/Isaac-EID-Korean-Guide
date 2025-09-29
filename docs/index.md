@@ -1,16 +1,26 @@
+!!! danger "리펜턴스+ DLC에서의 REPENTOGON의 경우"
+    리펜턴스+에서 REPENTOGON 런처를 통한 실행의 경우 강제로 다운그레이드를 진행하므로 설명모드 역시 REPENTOGON 대응 버전인 1.9.7.12에 맞는 버전이 필요합니다.
+
+    - [리펜플에서 REPENTOGON 실행 방법](https://gall.dcinside.com/m/tboi/149421)
+
+    - [리펜플 REPENTOGON 대응 버전](https://github.com/wofsauge/External-Item-Descriptions/releases/tag/V5.04)
+
+    - [Github에서 수동 다운로드 및 적용 방법](/howto/update-from-github.md)
+
+
 ??? note "2023년 이전 구 한글 설명모드 관련"
     <span style="color:red;font-weight:700;font-size:1rem">반드시 이 페이지 전부를 정독한 후 설명모드를 사용하여 주십시오!</span>
 
-    **2022-06-25일자로 구 한글 설명모드가 창작마당에서 삭제되었습니다.** 이후 게임 실행 시 해당 모드가 제거되며 원본 설명모드를 이용하셔야 합니다.   
-    일부 원본 설명모드의 기본값이 구 한글 설명모드의 기본값과 달라 언어 이외에 추가 설정을 진행해 주어야 합니다.   
-    추가 설정이 필요한 항목은 아래와 같습니다:   
+    **2022-06-25일자로 구 한글 설명모드가 창작마당에서 삭제되었습니다.** 이후 게임 실행 시 해당 모드가 제거되며 원본 설명모드를 이용하셔야 합니다.
+    일부 원본 설명모드의 기본값이 구 한글 설명모드의 기본값과 달라 언어 이외에 추가 설정을 진행해 주어야 합니다.
+    추가 설정이 필요한 항목은 아래와 같습니다:
 
-    - [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독   
-    - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입   
-        - EID -> General -> **Language**를 '**Korean**'으로 설정 (이미 한국어인 경우 스킵)   
-        - EID -> General -> **Name Language**를 '**Current + English**'로 설정   
-        - EID -> General -> **Indicator**를 '**arrow**'로 설정   
-        - EID -> Display -> **Description Refresh Rate**를 '**60**'으로 설정   
+    - [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독
+    - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입
+        - EID -> General -> **Language**를 '**Korean**'으로 설정 (이미 한국어인 경우 스킵)
+        - EID -> General -> **Name Language**를 '**Current + English**'로 설정
+        - EID -> General -> **Indicator**를 '**arrow**'로 설정
+        - EID -> Display -> **Description Refresh Rate**를 '**60**'으로 설정
 
 !!! warning "해당 가이드는 제작중입니다."
     일부 페이지는 '준비중'으로 표기되므로 양해 부탁드립니다.
@@ -18,7 +28,7 @@
 
 ## For Non-Korean users
 !!! note ""
-    This (unfinished)documentation contains instruction or information for Korean users.  
+    This (unfinished)documentation contains instruction or information for Korean users.
     To check original External items Descriptions information, try to visit following links below:
 
 - [Steam Workshop Link](https://steamcommunity.com/sharedfiles/filedetails/?id=836319872)
@@ -64,19 +74,19 @@
 ## ⭐⭐⭐사용 전 필독⭐⭐⭐
 !!! warning "모드 설치 전 필수 확인 사항"
     ![해금 불가 경고](./img/achievement_warning.jpg){: width="50%"}
-    
+
     - {==**만약 게임을 설치하자마자 모드나 콘솔을 적용하고 게임을 시작하면 왼쪽 위의 '트로피 금지' 표시가 나오게 됩니다.** 이 표시는 캐릭터 및 도전과제 해금이 불가능하다는 표시이기 때문에 이 상태로 게임을 시작하게 되면 게임을 1%도 즐기지도 못하는 상황이 일어나게 됩니다. 따라서 우선적으로 모드 금지 제한을 해제하는 것이 좋습니다.==}
     - 위의 메시지는 Cube of Meat 아이템 해금 여부에 따라 표시됩니다. 도전과제를 해금할 수 있는데도 저 메시지가 나오는 경우가 있습니다. 이 경우는 무시하셔도 됩니다.
     === "리펜턴스"
         1. **리펜턴스의 경우 'The Binding of Isaac : Rebirth' 게임 설치 경로에 한글이 있을 경우 모드 적용이 불가능**합니다. 또한 **운영체제 계정명이 한글일 경우 일부 기능이 작동하지 않습니다.** 설치 경로 중간이나 운영체제 계정명에 한글이 있는지 확인해 주세요.
             1. 확인 방법 : Steam 설정 -> 다운로드 -> STEAM 라이브러리 폴더
             2. 저장공간 관리자 창에서 'The Binding of Isaac : Rebirth' 게임이 설치된 드라이브 선택 후 경로 확인
-        2. {==**반드시 모드 및 콘솔을 적용하지 않은 상태에서 <u>1회차(Mom / 에필로그 엔딩)</u> 클리어 후 모드를 적용해 주세요. 해당 조건을 만족하기 전에 모드 적용 시 도전과제가 해금되지 않습니다.**==}   
+        2. {==**반드시 모드 및 콘솔을 적용하지 않은 상태에서 <u>1회차(Mom / 에필로그 엔딩)</u> 클리어 후 모드를 적용해 주세요. 해당 조건을 만족하기 전에 모드 적용 시 도전과제가 해금되지 않습니다.**==}
             ![자궁 스테이지 해금](./img/womb_unlock.jpg)
             - 메인 메뉴에서 Stats -> Secrets에 들어가서 4번과 5번 도전과제가 달성되어 있다면 모드를 적용해도 됩니다.
     === "애프터버스 +"
         1. **애프터버스+의 경우 운영체제 계정명이 한글일 경우 모드 적용이 불가능**합니다. 새로운 운영체제 계정을 생성한 후에 적용할 수 있습니다.
-        2. {==**반드시 모드 및 콘솔을 적용하지 않은 상태에서 <u>2회차(Mom's Heart / 1번 엔딩)</u> 클리어 후 모드를 적용해 주세요. 해당 조건을 만족하기 전에 모드 적용 시 도전과제가 해금되지 않습니다.**==}  
+        2. {==**반드시 모드 및 콘솔을 적용하지 않은 상태에서 <u>2회차(Mom's Heart / 1번 엔딩)</u> 클리어 후 모드를 적용해 주세요. 해당 조건을 만족하기 전에 모드 적용 시 도전과제가 해금되지 않습니다.**==}
             ![에덴 캐릭터 해금](./img/eden_unlock.jpg)
             - 캐릭터 선택 창에서 **'Eden' 캐릭터가 있으며 밑의 'Eden Tokens'가 1개 이상 있다면** 모드를 적용해도 됩니다.
 
@@ -85,12 +95,12 @@
 !!! info "스팀 창작마당 버전은 정기적으로 업데이트된다"
     아이템 설명 모드는 Wofsauge를 비롯한 여러 개발자가 개발하는 모드입니다. 따라서 개발자 및 번역가들이 Github 프로젝트에 먼저 올린 후 한국 시간 기준 격주마다 스팀 창작마당에 업로드 됩니다. 스팀 버전보다도 빠른 업데이트를 받고자 한다면 [Github 프로젝트](https://github.com/wofsauge/External-Item-Descriptions)에서 직접 받으시는 걸 권장드립니다.
 - Mod Config Menu로 설정 :
-    - [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독 
+    - [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독
     - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입
     - EID -> General -> Language를 'Korean'으로 설정 (아래 그림 참조)
-    - 이외의 옵션 설정 방법은 [이 페이지](./config/configmenu.md)를 확인해 주세요.  
+    - 이외의 옵션 설정 방법은 [이 페이지](./config/configmenu.md)를 확인해 주세요.
     ![한국어 설정](./img/guide_first.jpg){: width="500"}
-    - 위 이미지처럼 되어 있다면 아이템 설명이 이제 한글로 표시됩니다. 
+    - 위 이미지처럼 되어 있다면 아이템 설명이 이제 한글로 표시됩니다.
 
 - 직접 설정 :
     - Mod Config Menu가 적용 중인 경우 이 방법으로 설정할 수 없습니다.
@@ -101,7 +111,7 @@
 
 <!-- !!! warning "GOG 버전 주의사항"
     스팀 버전이 아닌 GOG 버전은 모드 실행을 위한 스크립트가 없어 모드를 적용할 수 없습니다. 따라서 별도의 스크립트 구동을 위한 파일이 필요합니다.
-- GOG 버전(리펜턴스) : 
+- GOG 버전(리펜턴스) :
     - 모드 실행을 위한 스크립트를 다운로드 [(링크)](https://cdn.discordapp.com/attachments/927987001767112794/929746140713349170/scripts.rar)
     - 다운로드 받은 스크립트 파일을  ```아이작 설치 폴더\resources``` 폴더에 풀기
     - [아이템 설명 모드 Github 페이지로 이동](https://github.com/wofsauge/External-Item-Descriptions)
