@@ -1,0 +1,3331 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="kohashiwakaba">
+      
+      
+      
+        <link rel="prev" href="../configmenu/">
+      
+      
+        <link rel="next" href="../../faq/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>설정 파일 직접 수정 - 아이작의 번제 아이템 설명 모드 한국어 가이드</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+
+      
+    
+<script src="../../assets/pymdownx-extras/material-extra-theme-2ek1P7jT.js" type="text/javascript"></script>
+<script src="../../assets/pymdownx-extras/material-extra-3rdparty-BUCF4rjN.js" type="text/javascript"></script>
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+KR:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans KR";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/pymdownx.css">
+    
+      <link rel="stylesheet" href="../../css/wakaba.css">
+    
+      <link rel="stylesheet" href="../../assets/pymdownx-extras/extra-c6ab11540a.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="dracula" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="header.title"
+  >
+    <a
+      href="../.."
+      title="아이작의 번제 아이템 설명 모드 한국어 가이드"
+      class="md-header__button md-logo"
+      aria-label="아이작의 번제 아이템 설명 모드 한국어 가이드"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            아이작의 번제 아이템 설명 모드 한국어 가이드
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              설정 파일 직접 수정
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      <div class="md-header-nav__scheme md-header-nav__button md-source__icon md-icon">
+          <a
+            href="javascript:toggleScheme();"
+            title="Light mode"
+            class="light-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="Dark mode"
+            class="dark-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="System preference"
+            class="system-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+          </a>
+           <a
+            href="javascript:toggleScheme();"
+            title="Unknown scheme"
+            class="unknown-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg>
+          </a>
+      </div>
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kohashiwakaba/Isaac-EID-Korean-Guide" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kohashiwakaba/Isaac-EID-Korean-Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  개요
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../howto/basic/" class="md-tabs__link">
+          
+  
+  
+  사용법
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../configmenu/" class="md-tabs__link">
+          
+  
+  
+  옵션
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  자주 묻는 질문
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../recommended/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  추천 모드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  변경 내역
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=836319872" class="md-tabs__link">
+        
+  
+  
+    
+  
+  모드 링크
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://github.com/wofsauge/External-Item-Descriptions/wiki" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API(외부 링크)
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="아이작의 번제 아이템 설명 모드 한국어 가이드" class="md-nav__button md-logo" aria-label="아이작의 번제 아이템 설명 모드 한국어 가이드" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    아이작의 번제 아이템 설명 모드 한국어 가이드
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kohashiwakaba/Isaac-EID-Korean-Guide" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kohashiwakaba/Isaac-EID-Korean-Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    사용법
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    사용법
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    기본 사용법
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    다른 아이템과의 시너지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/reminder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    리마인더
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/crafting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    알트 카인 레시피
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/repentogon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REPENTOGON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/update-from-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Github에서 바로 업데이트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    옵션
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    옵션
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configmenu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    주요 옵션
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    설정 파일 직접 수정
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    설정 파일 직접 수정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Language
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translateitemname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TranslateItemName
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonttype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FontType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Size
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sizehotkey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SizeHotkey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transparency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transparency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hudoffset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HUDOffset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lineheight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LineHeight
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textboxwidth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TextboxWidth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxdistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxDistance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hidekey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HideKey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hidebutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HideButton
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initiallyhidden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InitiallyHidden
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hideinbattle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HideInBattle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refreshrate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RefreshRate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disableobstructiononflight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisableObstructionOnFlight
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disableachievementcheck" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisableAchievementCheck
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#co-op-multiple-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Co-op / Multiple Descriptions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Co-op / Multiple Descriptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coopdescriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CoopDescriptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pairedplayerdescriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PairedPlayerDescriptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displayallnearby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayAllNearby
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxdescriptionstodisplay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxDescriptionsToDisplay
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display Modes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Display Modes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaymode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayMode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localmodesize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LocalModeSize
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localmodecentered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LocalModeCentered
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Icons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Icons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#markupsize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MarkupSize
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statchangeicons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StatChangeIcons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statandpickupbulletpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StatAndPickupBulletpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curse
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Curse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disableoncurse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisableOnCurse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disableonaltpath" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisableOnAltPath
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disableonaprilfoolschallenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisableOnAprilFoolsChallenge
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#item-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item Names
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Item Names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#showitemname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShowItemName
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showitemtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShowItemType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showitemicon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShowItemIcon
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displayiteminfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayItemInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaytrinketinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayTrinketInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemnamecolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemNameColor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showobjectid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShowObjectID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showquality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShowQuality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modindicatordisplay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ModIndicatorDisplay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modindicatortextcolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ModIndicatorTextColor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transformations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transformations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transformationtext" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TransformationText
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformationicons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TransformationIcons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformationprogress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TransformationProgress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformationcolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TransformationColor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cards
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaycardinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayCardInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaycardinfoshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayCardInfoShop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaysoulstoneinfoshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplaySoulstoneInfoShop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displayobstructedcardinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayObstructedCardInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displayobstructedsoulstoneinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayObstructedSoulstoneInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaycardinfooptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayCardInfoOptions?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaypillinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayPillInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaypillinfoshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayPillInfoShop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displayobstructedpillinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayObstructedPillInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaypillinfooptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayPillInfoOptions?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showunidentifiedpilldescriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShowUnidentifiedPillDescriptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glitched-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glitched Items
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Glitched Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displayglitchediteminfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayGlitchedItemInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sacrifice-rooms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sacrifice rooms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sacrifice rooms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaysacrificeinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplaySacrificeInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sanguine-bond" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sanguine Bond
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sanguine Bond">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaysanguineinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplaySanguineInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#predictionsanguinebond" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PredictionSanguineBond
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dice-rooms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dice rooms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dice rooms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaydiceinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayDiceInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crane-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crane Game
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crane Game">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaycraneinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayCraneInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-stat-increases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Void Stat Increases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Void Stat Increases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displayvoidstatinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayVoidStatInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#item-reminder-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item Reminder Description
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Item Reminder Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#itemreminderenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemReminderEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bagofcraftingtogglekey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BagOfCraftingToggleKey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemremindershowrecentitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemReminderShowRecentItem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemremindershowactivedesc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemReminderShowActiveDesc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemremindershowpocketdesc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemReminderShowPocketDesc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemremindershowtrinketdesc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemReminderShowTrinketDesc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemremindershowpoopdesc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemReminderShowPoopDesc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemremindershowhiddeninfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemReminderShowHiddenInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemremindershowrngcheats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemReminderShowRNGCheats
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bag-of-crafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bag of Crafting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bag of Crafting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#displaybagofcrafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DisplayBagOfCrafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bagofcraftingdisplayrecipesmode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BagOfCraftingDisplayRecipesMode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bagofcraftinghideinbattle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BagOfCraftingHideInBattle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bagofcraftingresults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BagOfCraftingResults
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bagofcraftingcombinationmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BagOfCraftingCombinationMax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bagofcraftingrandomresults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BagOfCraftingRandomResults
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bagofcraftingdisplaynames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BagOfCraftingDisplayNames
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bagofcraftingdisplayicons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BagOfCraftingDisplayIcons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#craftinghidekey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CraftingHideKey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#craftinghidebutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CraftingHideButton
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#craftingresultkey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CraftingResultKey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#craftingresultbutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CraftingResultButton
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save Game
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Save Game">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#savegamenumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SaveGameNumber
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemcollectioncolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ItemCollectionColor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mouse Controls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mouse Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enablemousecontrols" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EnableMouseControls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showcursor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShowCursor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Misc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spindowndiceresults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SpindownDiceResults
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spindowndicedisplayid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SpindownDiceDisplayID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spindowndicedisplayname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SpindownDiceDisplayName
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spindowndiceskiplocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SpindownDiceSkipLocked
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#errormessage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ErrorMessage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textcolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TextColor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#errorcolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ErrorColor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enableentitydescriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EnableEntityDescriptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자주 묻는 질문
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recommended/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    추천 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    변경 내역
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=836319872" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    모드 링크
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/wofsauge/External-Item-Descriptions/wiki" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API(외부 링크)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+  <h1>설정 파일 직접 수정</h1>
+
+<p>이 페이지는 Mod Config Menu에 접근할 수 없거나 사용하기 힘들 경우 eid_config.lua를 직접 수정해야 될 때를 위한 페이지입니다. Mod Config Menu로 옵션을 설정하고자 할 경우 각 옵션별 대응 옵션을 찾아서 수정하면 됩니다.</p>
+<h2 id="general">General</h2>
+<h3 id="language">Language</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Language</strong></p>
+</div>
+<p>언어를 설정합니다. 기본값은  <code>"auto"</code>이며 아이템 설명모드가 지원하는 언어 중 하나를 선택할 수 있습니다.<br />
+기본값 : "auto"</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>언어</th>
+<th>번역 작업자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"auto"</td>
+<td><strong>게임 언어 자동 매칭</strong>(리펜턴스 한정)</td>
+<td></td>
+</tr>
+<tr>
+<td>"en_us"</td>
+<td><strong>영어</strong>(English)</td>
+<td>Wofsauge</td>
+</tr>
+<tr>
+<td>"en_us_detailed"</td>
+<td><strong>영어, 설명 자세하게</strong>(English Detailed)</td>
+<td>Wofsauge</td>
+</tr>
+<tr>
+<td>"fr"</td>
+<td><strong>프랑스어</strong>(French)</td>
+<td>Nicolas Delvaux</td>
+</tr>
+<tr>
+<td>"pl"</td>
+<td><strong>폴란드어</strong>(Polish)</td>
+<td>Rickyy</td>
+</tr>
+<tr>
+<td>"spa"</td>
+<td><strong>에스파냐어</strong>(Spanish)</td>
+<td>Lidia Arroyo Purroy</td>
+</tr>
+<tr>
+<td>"pt"</td>
+<td><strong>포르투갈어</strong>(Portuguese)</td>
+<td>Marcelino Cruz</td>
+</tr>
+<tr>
+<td>"pt_br"</td>
+<td><strong>브라질어</strong>(Brazilian Portuguese)</td>
+<td>Marcelino Cruz</td>
+</tr>
+<tr>
+<td>"ru"</td>
+<td><strong>러시어아</strong>(Russian)</td>
+<td>hell2pay, fly_6</td>
+</tr>
+<tr>
+<td>"it"</td>
+<td><strong>이탈리아어</strong>(Italian)</td>
+<td>Denkishi, 2G</td>
+</tr>
+<tr>
+<td>"bul"</td>
+<td><strong>불가리아어</strong>(Bulgarian)</td>
+<td>Gothika_47</td>
+</tr>
+<tr>
+<td>"tr_tr"</td>
+<td><strong>터키어</strong>(Turkish)</td>
+<td>Mert Dutal</td>
+</tr>
+<tr>
+<td>"ko_kr"</td>
+<td><strong>한국어</strong>(Korean)</td>
+<td>Blackcreamtea, 미카</td>
+</tr>
+<tr>
+<td>"zh_cn"</td>
+<td><strong>중국어</strong>(Chinese)</td>
+<td>Xheepey87, frto027</td>
+</tr>
+<tr>
+<td>"ja_jp"</td>
+<td><strong>일본어</strong>(Japanese)</td>
+<td>prefab</td>
+</tr>
+<tr>
+<td>"cs_cz"</td>
+<td><strong>체코어</strong>(Czech)</td>
+<td>domcizzz</td>
+</tr>
+</tbody>
+</table>
+<h3 id="translateitemname">TranslateItemName</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Name Language</strong></p>
+</div>
+<p>아이템 이름을 어떻게 출력할지 설정합니다.<br />
+기본값 : 2</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>적용 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>영어</strong>(English)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>현재 언어</strong>(Current)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>현재 언어 + 영어</strong>(Current + English)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fonttype">FontType</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Font Type</strong></p>
+</div>
+<p>폰트 종류를 설정합니다. 언어별로 설정할 수 있는 폰트가 다르기 때문에 반드시 Mod Config Menu를 통해 설정하는 것을 권장합니다. 한국어는 아래의 폰트 중 하나를 선택할 수 있습니다.  </p>
+<p><img alt="폰트 미리보기" src="../../img/fontpreview.png" /></p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>적용 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"korean_hcrdotum"</td>
+<td><strong>함초롬돋움</strong></td>
+</tr>
+<tr>
+<td>"korean_lanapixel"</td>
+<td><strong>Lanapixel</strong></td>
+</tr>
+<tr>
+<td>"korean_soyakkoma"</td>
+<td><strong>소야꼬마9</strong></td>
+</tr>
+<tr>
+<td>"korean_soyakkoma_borderless"</td>
+<td><strong>소야꼬마9</strong>(테두리 없음)</td>
+</tr>
+<tr>
+<td>"korean_soyakkoma_inverted"</td>
+<td><strong>소야꼬마9</strong>(글자색 반전)</td>
+</tr>
+<tr>
+<td>"korean_soyanon"</td>
+<td><strong>소야논8</strong></td>
+</tr>
+<tr>
+<td>"korean_galmoori9"</td>
+<td><strong>갈무리9</strong></td>
+</tr>
+<tr>
+<td>"korean_galmoori11"</td>
+<td><strong>갈무리11</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="size">Size</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Text Size</strong></p>
+</div>
+<p>텍스트박스의 크기 비율을 설정합니다.<br />
+기본값 : 1  </p>
+<div class="admonition warning">
+<p><strong>주의</strong> : 0.5배 혹은 정수 배율이 아닌 경우 폰트가 깨져서 나올 수 있습니다.</p>
+</div>
+<h3 id="sizehotkey">SizeHotkey</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Toggle Scale(Keyboard)</strong></p>
+</div>
+<p>텍스트박스의 크기 비율을 설정하는 바로가기 키를 설정합니다. (키보드 전용)<br />
+해당 키를 누르면 크기 비율을 0.5, 1.0, 1.5배 순서로 적용되며 꾹 눌렀을 경우 세부 배율이 조절됩니다.
+설정값은 <a href="https://wofsauge.github.io/IsaacDocs/rep/enums/Keyboard.html">이 링크</a>에서 확인할 수 있습니다.<br />
+기본값 : -1 (없음)</p>
+<h3 id="transparency">Transparency</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Transparency</strong></p>
+</div>
+<p>글자의 불투명도를 설정합니다.<br />
+값 : 0 ~ 1<br />
+기본값 : 0.75   </p>
+<h3 id="hudoffset">HUDOffset</h3>
+<p>HUD 기준점을 설정합니다. (애프터버스 + 전용)<br />
+기본값 : 10</p>
+<h3 id="xposition">XPosition</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Position X</strong></p>
+</div>
+<p>텍스트박스의 X좌표 위치를 설정합니다. 리펜턴스 버전일 경우 HUD 위치에 따라 자동으로 조정됩니다.<br />
+기본값 : 60</p>
+<h3 id="yposition">YPosition</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Position Y</strong></p>
+</div>
+<p>텍스트박스의 Y좌표 위치를 설정합니다. 리펜턴스 버전일 경우 HUD 위치에 따라 자동으로 조정됩니다.<br />
+기본값 : 45</p>
+<h3 id="lineheight">LineHeight</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Line Height</strong></p>
+</div>
+<p>줄 간 간격을 설정합니다. 기본 설정은 폰트마다 다릅니다.<br />
+기본값 : 11(기본 폰트)</p>
+<h3 id="textboxwidth">TextboxWidth</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Textbox Width</strong></p>
+</div>
+<p>텍스트박스의 넓이를 설정합니다. 기본 설정은 폰트마다 다릅니다.<br />
+기본값 : 130(한글 150)</p>
+<div class="admonition note">
+<p class="admonition-title">예시</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Boxwidth 100</label><label for="__tabbed_1_2">Boxwidth 200</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="폰트 미리보기" src="../../img/example_boxwidth_100.jpg" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="폰트 미리보기" src="../../img/example_boxwidth_200.jpg" /></p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="maxdistance">MaxDistance</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Max Distance</strong></p>
+</div>
+<p>아이템이 인식되는 범위를 설정합니다.<br />
+기본값 : 5</p>
+<h3 id="indicator">Indicator</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Indicator</strong></p>
+</div>
+<p>설명 출력중인 아이템의 표시방법을 설정합니다. (아래 그림 참조)  </p>
+<p>기본값 : "none"<br />
+<img alt="인디케이터" src="https://steamuserimages-a.akamaihd.net/ugc/964219973643822883/4354AE9676356B121ED0C70259F6FE1CB0174E2B/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false" /></p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>적용 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"arrow"</td>
+<td><strong>화살표</strong></td>
+</tr>
+<tr>
+<td>"blink"</td>
+<td><strong>깜빡임</strong></td>
+</tr>
+<tr>
+<td>"border"</td>
+<td><strong>테두리 깜빡임</strong></td>
+</tr>
+<tr>
+<td>"highlight"</td>
+<td><strong>테두리</strong></td>
+</tr>
+<tr>
+<td>"none"</td>
+<td><strong>없음</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hidekey">HideKey</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Toggle(Keyboard)</strong></p>
+</div>
+<p>설명을 켜고 끌 수 있는 버튼을 설정합니다. (키보드 전용)<br />
+설정값은 <a href="https://wofsauge.github.io/IsaacDocs/rep/enums/Keyboard.html">이 링크</a>에서 확인할 수 있습니다.<br />
+기본값 : Keyboard.KEY_F2 (<span class="keys"><kbd class="key-f2">F2</kbd></span>키)</p>
+<h3 id="hidebutton">HideButton</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Toggle(Controller)</strong></p>
+</div>
+<p>설명을 켜고 끌 수 있는 버튼을 설정합니다. (컨트롤러 전용)<br />
+설정값은 <a href="https://github.com/wofsauge/External-Item-Descriptions/blob/master/mod_config_menu.lua#L1">이 링크</a>에서 확인할 수 있습니다. 값 설정은 'Controller.STICK_LEFT'와 같이 설정합니다.<br />
+기본값 : -1 (없음)</p>
+<h3 id="initiallyhidden">InitiallyHidden</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Is Initially Hidden</strong></p>
+</div>
+<p>아이작의 번제 게임 시작 시 설명 모드를 숨기게 할지 설정합니다.<br />
+기본값 : false</p>
+<h3 id="hideinbattle">HideInBattle</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Hide in Battle</strong></p>
+</div>
+<p>전투 중에 아이템 설명을 숨길지 설정합니다.<br />
+기본값 : false</p>
+<h3 id="refreshrate">RefreshRate</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Description Refresh Rate</strong></p>
+</div>
+<p>설명모드의 설명 새로고침 주기를 설정합니다.(초당 n회 새로고침) <br />
+숫자가 높을수록 설명모드가 더 빠르게 반응하나 게임 성능이 하락할 수 있습니다. <br />
+값 : 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60
+기본값 : 30</p>
+<h3 id="disableobstructiononflight">DisableObstructionOnFlight</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Show again when having flight</strong></p>
+</div>
+<p>비행 능력이 생길 때 갈 수 없는 장소에 있었던 카드나 알약의 설명을 출력할지 설정합니다.<br />
+기본값 : false</p>
+<h3 id="disableachievementcheck">DisableAchievementCheck</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Start of Run Warning</strong></p>
+</div>
+<p>도전과제 해금이 불가능할하거나 알트 카인 플레이 시 아이템을 추가하거나 배열을 바꾸는 모드를 사용하는 경우 경고문을 숨길지 설정합니다.<br />
+기본값 : false</p>
+<h2 id="co-op-multiple-descriptions">Co-op / Multiple Descriptions</h2>
+<h3 id="coopdescriptions">CoopDescriptions</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Co-op Player Descriptions</strong></p>
+</div>
+<p>멀티 플레이 시 모든 플레이어의 인식 범위에 있는 아이템의 설명을 보여줍니다. <br />
+2개 이상의 아이템의 설명이 동시에 보여질 경우 2번째 아이템부터는 아이템 바로 밑에서 설명이 표시됩니다.<br />
+기본값 : true</p>
+<h3 id="pairedplayerdescriptions">PairedPlayerDescriptions</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Paired Player Descriptions</strong></p>
+</div>
+<p>2개의 캐릭터를 한 플레이어가 동시에 조종할 경우 연결된 플레이어(Esau, Tainted Forgotten)가 인식 범위에 있어도 아이템의 설명을 보여줍니다.<br />
+기본값 : false</p>
+<h3 id="displayallnearby">DisplayAllNearby</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Display All Objects In Range</strong></p>
+</div>
+<p>인식 범위 안에 있는 모든 설명을 출렧합니다. <br />
+주의: 설명이 정상적으로 출력되지 않거나 가려질 수 있습니다. <br />
+기본값 : false</p>
+<h3 id="maxdescriptionstodisplay">MaxDescriptionsToDisplay</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Max Descriptions to Display</strong></p>
+</div>
+<p>출력되는 최대 설명의 개수를 설정합니다. (일부 상황에만 적용)
+기본값 : 99</p>
+<h2 id="display-modes">Display Modes</h2>
+<h3 id="displaymode">DisplayMode</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display mode</strong></p>
+</div>
+<p>아이템 설명을 어디에 표시할지 설정합니다.<br />
+기본값 : "default"</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>적용 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"default"</td>
+<td><strong>기본값</strong> : 모든 아이템의 설명이 고정된 위치에 표시됩니다.</td>
+</tr>
+<tr>
+<td>"local"</td>
+<td><strong>아이템 위치</strong> 애프터버스의 아이템 설명 모드와 같이 아이템의 설명이 각 아이템 주변에 표시됩니다.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="localmodesize">LocalModeSize</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Text Size(local mode)</strong></p>
+</div>
+<p>아이템 설명을 아이템 주변에 표시할 때 크기 비율을 설정합니다.<br />
+기본값 : 0.5  </p>
+<h3 id="localmodecentered">LocalModeCentered</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Local mode centered</strong></p>
+</div>
+<p>아이템 설명을 아이템 주변에 표시할 때 가운데 정렬을 할지 설정합니다.<br />
+기본값 : true  </p>
+<h2 id="icons">Icons</h2>
+<h3 id="markupsize">MarkupSize</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Markup Icon Size</strong></p>
+</div>
+<p>아이콘의 크기를 설정합니다. <br />
+값 : "default", "big", "small"
+기본값 : default  </p>
+<h3 id="statchangeicons">StatChangeIcons</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Stat Change Icons</strong></p>
+</div>
+<p>스탯 증감 라인의 아이콘을 보여줍니다.<br />
+기본값 : false  </p>
+<h3 id="statandpickupbulletpoints">StatAndPickupBulletpoints</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Stat/Pickup Bulletpoint Icons</strong></p>
+</div>
+<p>각 줄의 라인 말머리표 대신 아이콘을 보여주는 것을 허용합니다.<br />
+기본값 : true  </p>
+<h2 id="curse">Curse</h2>
+<h3 id="disableoncurse">DisableOnCurse</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Show on "Curse of Blind"</strong></p>
+</div>
+<p>아이템이 보이지 않는 저주(블라인드) 상태에서 아이템 설명을 출력할지 설정합니다.<br />
+기본값 : false  </p>
+<h3 id="disableonaltpath">DisableOnAltPath</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Show hidden alt-Path Item</strong></p>
+</div>
+<p>알트 스테이지 또는 일반 스테이지에서 보이지 않는 아이템의 설명을 출력할지 설정합니다. (리펜턴스 전용)<br />
+기본값 : false  </p>
+<h3 id="disableonaprilfoolschallenge">DisableOnAprilFoolsChallenge</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Show on April Fools challenge</strong></p>
+</div>
+<p>April's Fool 챌린지에서 아이템의 설명을 출력할지 설정합니다.<br />
+기본값 : false  </p>
+<h2 id="item-names">Item Names</h2>
+<h3 id="showitemname">ShowItemName</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display Item Name</strong></p>
+</div>
+<p>아이템, 카드, 알약의 이름을 보여줄지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="showitemtype">ShowItemType</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display Item Type</strong></p>
+</div>
+<p>액티브 아이템, 패밀리어 등 아이템의 형식을 보여줄지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="showitemicon">ShowItemIcon</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display Item Icon</strong></p>
+</div>
+<p>아이템, 카드, 알약의 아이콘을 보여줄지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="displayiteminfo">DisplayItemInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Collectible Infos</strong></p>
+</div>
+<p>아이템의 설명을 보여줄지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="displaytrinketinfo">DisplayTrinketInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Trinket Infos</strong></p>
+</div>
+<p>장신구의 설명을 보여줄지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="itemnamecolor">ItemNameColor</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Color &gt; <strong>Names</strong></p>
+</div>
+<p>아이템 이름 텍스트의 색상을 설정합니다.<br />
+텍스트 색상은 "eid_data.lua" 파일에서 확인할 수 있습니다.<br />
+기본값 : "ColorEIDObjName"  </p>
+<h3 id="showobjectid">ShowObjectID</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display Object ID</strong></p>
+</div>
+<p>아이템, 카드, 알약의 이름 옆의 각 엔티티의 번호(예시 : 5.100.331)를 보여줄지 설정합니다.<br />
+기본값 : false  </p>
+<h3 id="showquality">ShowQuality</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display Quality Info</strong></p>
+</div>
+<p>아이템의 퀄리티를 보여줄지 설정합니다. (리펜턴스 전용)<br />
+기본값 : true  </p>
+<h3 id="modindicatordisplay">ModIndicatorDisplay</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Mod indicator displayed for:</strong></p>
+</div>
+<p>모드 아이템의 출신 모드를 보여줍니다.
+기본값 : "None"  </p>
+<h3 id="modindicatortextcolor">ModIndicatorTextColor</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Color &gt; <strong>Mod Indicator</strong></p>
+</div>
+<p>아이템 이름 텍스트의 색상을 설정합니다.<br />
+텍스트 색상은 "eid_data.lua" 파일에서 확인할 수 있습니다.<br />
+기본값 : "LightOrange"  </p>
+<h2 id="transformations">Transformations</h2>
+<h3 id="transformationtext">TransformationText</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display Transform Name</strong></p>
+</div>
+<p>아이템의 변신세트 이름을 텍스트로 보여줄지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="transformationicons">TransformationIcons</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display Transform Icon</strong></p>
+</div>
+<p>아이템의 변신세트 이름을 아이콘으로 보여줄지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="transformationprogress">TransformationProgress</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Visuals &gt; <strong>Display Transform Progress</strong></p>
+</div>
+<p>아이템의 변신세트 상황을 보여줍니다.<br />
+기본값 : true  </p>
+<h3 id="transformationcolor">TransformationColor</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Color &gt; <strong>Transformations</strong></p>
+</div>
+<p>변신세트 텍스트의 색상을 설정합니다.<br />
+텍스트 색상은 "eid_data.lua" 파일에서 확인할 수 있습니다.<br />
+기본값 : "ColorEIDTransform"  </p>
+<h2 id="cards">Cards</h2>
+<h3 id="displaycardinfo">DisplayCardInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Card Infos</strong></p>
+</div>
+<p>카드, 룬 또는 영혼석의 정보를 출력할지 설정합니다.
+기본값 : true  </p>
+<h3 id="displaycardinfoshop">DisplayCardInfoShop</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Display Infos in Shops &gt; <strong>Card Infos</strong></p>
+</div>
+<p>상점에서 판매중인 카드 또는 룬의 정보를 출력할지 설정합니다.<br />
+기본값 : false  </p>
+<h3 id="displaysoulstoneinfoshop">DisplaySoulstoneInfoShop</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Display Infos in Shops &gt; <strong>Soulstone Infos</strong></p>
+</div>
+<p>상점에서 판매중인 영혼석의 정보를 출력할지 설정합니다. (리펜턴스 전용)<br />
+기본값 : true  </p>
+<h3 id="displayobstructedcardinfo">DisplayObstructedCardInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Display Infos when obstructed &gt; <strong>Card Infos</strong></p>
+</div>
+<p>비행 능력이 없을 때 갈 수 없는 장소에 있는 카드 또는 룬의 설명을 출력할지 설정합니다.<br />
+기본값 : false  </p>
+<h3 id="displayobstructedsoulstoneinfo">DisplayObstructedSoulstoneInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Display Infos when obstructed &gt; <strong>Soulstone Infos</strong></p>
+</div>
+<p>비행 능력이 없을 때 갈 수 없는 장소에 있는 영혼석의 설명을 출력할지 설정합니다. (리펜턴스 전용)<br />
+기본값 : true  </p>
+<h3 id="displaycardinfooptions">DisplayCardInfoOptions?</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Interaction with 'Options?' &gt; <strong>Card Infos when spawned by 'Options?'</strong></p>
+</div>
+<p>Options? 아이템으로 드랍된 선택형 카드 또는 룬의 설명을 출력할지 설정합니다. (리펜턴스 전용)<br />
+기본값 : false  </p>
+<h2 id="pills">Pills</h2>
+<h3 id="displaypillinfo">DisplayPillInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Pill Infos</strong></p>
+</div>
+<p>알약의 정보를 출력할지 설정합니다.
+기본값 : true  </p>
+<h3 id="displaypillinfoshop">DisplayPillInfoShop</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Display Infos in Shops &gt; <strong>Pill Infos</strong></p>
+</div>
+<p>상점에서 판매중인 알약의 정보를 출력할지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="displayobstructedpillinfo">DisplayObstructedPillInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Display Infos when obstructed &gt; <strong>Pill Infos</strong></p>
+</div>
+<p>비행 능력이 없을 때 갈 수 없는 장소에 있는 알약의 설명을 출력할지 설정합니다.<br />
+기본값 : false  </p>
+<h3 id="displaypillinfooptions">DisplayPillInfoOptions?</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Interaction with 'Options?' &gt; <strong>Pill Infos when spawned by 'Options?'</strong></p>
+</div>
+<p>Options? 아이템으로 드랍된 선택형 알약의 설명을 출력할지 설정합니다. (리펜턴스 전용)<br />
+기본값 : false  </p>
+<h3 id="showunidentifiedpilldescriptions">ShowUnidentifiedPillDescriptions</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; General &gt; <strong>Show Unidentified Pill Effects</strong></p>
+</div>
+<p>확인되지 않은 알약의 정보를 출력할지 설정합니다.
+기본값 : false  </p>
+<h2 id="glitched-items">Glitched Items</h2>
+<h3 id="displayglitchediteminfo">DisplayGlitchedItemInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Glitched Item Infos</strong></p>
+</div>
+<p>글리치 아이템의 예상 효과를 표시합니다. 자세한 설명은 <a href="../howto/advanced#tmtrainer.md">여기서</a> 확인할 수 있습니다.
+기본값 : false (--luadebug 상태일 때 true)  </p>
+<h2 id="sacrifice-rooms">Sacrifice rooms</h2>
+<h3 id="displaysacrificeinfo">DisplaySacrificeInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Sacrifice Room Infos</strong></p>
+</div>
+<p>희생방의 희생 보상 설명을 출력할지 설정합니다.<br />
+기본값 : true  </p>
+<h2 id="sanguine-bond">Sanguine Bond</h2>
+<h3 id="displaysanguineinfo">DisplaySanguineInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Sanguine Bond Infos</strong></p>
+</div>
+<p>Sanguine Bond 악마방의 희생 보상 설명을 출력할지 설정합니다.<br />
+기본값 : true  </p>
+<h3 id="predictionsanguinebond">PredictionSanguineBond</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Predict Sanguine Bond Result</strong></p>
+</div>
+<p>Sanguine Bond의 다음 희생 보상을 보여줍니다.<br />
+기본값 : false  </p>
+<h2 id="dice-rooms">Dice rooms</h2>
+<h3 id="displaydiceinfo">DisplayDiceInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Dice Room Infos</strong></p>
+</div>
+<p>주사위방의 효과 설명을 출력할지 설정합니다.<br />
+기본값 : true  </p>
+<h2 id="crane-game">Crane Game</h2>
+<h3 id="displaycraneinfo">DisplayCraneInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Crane Game Infos</strong></p>
+</div>
+<p>크레인 게임에 있는 아이템의 설명을 출력할지 설정합니다. (리펜턴스 전용)<br />
+기본값 : true  </p>
+<h2 id="void-stat-increases">Void Stat Increases</h2>
+<h3 id="displayvoidstatinfo">DisplayVoidStatInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Void Stat Increase</strong></p>
+</div>
+<p>Void 아이템, Black Rune의 예상 스탯 증가량을 보여줍니다.
+기본값 : false  </p>
+<h2 id="item-reminder-description">Item Reminder Description</h2>
+<h3 id="itemreminderenabled">ItemReminderEnabled</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Item Reminder Description</strong></p>
+</div>
+<p>특정 키를 누른 상태에서 리마인더(특수 설명)를 보여줍니다.
+기본값 : true  </p>
+<h3 id="bagofcraftingtogglekey">BagOfCraftingToggleKey</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Hold to Show</strong></p>
+</div>
+<p>리마인더를 보여줄 단축키를 설정합니다. <br />
+이 단축키는 Flip, Spindown Dice, Bag of Crafting의 레시피 등 Tab 키를 사용하는 모든 EID 기능에 영향을 줍니다.
+기본값 : ButtonAction.ACTION_MAP (<span class="keys"><kbd class="key-tab">Tab</kbd></span>키)  </p>
+<h3 id="itemremindershowrecentitem">ItemReminderShowRecentItem</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Recent Items</strong></p>
+</div>
+<p>리마인더에서 현재 방에서 최근 획득한 아이템의 설명을 보여줍니다.(최대 8)
+기본값 : 1  </p>
+<h3 id="itemremindershowactivedesc">ItemReminderShowActiveDesc</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Active Items</strong></p>
+</div>
+<p>리마인더에서 현재 소지 중인 액티브 아이템의 설명을 보여줍니다.(최대 2)
+기본값 : 1  </p>
+<h3 id="itemremindershowpocketdesc">ItemReminderShowPocketDesc</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Pocket Items</strong></p>
+</div>
+<p>리마인더에서 현재 소지 중인 카드/알약/특수 액티브의 설명을 보여줍니다.(최대 2/4)
+기본값 : 1  </p>
+<h3 id="itemremindershowtrinketdesc">ItemReminderShowTrinketDesc</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Trinkets</strong></p>
+</div>
+<p>리마인더에서 현재 소지 중인 장신구의 설명을 보여줍니다.(최대 2)
+기본값 : 2  </p>
+<h3 id="itemremindershowpoopdesc">ItemReminderShowPoopDesc</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Poop Spells</strong></p>
+</div>
+<p>알트 ??? 플레이 시 리마인더에서 다음에 사용될 똥의 설명을 보여줍니다.(최대 6)
+기본값 : 1  </p>
+<h3 id="itemremindershowhiddeninfo">ItemReminderShowHiddenInfo</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Show Hidden Information</strong></p>
+</div>
+<p>리마인더에서 숨겨진 정보를 표시합니다.(Zodiac, Liberty Cap 등)
+기본값 : false  </p>
+<h3 id="itemremindershowrngcheats">ItemReminderShowRNGCheats</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Reminder &gt; <strong>Show RNG Predictions</strong></p>
+</div>
+<p>리마인더에서 다음 이벤트 및 사용에 대한 예측 결과를 표시합니다.(Teleport! 등)
+기본값 : false  </p>
+<h2 id="bag-of-crafting">Bag of Crafting</h2>
+<h3 id="displaybagofcrafting">DisplayBagOfCrafting</h3>
+<h3 id="bagofcraftingdisplayrecipesmode">BagOfCraftingDisplayRecipesMode</h3>
+<h3 id="bagofcraftinghideinbattle">BagOfCraftingHideInBattle</h3>
+<h3 id="bagofcraftingresults">BagOfCraftingResults</h3>
+<h3 id="bagofcraftingcombinationmax">BagOfCraftingCombinationMax</h3>
+<h3 id="bagofcraftingrandomresults">BagOfCraftingRandomResults</h3>
+<h3 id="bagofcraftingdisplaynames">BagOfCraftingDisplayNames</h3>
+<h3 id="bagofcraftingdisplayicons">BagOfCraftingDisplayIcons</h3>
+<h3 id="craftinghidekey">CraftingHideKey</h3>
+<h3 id="craftinghidebutton">CraftingHideButton</h3>
+<h3 id="craftingresultkey">CraftingResultKey</h3>
+<h3 id="craftingresultbutton">CraftingResultButton</h3>
+<h2 id="save-game">Save Game</h2>
+<h3 id="savegamenumber">SaveGameNumber</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Save Game &gt; <strong>Current Save Game</strong></p>
+</div>
+<p>설명모드가 사용할 세이브파일을 선택합니다. 0으로 설정시 해당 기능을 비활성화합니다.<br />
+기본값 : 0  </p>
+<h3 id="itemcollectioncolor">ItemCollectionColor</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Save Game &gt; <strong>Collection Page Highlight color</strong></p>
+</div>
+<p>아직 컬렉션에 없는 아이템의 텍스트의 색상을 설정합니다.<br />
+텍스트 색상은 "eid_data.lua" 파일에서 확인할 수 있습니다.<br />
+기본값 : "Fade"  </p>
+<h2 id="mouse-controls">Mouse Controls</h2>
+<h3 id="enablemousecontrols">EnableMouseControls</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Mouse &gt; <strong>Enable Mouse controls</strong></p>
+</div>
+<p>마우스를 아이템에 올려 설명을 표시할지 설정합니다.<br />
+기본값 : false  </p>
+<h3 id="showcursor">ShowCursor</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Mouse &gt; <strong>Show Cursor</strong></p>
+</div>
+<p>아이템 설명 모드의 마우스 커서를 표시할지 설정합니다.<br />
+기본값 : false  </p>
+<h2 id="misc">Misc</h2>
+<h3 id="spindowndiceresults">SpindownDiceResults</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Spindown Dice</strong></p>
+</div>
+<p>Spindown Dice 결과 미리보기 목록에 출력되는 아이템의 갯수를 설정합니다. 0으로 설정시 해당 기능이 비할성화됩니다. (리펜턴스 전용)<br />
+기본값 : 3  </p>
+<h3 id="spindowndicedisplayid">SpindownDiceDisplayID</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Spindown Dice - <strong>Display IDs</strong></p>
+</div>
+<p>Spindown Dice 결과 미리보기 목록에서 ID 번호를 보여줄지 설정합니다. (리펜턴스 전용)<br />
+기본값 : false  </p>
+<h3 id="spindowndicedisplayname">SpindownDiceDisplayName</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; Spindown Dice - <strong>Display names</strong></p>
+</div>
+<p>Spindown Dice 결과 미리보기 목록에서 아이템 이름을 보여줄지 설정합니다. (리펜턴스 전용)<br />
+기본값 : false  </p>
+<h3 id="spindowndiceskiplocked">SpindownDiceSkipLocked</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Display &gt; <strong>Skip Locked Items</strong></p>
+</div>
+<p>Spindown Dice 결과 미리보기에서 해금되지 않은 아이템을 숨길지 설정합니다. (리펜턴스 전용)<br />
+완전 작동을 보장하지는 않습니다.<br />
+기본값 : false  </p>
+<h3 id="errormessage">ErrorMessage</h3>
+<p>오류 메시지를 설정합니다.<br />
+기본값 : "[Effect not defined]"</p>
+<h3 id="textcolor">TextColor</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Color &gt; <strong>Descriptions</strong></p>
+</div>
+<p>아이템 설명의 색상을 설정합니다.
+텍스트 색상은 "eid_data.lua" 파일에서 확인할 수 있습니다.<br />
+기본값 : "ColorEIDText"  </p>
+<h3 id="errorcolor">ErrorColor</h3>
+<div class="admonition note">
+<p>대응 옵션 : EID &gt; Color &gt; <strong>Errors</strong></p>
+</div>
+<p>오류 항목의 색상을 설정합니다.
+텍스트 색상은 "eid_data.lua" 파일에서 확인할 수 있습니다.<br />
+기본값 : "ColorEIDError"  </p>
+<h3 id="enableentitydescriptions">EnableEntityDescriptions</h3>
+<p>모드로 추가된 엔티티의 설명을 보여쥴지 설정합니다.<br />
+기본값 : true  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        
+
+<footer class="md-footer">
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="footer.title"
+    >
+      
+        <a
+          href="../configmenu/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              주요 옵션
+            </div>
+          </div>
+        </a>
+      
+      
+        <a
+          href="../../faq/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              자주 묻는 질문
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2022 kohashiwakaba aka. 미카
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        with emoji by
+        <a href="https://github.com/twitter/twemoji" target="_blank" rel="noopener">
+          Twemoji
+        </a>
+      </div>
+      
+<div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", {"toc": {"permalink": true}}, "toc.integrate", "navigation.top", "header.autohide", "navigation.footer"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../assets/pymdownx-extras/extra-loader-B5CKpNQx.js"></script>
+      
+    
+  </body>
+</html>

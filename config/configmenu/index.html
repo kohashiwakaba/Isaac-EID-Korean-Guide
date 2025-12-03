@@ -1,0 +1,2051 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="kohashiwakaba">
+      
+      
+      
+        <link rel="prev" href="../../howto/update-from-github/">
+      
+      
+        <link rel="next" href="../lua/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>주요 옵션 - 아이작의 번제 아이템 설명 모드 한국어 가이드</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+
+      
+    
+<script src="../../assets/pymdownx-extras/material-extra-theme-2ek1P7jT.js" type="text/javascript"></script>
+<script src="../../assets/pymdownx-extras/material-extra-3rdparty-BUCF4rjN.js" type="text/javascript"></script>
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+KR:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans KR";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/pymdownx.css">
+    
+      <link rel="stylesheet" href="../../css/wakaba.css">
+    
+      <link rel="stylesheet" href="../../assets/pymdownx-extras/extra-c6ab11540a.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="dracula" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="header.title"
+  >
+    <a
+      href="../.."
+      title="아이작의 번제 아이템 설명 모드 한국어 가이드"
+      class="md-header__button md-logo"
+      aria-label="아이작의 번제 아이템 설명 모드 한국어 가이드"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            아이작의 번제 아이템 설명 모드 한국어 가이드
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              주요 옵션
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      <div class="md-header-nav__scheme md-header-nav__button md-source__icon md-icon">
+          <a
+            href="javascript:toggleScheme();"
+            title="Light mode"
+            class="light-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="Dark mode"
+            class="dark-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="System preference"
+            class="system-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+          </a>
+           <a
+            href="javascript:toggleScheme();"
+            title="Unknown scheme"
+            class="unknown-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg>
+          </a>
+      </div>
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kohashiwakaba/Isaac-EID-Korean-Guide" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kohashiwakaba/Isaac-EID-Korean-Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  개요
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../howto/basic/" class="md-tabs__link">
+          
+  
+  
+  사용법
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  옵션
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  자주 묻는 질문
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../recommended/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  추천 모드
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  변경 내역
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=836319872" class="md-tabs__link">
+        
+  
+  
+    
+  
+  모드 링크
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://github.com/wofsauge/External-Item-Descriptions/wiki" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API(외부 링크)
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="아이작의 번제 아이템 설명 모드 한국어 가이드" class="md-nav__button md-logo" aria-label="아이작의 번제 아이템 설명 모드 한국어 가이드" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    아이작의 번제 아이템 설명 모드 한국어 가이드
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kohashiwakaba/Isaac-EID-Korean-Guide" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kohashiwakaba/Isaac-EID-Korean-Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    사용법
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    사용법
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    기본 사용법
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    다른 아이템과의 시너지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/reminder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    리마인더
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/crafting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    알트 카인 레시피
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/repentogon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REPENTOGON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/update-from-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Github에서 바로 업데이트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    옵션
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    옵션
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    주요 옵션
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    주요 옵션
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        언어 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        기본 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        표시 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        스타일 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        리마인더 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        조합의 가방 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repentogon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REPENTOGON 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컬렉션 페이지 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        마우스 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        색상 설정
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    설정 파일 직접 수정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자주 묻는 질문
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recommended/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    추천 모드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    변경 내역
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=836319872" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    모드 링크
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/wofsauge/External-Item-Descriptions/wiki" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API(외부 링크)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+  <h1>주요 옵션</h1>
+
+<p>Mod Config Menu는 기본적으로 라틴 계열의 문자만 지원하기 때문에 아쉽게도 한국어는 지원하지 않습니다. 이 페이지는 설명모드 세팅 방법을 모르는 사람들을 위한 페이지입니다.</p>
+<p>Mod Config Menu의 기본적인 진입 방법은 <span class="keys"><kbd class="key-l">L</kbd></span> 키 혹은 <span class="keys"><kbd class="key-f10">F10</kbd></span> 키입니다. 진입에 성공하면 아래와 비슷한 화면이 출력됩니다.
+<img alt="한국어 설정" src="../../img/guide_first.jpg" width="500" /></p>
+<h2 id="_1">언어 설정</h2>
+<p>EID -&gt; General -&gt; Language를 'Korean'으로 설정하면 이후 아이템 설명이 한국어로 표시됩니다.</p>
+<h2 id="_2">기본 설정</h2>
+<p>EID -&gt; General에서 기본 설정을 할 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Language</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Language</strong></td>
+<td>언어를 설정합니다</td>
+<td><code>auto</code></td>
+</tr>
+<tr>
+<td><strong>Name Language</strong></td>
+<td>아이템 이름 표시 언어를 설정합니다.<br/> - <code>English</code> : 영어만<br/> - <code>Current</code> : 현재 언어만<br/> - <code>Current + English</code> : 현재 언어 + 영어</td>
+<td><code>Current</code></td>
+</tr>
+<tr>
+<td><strong>Keybinds</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Toggle</strong></td>
+<td>설명을 켜고 끌 수 있는 키보드 단축키를 설정합니다.</td>
+<td><code>F2</code>(키보드)</td>
+</tr>
+<tr>
+<td><strong>Advanced</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Description Refresh Rate</strong></td>
+<td>설명모드의 설명 새로고침 주기를 설정합니다.<br/>숫자가 높을수록 설명모드가 더 빠르게 반응하나 게임 성능이 하락할 수 있습니다.</td>
+<td><code>30</code></td>
+</tr>
+<tr>
+<td><strong>RESET CONFIG TO DEFAULT</strong></td>
+<td>설명모드 설정을 초기화합니다.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">표시 설정</h2>
+<p>EID -&gt; Display에서 표시할 설명의 유형을 설정할 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Start of Run Warnings</strong></td>
+<td>아이작의 번제 게임 시작 시 해금이 불가능하거나, 알트 카인 플레이 시 경고문을 출력합니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Gameplay</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Hide in Battle</strong></td>
+<td>방 안에 적이 있을 경우 설명을 자동으로 숨깁니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Is initially hidden</strong></td>
+<td>아이작의 번제 게임 시작 시 설명 모드를 숨기게 합니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Max Distance</strong></td>
+<td>아이템이 인식되는 범위를 설정합니다.</td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td><strong>Multiple Descriptions</strong></td>
+<td>인식 범위 안에 있는 모든 설명을 출력합니다.<br/>주의: 설명이 정상적으로 출력되지 않거나 가려질 수 있습니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Max Descriptions to Display</strong></td>
+<td>출력되는 최대 설명의 개수를 설정합니다. (일부 상황에만 적용)</td>
+<td><code>99</code></td>
+</tr>
+<tr>
+<td><strong>Description visibility</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Show Item Info</strong></td>
+<td>아이템의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Show Trinket Info</strong></td>
+<td>장신구의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Show Card Info</strong></td>
+<td>카드/룬/영혼석의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Show Pill Info</strong></td>
+<td>알약의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Special rooms</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Show Sacrifice Room Infos</strong></td>
+<td>다음 희생방 희생 시 발생 효과를 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Show Dice Room Infos</strong></td>
+<td>현재 주사위방의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Show Sanguine Bond Infos</strong></td>
+<td>Sanguine Bond 가시가 생성된 악마방 진입 시 해당 가시의 확률표를 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Show Predict Sanguine Bond Result</strong></td>
+<td>Sanguine Bond 가시가 생성된 악마방에서 다음 희생 시 예상 효과를 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Items and Machines</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Crane Game Infos</strong></td>
+<td>크레인 게임에 있는 아이템의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Void Stat Increase Infos</strong></td>
+<td>Void 및 Black Rune 아이템 사용 시 예상되는 스탯 증가량을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Glitched Item Infos</strong></td>
+<td>글리치 아이템의 설명을 보여줍니다. 자세한 내용은 <a href="../../howto/advanced#repentogon.md">여기서</a> 확인할 수 있습니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Hidden items</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Show on "Curse of Blind"</strong></td>
+<td>Curse of Blind(눈먼자의 저주) 상태에 있는 아이템의 설명을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Show on April Fools Challenge</strong></td>
+<td>Aprils Fool 챌린지를 플레이할 때 실제 아이템의 설명을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Show Hidden alt-Path Item</strong></td>
+<td>리펜턴스 대체 루트와 Broken Glasses 장신구의 가려진 아이템의 설명을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Co-op</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Co-op Player Descriptions</strong></td>
+<td>멀티 플레이 시 모든 플레이어의 인식 범위에 있는 아이템의 설명을 보여줍니다.<br/>2개 이상의 아이템의 설명이 동시에 보여질 경우 2번째 아이템부터는 아이템 바로 밑에서 설명이 표시됩니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Paired Player Descriptions</strong></td>
+<td>2개의 캐릭터를 한 플레이어가 동시에 조종할 경우 연결된 플레이어(Esau, Tainted Forgotten)가 인식 범위에 있어도 아이템의 설명을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Spindown Dice</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Preview rerolls</strong></td>
+<td>Spindown Dice(스핀다운 다이스) 아이템의 결과 미리보기 목록에 출력되는 아이템의 갯수를 설정합니다.<br/>0으로 설정시 해당 기능이 비할성화됩니다.(리펜턴스 전용)</td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><strong>Display IDs</strong></td>
+<td>Spindown Dice 결과 미리보기 목록에서 ID 번호를 보여줍니다.(리펜턴스 전용)</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Display names</strong></td>
+<td>Spindown Dice 결과 미리보기 목록에서 아이템 이름를 보여줍니다.(리펜턴스 전용)</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Skip Locked Items</strong></td>
+<td>Spindown Dice 결과 미리보기 목록에서 해금되지 않은 아이템을 숨길지 설정합니다. (리펜턴스 전용) <br/>완전 작동을 보장하지는 않습니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Unreachable items</strong><br/>캐릭터가 갈 수 없는 곳의 픽업 아이템의 설명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Show Unreachable Card Info</strong></td>
+<td>장애물에 가로막힌 카드/룬의 설명을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Show Unreachable Pill Info</strong></td>
+<td>장애물에 가로막힌 알약의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Show Unreachable Soulsotne Info</strong></td>
+<td>장애물에 가로막힌 영혼석의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Always show with flight</strong></td>
+<td>비행 아이템 획득시 설명을 다시 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Pills</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Show pill effect after one use</strong></td>
+<td>최소 한 번 이상 사용한 알약의 설명만 보여줍니다. PHD 및 False PHD의 효과를 무시합니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Show Unidentified Pill Effects</strong></td>
+<td>확인하지 않은 알약의 설명을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Consumables for Sale</strong><br/>상점 픽업 아이템의 설명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Shop Card Infos</strong></td>
+<td>상점에서 판매중인 카드/룬의 설명을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Shop Pill Infos</strong></td>
+<td>상점에서 판매중인 알약의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Shop Soulsotne Infos</strong></td>
+<td>상점에서 판매중인 영혼석의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Interactions with 'Options?'</strong><br/>Options? 아이템으로 생긴 선택형 픽업 아이템의 설명</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>'Options?' Card Infos</strong></td>
+<td>Options? 아이템으로 생긴 카드/룬의 설명을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>'Options?' Pill Infos</strong></td>
+<td>Options? 아이템으로 생긴 알약의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">스타일 설정</h2>
+<p>EID -&gt; Visuals에서 표시할 설명의 스타일을 설정할 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Opacity</strong></td>
+<td>글자의 불투명도를 설정합니다.</td>
+<td><code>0.75</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Font Type</strong></td>
+<td>폰트를 설정합니다.<br/><img alt="폰트 미리보기" src="../../img/fontpreview.png" /><br/>변경 시 Line Height, Textbox Width 항목이 초기화됩니다.</td>
+<td><code>korean_yoonwebdotum9</code>(한국어)</td>
+</tr>
+<tr>
+<td><strong>Display mode</strong></td>
+<td>설명 출력 위치를 설정합니다.</td>
+<td><code>default</code></td>
+</tr>
+<tr>
+<td><strong>Local mode centered</strong></td>
+<td>(Display mode가 Local일 때만 적용)설명을 아이템 오른쪽이 아닌 중앙에 표시합니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Indicator</strong></td>
+<td>설명 출력중인 아이템의 표시방법을 설정합니다.<br/><img alt="인디케이터" src="https://steamuserimages-a.akamaihd.net/ugc/964219973643822883/4354AE9676356B121ED0C70259F6FE1CB0174E2B/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false" /><br/> - <code>none</code> : 없음<br/> - <code>arrow</code> : 화살표<br/> - <code>blink</code> : 깜빡임<br/> - <code>border</code> : 테두리 깜빡임<br/> - <code>highlight</code> : 테두리</td>
+<td><code>none</code></td>
+</tr>
+<tr>
+<td><strong>Position</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Position X</strong></td>
+<td>텍스트박스의 X좌표 위치를 설정합니다.</td>
+<td><code>60</code></td>
+</tr>
+<tr>
+<td><strong>Position Y</strong></td>
+<td>텍스트박스의 Y좌표 위치를 설정합니다.</td>
+<td><code>45</code></td>
+</tr>
+<tr>
+<td><strong>Line Height</strong></td>
+<td>줄 간 간격을 설정합니다.</td>
+<td><code>11</code>(폰트마다 다름)</td>
+</tr>
+<tr>
+<td><strong>Textbox Width</strong></td>
+<td>텍스트박스의 넓이를 설정합니다.<br/></td>
+<td><code>130</code>(한글 <code>150</code>)</td>
+</tr>
+<tr>
+<td><strong>Size</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Text Size</strong></td>
+<td>텍스트박스의 크기 비율을 설정합니다.</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><strong>Toggle Size</strong></td>
+<td>크기 비율 단축키를 지정합니다. 0.5배→1배→2배 순으로 순환되며 꾹 누르면 소숫점 배율로 지정됩니다.</td>
+<td>없음</td>
+</tr>
+<tr>
+<td><strong>Icons</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Markup Size Icons</strong></td>
+<td>아이콘의 크기를 설정합니다.</td>
+<td><code>default</code></td>
+</tr>
+<tr>
+<td><strong>Stat Change Icons</strong></td>
+<td>스탯 증감 라인의 아이콘을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Stat/Pickup Bulletpoint Icons</strong></td>
+<td>각 줄의 라인 말머리표 대신 아이콘을 보여주는 것을 허용합니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Description elements</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Display Name</strong></td>
+<td>아이템의 이름을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Display Type</strong></td>
+<td>아이템의 타입(액티브/패시브/패밀리어 등)을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Display Icon</strong></td>
+<td>아이템의 아이콘을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Display Description</strong></td>
+<td>아이템의 설명을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Display Quality</strong></td>
+<td>(리펜턴스 전용)아이템의 퀄리티를 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Display Transformation Name</strong></td>
+<td>아이템이 속한 변신세트의 이름을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Display Transformation Icon</strong></td>
+<td>아이템이 속한 변신세트의 아이콘을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Display Transformation Progress</strong></td>
+<td>아이템이 속한 변신세트의 진행 상태을 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Display Item Pool Icon</strong></td>
+<td>아이템 획득 시 배열 아이콘을 아이템 이름 옆에 표시합니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Display Item Pool Name</strong></td>
+<td>아이템 획득 시 배열 아이콘을 아이템 이름 아래에 표시합니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Display ID</strong></td>
+<td>아이템의 ID를 보여줍니다(5.100.331)</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Display Mod indicator</strong></td>
+<td>모드 아이템의 출신 모드를 보여줍니다.</td>
+<td><code>none</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">리마인더 설정</h2>
+<p>EID -&gt; Reminder에서 특수 설명(리마인더) 옵션을 설정할 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Item Reminder</strong></td>
+<td>특정 키를 누른 상태에서 리마인더를 보여줍니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Controls</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Hold to Show</strong></td>
+<td>리마인더를 보여줄 단축키를 설정합니다.<br>이 단축키는 Flip, Spindown Dice, Bag of Crafting의 레시피 등 Tab 키를 사용하는 모든 EID 기능에 영향을 줍니다.</td>
+<td><code>Tab</code></td>
+</tr>
+<tr>
+<td><strong>Navigate Left</strong></td>
+<td>리마인더에서의 왼쪽 이동(이전 카테고리)</td>
+<td><code>Shoot Left</code></td>
+</tr>
+<tr>
+<td><strong>Navigate Right</strong></td>
+<td>리마인더에서의 오른쪽 이동(다음 카테고리)</td>
+<td><code>Shoot Right</code></td>
+</tr>
+<tr>
+<td><strong>Navigate Down</strong></td>
+<td>리마인더에서의 위쪽 이동(카테고리 내 이전 항목)</td>
+<td><code>Shoot Down</code></td>
+</tr>
+<tr>
+<td><strong>Navigate Up</strong></td>
+<td>리마인더에서의 아래쪽 이동(카테고리 내 다음 항목)</td>
+<td><code>Shoot Up</code></td>
+</tr>
+<tr>
+<td><strong>Options</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Display Mode</strong></td>
+<td>리마인더 표시 방식을 설정합니다.<br/>All: 카테고리 + 요약<br/>NoOverview: 카테고리만<br/>Classic: 요약만</td>
+<td><code>All</code></td>
+</tr>
+<tr>
+<td><strong>Disable Player Inputs</strong></td>
+<td>리마인더 설명을 보는 중일 때 캐릭터의 공격 및 이동을 방지합니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Show Hidden Information</strong></td>
+<td>리마인더에서 숨겨진 정보를 표시합니다.(Zodiac, Liberty Cap 등)</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Show RNG Predictions</strong></td>
+<td>리마인더에서 다음 이벤트 및 사용에 대한 예측 결과를 표시합니다.(Teleport! 등)</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Item Descriptions</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Max Entries</strong></td>
+<td>리마인더 요약에서 최근 획득한 아이템의 설명을 보여줍니다.(최대 10)</td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><strong>Overview hide after X rows</strong></td>
+<td>리마인더 요약에서 긴 설명이 나올 때 줄입니다.(최대 20)</td>
+<td><code>2</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">조합의 가방 설정</h2>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Show Display</strong></td>
+<td>설정과 무관하게 스테이지 내에 픽업 아이템이 8개 이상 있어야 표시됩니다.<br/>always: 항상 표시<br/>hold: 가방을 들고 있는 도중에만 표시<br/>never: 레시피 기능 끄기</td>
+<td><code>always</code></td>
+</tr>
+<tr>
+<td><strong>Display Mode</strong></td>
+<td>조합 가방의 레시피 정보를 표시합니다.<br/>Recipe List: 조합법을 보여줍니다.<br/>Preview Only: 예상되는 조합 결과만 보여줍니다.<br/>Itempool percentage: 아이템 퀄리티, 배열의 아이템 등장 확률만 보여줍니다.<br/>Pickups Only: 현재 방/스테이지의 픽업 정보만 보여줍니다.</td>
+<td><code>Recipe List</code></td>
+</tr>
+<tr>
+<td><strong>Hide in Battle</strong></td>
+<td>방 안에 적이 있을 경우 조합법/가방 정보를 자동으로 숨깁니다.</td>
+<td><code>yes</code></td>
+</tr>
+<tr>
+<td><strong>Recipe List Options</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sort Recipes by</strong></td>
+<td>레시피의 정렬 옵션을 설정합니다.</td>
+<td><code>Quality</code></td>
+</tr>
+<tr>
+<td><strong>Show Item Names</strong></td>
+<td>레시피 목록에서의 아이템 이름을 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Recipes to Display</strong></td>
+<td>한 페이지당 표시되는 조합법 갯수를 설정합니다.</td>
+<td><code>7</code></td>
+</tr>
+<tr>
+<td><strong>Show Recipies/Best Bag as</strong></td>
+<td>레시피 목록의 표시 방식을 설정합니다<br/>Groups: 각 아이템 별로 픽업의 갯수로 표시<br/>8 Icons: 각 픽업 1개 당 개별 아이콘으로 표시</td>
+<td><code>Groups</code></td>
+</tr>
+<tr>
+<td><strong>Controls</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Show Controls</strong></td>
+<td>레시피 목록 표시 중 조작법 표시 여부를 설정합니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Toggle</strong></td>
+<td>레시피 목록을 보이거나 숨기게 할 수 있습니다.</td>
+<td><code>F3</code></td>
+</tr>
+<tr>
+<td><strong>Result Toggle</strong></td>
+<td>픽업이 8개 모인 경우 예상 아이템의 설명을 보여줍니다.</td>
+<td><code>F4</code></td>
+</tr>
+<tr>
+<td><strong>Search</strong></td>
+<td>아이템 이름을 입력하여 레시피를 검색할 수 있습니다.</td>
+<td><code>R Shift</code></td>
+</tr>
+<tr>
+<td><strong>Advanced</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Thorough Calculations</strong></td>
+<td>현재 스테이지에 있는 픽업 종류 중 최상위 n개의 픽업 종류를 선택해 조합법을 계산합니다.</td>
+<td><code>12</code></td>
+</tr>
+<tr>
+<td><strong>Random Calculations</strong></td>
+<td>레시피 목록을 새로고침할 때마다 랜덤으로 생성하는 조합법의 갯수를 설정합니다.</td>
+<td><code>400</code></td>
+</tr>
+<tr>
+<td><strong>Clear Bag Content</strong></td>
+<td>현재 설명모드가 인식한 가방 안의 픽업 내용물을 초기화합니다.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Clear Floor item List</strong></td>
+<td>현재 층의 픽업 아이템 정보를 초기화합니다. 방을 다시 방문하여 픽업 정보를 갱신해야 합니다.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="repentogon">REPENTOGON 설정</h2>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hide uncollected items</strong></td>
+<td>아직 획득하지 않은 아이템을 설명을 숨깁니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Highlight uncollected items</strong></td>
+<td>아직 획득하지 않은 아이템을 설명에 표시합니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Collection Page Highlight Color</strong></td>
+<td>아직 획득하지 않은 아이템의 색상을 설정합니다.</td>
+<td><code>Fade</code></td>
+</tr>
+<tr>
+<td><strong>Show descriptions on collection page</strong></td>
+<td>통계 &gt; 아이템 페이지에서 선택한 아이템의 설명을 표시합니다.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><strong>Donation machine progress</strong></td>
+<td>기부기계 및 그리드 머신의 상황을 표시합니다.</td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">컬렉션 페이지 설정</h2>
+<p>EID -&gt; Save Game에서 컬렉션 페이지 기능을 사용할 수 있습니다. 이 기능은 초기에는 비활성화되어 있으며 설명모드에 동봉된 scripts/savegame_reader 프로그램을 실행해야 인식할 수 있습니다.
+이 메뉴는 REPENTOGON 적용 시 표시되지 않습니다.</p>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Current Save Game</strong></td>
+<td>컬렉션 페이지의 세이브를 설정합니다.</td>
+<td><code>0</code>(해당 기능 비활성화)</td>
+</tr>
+<tr>
+<td><strong>Collection Page Highlight Color</strong></td>
+<td>아직 획득하지 않은 아이템의 색상을 설정합니다.</td>
+<td><code>Fade</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_8">마우스 설정</h2>
+<p>EID -&gt; Mouse에서 마우스 기능을 설정할 수 있습니다. <strong>해당 기능은 개발중인 기능이기 때문에 정상적으로 동작하지 않을 수 있습니다.</strong></p>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Mouse Controls</strong></td>
+<td>마우스 기능을 활성화합니다.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><strong>Show Cursor</strong></td>
+<td>커서를 보여줍니다.</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_9">색상 설정</h2>
+<p>EID -&gt; Colors에서 설명의 색상을 지정할 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descriptions</strong></td>
+<td>아이템 설명 색상을 설정합니다.</td>
+<td><code>EIDText</code></td>
+</tr>
+<tr>
+<td><strong>Names</strong></td>
+<td>아이템 이름 색상을 설정합니다.</td>
+<td><code>EIDObjName</code></td>
+</tr>
+<tr>
+<td><strong>Transformations</strong></td>
+<td>변신세트 이름 색상을 설정합니다.</td>
+<td><code>EIDTransformation</code></td>
+</tr>
+<tr>
+<td><strong>Errors</strong></td>
+<td>오류 문구 색상을 설정합니다.</td>
+<td><code>EIDError</code></td>
+</tr>
+<tr>
+<td><strong>Mod Indicator</strong></td>
+<td>출신 모드 이름의 색상을 설정합니다.</td>
+<td><code>LightOrange</code></td>
+</tr>
+<tr>
+<td><strong>Item Pool Name Color</strong></td>
+<td>획득 시 아이템 배열 표기의 색상을 설정합니다.</td>
+<td><code>Silver</code></td>
+</tr>
+<tr>
+<td><strong>Colorblind Mode</strong></td>
+<td>색맹 보정을 설정합니다.</td>
+<td><code>Off</code></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        
+
+<footer class="md-footer">
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="footer.title"
+    >
+      
+        <a
+          href="../../howto/update-from-github/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              Github에서 바로 업데이트
+            </div>
+          </div>
+        </a>
+      
+      
+        <a
+          href="../lua/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              설정 파일 직접 수정
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2022 kohashiwakaba aka. 미카
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        with emoji by
+        <a href="https://github.com/twitter/twemoji" target="_blank" rel="noopener">
+          Twemoji
+        </a>
+      </div>
+      
+<div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", {"toc": {"permalink": true}}, "toc.integrate", "navigation.top", "header.autohide", "navigation.footer"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../assets/pymdownx-extras/extra-loader-B5CKpNQx.js"></script>
+      
+    
+  </body>
+</html>
