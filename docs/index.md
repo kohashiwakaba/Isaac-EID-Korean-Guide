@@ -1,5 +1,5 @@
-!!! danger "리펜턴스+ DLC에서의 REPENTOGON의 경우"
-    리펜턴스+에서 REPENTOGON 런처를 통한 실행의 경우 강제로 다운그레이드를 진행하므로 설명모드 역시 REPENTOGON 대응 버전인 1.9.7.12에 맞는 버전이 필요합니다.
+!!! danger "REPENTOGON 업데이트"
+    2025-11-30일자로 REPENTOGON이 더 이상 리펜턴스를 지원하지 않으며 반드시 리펜턴스+ DLC로 업그레이드가 필요합니다. 리펜턴스+에서 REPENTOGON 런처를 통한 실행의 경우 강제로 다운그레이드를 진행하므로 설명모드 역시 REPENTOGON 대응 버전인 1.9.7.12에 맞는 버전이 필요합니다.
 
     - [리펜플에서 REPENTOGON 실행 방법](https://gall.dcinside.com/m/tboi/149421)
 
