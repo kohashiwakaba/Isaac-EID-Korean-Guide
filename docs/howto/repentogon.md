@@ -11,9 +11,9 @@ REPENTOGON의 설치는 다른 모드와는 다르게 창작마당에서의 설�
 !!! danger "REPENTOGON 업데이트"
     2025-11-30일자로 REPENTOGON이 더 이상 리펜턴스를 지원하지 않으며 반드시 리펜턴스+ DLC로 업그레이드가 필요합니다. 1.9.7.15 버전에서는 호환되지 않으며 REPENTOGON 런처는 이전 버전(1.9.7.12)으로 롤백하여 실행됩니다.
 
-[REPENTOGON 설치 페이지 및 런처 다운로드 방법(영문)](https://repentogon.com/install.html)
+- [REPENTOGON 설치 페이지 및 런처 다운로드 방법(영문)](https://repentogon.com/install.html)
 
-[REPENTOGON 런처 다운로드 방법(한글)](https://gall.dcinside.com/m/tboi/149421)
+- [REPENTOGON 런처 다운로드 방법(한글)](https://gall.dcinside.com/m/tboi/149421)
 
 아이템 설명모드 역시 1.9.7.12 버전에 맞는 버전을 설치해야 합니다.
 
