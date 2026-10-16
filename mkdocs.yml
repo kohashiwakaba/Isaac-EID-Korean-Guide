@@ -25,23 +25,43 @@ nav:
 theme:
   variant: modern
   icon:
+    logo: lucide/rabbit
     repo: fontawesome/brands/github
   language: ko
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.path
     - header.autohide
     - navigation.footer
+    - search.highlight
   palette: 
-    scheme: dracula
-    primary: deep purple
-    accent: deep purple
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: lucide/sun-moon
+        name: 라이트 모드로 변경
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: red
+      toggle:
+        icon: lucide/sun
+        name: 다크 모드로 변경
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: deep purple
+      toggle:
+        icon: lucide/moon
+        name: 시스템 설정에 따라 변경
   font:
     text: IBM Plex Sans KR
+    code: Nanum Gothic Coding
 
 extra_css: 
   - css/pymdownx.css
