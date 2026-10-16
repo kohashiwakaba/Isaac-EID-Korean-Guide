@@ -2,7 +2,7 @@
 
 Mod Config Menu는 기본적으로 라틴 계열의 문자만 지원하기 때문에 아쉽게도 한국어는 지원하지 않습니다. 이 페이지는 설명모드 세팅 방법을 모르는 사람들을 위한 페이지입니다.
 
-Mod Config Menu의 기본적인 진입 방법은 ++l++ 키 혹은 ++f10++ 키입니다. 진입에 성공하면 아래와 비슷한 화면이 출력됩니다.
+Mod Config Menu의 기본적인 진입 방법은 ++l++ 키입니다. 진입에 성공하면 아래와 비슷한 화면이 출력됩니다.
 ![한국어 설정](../img/guide_first.jpg){: width="500"}
 
 ## 언어 설정
@@ -91,7 +91,7 @@ EID -> Visuals에서 표시할 설명의 스타일을 설정할 수 있습니다
 | **Font Type** | 폰트를 설정합니다.<br/>![폰트 미리보기](../img/fontpreview.png)<br/>변경 시 Line Height, Textbox Width 항목이 초기화됩니다. | `korean_yoonwebdotum9`(한국어) |
 | **Display mode** | 설명 출력 위치를 설정합니다. | `default` |
 | **Local mode centered** | (Display mode가 Local일 때만 적용)설명을 아이템 오른쪽이 아닌 중앙에 표시합니다. | `false` |
-| **Indicator** | 설명 출력중인 아이템의 표시방법을 설정합니다.<br/>![인디케이터](https://steamuserimages-a.akamaihd.net/ugc/964219973643822883/4354AE9676356B121ED0C70259F6FE1CB0174E2B/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)<br/> - `none` : 없음<br/> - `arrow` : 화살표<br/> - `blink` : 깜빡임<br/> - `border` : 테두리 깜빡임<br/> - `highlight` : 테두리 | `none` |
+| **Indicator** | 설명 출력중인 아이템의 표시방법을 설정합니다.<br/>![인디케이터](https://images.steamusercontent.com/ugc/2444972799627218104/7F968AE1D8B965DD4094245DABB5181D91A3C173/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)<br/> - `none` : 없음<br/> - `arrow` : 화살표<br/> - `blink` : 깜빡임<br/> - `border` : 테두리 깜빡임<br/> - `highlight` : 테두리 | `none` |
 | **Position** |||
 | **Position X** | 텍스트박스의 X좌표 위치를 설정합니다. | `60` |
 | **Position Y** | 텍스트박스의 Y좌표 위치를 설정합니다. | `45` |

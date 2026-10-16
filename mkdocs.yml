@@ -11,8 +11,8 @@ nav:
     - '기본 사용법': howto/basic.md
     - '다른 아이템과의 시너지': howto/advanced.md
     - '리마인더': howto/reminder.md
-    - '알트 카인 레시피': howto/crafting.md
     - 'REPENTOGON': howto/repentogon.md
+    - '알트 카인 레시피': howto/crafting.md
     - 'Github에서 바로 업데이트': howto/update-from-github.md
   - 옵션: 
     - '주요 옵션': config/configmenu.md
@@ -23,7 +23,7 @@ nav:
   - 모드 링크: https://steamcommunity.com/sharedfiles/filedetails/?id=836319872
   - API(외부 링크): https://github.com/wofsauge/External-Item-Descriptions/wiki
 theme:
-  name: material
+  variant: modern
   icon:
     repo: fontawesome/brands/github
   language: ko
@@ -33,9 +33,6 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
-    - toc:
-        permalink: True
-    - toc.integrate
     - navigation.top
     - header.autohide
     - navigation.footer
@@ -69,4 +66,4 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-copyright: Copyright &copy; 2022 kohashiwakaba aka. 미카
+copyright: Copyright &copy; 2022 리셰/kohashiwakaba

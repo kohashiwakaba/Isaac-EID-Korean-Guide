@@ -9,15 +9,11 @@ REPENTOGON은 다수의 아이작 모드 개발자들에 의해 리버스 엔지
 REPENTOGON의 설치는 다른 모드와는 다르게 창작마당에서의 설치가 불가능합니다. 따라서 최초 설치 시 수동으로 설치가 필요합니다.
 
 !!! danger "REPENTOGON 업데이트"
-    2025-11-30일자로 REPENTOGON이 더 이상 리펜턴스를 지원하지 않으며 반드시 리펜턴스+ DLC로 업그레이드가 필요합니다. 1.9.7.15 버전에서는 호환되지 않으며 REPENTOGON 런처는 이전 버전(1.9.7.12)으로 롤백하여 실행됩니다.
+    2025-11-30일자로 REPENTOGON이 더 이상 리펜턴스를 지원하지 않으며 반드시 리펜턴스+ DLC로 업그레이드가 필요합니다. 1.9.7.17 버전에서는 호환되지 않으며 REPENTOGON 런처는 이전 버전(1.9.7.12)으로 롤백하여 실행됩니다.
 
 - [REPENTOGON 설치 페이지 및 런처 다운로드 방법(영문)](https://repentogon.com/install.html)
 
 - [REPENTOGON 런처 다운로드 방법(한글)](https://gall.dcinside.com/m/tboi/149421)
-
-아이템 설명모드 역시 1.9.7.12 버전에 맞는 버전을 설치해야 합니다.
-
-- [Github에서 수동 다운로드 방법](update-from-github.md)
 
 ### TMTRAINER
 
@@ -240,3 +236,8 @@ REPENTOGON 적용 시 획득하지 않은 아이템의 경우 설명 하단에�
 ![미획득 아이템](../img/repentogon_donation.jpg)
 
 REPENTOGON 적용 시 기부기계 해금 현황을 확인할 수 있습니다.
+
+### 등장 아이템 배열 확인
+
+REPENTOGON 적용 시 어느 아이템이 어느 배열에 속해 있는지 확인할 수 있습니다.
+REPENTOGON을 적용 중이지 않는 경우 모드 아이템은 소속 배열이 등장하지 않습니다.

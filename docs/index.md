@@ -1,12 +1,7 @@
-!!! danger "REPENTOGON 업데이트"
-    2025-11-30일자로 REPENTOGON이 더 이상 리펜턴스를 지원하지 않으며 반드시 리펜턴스+ DLC로 업그레이드가 필요합니다. 리펜턴스+에서 REPENTOGON 런처를 통한 실행의 경우 강제로 다운그레이드를 진행하므로 설명모드 역시 REPENTOGON 대응 버전인 1.9.7.12에 맞는 버전이 필요합니다.
+!!! note "Mod Config Menu 관련"
+    기존에 페이지에 안내된 Mod Config Menu 모드가 창작마당에서 내려간 이후 원 개발자에 의해 다시 업로드되었습니다.
 
-    - [리펜플에서 REPENTOGON 실행 방법](https://gall.dcinside.com/m/tboi/149421)
-
-    - [리펜플 REPENTOGON 대응 버전](https://github.com/wofsauge/External-Item-Descriptions/releases/tag/V5.04)
-
-    - [Github에서 수동 다운로드 및 적용 방법](/howto/update-from-github.md)
-
+    [Mod Config Menu - Impure](https://steamcommunity.com/sharedfiles/filedetails/?id=3701683951) 모드를 새로 받아주십시오.
 
 ??? note "2023년 이전 구 한글 설명모드 관련"
     <span style="color:red;font-weight:700;font-size:1rem">반드시 이 페이지 전부를 정독한 후 설명모드를 사용하여 주십시오!</span>
@@ -15,8 +10,8 @@
     일부 원본 설명모드의 기본값이 구 한글 설명모드의 기본값과 달라 언어 이외에 추가 설정을 진행해 주어야 합니다.
     추가 설정이 필요한 항목은 아래와 같습니다:
 
-    - [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독
-    - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입
+    - [Mod Config Menu - Impure](https://steamcommunity.com/sharedfiles/filedetails/?id=3701683951) 구독
+    - 게임 시작 직후 ++l++ 키를 눌러 Mod Config Menu 진입
         - EID -> General -> **Language**를 '**Korean**'으로 설정 (이미 한국어인 경우 스킵)
         - EID -> General -> **Name Language**를 '**Current + English**'로 설정
         - EID -> General -> **Indicator**를 '**arrow**'로 설정
@@ -35,8 +30,10 @@
 - [Github Project link](https://github.com/wofsauge/External-Item-Descriptions)
 - [EID Wiki](https://github.com/wofsauge/External-Item-Descriptions/wiki)
 - [Wofsauge's Modding Central Discord](https://discord.com/invite/HhD4vMM4bZ)
+
 ---
 ## 아이템 설명 모드가 무엇인가요?
+
 **아이템 설명 모드(External Item Descriptions)**는 아이작의 번제 애프터버스+, 및 리펜턴스의 아이템과 희생방, 주사위방의 효과를 화면에 출력하는 모드입니다. 아이작의 번제 게임은 수백가지의 아이템, 장신구, 알약, 카드 등의 아이템이 있으며 이러한 아이템들의 효과는 제각각 다른 기능을 가집니다. 어느 효과는 좋은 효과를 갖고 있지만, 어느 효과는 나쁜 효과를 가지는 등 운에 기대야 되는 상황이 발생하기 마련, 브라우저를 키고 외부 사이트에 접속하여 아이템의 효과를 찾으려 하는 번거로운 작업을 거치곤 합니다. 아이템 설명 모드는 이러한 아이템들의 효과를 게임 안에 표시하게 해줌으로서 귀찮은 작업을 하지 않아도 되어 편하게 게임을 할 수 있게 해줍니다. 현재 아이템 설명 모드는 한국어를 포함한 여러 언어를 지원하고 있습니다.
 
 ---
@@ -65,8 +62,8 @@
 - 전투 중 설명 숨기기 설정 가능
 - 마우스 커서를 액티브 아이템과 픽업 그림에 올려 설명 확인 (베타)
 - 모드 아이템 설명 추가 가능([영어](https://github.com/wofsauge/External-Item-Descriptions/wiki))
-- (리펜턴스) [알트 카인의 레시피 실시간 확인](./howto/crafting.md)
 - (리펜턴스) [스핀다운 주사위 예상 결과 확인](./howto/advanced.md)
+- (REPENTOGON) [알트 카인의 레시피 실시간 확인](./howto/crafting.md)
 - (REPENTOGON) TMTRAINER 글리치 아이템 설명
 - (REPENTOGON) 컬렉션 페이지에서 설명 확인
 - (REPENTOGON) 기부 기계 다음 목표 수 확인
@@ -77,13 +74,15 @@
 
     - {==**만약 게임을 설치하자마자 모드나 콘솔을 적용하고 게임을 시작하면 왼쪽 위의 '트로피 금지' 표시가 나오게 됩니다.** 이 표시는 캐릭터 및 도전과제 해금이 불가능하다는 표시이기 때문에 이 상태로 게임을 시작하게 되면 게임을 1%도 즐기지도 못하는 상황이 일어나게 됩니다. 따라서 우선적으로 모드 금지 제한을 해제하는 것이 좋습니다.==}
     - 위의 메시지는 Cube of Meat 아이템 해금 여부에 따라 표시됩니다. 도전과제를 해금할 수 있는데도 저 메시지가 나오는 경우가 있습니다. 이 경우는 무시하셔도 됩니다.
-    === "리펜턴스"
+    === "리펜턴스 (REPENTOGON 미적용 시)"
         1. **리펜턴스의 경우 'The Binding of Isaac : Rebirth' 게임 설치 경로에 한글이 있을 경우 모드 적용이 불가능**합니다. 또한 **운영체제 계정명이 한글일 경우 일부 기능이 작동하지 않습니다.** 설치 경로 중간이나 운영체제 계정명에 한글이 있는지 확인해 주세요.
             1. 확인 방법 : Steam 설정 -> 다운로드 -> STEAM 라이브러리 폴더
             2. 저장공간 관리자 창에서 'The Binding of Isaac : Rebirth' 게임이 설치된 드라이브 선택 후 경로 확인
         2. {==**반드시 모드 및 콘솔을 적용하지 않은 상태에서 <u>1회차(Mom / 에필로그 엔딩)</u> 클리어 후 모드를 적용해 주세요. 해당 조건을 만족하기 전에 모드 적용 시 도전과제가 해금되지 않습니다.**==}
             ![자궁 스테이지 해금](./img/womb_unlock.jpg)
             - 메인 메뉴에서 Stats -> Secrets에 들어가서 4번과 5번 도전과제가 달성되어 있다면 모드를 적용해도 됩니다.
+    === "REPENTOGON"
+        REPENTOGON의 경우 모드, 콘솔 적용 시 패널티가 없습니다.
     === "애프터버스 +"
         1. **애프터버스+의 경우 운영체제 계정명이 한글일 경우 모드 적용이 불가능**합니다. 새로운 운영체제 계정을 생성한 후에 적용할 수 있습니다.
         2. {==**반드시 모드 및 콘솔을 적용하지 않은 상태에서 <u>2회차(Mom's Heart / 1번 엔딩)</u> 클리어 후 모드를 적용해 주세요. 해당 조건을 만족하기 전에 모드 적용 시 도전과제가 해금되지 않습니다.**==}
@@ -95,8 +94,8 @@
 !!! info "스팀 창작마당 버전은 정기적으로 업데이트된다"
     아이템 설명 모드는 Wofsauge를 비롯한 여러 개발자가 개발하는 모드입니다. 따라서 개발자 및 번역가들이 Github 프로젝트에 먼저 올린 후 한국 시간 기준 격주마다 스팀 창작마당에 업로드 됩니다. 스팀 버전보다도 빠른 업데이트를 받고자 한다면 [Github 프로젝트](https://github.com/wofsauge/External-Item-Descriptions)에서 직접 받으시는 걸 권장드립니다.
 - Mod Config Menu로 설정 :
-    - [Mod Config Menu - Pure](https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787) 구독
-    - 게임 시작 직후 ++l++ 키, 혹은 ++f10++ 키를 눌러 Mod Config Menu 진입
+    - [Mod Config Menu - Impure](https://steamcommunity.com/sharedfiles/filedetails/?id=3701683951) 구독
+    - 게임 시작 직후 ++l++ 키를 눌러 Mod Config Menu 진입
     - EID -> General -> Language를 'Korean'으로 설정 (아래 그림 참조)
     - 이외의 옵션 설정 방법은 [이 페이지](./config/configmenu.md)를 확인해 주세요.
     ![한국어 설정](./img/guide_first.jpg){: width="500"}
@@ -130,7 +129,7 @@
 - [아카라이브 아이작의 번제 채널](https://arca.live/b/isaac)
 - [나무위키](https://namu.wiki)
 - [Isaacguru](https://isaacguru.com)
-- [Binding of Isaac Rebirth Wiki](https://bindingofisaacrebirth.fandom.com/)
+- [Binding of Isaac Rebirth Wiki](https://bindingofisaacrebirth.wiki.gg/)
 - ~~[(구) 한국어 설명 모드(Blackcreamtea 제작)](https://steamcommunity.com/sharedfiles/filedetails/?id=1630138997)~~ (삭제됨)
 - ~~[(구) 한국어 설명 모드(Blackcreamtea 제작 / 애프터버스+ 전용, 이미지 타입)](https://steamcommunity.com/sharedfiles/filedetails/?id=2375611219)~~ (삭제됨)
 
